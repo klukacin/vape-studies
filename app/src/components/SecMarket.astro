@@ -1,10 +1,12 @@
 ---
+import DeviceGallery from './DeviceGallery.astro';
 import {devices,liquidContent,costScenarios} from '../data/devices.js';
 const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFractionDigits:2});
 ---
 <section id="market" class="reveal">
   <div class="eyebrow">Zajednički pregled · šest uređaja + cigarete</div>
   <h2><span class="num">12</span>Uređaji, cijene i nikotin</h2>
+  <DeviceGallery />
   <p>JUUL2, Vuse Pro One, ENVA Sol, IQOS ILUMA i ONE, Wiip Magnetic II i Wiip X Pro — šest uređaja, uz cigarete kao referencu. <a href="/#uredaji">Sve fotografije ↑</a> · zasebne analize: <a href="/#enva">ENVA Sol</a>, <a href="/#vuse">Vuse</a>, <a href="/#wiip">Wiip</a>.</p>
   <h3>Uređaj, potrošni dio i cijena</h3>
   <div class="compare-scroll"><table class="data">
