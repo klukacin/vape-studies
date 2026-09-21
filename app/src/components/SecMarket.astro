@@ -1,6 +1,7 @@
 ---
+import InfoTip from './InfoTip.astro';
 import DeviceGallery from './DeviceGallery.astro';
-import {devices,liquidContent,costScenarios} from '../data/devices.js';
+import {devices,liquidContent,costScenarios,nicotineEvidence} from '../data/devices.js';
 const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFractionDigits:2});
 ---
 <section id="market" class="reveal">
@@ -32,30 +33,35 @@ const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFracti
   <p class="chart-note">0–40 mg, sadržaj tekućine = volumen × koncentracija. Za oba Wiipa prikazan je kompatibilni Cola 18 pod; Cola 10 i Apple 10 imaju 20 mg u 2 mL. Ovo nije doza u krvi niti usporedba štetnosti. <a href="/studije/147/">Cola 10</a> · <a href="/studije/148/">Cola 18</a> · <a href="/studije/149/">Apple 10</a> · <a href="/studije/124/">JUUL 5% literatura</a>.</p>
 
   <h3>Trošak po 100 puffova, mjesečno i godišnje</h3>
-  <p>Odaberite scenarij potrošnje i po potrebi izmijenite cijenu ili trajnost potrošnog dijela. <strong>Isti broj puffova ne znači istu dozu nikotina.</strong> Za Wiip broj puffova po podu nije potvrđen: računica ostaje prazna dok ne unesete vlastitu pretpostavku. JUUL također traži vašu cijenu u eurima.</p>
+  <p>Odaberite scenarij potrošnje i po potrebi izmijenite cijenu ili trajnost potrošnog dijela. <strong>Isti broj puffova ne znači istu dozu nikotina.</strong> Za Wiip broj puffova po podu nije potvrđen: računica ostaje prazna dok ne unesete vlastitu pretpostavku.</p>
   <form id="cost-model">
     <div class="cost-controls"><label>Puffova dnevno <input id="daily-puffs" type="number" min="0" max="10000" step="1" value="240" /></label><label>Graf prikazuje <select id="cost-period"><option value="hundred">€ / 100 puffova</option><option value="month" selected>€ / 30 dana</option><option value="year">€ / 365 dana</option></select></label><button type="reset">Vrati početne vrijednosti</button></div>
     <p class="cost-legend"><span class="cheap">Zeleno: najniži trošak</span> → <span class="expensive">crveno: najviši trošak</span> među izračunatim scenarijima. Boje uspoređuju cijenu, ne štetnost; nepoznate vrijednosti ostaju neutralne.</p>
     <p class="chart-note">Proizvodi su u stupcima; pomaknite tablicu vodoravno za ostale uređaje. Nazivi redaka ostaju vidljivi.</p>
     <div class="matrix-scroll" tabindex="0" role="region" aria-label="Kalkulator troškova po proizvodima"><table class="data cost-table">
-      <thead><tr><th scope="col">Stavka</th>{costScenarios.map(d=><th scope="col">{d.name}</th>)}</tr></thead>
+      <thead><tr><th scope="col">Stavka</th>{costScenarios.map(d=><th scope="col"><span class="product-heading">{d.heading}</span><InfoTip label={d.subheading} text={d.headerDetails} /></th>)}</tr></thead>
       <tbody>
         <tr><th scope="row">Potrošni dio</th>{costScenarios.map(d=><td>{d.unit}</td>)}</tr>
         <tr><th scope="row">Cijena dijela (€)</th>{costScenarios.map(d=><td><input aria-label={`Cijena: ${d.name}`} data-price={d.id} type="number" min="0" max="10000" step="any" value={d.price??''} placeholder="Unesite €" /></td>)}</tr>
         <tr><th scope="row">Puffova po dijelu</th>{costScenarios.map(d=><td><input aria-label={`Puffova: ${d.name}`} data-puffs={d.id} type="number" min="1" max="100000" step="1" value={d.puffs??''} placeholder="Nepoznato" /></td>)}</tr>
         {[['hundred','Trošak / 100 puffova'],['month','Trošak / 30 dana'],['year','Trošak / 365 dana']].map(([metric,label])=><tr><th scope="row">{label}</th>{costScenarios.map(d=><td data-product={d.id} data-output={metric}>—</td>)}</tr>)}
         <tr><th scope="row">Ušteda / godinu<br />prema cigaretama</th>{costScenarios.map(d=><td data-saving={d.id}>—</td>)}</tr>
-        <tr><th scope="row">Pretpostavka</th>{costScenarios.map(d=><td><small>{d.puffNote}</small></td>)}</tr>
+        <tr><th scope="row">Nikotin: isporuka u aerosol / dim</th>{costScenarios.map(d=><td>{nicotineEvidence(d.id).delivery}</td>)}</tr>
+        <tr><th scope="row">Nikotin: apsorbirano u tijelo</th>{costScenarios.map(d=><td>{nicotineEvidence(d.id).absorbed}</td>)}</tr>
+        <tr><th scope="row">Osnova za nikotin</th>{costScenarios.map(d=><td><InfoTip label="Detalji" text={nicotineEvidence(d.id).details} /><br /><a href={nicotineEvidence(d.id).source}>Izvor ↗</a></td>)}</tr>
+        <tr><th scope="row">Pretpostavka</th>{costScenarios.map(d=><td><InfoTip label="Detalji" text={d.puffNote} /></td>)}</tr>
       </tbody>
     </table></div>
+    <p class="chart-note">¹ Deklaracija proizvođača; različite jedinice (mg/puff i mg/stick) nisu izravno usporedive. Isporuka u aerosol nije isto što i apsorpcija u tijelu. Nepoznate vrijednosti ne procjenjujemo iz sadržaja poda ili broja puffova.</p>
     <h3>Mjesečni scenariji — svaki broj puffova u svom retku</h3>
     <p class="chart-note">Svaki redak koristi isti broj dnevnih puffova za sve proizvode i 30 dana. Klik na broj puffova prenosi taj scenarij u kalkulator i graf ispod. Nema pretvaranja u nikotinski ekvivalent kutije cigareta.</p>
     <div class="matrix-scroll" tabindex="0" role="region" aria-label="Mjesečni troškovi po dnevnoj potrošnji"><table class="data cost-table scenario-table">
-      <thead><tr><th scope="col">Puffova / dan</th>{costScenarios.map(d=><th scope="col">{d.name}</th>)}</tr></thead>
+      <thead><tr><th scope="col">Puffova / dan</th>{costScenarios.map(d=><th scope="col"><span class="product-heading">{d.heading}</span><InfoTip label={d.subheading} text={d.headerDetails} /></th>)}</tr></thead>
       <tbody>{[120,140,240,360,480,720,960,1440].map(puffs=><tr data-scenario={puffs}><th scope="row"><button type="button" data-daily={puffs}>{puffs}</button></th>{costScenarios.map(d=><td data-monthly={d.id} data-daily-count={puffs}>—</td>)}</tr>)}</tbody>
     </table></div>
   </form>
-  <div id="cost-bars" class="comparison-bars" aria-label="Izračun troškova, svi proizvodi na istoj linearnoj skali">
+  <h3 id="cost-chart-title">Usporedba troškova — odabrana potrošnja</h3>
+  <div id="cost-bars" aria-labelledby="cost-chart-title" class="comparison-bars" aria-label="Izračun troškova, svi proizvodi na istoj linearnoj skali">
     {costScenarios.map(d=><div class="comparison-row" data-cost-bar={d.id}><strong>{d.name}</strong><div class="bar-track"><span class="bar-fill" style="width:0%"></span></div><span data-value>Potrebni podaci</span></div>)}
   </div>
   <p id="cost-scale" class="chart-note" aria-live="polite"></p>
@@ -66,6 +72,7 @@ const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFracti
 <style>
 .compare-scroll{overflow-x:auto}.compare-scroll table{min-width:760px}.compare-scroll small{display:block;font-weight:400;font-size:11px;color:var(--ink2);margin-top:.5rem}
 .comparison-bars{margin:1.5rem 0;display:grid;gap:1rem}.comparison-row{display:grid;grid-template-columns:180px minmax(60px,1fr) 150px;align-items:center;gap:1rem;font-size:13px}.comparison-row strong{font-weight:500}.bar-track{height:20px;border-left:1px solid #888;background:rgba(255,255,255,.025)}.bar-fill{display:block;height:100%;background:var(--amber)}.bar-fill.nicotine{background:var(--vuse)}
+.product-heading{display:block;font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:normal;text-transform:none;margin-bottom:.35rem}
 .matrix-scroll{overflow-x:auto;margin:1rem 0 2rem;max-width:100%;isolation:isolate}.cost-table{width:max-content;min-width:100%;table-layout:fixed;border-collapse:separate;border-spacing:0}.cost-table th,.cost-table td{min-width:145px;width:145px;padding:.75rem;vertical-align:top;font-variant-numeric:tabular-nums}.cost-table th:first-child{position:sticky;left:0;z-index:2;background:var(--bg);min-width:170px;width:170px;box-shadow:2px 0 var(--line)}.cost-table small{display:block;font-weight:400;font-size:11px;color:var(--ink2)}.cost-table input{width:100%;max-width:120px}.cost-table tbody th{font-family:var(--sans);font-size:13px;text-transform:none;letter-spacing:normal}.scenario-table tr.selected th{border-left:3px solid var(--amber)}.scenario-table button{padding:.35rem .75rem}.cost-legend{font-size:13px;max-width:none}.cheap{color:hsl(130 65% 72%)}.expensive{color:hsl(0 65% 72%)}
 .cost-controls{display:flex;gap:1.2rem;flex-wrap:wrap;align-items:end;margin:1.5rem 0}label{display:grid;gap:.4rem;font-size:13px}input,select,button{background:var(--bg2);border:1px solid var(--line);color:var(--ink);padding:.6rem;font:inherit}input{width:110px}button{cursor:pointer}input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--amber)}
 @media(max-width:650px){.comparison-row{grid-template-columns:1fr 110px;gap:.4rem}.comparison-row strong{grid-column:1/-1}.comparison-row .bar-track{grid-column:1}.comparison-row>span{font-size:12px}}

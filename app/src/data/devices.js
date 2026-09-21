@@ -15,8 +15,24 @@ export function costs(price,puffs,daily){
 }
 
 // Four explicit ENVA scenarios; puff counts are assumptions, not measured yields.
-export const costScenarios = devices.flatMap(device => device.id !== 'enva' ? [device] :
+const allCostScenarios = devices.flatMap(device => device.id !== 'enva' ? [device] :
  [{pack:'2/1',price:6.90/2},{pack:'XXL',price:69.90/30}].flatMap(({pack,price}) =>
   [200,300].map(puffs => ({...device,id:`enva${pack==='XXL'?'XXL':'Regular'}${puffs}`,
    name:`ENVA Sol ${pack} · ${puffs} puffova/stick`,price,puffs,
    puffNote:`Scenarij ${puffs} puffova; ${pack==='XXL'?'69,90 € / 30 stickova, paket s uređajem':'6,90 € / 2 sticka'}`}))));
+
+// Keep all equipment in the overview; the cost comparison excludes JUUL.
+const costOrder = ['iqos','vuse','wiipMagnetic','wiipXPro','envaRegular200','envaRegular300','envaXXL200','envaXXL300','cig'];
+export const costScenarios = costOrder.map(id => {
+ const d=allCostScenarios.find(item=>item.id===id);
+ const enva=id.startsWith('enva');
+ return {...d,heading:enva?'ENVA Sol':id==='vuse'?'Vuse':id==='iqos'?'IQOS':id==='cig'?'Cigarete':'Wiip',
+  subheading:enva?`${id.includes('XXL')?'XXL':'2/1'} · ${d.puffs}/stick`:id==='vuse'?'Pro One':id==='iqos'?'ILUMA · TEREA':id==='cig'?'Referenca':id==='wiipMagnetic'?'Magnetic II':'X Pro',
+  headerDetails:enva?`${d.puffs} puffova po sticku kao računska pretpostavka. ${id.includes('XXL')?'XXL: paket od 30 stickova s uređajem.':'2/1: pakiranje od 2 sticka.'}`:d.puffNote};
+});
+export function nicotineEvidence(id){
+ if(id==='cig')return {delivery:'Nije utvrđeno',absorbed:'≈1–1,5 mg/cigareta',source:'/studije/160/',details:'Prosječna sistemska apsorpcija iz pregleda Benowitz i sur. (2009), ne mjerenje aktualne marke. Ovisi o načinu pušenja. Strojni prinos dima i ukupni sadržaj duhana nisu apsorbirana doza.'};
+ if(id==='iqos')return {delivery:'≈0,5 mg/stick¹',absorbed:'Nije utvrđeno',source:'/studije/161/',details:'IQOS Egypt deklarira isporuku oko 0,5 mg po TEREA sticku, bez protokola mjerenja. Nije potvrđena apsorpcija u krv ni rezultat za hrvatske varijante.'};
+ if(id.startsWith('wiip'))return {delivery:'0,14 mg/puff¹',absorbed:'Nije utvrđeno',source:'/studije/148/',details:'Deklaracija Wiipod Magnetic Cola 18 mg/mL: oslobađanje 0,14 mg/puff. Nije zasebno mjerenje za Magnetic II ili X Pro; testni uređaj i protokol nisu objavljeni. Nije doza apsorbirana u tijelo.'};
+ return {delivery:'Nije utvrđeno',absorbed:'Nije utvrđeno',source:id==='vuse'?'/#vuse':'/#enva',details:'U prikupljenim izvorima nema potvrđenog prinosa ni sistemske apsorpcije za ovu kombinaciju uređaja i potrošnog dijela. Rezultate drugih modela ne prenosimo kao brojčanu procjenu.'};
+}
