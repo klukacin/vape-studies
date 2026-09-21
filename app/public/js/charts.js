@@ -33,12 +33,12 @@ document.querySelectorAll('section').forEach(s=>secIO.observe(s));
 
 /* ---------- 02 temp chart ---------- */
 mk('chartTemp',{
-tooltip:{trigger:'item',...baseTip,formatter:p=>`${p.name}<br><b>${p.value[1]}–${p.value[2]} °C</b>`},
-grid:{left:210,right:40,top:30,bottom:50},
-xAxis:{type:'value',name:'°C',nameTextStyle:{color:C.ink2},max:1000,...baseAxis},
+tooltip:{...baseTip,trigger:'item',formatter:p=>`Temperaturni raspon<br><b>${p.value[1]}–${p.value[2]} °C</b>`},
+grid:{left:230,right:100,top:30,bottom:50},
+xAxis:{type:'value',name:'°C',nameTextStyle:{color:C.ink2},min:0,max:1100,...baseAxis},
 yAxis:{type:'category',data:['Nepušač (referenca)','Pod-uređaji 1,2 Ω · ~10 W','Pod-uređaji 0,6 Ω · ~21 W','Vuse Pro One (procjena)','JUUL — prosjek atomizera','JUUL — grijaći element','ENVA Sol (procjena vršne)','PG/VG prag razgradnje','Dry burn — suhi fitilj','Cigareta — vrh pri puhanju'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
 series:[{type:'custom',renderItem:(p,api)=>{const y=api.coord([0,api.value(0)])[1];const x1=api.coord([api.value(1),0])[0];const x2=api.coord([api.value(2),0])[0];
-return{type:'rect',shape:{x:x1,y:y-11,width:Math.max(x2-x1,2),height:22},style:{fill:api.value(3),opacity:.92}};},
+return{type:'group',children:[{type:'rect',shape:{x:x1,y:y-11,width:Math.max(x2-x1,2),height:22},style:{fill:api.value(3),opacity:.92}},{type:'text',style:{x:x2+7,y,text:api.value(1)+'–'+api.value(2)+' °C',fill:C.ink,fontSize:11,verticalAlign:'middle'}}]};},
 data:[
 [0,36,37,C.non],
 [1,63,90,C.ecig],
@@ -53,21 +53,30 @@ data:[
 markLine:{symbol:'none',lineStyle:{color:'#d94f70',type:'dashed'},label:{color:'#d94f70',fontSize:11,formatter:'~250 °C — početak pirolize PG/VG'},data:[{xAxis:250}]}
 }]});
 
-/* ---------- 02 power chart ---------- */
+/* ---------- 02 power: separate absolute emissions and composition ---------- */
 mk('chartPower',{
-tooltip:baseTip,legend:{textStyle:{color:C.ink2},top:0},
-grid:[{left:70,right:'54%',top:50,bottom:60},{left:'56%',right:30,top:50,bottom:60}],
-xAxis:[{gridIndex:0,type:'category',name:'snaga (W)',data:['5','7','9','11','15','20','25','80*'],...baseAxis,nameTextStyle:{color:C.ink2}},
-{gridIndex:1,type:'category',data:['niska','srednja','visoka'],...baseAxis}],
-yAxis:[{gridIndex:0,type:'log',name:'formaldehid (ng/puff, log)',...baseAxis,nameTextStyle:{color:C.ink2}},
-{gridIndex:1,type:'value',name:'% udjela u karbonilima',max:100,...baseAxis,nameTextStyle:{color:C.ink2}}],
-series:[
-{name:'formaldehid (Geiss 2016)',type:'line',xAxisIndex:0,yAxisIndex:0,smooth:true,symbolSize:7,lineStyle:{width:3,color:C.enva},itemStyle:{color:C.enva},data:[24.2,40,90,210,430,1599.9,null,null],markArea:{itemStyle:{color:'rgba(224,93,79,.08)'},label:{color:C.cig,fontSize:11},data:[[{name:'>300 °C zavojnica',xAxis:'20'},{xAxis:'25'}]]}},
-{name:'formaldehid (Gillman 2016)',type:'line',xAxisIndex:0,yAxisIndex:0,smooth:true,symbol:'diamond',symbolSize:8,lineStyle:{width:2,type:'dashed',color:C.cig},itemStyle:{color:C.cig},data:[3.4,19.8,71.8,380,718,null,null,null]},
-{name:'formaldehid',type:'bar',stack:'s',xAxisIndex:1,yAxisIndex:1,itemStyle:{color:'#d94f70'},data:[100,64,33]},
-{name:'acetaldehid',type:'bar',stack:'s',xAxisIndex:1,yAxisIndex:1,itemStyle:{color:'#b07843'},data:[0,22,31]},
-{name:'akrolein',type:'bar',stack:'s',xAxisIndex:1,yAxisIndex:1,itemStyle:{color:'#6d7fa3'},data:[0,14,30]}
-]});
+ tooltip:{...baseTip, valueFormatter:v=>`${v} ng/puff`},
+ legend:{textStyle:{color:C.ink2},top:0},
+ grid:{left:75,right:35,top:65,bottom:60},
+ xAxis:{...baseAxis,type:'value',min:0,max:22,name:'Snaga (W)',nameLocation:'middle',nameGap:30},
+ yAxis:{...baseAxis,type:'value',min:0,name:'Formaldehid (ng/puff)'},
+ series:[
+ {name:'Geiss 2016',type:'line',symbolSize:8,itemStyle:{color:C.enva},data:[[5,24.2],[7,40],[9,90],[11,210],[15,430],[20,1599.9]]},
+ {name:'Gillman 2016',type:'line',symbol:'diamond',symbolSize:8,itemStyle:{color:C.cig},data:[[5,3.4],[7,19.8],[9,71.8],[11,380],[15,718]]}
+ ]
+});
+mk('chartPowerComposition',{
+ tooltip:{...baseTip,valueFormatter:v=>`${v}%`},
+ legend:{textStyle:{color:C.ink2},top:0},
+ grid:{left:75,right:35,top:65,bottom:55},
+ xAxis:{...baseAxis,type:'category',data:['Niska snaga','Srednja snaga','Visoka snaga']},
+ yAxis:{...baseAxis,type:'value',min:0,max:100,name:'Udio u karbonilima (%)'},
+ series:[
+ {name:'Formaldehid',type:'bar',itemStyle:{color:'#d94f70'},data:[100,64,33]},
+ {name:'Acetaldehid',type:'bar',itemStyle:{color:C.cigar},data:[0,22,31]},
+ {name:'Akrolein',type:'bar',itemStyle:{color:C.juul},data:[0,14,30]}
+ ].map(s=>({...s,barMaxWidth:65,label:{show:true,position:'top',color:C.ink,formatter:'{c}%'}}))
+});
 
 /* ---------- 03 cancer potency ---------- */
 mk('chartPotency',{
@@ -108,7 +117,7 @@ mk('chartMetalSrc',{
 tooltip:baseTip,legend:{textStyle:{color:C.ink2},top:0},
 grid:{left:70,right:30,top:50,bottom:60},
 xAxis:{type:'category',data:['Nikal','Krom','Olovo','Cink','Aluminij'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
-yAxis:{type:'log',min:0.1,name:'µg/kg (log)',...baseAxis,nameTextStyle:{color:C.ink2}},
+yAxis:{type:'value',min:0,name:'µg/kg',...baseAxis,nameTextStyle:{color:C.ink2}},
 series:[
 {name:'dozator (bez kontakta)',type:'bar',barWidth:22,itemStyle:{color:C.non},data:[2.03,0.5,0.476,13.1,10.9]},
 {name:'aerosol',type:'bar',barWidth:22,itemStyle:{color:'#d94f70'},data:[68.4,8.38,14.8,515,16.3]},
@@ -119,7 +128,7 @@ series:[
 mk('chartCeramic',{
 tooltip:{...baseTip,formatter:p=>`${p[0].name}<br><b>${p[0].value.toLocaleString('hr')}</b> silikatnih čestica`},
 grid:{left:200,right:70,top:30,bottom:50},
-xAxis:{type:'log',min:100,max:100000,name:'silikatne čestice po uzorku (log)',...baseAxis,nameTextStyle:{color:C.ink2}},
+xAxis:{type:'value',min:0,max:16000,name:'Silikatne čestice po uzorku',nameLocation:'middle',nameGap:30,...baseAxis,nameTextStyle:{color:C.ink2}},
 yAxis:{type:'category',data:['Kvarcni element','Keramički element'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:13}},
 series:[{type:'bar',barWidth:30,
 data:[{value:3178,itemStyle:{color:C.juul}},{value:13644,itemStyle:{color:'#d94f70'}}],
@@ -172,7 +181,7 @@ const labs=['~40–80','48–144','~70–120','22–50','72–164','100–300'];
 mk('chartNicotine',{
 tooltip:{...baseTip,formatter:p=>{const i=cats.indexOf(p.name);return `${p.name}<br>nikotin po puffu: <b>${labs[i]}</b> µg`}},
 grid:{left:250,right:90,top:20,bottom:50},
-xAxis:{type:'log',min:10,max:1000,name:'µg nikotina po puffu (log skala)',...baseAxis,nameTextStyle:{color:C.ink2}},
+xAxis:{type:'value',min:0,max:350,name:'µg nikotina po puffu',nameLocation:'middle',nameGap:30,...baseAxis,nameTextStyle:{color:C.ink2}},
 yAxis:{type:'category',data:cats,...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
 series:[
 {type:'bar',stack:'r',barWidth:20,itemStyle:{color:'transparent'},data:mins,tooltip:{show:false},emphasis:{disabled:true},silent:true},
@@ -228,7 +237,7 @@ label:{show:true,position:'top',color:C.ink,fontSize:10,fontFamily:'ui-monospace
 mk('chartNNAL',{
 tooltip:{trigger:'axis',...baseTip,formatter:p=>{const d=p[0];return `${d.name}<br>NNAL: <b>${d.value}</b> pg/mg kreatinina`}},
 grid:{left:230,right:60,top:40,bottom:50},
-xAxis:{type:'log',min:0.1,max:3000,name:'urinski NNAL (log skala)',...baseAxis,nameTextStyle:{color:C.ink2}},
+xAxis:{type:'value',min:0,max:1100,name:'Urinski NNAL (pg/mg)',nameLocation:'middle',nameGap:30,...baseAxis,nameTextStyle:{color:C.ink2}},
 yAxis:{type:'category',data:[
 'Nepušači (meta 2025)',
 'Nepušači (NHANES)',
@@ -274,7 +283,7 @@ tooltip:{trigger:'axis',...baseTip,axisPointer:{type:'shadow'},formatter:p=>p.ma
 legend:{textStyle:{color:C.ink2},top:0},
 grid:{left:70,right:30,top:44,bottom:64},
 xAxis:{type:'category',data:['Akrolein (CEMA)','Akrolein (3-HPMA)','Akrilamid (AAMA)'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
-yAxis:{type:'log',min:10,max:2000,name:'ng/mg kreatinina (log)',...baseAxis,nameTextStyle:{color:C.ink2}},
+yAxis:{type:'value',min:0,name:'ng/mg kreatinina',...baseAxis,nameTextStyle:{color:C.ink2}},
 series:[
 {name:'Nepušači',type:'bar',barWidth:'18%',itemStyle:{color:C.non},data:[79,223,67.8]},
 {name:'Ekskluzivni vaperi',type:'bar',barWidth:'18%',itemStyle:{color:C.ecig},data:[120.8,338.6,88.5]},
@@ -287,8 +296,8 @@ label:{show:true,position:'top',color:C.ink,fontSize:10,fontFamily:'ui-monospace
 mk('chartVOC2',{
 tooltip:{trigger:'axis',...baseTip,axisPointer:{type:'shadow'},formatter:p=>p.map(x=>`${x.marker} ${x.seriesName}: <b>+${x.value}%</b> vs nepušači`).join('<br>')},
 legend:{textStyle:{color:C.ink2},top:0},
-grid:{left:190,right:90,top:44,bottom:56},
-xAxis:{type:'log',min:1,max:30000,name:'% iznad razine nepušača (log skala, prilagođeno)',...baseAxis,nameTextStyle:{color:C.ink2}},
+grid:{left:245,right:85,top:60,bottom:65},
+xAxis:{type:'value',min:0,max:10000,name:'% iznad nepušača · linearno od 0',nameLocation:'middle',nameGap:35,...baseAxis,nameTextStyle:{color:C.ink2}},
 yAxis:{type:'category',data:['Krotonaldehid (HPMMA)','Akrilonitril (CYMA) — karcinogen'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
 series:[
 {name:'Ekskluzivni vaperi',type:'bar',barWidth:16,itemStyle:{color:C.ecig},data:[13,1002],
@@ -298,31 +307,18 @@ label:{show:true,position:'right',color:C.ink,fontSize:11,fontFamily:'ui-monospa
 {name:'Pušači cigareta',type:'bar',barWidth:16,itemStyle:{color:C.cig},data:[172,8901],
 label:{show:true,position:'right',color:C.ink,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace',formatter:'+{c}%'}}
 ],
-graphic:[{type:'text',left:190,bottom:0,style:{text:'De Jesus 2020 · PATH Wave 1, odrasli (n=488 nepušači / 247 ENDS / 792 dualni / 2411 pušači) · propilen-oksid (2-HPMA): vaperi −20% (nisu viši), pušači +54%',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
+
 });
 
 
-/* ---------- 03 general markers ---------- */
+/* ---------- 03 general markers: quantitative bars and qualitative comparisons ---------- */
 mk('chartGenMarkers',{
-tooltip:{trigger:'axis',...baseTip,axisPointer:{type:'shadow'},formatter:p=>p.filter(x=>x.value!=null).map(x=>`${x.marker} ${x.seriesName}: <b>${x.value<=1?'≈ nepušači (n.s.)':'+'+x.value+'%'}</b>${x.value<=1?'':' iznad nepušača'}`).join('<br>')||'nema podataka'},
-legend:{textStyle:{color:C.ink2},top:0},
-grid:{left:190,right:120,top:40,bottom:60},
-xAxis:{type:'log',min:0.9,max:1000,name:'% iznad razine nepušača (log skala)',...baseAxis,nameTextStyle:{color:C.ink2}},
-yAxis:{type:'category',data:['Homocistein','Fibrinogen','Leukociti (WBC)','CRP (upala)','COHb (karboksihemoglobin)'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
-series:[
-{name:'Nepušači (baza = 0%)',type:'bar',barWidth:8,itemStyle:{color:'rgba(139,148,161,.45)'},data:[1,1,1,1,1],
-label:{show:true,position:'right',color:C.ink2,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace',formatter:'0'},
-markLine:{silent:true,symbol:'none',lineStyle:{color:C.non,type:'dashed',width:1.5},label:{color:C.ink2,fontSize:10,fontFamily:'ui-monospace,Menlo,monospace',formatter:'nepušači = 0%'},data:[{xAxis:1}]}},
-{name:'Ekskluzivni vaperi',type:'bar',barWidth:8,itemStyle:{color:C.ecig},data:[null,1,1,1,1],
-label:{show:true,position:'right',color:C.ink,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace',formatter:p=>p.value==null?'':'+0–1 (n.s.)'}},
-{name:'Primarni pušači cigara',type:'bar',barWidth:8,itemStyle:{color:C.cigar},data:[null,1,1,1,10],
-label:{show:true,position:'right',color:C.ink,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace',formatter:p=>p.value==null?'':(p.value<=1?'+0–1 (n.s.)':`+${p.value}%`)}},
-{name:'Pušači cigareta',type:'bar',barWidth:8,itemStyle:{color:C.cig},data:[12,7,21,100,400],
-label:{show:true,position:'right',color:C.ink,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace',formatter:p=>p.value==null?'':`+${p.value}%`}}
-],
-graphic:[{type:'text',left:190,bottom:0,style:{text:'Cigarete: NHANES III/PLoS Med 2005 · Bazzano 2003 · cigare: Wannamethee 2005 (≈ nepušači za CRP/WBC/fibrinogen) + Turner 1977 (COHb) · vaperi: PATH W1 & NHANES 2013–23 (sve n.s. vs nepušači)',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
+ tooltip:{...baseTip,valueFormatter:v=>`+${v}% iznad nepušača`},
+ grid:{left:225,right:70,top:30,bottom:65},
+ xAxis:{...baseAxis,type:'value',min:0,max:450,name:'% iznad nepušača · linearno od 0',nameLocation:'middle',nameGap:35},
+ yAxis:{...baseAxis,type:'category',data:['Homocistein','Fibrinogen','Leukociti (WBC)','CRP (upala)','COHb (karboksihemoglobin)']},
+ series:[{name:'Pušači cigareta',type:'bar',barWidth:28,itemStyle:{color:C.cig},data:[12,7,21,100,400],label:{show:true,position:'right',color:C.ink,formatter:'+{c}%'}}]
 });
-
 
 /* ---------- 05 switching ---------- */
 mk('chartSwitch',{
@@ -407,8 +403,8 @@ markLine:{symbol:'none',lineStyle:{color:C.ink3,type:'dashed'},label:{show:false
 /* ---------- 07 deaths ---------- */
 mk('chartDeaths',{
 tooltip:{...baseTip,formatter:p=>`${p[0].name}<br><b>${p[0].value.toLocaleString('hr')}</b> smrti godišnje`},
-grid:{left:140,right:60,top:30,bottom:50},
-xAxis:{type:'log',min:10,max:2000000,name:'smrti godišnje u SAD-u (log)',...baseAxis,nameTextStyle:{color:C.ink2}},
+grid:{left:205,right:75,top:30,bottom:60},
+xAxis:{type:'value',min:0,max:550000,name:'Broj smrti u SAD-u',nameLocation:'middle',nameGap:30,...baseAxis,nameTextStyle:{color:C.ink2}},
 yAxis:{type:'category',data:['EVALI (2019–20, ukupno)','Cigare','Cigarete'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:13}},
 series:[{type:'bar',barWidth:26,
 data:[{value:68,itemStyle:{color:C.enva}},{value:9000,itemStyle:{color:C.cigar}},{value:480000,itemStyle:{color:C.cig}}],

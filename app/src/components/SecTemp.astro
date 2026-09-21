@@ -2,14 +2,18 @@
   <div class="eyebrow">Fizika grijanja</div>
   <h2><span class="num">02</span>Temperatura uređaja — gdje se tvar raspada</h2>
   <p>Suština cijele usporedbe je jedna rečenica: <strong>PG/VG tekućina isparava već na ~160–200&nbsp;°C, ali iznad ~250&nbsp;°C počinje toplinska razgradnja u karbonile</strong> (formaldehid, acetaldehid, akrolein), a preko ~350&nbsp;°C nastaje „dry burn" s eksplozijom emisija. Cigareta radi sasvim drugim režimom — vrh gori na 600–900&nbsp;°C i proizvodi 7.000+ kemikalija izgaranjem. Izmjerene temperature zavojnica potvrđuju da e-cigarete rade u potpuno drugom temperaturnom svijetu — dok god fitilj nije suh.</p>
-  <div id="chartTemp" class="chart tall"></div>
+  <p class="chart-help">Na uskom ekranu graf možete pomicati vodoravno.</p>
+  <div class="chart-scroll"><div id="chartTemp" class="chart tall"></div></div>
   <p class="chart-note">Rasponi temperatura po literaturi: top-coil uređaji 322–1008&nbsp;°C (suho) / 110–185&nbsp;°C (mokro) — PLoS ONE 2018; pod-uređaji 63–122&nbsp;°C (0,6–1,2&nbsp;Ω, 9–21&nbsp;W); JUUL element 200–250&nbsp;°C, prosjek atomizera &lt;300&nbsp;°C (CORESTA 2019); ENVA Sol — vlastita energetska procjena iz baterije/puffova; cigareta — vrh pri puhanju.</p>
 
   <h3>Napon/snaga → karbonili: najvažnija krivulja u cijeloj literaturi</h3>
   <p>Kosmider (2014) je pokazao da podizanje napona s 3,2 na 4,8&nbsp;V povećava formaldehid, acetaldehid i aceton <strong>4 do preko 200 puta</strong>; Geiss (2016) infracrvenom termografijom mjeri da zavojnica na 20&nbsp;W prelazi <strong>300&nbsp;°C</strong> — upravo tamo gdje korisnik javlja „previše vruć" okus. Sleiman (2016) bilježi da pri 4,8&nbsp;V emisije akroleina rastu 10x, a Farsalinosove replikacije (2017) potvrđuju da se ekstremne emisije događaju isključivo u režimu „suhog udara" koji korisnici osjete i izbjegavaju.</p>
-  <div id="chartPower" class="chart"></div>
-  <p class="chart-note">Lijevo: rast emisija karbonila sa snagom (Kosmider 2014; Gillman 2016; Geiss 2016 — indeksirano, log skala). Desno: udio formaldehida/acetaldehida/akroleina u emisiji po snazi (Tob Induc Dis 2020).</p>
+  <div class="chart-scroll"><div id="chartPower" class="chart"></div></div>
+  <p class="chart-note">Apsolutna emisija formaldehida po puffu, na linearnoj skali od nule. Položaj na vodoravnoj osi odgovara snazi u vatima; serije prikazuju različite studije (Geiss 2016; Gillman 2016).</p>
 
+  <h3>Sastav emisije: udio pojedinih karbonila</h3>
+  <div class="chart-scroll"><div id="chartPowerComposition" class="chart"></div></div>
+  <p class="chart-note">Postotni udjeli, a ne ukupna količina emisije (Tob Induc Dis 2020). Svaki stupac počinje od nule. Prikazana tri spoja pri visokoj snazi zbrajaju se na 94%; preostalih 6% nije razvrstano u izvornim podacima ove stranice.</p>
   <div class="callout">
     <h4>Što to znači za naša tri uređaja</h4>
     <p><strong>Vuse Pro One (~6&nbsp;W, keramika):</strong> duboko ispod praga razgradnje — energetska procjena 60–90&nbsp;°C prosječno, 140–180&nbsp;°C vršno. <strong>JUUL (temp. regulacija, &lt;300&nbsp;°C prosjek atomizera, element 200–250&nbsp;°C):</strong> radi tik ispod praga — zato JUUL u Son (2020) mjerenjima emitira <strong>najmanje karbonila i CO</strong> od svih tipova uređaja. <strong>ENVA Sol (~9–14&nbsp;W procjena, TLA kontrola):</strong> namjerno topliji (procjena vršnih 160–200&nbsp;°C) radi ekstrakcije okusa iz duhana — još uvijek ispod razgradnje, ali s najmanje sigurnosne margine od trojice.</p>

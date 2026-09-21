@@ -87,13 +87,13 @@ h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.6vw,58px);lin
 h2{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3vw,38px);line-height:1.15;letter-spacing:-.01em;margin-bottom:.6em}
 h2 .num{font-family:var(--mono);font-size:.45em;color:var(--amber);vertical-align:super;letter-spacing:.1em;margin-right:.6em}
 h3{font-size:15px;font-weight:600;letter-spacing:.02em;margin:2.2em 0 .7em;color:var(--ink)}
-p{color:var(--ink2);margin-bottom:1.1em;max-width:68ch}
+p{color:var(--ink2);margin-bottom:1.1em;max-width:88ch}
 p strong,li strong{color:var(--ink);font-weight:600}
-.lede{font-size:19px;line-height:1.6;color:var(--ink);max-width:60ch}
+.lede{font-size:19px;line-height:1.6;color:var(--ink);max-width:76ch}
 .small{font-size:13px;color:var(--ink3)}
 ul,ol.body{ padding-left:1.2em;margin-bottom:1.2em;color:var(--ink2)}
-ul li,ol.body li{margin-bottom:.5em;max-width:66ch}
-blockquote{border-left:2px solid var(--amber);padding:.4em 0 .4em 1.2em;margin:1.6em 0;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:17px;max-width:60ch}
+ul li,ol.body li{margin-bottom:.5em;max-width:86ch}
+blockquote{border-left:2px solid var(--amber);padding:.4em 0 .4em 1.2em;margin:1.6em 0;font-family:var(--serif);font-style:italic;color:var(--ink);font-size:17px;max-width:76ch}
 .src{font-size:11px;color:var(--ink3);font-family:var(--mono);margin-top:.5em;max-width:70ch}
 .src a{color:var(--ink3);border-bottom-color:rgba(255,255,255,.2)}
 .src a:hover{color:var(--amber)}
@@ -125,9 +125,16 @@ table.data tr:hover td{background:rgba(255,255,255,.02)}
 table.data .n{font-family:var(--mono);color:var(--amber)}
 
 /* ---------- charts ---------- */
+#markers table.data{table-layout:fixed;width:100%;display:table}
+#markers table.data th,#markers table.data td{white-space:normal;overflow-wrap:anywhere}
+#markers table.data th:first-child{width:28%}
+.chart-scroll{overflow-x:auto;overscroll-behavior-x:contain}
+.chart-scroll .chart{min-width:700px}
+.chart-help{font-size:13px;color:var(--ink2);max-width:none}
+
 .chart{width:100%;height:420px;margin:1.2em 0 .4em}
 .chart.tall{height:520px}
-.chart-note{font-size:12px;color:var(--ink3);font-family:var(--mono);margin-bottom:2em;max-width:80ch}
+.chart-note{font-size:12px;color:var(--ink3);font-family:var(--mono);margin-bottom:2em;max-width:100ch}
 
 /* ---------- reveal ---------- */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
@@ -169,16 +176,16 @@ table.data .n{font-family:var(--mono);color:var(--amber)}
 .callout.red{background:linear-gradient(180deg,rgba(224,93,79,.08),rgba(224,93,79,.02));border-color:rgba(224,93,79,.35)}
 .callout h4{font-size:13px;font-family:var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:.8em}
 .callout.red h4{color:var(--cig)}
-.callout p{font-size:14.5px;margin-bottom:.6em}
+.callout p{max-width:none;font-size:14.5px;margin-bottom:.6em}
 
-footer{padding:3em 4.5em 4em;color:var(--ink3);font-size:12px;max-width:80ch}
+footer{padding:3em 4.5em 4em;color:var(--ink3);font-size:12px;max-width:100ch}
 footer .disc{border:1px solid var(--line);padding:1.4em 1.6em;margin-top:1.5em;line-height:1.7}
 
 /* ---------- chapter banners & nav groups ---------- */
 .chapter{margin:6em 0 0;padding:2.6em clamp(1.4em,4.5vw,4.5em) 0;border-top:2px solid var(--amber)}
 .chapter .ch-k{font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--amber)}
 .chapter h2{font-size:clamp(26px,3.2vw,42px);margin:.35em 0 .45em;line-height:1.12}
-.chapter p{color:var(--ink2);max-width:64ch;font-size:14.5px;line-height:1.65}
+.chapter p{color:var(--ink2);max-width:88ch;font-size:14.5px;line-height:1.65}
 #outline .grp{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);margin:1.5em 0 .4em;padding-left:.7em}
 
 
