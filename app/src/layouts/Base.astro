@@ -48,7 +48,7 @@ a:hover{border-bottom-color:var(--amber)}
 #topbar{display:none}
 #navBackdrop{display:none}
 
-main{margin-left:var(--sbw);max-width:1180px}
+main,footer{margin-left:var(--sbw);max-width:1180px}
 section{padding:4.2em clamp(1.4em,4.5vw,4.5em) 2.8em;border-bottom:1px solid var(--line)}
 section,.chapter{scroll-margin-top:1.5em}
 
@@ -65,12 +65,12 @@ section,.chapter{scroll-margin-top:1.5em}
   body.nav-open #outline{transform:none}
   #navBackdrop{display:block;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:250;opacity:0;pointer-events:none;transition:opacity .26s}
   body.nav-open #navBackdrop{opacity:1;pointer-events:auto}
-  main{margin-left:0;padding-top:3.1em}
+  main,footer{margin-left:0}
+  main{padding-top:3.1em}
   section,.chapter{scroll-margin-top:4.2em}
   section{padding:3em clamp(1.1em,4vw,2.2em) 2.2em}
   .chapter{padding:2em clamp(1.1em,4vw,2.2em) 0}
   table.data{display:block;overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
-  footer{padding:2.5em clamp(1.1em,4vw,2.2em) 3em}
 }
 @media (max-width:640px){
   .chart{height:320px}
@@ -181,7 +181,9 @@ table.data .n{font-family:var(--mono);color:var(--amber)}
 .callout.red h4{color:var(--cig)}
 .callout p{max-width:none;font-size:14.5px;margin-bottom:.6em}
 
-footer{padding:3em 4.5em 4em;color:var(--ink3);font-size:12px;max-width:100ch}
+footer{padding:3em clamp(1.4rem,4.5vw,4.5rem) 4em;color:var(--ink3);font-size:12px}
+footer p{max-width:none}
+@media (max-width:1080px){footer{padding:2.5em clamp(1.1rem,4vw,2.2rem) 3em}}
 footer .disc{border:1px solid var(--line);padding:1.4em 1.6em;margin-top:1.5em;line-height:1.7}
 
 /* ---------- chapter banners & nav groups ---------- */
