@@ -1,6 +1,9 @@
 {
   "name": "vape-studies",
   "compatibility_date": "2026-09-21",
+  "observability": {
+    "enabled": true
+  },
   "assets": {
     "directory": "./dist"
   },
