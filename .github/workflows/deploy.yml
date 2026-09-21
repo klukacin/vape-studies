@@ -45,6 +45,8 @@ jobs:
       # The Worker is verified on its own workers.dev hostname, which does not
       # depend on the custom domain's certificate; the public URL is reported.
       - name: Healthcheck
+        # ponytail: worker name and account subdomain are hardcoded — one environment,
+        # one Worker. Parameterize (repo var + matrix) only if a develop preview appears.
         run: |
           worker="https://vape-studies.nosco-703.workers.dev"
           public="https://vape-studies.research.lukacin.com"
