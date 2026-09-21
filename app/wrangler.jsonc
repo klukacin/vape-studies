@@ -1,0 +1,13 @@
+{
+  "name": "vape-studies",
+  "compatibility_date": "2026-09-21",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    {
+      "pattern": "vape-studies.research.lukacin.com",
+      "custom_domain": true
+    }
+  ]
+}

@@ -27,6 +27,12 @@ npm run build
 npm run preview
 ```
 
-Build generira statičku stranicu u `app/dist/`. Ta mapa i instalirane ovisnosti ne spremaju se u Git; generiraju se lokalno. Za objavu koristite sadržaj `app/dist/` na statičkom hostingu.
+Build generira statičku stranicu u `app/dist/`. Ta mapa i instalirane ovisnosti ne spremaju se u Git; generiraju se lokalno.
+
+## Objava (CI/CD)
+
+Objava je automatska: push na `main` pokreće GitHub Actions koji builda i deploya
+Worker na <https://vape-studies.research.lukacin.com> (~1–2 min). Ne deployaj ručno.
+Detalji su u `CLAUDE.md`.
 
 Izvorni sadržaj preuzet je iz arhive `Kimi_Agent_Vuse vs Cigar Comparison Report.zip`.
