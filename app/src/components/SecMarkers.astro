@@ -1,21 +1,29 @@
+---
+import MarkerPlot from './MarkerPlot.astro';
+const ec='#3aa896', cig='#e05d4f', cigar='#b07843';
+---
 <section id="markers" class="reveal">
-  <div class="eyebrow">Opći markeri · upala · zgrušavanje · CO</div>
-  <h2><span class="num">03</span>Opći markeri: kako tijelo „izgleda" na pušača</h2>
-  <p>Prije specifičnih duhanskih karcinogena (sljedeća sekcija), tu su <strong>opći, nespecifični markeri</strong> koji se mjere na svakom sistematskom pregledu — i koji kod pušača dosljedno odstupaju. NHANES III (PLoS Medicine 2005, n&gt;4.000): pušači 30+ cigareta/dan imaju leukocite <strong>8.190 vs 6.760–6.960</strong> kod nepušača (+~20%), fibrinogen <strong>9,43 vs 8,82 µmol/L</strong> (+7%) i dvostruko veću vjerojatnost detektabilnog CRP-a (OR 1,91). King i sur. (2017, ATVB, n=1.652 pušača): prosječni CRP <strong>4,6 mg/L</strong>, fibrinogen 286 mg/dL, CO u izdahu 14,4 ppm — a nakon godinu dana čiste abstinencije značajno padaju F2-izoprostani (oksidativni stres) i leukociti. Poruka obje studije: <strong>upala je reverzibilna — ali sporo</strong>; CRP-u treba i do 5–20 godina da se vrati na razinu nepušača.</p>
-  <p class="chart-help">Na uskom ekranu graf možete pomicati vodoravno.</p>
-  <div class="chart-scroll"><div id="chartGenMarkers" class="chart"></div></div>
-  <p class="chart-note">% iznad razine nepušača (linearna skala od nule): COHb (karboksihemoglobin), CRP, leukociti (WBC), fibrinogen, homocistein. Cigarete: NHANES III / PLoS Med 2005, King 2017, Bazzano 2003, Turner 1977. <strong>Primarni pušači cigara:</strong> CRP, WBC i fibrinogen ≈ nepušači (Wannamethee 2005, British Regional Heart Study), samo COHb +10%. <strong>Ekskluzivni vaperi:</strong> CRP, WBC i fibrinogen statistički nerazlučivi od nepušača (PATH Wave 1; NHANES 2013–2023, mladi 18–30) — ali vidi §04: VOC metaboliti i IL-6/IL-8 ipak odstupaju. Homocistein za cigare i vaperstvo nema pouzdanih podataka.</p>
-  <p class="chart-help">Stupci prikazuju pušače cigareta u odnosu na nepušače (0%). Duljina +400% je četiri puta duljina +100%.</p>
-  <table class="data"><thead><tr><th>Skupina</th><th>Usporedba s nepušačima</th></tr></thead><tbody>
-  <tr><td>Ekskluzivni vaperi</td><td>COHb približno na referentnoj razini; CRP, leukociti i fibrinogen bez statistički značajne razlike.</td></tr>
-  <tr><td>Primarni pušači cigara</td><td>COHb približno +10%; CRP, leukociti i fibrinogen približno na referentnoj razini.</td></tr>
-  <tr><td>Homocistein: vaperi i cigare</td><td>Nema pouzdanih podataka.</td></tr>
-  </tbody></table>
-  <p class="chart-help">„Bez statistički značajne razlike” nije izmjerenih 0% i zato nije prikazano kao brojčani stupac.</p>
-  <div class="grid3">
-    <div class="card"><div class="k">Pušači cigareta</div><div class="big">COHb 3–8%</div><p>Nepušači 0,5–1,5%. CO iz dima veže hemoglobin 200x jače od kisika — kronično „gušenje" transporta kisika i izravni mehanizam srčanog rizika. CRP tipično ~2x, homocistein +10–15% (Bazzano 2003).</p></div>
-    <div class="card"><div class="k">Primarni pušači cigara</div><div class="big">COHb ~1,0%</div><p>Turner (1977): primarni pušači cigara/lule nakon pušenja na svega ~1,0% COHb — jer dim drže u ustima, ne u plućima. Ali oralna sluznica apsorbira nikotin: kotinin 6,2 ng/mL = <strong>137x nepušač</strong> (Chen, NHANES).</p></div>
-    <div class="card"><div class="k">Pasivni pušači</div><div class="big">+fibrinogen, +homocistein</div><p>Venn &amp; Britton (2007): i pasivna izloženost podiže fibrinogen i homocistein; NHANES III: homocistein raste nelinearno kroz kvartile kotinina kod nikad-nepušača. „Samo sam u društvu pušača" nije nula.</p></div>
-  </div>
-  <p>A gdje su e-cigarete u ovim općim markerima? <strong>Većinom nedokumentirano ili blizu nepušača:</strong> COHb kod vapera ostaje na razini nepušača (nema izgaranja — nema CO), a u switching studijama (§08) upalni i trombotički markeri kreću prema normali. Jedini dosljedan nalaz odstupanja su upalni citokini (IL-6, TNF-α, IL-8 — §04) i VOC metaboliti kod adolescenata. Drugim riječima: po općim markerima vaperi su gotovo neprimjetni, po specifičnim duhanskim karcinogenima također — upravo zato se sav teret dokaza za e-cigarete prebacio na metale, silikate i mikro-čestice (Poglavlje II).</p>
+  <div class="eyebrow">Opći markeri · usporedbe unutar studija</div>
+  <h2><span class="num">03</span>Upala, krv i CO: što je stvarno izmjereno</h2>
+  <p>Svaki prikaz koristi jednu studiju i njezinu referentnu skupinu. Ne spajamo različite populacije u jedan postotak „štetnosti”. Točka je procjena, a crta označava 95% interval pouzdanosti, osim gdje izričito piše standardna devijacija (SD). Interval koji prelazi nulu znači da razlika nije statistički značajna — ne da je dokazana jednakost ili sigurnost.</p>
+  <h3>CRP — prilagođeni omjer prema nikad-korisnicima duhana</h3>
+  <p><a href="/studije/136/">Christensen i sur. (2021), PATH, tablica 3</a>: vaperi su bivši pušači koji sada koriste isključivo e-cigarete. Postoci su izračunati kao (omjer geometrijskih sredina − 1) × 100; isto su pretvorene granice intervala.</p>
+  <MarkerPlot title="CRP" unit="Razlika prema nikad-korisnicima (%)" min={-40} max={45} rows={[{label:'Isključivo e-cigarete',value:-14,low:-34,high:11,color:ec},{label:'Isključivo cigarete',value:17,low:-2,high:39,color:cig}]} />
+  <h3>Fibrinogen — ista PATH studija i ista referenca</h3>
+  <MarkerPlot title="Fibrinogen" unit="Razlika prema nikad-korisnicima (%)" min={-8} max={8} rows={[{label:'Isključivo e-cigarete',value:-1,low:-6,high:4,color:ec},{label:'Isključivo cigarete',value:3,low:-1,high:7,color:cig}]} />
+  <p class="chart-note">Oba prikaza: <a href="/studije/136/">Christensen 2021</a>. U toj analizi nijedan od prikazanih intervala ne isključuje nulu. <a href="https://doi.org/10.1158/1055-9965.EPI-24-1666" target="_blank" rel="noopener">Ispravak iz 2025.</a> odnosi se na izjavu o povezanostima autora, ne na prikazane rezultate.</p>
+  <h3>Leukociti — apsolutna razlika, ne postotak</h3>
+  <p><a href="/studije/111/">Manietta, Drake i Jayawardene (2025), NHANES, tablica 3</a>: sudionici od 18 do 30 godina; referenca su nekorisnici. „Izgarajući duhan” je kategorija autora i nije zasebna procjena samo za cigare.</p>
+  <MarkerPlot title="Leukociti" unit="Prilagođena razlika (10³/µL)" min={-1} max={1.4} rows={[{label:'Isključivo e-cigarete',value:-0.156,low:-0.819,high:0.507,color:ec},{label:'Izgarajući duhan',value:0.829,low:0.467,high:1.192,color:cig}]} />
+  <h3>COHb — e-cigarete i cigarete prije pokusa</h3>
+  <p><a href="/studije/138/">Farsalinos i sur. (2013)</a>, konferencijski sažetak, 30 pušača i 30 bivših pušača koji svakodnevno koriste e-cigarete. Prikazane crte su <strong>prosjek ± SD, ne interval pouzdanosti</strong>. Kontrolna skupina nikad-pušača nije uključena.</p>
+  <MarkerPlot title="COHb prije pokusa" unit="COHb u krvi (%)" max={4.5} uncertainty="Prosjek ± SD" rows={[{label:'Korisnici e-cigareta',value:0.81,low:0.61,high:1.01,color:ec},{label:'Pušači cigareta',value:2.93,low:1.78,high:4.08,color:cig}]} />
+  <h3>COHb — prije i nakon jedne cigare</h3>
+  <p><a href="/studije/133/">Turner i sur. (1977)</a>: samo pet osoba po skupini. Rezultat ovisi o prethodnom pušenju i udisanju; ovo nije usporedba s nepušačima. U sažetku nisu navedeni intervali.</p>
+  <MarkerPlot title="COHb prije i poslije cigare" unit="COHb u krvi (%)" max={11} rows={[{label:'Primarni lula/cigare · prije',value:0.8,color:cigar},{label:'Primarni lula/cigare · poslije',value:1,color:cigar},{label:'Bivši pušači cigareta · prije',value:2.9,color:cig},{label:'Bivši pušači cigareta · poslije',value:9.6,color:cig}]} />
+  <h3>Cigare: CRP, leukociti i fibrinogen</h3>
+  <p><a href="/studije/137/">Wannamethee i sur. (2005)</a> obuhvaća 2920 muškaraca od 60 do 79 godina. Primarni pušači lula/cigara imali su razine slične nikad-pušačima; oni koji su prije pušili cigarete imali su drukčiji profil. Skupina kombinira lule i cigare. Dok ne potvrdimo točne vrijednosti i intervale iz pune tablice, ne prikazujemo izmišljene stupce od 0%.</p>
+  <h3>Homocistein — nedostaju usporedive vrijednosti</h3>
+  <p><a href="/studije/130/">Bazzano i sur. (2003)</a> i <a href="/studije/134/">Venn i Britton (2007)</a> odnose se na pušenje odnosno pasivnu izloženost. Za isključive korisnike e-cigareta i zasebnu skupinu pušača cigara zasad nemamo potvrđen usporediv skup brojki. Nedostajući podatak nije nula.</p>
+  <div class="callout"><h4>Kako čitati ove rezultate</h4><p>Ovo su različiti markeri izloženosti i upale, ne jedinstvena ljestvica ukupnog zdravstvenog rizika. Različite studije imaju različite dobi, povijest pušenja i statističke prilagodbe. Posebno razlikujemo bivše pušače, nikad-pušače i dualne korisnike.</p></div>
 </section>

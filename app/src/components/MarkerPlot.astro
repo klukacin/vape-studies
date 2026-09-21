@@ -1,0 +1,26 @@
+---
+const { title, unit, rows, min=0, max, uncertainty='95% interval pouzdanosti' } = Astro.props;
+const x = v => 235 + (v-min)/(max-min)*390;
+const h=rows.length*52+65;
+---
+<div class="marker-plot">
+<svg viewBox={`0 0 790 ${h}`} role="img" aria-label={`${title}. ${unit}. Brojčani podaci su u tablici ispod.`}>
+  <line x1={x(0)} x2={x(0)} y1="5" y2={h-42} stroke="#777" stroke-dasharray="4 4" />
+  {rows.map((r,i)=> <g>
+    <text x="220" y={i*52+27} text-anchor="end" fill="#ddd" font-size="13">{r.label}</text>
+    {r.low!==undefined ? <g>
+      <line x1={x(r.low)} x2={x(r.high)} y1={i*52+23} y2={i*52+23} stroke={r.color} stroke-width="3" />
+      <line x1={x(r.low)} x2={x(r.low)} y1={i*52+17} y2={i*52+29} stroke={r.color} />
+      <line x1={x(r.high)} x2={x(r.high)} y1={i*52+17} y2={i*52+29} stroke={r.color} />
+    </g> : <line x1={x(0)} x2={x(r.value)} y1={i*52+23} y2={i*52+23} stroke={r.color} stroke-width="14" />}
+    <circle cx={x(r.value)} cy={i*52+23} r="5" fill={r.color}/>
+    <text x="650" y={i*52+27} fill="#eee" font-size="13">{r.value.toLocaleString('hr-HR')}</text>
+  </g>)}
+  {[min,0,max].filter((v,i,a)=>a.indexOf(v)===i).map(v=><text x={x(v)} y={h-25} fill="#aaa" font-size="12" text-anchor="middle">{v.toLocaleString('hr-HR')}</text>)}
+  <text x="430" y={h-3} fill="#aaa" font-size="12" text-anchor="middle">{unit}</text>
+</svg>
+</div>
+<details><summary>Brojčani podaci i rasponi</summary><table class="data"><thead><tr><th>Skupina</th><th>Procjena</th><th>{uncertainty}</th></tr></thead><tbody>{rows.map(r=><tr><td>{r.label}</td><td>{r.value.toLocaleString('hr-HR')}</td><td>{r.low!==undefined?`${r.low.toLocaleString('hr-HR')} do ${r.high.toLocaleString('hr-HR')}`:'Nije naveden'}</td></tr>)}</tbody></table></details>
+<style>
+.marker-plot{overflow-x:auto;margin:1em 0}.marker-plot svg{display:block;width:100%;min-width:650px}summary{cursor:pointer;color:var(--amber)}
+</style>

@@ -1,17 +1,38 @@
+---
+import studies from '../data/studies.js';
+const categories = [...new Set(studies.map(s => s.cat))].sort();
+---
 <section id="db" class="reveal">
-  <div class="eyebrow">Transparentnost</div>
+  <div class="eyebrow">Transparentnost · {studies.length} zapisa</div>
   <h2><span class="num">11</span>Baza studija</h2>
-  <p>Sve studije koje stoje iza brojki na ovoj stranici. Filtriraj po kategoriji ili traži po autoru/markeru. Studije označene ♦ mjerile su iste markere i kod nepušača (referentna grupa). <strong>Klik na naziv studije otvara njezin zapis</strong> s bibliografskim podacima i linkom na izvor — ili pregledaj <a href="studije/">cijelu bazu na zasebnoj stranici ↗</a>.</p>
+  <p>Jedinstveni popis izvora. Naziv otvara izvorni rad; zasebna poveznica vodi na naš zapis i lokalne materijale kada su dostupni. ♦ označava usporedbu s nepušačima. Zapis s bibliografskim podacima nije isto što i puna kopija rada.</p>
   <div id="dbControls">
-    <input type="text" id="dbSearch" placeholder="traži: autor, marker, uređaj…">
-    <select id="dbCat"><option value="">sve kategorije</option></select>
-    <select id="dbNon"><option value="">sve studije</option><option value="1">♦ s kontrolom nepušača</option></select>
+    <input type="search" id="dbSearch" aria-label="Pretraži studije" placeholder="traži: autor, godina, marker…" />
+    <select id="dbCat" aria-label="Kategorija"><option value="">sve kategorije</option>{categories.map(c=><option value={c}>{c}</option>)}</select>
+    <select id="dbNon" aria-label="Kontrolna grupa"><option value="">sve studije</option><option value="1">♦ s kontrolom nepušača</option></select>
   </div>
-  <div id="studyCount"></div>
-  <div style="overflow-x:auto">
-  <table class="data" id="studyTable">
-    <thead><tr><th>#</th><th>Godina</th><th>Studija / autori</th><th>Kategorija</th><th>Dizajn · N</th><th>Ključni nalaz</th></tr></thead>
-    <tbody id="studyBody"></tbody>
-  </table>
-  </div>
+  <p id="studyCount" aria-live="polite">{studies.length} / {studies.length} zapisa</p>
+  <div style="overflow-x:auto"><table class="data" id="studyTable">
+    <thead><tr><th>#</th><th>Godina</th><th>Studija · izvor</th><th>Kategorija</th><th>Dizajn</th><th>Ključni nalaz</th><th>Kod nas</th></tr></thead>
+    <tbody>{studies.map(s=><tr id={`study-${s.i}`} data-category={s.cat} data-control={s.non}>
+      <td>{s.i}</td><td>{s.year}</td><td><a href={s.url} target="_blank" rel="noopener">{s.non==1?'♦ ':''}{s.name} ↗</a>{s.scholar==1 && <small> · pretraga izvora</small>}</td><td>{s.cat}</td><td>{s.design}</td><td>{s.finding}</td>
+      <td><a href={`/studije/${s.i}/`}>{s.fullText ? 'Lokalna kopija →' : 'Naš zapis →'}</a></td>
+    </tr>)}</tbody>
+  </table></div>
 </section>
+<script>
+const rows = [...document.querySelectorAll<HTMLTableRowElement>('#studyTable tbody tr')];
+const search = document.querySelector<HTMLInputElement>('#dbSearch')!;
+const cat = document.querySelector<HTMLSelectElement>('#dbCat')!;
+const non = document.querySelector<HTMLSelectElement>('#dbNon')!;
+function filter(){
+ let count=0;
+ for(const row of rows){row.hidden=!(
+ (!search.value || row.textContent?.toLocaleLowerCase('hr').includes(search.value.toLocaleLowerCase('hr'))) &&
+ (!cat.value || row.dataset.category===cat.value) && (!non.value || row.dataset.control===non.value));
+ if(!row.hidden)count++;
+ }
+ document.querySelector('#studyCount')!.textContent=`${count} / ${rows.length} zapisa`;
+}
+[search,cat,non].forEach(el=>el.addEventListener('input',filter));
+</script>

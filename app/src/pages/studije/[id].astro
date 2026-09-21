@@ -75,7 +75,7 @@ const used = usage[s.cat] || ['#db', '§11 Baza studija'];
 ---
 <Base title={`#${s.i} ${s.name} (${s.year}) — Baza studija | Deep Research`} base="../../">
   <section class="reveal on">
-    <div class="eyebrow">Zapis #{s.i} / {STUDIES_DB.length} · <a href="../" style="border:none">← svi zapisi</a></div>
+    <div class="eyebrow">Zapis #{s.i} / {STUDIES_DB.length} · <a href="/#db" style="border:none">← svi zapisi</a></div>
     <h2><span class="num">{String(s.i).padStart(2,'0')}</span>{s.non == 1 ? '♦ ' : ''}{s.name} ({s.year})</h2>
 
     {s.title && <h3 style="font-weight:500">{s.title}</h3>}
@@ -86,6 +86,11 @@ const used = usage[s.cat] || ['#db', '§11 Baza studija'];
       <div class="card"><div class="k">Kontrola nepušača</div><p style="font-size:14px">{s.non == 1 ? '♦ Da — usporedba s nepušačima' : 'Ne / nije primjenjivo'}</p></div>
     </div>
 
+    <div class="callout">
+      <h4>Materijali kod nas</h4>
+      {s.fullText ? <p><a href={s.fullText}>Otvori lokalnu kopiju rada →</a></p> : <p>Ovdje je bibliografski zapis i sažetak nalaza. Puni tekst i prilozi još nisu pohranjeni u ovom repozitoriju; izvorni rad dostupan je putem poveznice ispod.</p>}
+      {s.materials?.map(m=><p><a href={m.url}>{m.title}</a></p>)}
+    </div>
     <h3>Ključni nalaz</h3>
     <p>{s.finding}</p>
 
@@ -106,12 +111,12 @@ const used = usage[s.cat] || ['#db', '§11 Baza studija'];
       {s.scholar == 1 && <p style="font-size:13px;color:var(--ink2)">Za ovaj zapis link otvara Google Scholar pretragu po autoru i godini — prvi rezultati vode na izvorni rad i časopis. Provjerene PubMed poveznice postoje za 42 ključne studije u bazi.</p>}
     </div>
 
-    <p class="chart-note">Gdje se koristi na stranici: <a href="../../{used[0]}">{used[1]}</a>. Zapisi označeni ♦ imaju kontrolnu grupu nepušača — najjači tip dokaza za usporedbe grupa.</p>
+    <p class="chart-note">Gdje se koristi na stranici: <a href={`/${used[0]}`}>{used[1]}</a>. Zapisi označeni ♦ imaju kontrolnu grupu nepušača — najjači tip dokaza za usporedbe grupa.</p>
 
     <div style="display:flex;justify-content:space-between;margin-top:2em;gap:1em;flex-wrap:wrap">
-      {prev ? <a href={`../${prev}/`}>← #{prev}</a> : <span></span>}
-      <a href="../">svi zapisi</a>
-      {next ? <a href={`../${next}/`}>#{next} →</a> : <span></span>}
+      {prev ? <a href={`/studije/${prev}/`}>← #{prev}</a> : <span></span>}
+      <a href="/#db">svi zapisi</a>
+      {next ? <a href={`/studije/${next}/`}>#{next} →</a> : <span></span>}
     </div>
   </section>
 </Base>

@@ -503,8 +503,9 @@ const STUDIES_DB = [
   "design": "NHANES 2013–23 · n=756",
   "finding": "Pušači: povišeni olovo, kadmij, WBC; vaperi: manja odstupanja",
   "non": 1,
-  "url": "https://wwwn.cdc.gov/nchs/nhanes/",
-  "srclabel": "NHANES (CDC)"
+  "url": "https://www.mdpi.com/2039-4713/15/2/53",
+  "srclabel": "Manietta, Drake & Jayawardene · J. Xenobiot. 2025",
+  "title": "Comparative Analysis of Inflammatory and Heavy Metal Biomarkers in Exclusive E-Cigarette Users, Combustible Tobacco Users, and Non-Users Aged 18–30: A Cross-Sectional NHANES Analysis"
  },
  {
   "i": 38,
@@ -1480,8 +1481,9 @@ const STUDIES_DB = [
   "design": "NHANES 2013–23 · n=756 · 18–30 g.",
   "finding": "Pušači: viši krvni Pb i Cd; ekskluzivni vaperi: bez razlike u Pb, Cd čak niži od nepušača",
   "non": 1,
-  "url": "https://wwwn.cdc.gov/nchs/nhanes/",
-  "srclabel": "NHANES (CDC)"
+  "url": "https://www.mdpi.com/2039-4713/15/2/53",
+  "srclabel": "Manietta, Drake & Jayawardene · J. Xenobiot. 2025",
+  "title": "Comparative Analysis of Inflammatory and Heavy Metal Biomarkers in Exclusive E-Cigarette Users, Combustible Tobacco Users, and Non-Users Aged 18–30: A Cross-Sectional NHANES Analysis"
  },
  {
   "i": 112,
@@ -1783,6 +1785,90 @@ const STUDIES_DB = [
   "non": 1,
   "url": "https://www.jstage.jst.go.jp/browse/jea",
   "srclabel": "J Epidemiology (Japan)"
+ },
+ {
+  "i": 136,
+  "name": "Christensen i sur. (PATH upala)",
+  "year": 2021,
+  "cat": "Biomarkeri / upala",
+  "design": "PATH Wave 1 · n=3712 · presječna",
+  "finding": "Prilagođeni omjeri CRP-a i fibrinogena prema nikad-korisnicima; intervali pouzdanosti uključuju 1.",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8500540/",
+  "title": "Biomarkers of Inflammation and Oxidative Stress Among Adult Former Smoker, Current E-Cigarette Users – Results from Wave 1 PATH Study",
+  "non": 1,
+  "srclabel": "Izvorni rad"
+ },
+ {
+  "i": 137,
+  "name": "Wannamethee i sur.",
+  "year": 2005,
+  "cat": "Biomarkeri / upala",
+  "design": "2920 muškaraca · 60–79 godina",
+  "finding": "Primarni pušači lula/cigara: upalni markeri slični nikad-pušačima; skupina nije samo cigare.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/15817606/",
+  "title": "Associations between cigarette smoking, pipe/cigar smoking, and smoking cessation, and haemostatic and inflammatory markers for cardiovascular disease",
+  "non": 1,
+  "srclabel": "Izvorni rad"
+ },
+ {
+  "i": 138,
+  "name": "Farsalinos i sur. (COHb)",
+  "year": 2013,
+  "cat": "Biomarkeri / upala",
+  "design": "60 sudionika · konferencijski sažetak",
+  "finding": "COHb prije pokusa: vaperi 0,81 ± 0,20%, pušači 2,93 ± 1,15%; nakon dvije cigarete 3,50 ± 1,11%.",
+  "url": "https://academic.oup.com/eurheartj/article/34/suppl_1/102/2859516",
+  "title": "Immediate effects of electronic cigarette use on coronary circulation and blood carboxyhemoglobin levels: comparison with cigarette smoking",
+  "non": 0,
+  "srclabel": "Izvorni rad"
+ },
+ {
+  "i": 139,
+  "name": "Vuse Vibe / Ciro",
+  "year": 2023,
+  "title": "Changes in Biomarkers of Exposure and Potential Harm in Smokers Switched to Vuse Vibe or Vuse Ciro Electronic Nicotine Delivery Systems",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10384956/",
+  "finding": "Kratkoročno potpuno prebacivanje; COHb pada 52,8–55,0% u ispitivanim skupinama. Industrijska studija.",
+  "cat": "Klinička / switching",
+  "design": "Izvorni rad",
+  "non": 0,
+  "srclabel": "Izvorni rad"
+ },
+ {
+  "i": 140,
+  "name": "EMIT studija",
+  "year": 2023,
+  "title": "Characterization of e-cigarette users according to device type, use behaviors, and self-reported health outcomes: Findings from the EMIT study",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/38059181/",
+  "finding": "Samoprijavljeni prosjek: MOD 373, POD 123 puffa dnevno; velika varijabilnost.",
+  "cat": "Ponašanje / uporaba",
+  "design": "Izvorni rad",
+  "non": 0,
+  "srclabel": "Izvorni rad"
+ },
+ {
+  "i": 141,
+  "name": "Dautzenberg & Bricard",
+  "year": 2015,
+  "title": "Real-Time Characterization of E-Cigarettes Use: The 1 Million Puffs Study",
+  "url": "https://www.omicsonline.org/open-access-pdfs/realtime-characterization-of-ecigarettes-use-the-1-million-puffs-study-2155-6105-1000229.pdf",
+  "finding": "185 korisnika, povezani uređaj; opažanje obrazaca povlačenja aerosola.",
+  "cat": "Ponašanje / uporaba",
+  "design": "Izvorni rad",
+  "non": 0,
+  "srclabel": "Izvorni rad"
+ },
+ {
+  "i": 142,
+  "name": "PATH Wave 7 — puffovi",
+  "year": 2026,
+  "title": "Variation in quantity of puffs per day among U.S. adolescents and young adults using electronic nicotine delivery systems",
+  "url": "https://www.sciencedirect.com/science/article/pii/S037687162600102X",
+  "finding": "2606 sudionika, 12–30 godina; prosječno 85 puffova dnevno ukupno, s razlikama prema uređaju.",
+  "cat": "Ponašanje / uporaba",
+  "design": "Izvorni rad",
+  "non": 0,
+  "srclabel": "Izvorni rad"
  }
 ];
 
