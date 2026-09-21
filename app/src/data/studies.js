@@ -1394,15 +1394,14 @@ const STUDIES_DB = [
  },
  {
   "i": 104,
-  "name": "Quartz vs Ceramic coil",
+  "name": "Bear Rootz — kvarc i keramika (komercijalna usporedba)",
   "year": 2024,
   "cat": "Emisije / keramika",
-  "design": "Lab · lifecycle · ICP-OES (industrija)",
-  "finding": "Keramika: 13.644 silikatnih čestica vs kvarc 3.178; keramika više aldehida (akrolein, butiraldehid); teški metali minimalni kod oba",
+  "design": "Komercijalni prikaz · patrone za ulja/kanabis",
+  "finding": "Navodi 13.644 naspram 3.178 čestica u usporedbi keramičke i kvarcne patrone. Nije dokaz za nikotinske podove ili Vuse Pro One; ne koristimo za opće rangiranje keramike.",
   "non": 0,
-  "url": "https://scholar.google.com/scholar?q=Quartz%20vs%20Ceramic%20coil%202024%20e-cigarette%20tobacco%20cigar",
-  "srclabel": "Google Scholar — pretraga izvora",
-  "scholar": 1
+  "url": "https://www.bearrootz.com/quartz-vs-ceramic-atomizers/",
+  "srclabel": "Komercijalni izvor · ograničena primjenjivost"
  },
  {
   "i": 105,
@@ -2257,6 +2256,96 @@ const STUDIES_DB = [
    {
     "heading": "Ograničenje podatka",
     "text": "Objava od 26. 6. 2025. za egipatsko tržište ne navodi protokol mjerenja za ovu brojku. Ne prenosimo je na hrvatske varijante kao potvrđeno mjerenje; koncentracija mg/g i ukupni sadržaj mg/stick ostaju nepotvrđeni."
+   }
+  ]
+ },
+ {
+  "i": 162,
+  "name": "Pinto i sur.",
+  "year": 2022,
+  "cat": "Emisije / keramika",
+  "title": "Chemical characterisation of the vapour emitted by an e-cigarette using a ceramic wick-based technology",
+  "url": "https://doi.org/10.1038/s41598-022-19761-w",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Laboratorij · BAT financiranje",
+  "finding": "Keramički fitilj s NiCr grijačem; pet kvantificiranih karbonila 0,02–0,19 µg/puff. Autori navode rad ispod 350 °C; to nije granica sigurnosti keramike.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Tumačenje i ograničenja",
+    "text": "ISO 20768: 55 mL, 3 s, razmak 30 s. Dvije tekućine; analizirane organske emisije. Nije temperaturna mapa otpuštanja keramike ni dugoročna studija bolesti. Svi autori zaposleni u BAT-u. Ne prenositi rezultate na Pro One."
+   }
+  ]
+ },
+ {
+  "i": 163,
+  "name": "Talih i sur.",
+  "year": 2020,
+  "cat": "Emisije / temperatura",
+  "title": "Hot Wires and Film Boiling: Another Look at Carbonyl Formation in Electronic Cigarettes",
+  "url": "https://doi.org/10.1021/acs.chemrestox.0c00196",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Laboratorij · toplinski tok",
+  "finding": "Karbonilne emisije naglo rastu iznad kritičnog toplinskog toka; film boiling može nastati i sa zasićenim fitiljem.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Tumačenje i ograničenja",
+    "text": "Nema jedinstvene sigurne snage ili temperature za sve konstrukcije. Rad opisuje razgradnju tekućine, ne otpuštanje čestica iz keramičkog materijala."
+   }
+  ]
+ },
+ {
+  "i": 164,
+  "name": "CDC — zdravstveni učinci vapinga",
+  "year": 2025,
+  "cat": "Regulativa",
+  "title": "Health Effects of Vaping",
+  "url": "https://www.cdc.gov/tobacco/e-cigarettes/health-effects.html",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Javnozdravstveni pregled",
+  "finding": "Aerosol obično sadrži manje štetnih kemikalija od dima cigareta, ali e-cigarete nisu sigurne; dualna uporaba nije učinkovita zaštita zdravlja.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Tumačenje i ograničenja",
+    "text": "Manje emisija ne određuje točan postotak smanjenja dugoročnog rizika bolesti."
+   }
+  ]
+ },
+ {
+  "i": 165,
+  "name": "NCI — cigare i rak",
+  "year": 2026,
+  "cat": "Ishodi / cigare",
+  "title": "Cigar Smoking and Cancer",
+  "url": "https://www.cancer.gov/about-cancer/causes-prevention/risk/tobacco/cigars-fact-sheet",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Javnozdravstveni pregled",
+  "finding": "Cigare uzrokuju rak; rizik ovisi o intenzitetu i udisanju. Nisu sigurna alternativa cigaretama.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Tumačenje i ograničenja",
+    "text": "Bez inhalacije ostaju rizici za usnu šupljinu i jednjak. Ne postoji univerzalna pozicija cigara na jednoj ljestvici svih bolesti."
+   }
+  ]
+ },
+ {
+  "i": 166,
+  "name": "Jaegers i sur.",
+  "year": 2021,
+  "cat": "Emisije / temperatura",
+  "title": "Low-temperature (< 200 °C) degradation of electronic nicotine delivery system liquids generates toxic aldehydes",
+  "url": "https://doi.org/10.1038/s41598-021-87044-x",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Laboratorij · modelne reakcije",
+  "finding": "Modelno istraživanje pokazuje nastanak aldehida i ispod 200 °C.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Tumačenje i ograničenja",
+    "text": "Laboratorijski model tekućine, plina i simuliranih materijala grijača nije mjerenje doze iz određenog komercijalnog poda. Ne određuje sigurnu temperaturu keramike."
    }
   ]
  }

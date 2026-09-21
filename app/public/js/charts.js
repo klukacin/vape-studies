@@ -122,19 +122,6 @@ series:[
 {name:'spremnik nakon uporabe',type:'bar',barWidth:22,itemStyle:{color:C.juul},data:[233,55.4,40.2,426,31.2]}
 ]});
 
-/* ---------- 03c ceramic vs quartz silicates ---------- */
-mk('chartCeramic',{
-tooltip:{...baseTip,formatter:p=>`${p[0].name}<br><b>${p[0].value.toLocaleString('hr')}</b> silikatnih čestica`},
-grid:{left:200,right:70,top:30,bottom:50},
-xAxis:{type:'value',min:0,max:16000,name:'Silikatne čestice po uzorku',nameLocation:'middle',nameGap:30,...baseAxis,nameTextStyle:{color:C.ink2}},
-yAxis:{type:'category',data:['Kvarcni element','Keramički element'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:13}},
-series:[{type:'bar',barWidth:30,
-data:[{value:3178,itemStyle:{color:C.juul}},{value:13644,itemStyle:{color:'#d94f70'}}],
-label:{show:true,position:'right',color:C.ink,fontFamily:'ui-monospace,Menlo,monospace',formatter:p=>p.value.toLocaleString('hr')}
-}],
-graphic:[{type:'text',right:20,bottom:0,style:{text:'Lifecycle mjerenje 2024 (industrijski protokol, ICP-OES + brojač čestica)',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
-});
-
 /* ---------- 03d brain metal accumulation ---------- */
 mk('chartBrain',{
 tooltip:{...baseTip,formatter:p=>`${p[0].name}<br>+<b>${p[0].value}%</b> vs kontrola (miševi, 2 mj. izloženosti)`},
