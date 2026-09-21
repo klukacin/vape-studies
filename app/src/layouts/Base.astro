@@ -1,6 +1,7 @@
 ---
+import PdfModal from '../components/PdfModal.astro';
 // Base layout — Deep Research (Astro)
-const { title = 'Toplina i otrovi — ENVA Sol vs Vuse vs JUUL vs cigarete i cigare | Deep Research', desc = 'Usporedba temperatura, emisija i biomarkera: cigarete, cigare, nepušači, JUUL, Vuse Pro One i ENVA Sol — sinteza 130+ studija.', base = './' } = Astro.props;
+const { title = 'Toplina i otrovi — ENVA Sol, Vuse, JUUL, Wiip, cigarete i cigare | Deep Research', desc = 'Usporedba temperatura, emisija i biomarkera: cigarete, cigare, nepušači, JUUL, Vuse Pro One, ENVA Sol i Wiip — sinteza 130+ studija.', base = './' } = Astro.props;
 ---
 <!doctype html>
 <html lang="hr">
@@ -233,7 +234,7 @@ footer .disc{border:1px solid var(--line);padding:1.4em 1.6em;margin-top:1.5em;l
     <li><a href="#emissions">Emisije, metali, keramika</a></li>
     <li><a href="#switching">Kliničke switching studije</a></li>
     <li><a href="#enva">ENVA Sol — posebna analiza</a></li>
-    <li><a href="#market">Slike, cijene i nikotin</a></li>
+    <li><a href="#market">Uređaji, cijene i nikotin</a></li>
     <li class="grp">III · Izvori</li>
     <li><a href="#db">Baza od 130+ studija</a></li>
     <li><a href="#rjecnik">Rječnik pojmova</a></li>
@@ -247,6 +248,7 @@ footer .disc{border:1px solid var(--line);padding:1.4em 1.6em;margin-top:1.5em;l
 <main>
 <slot />
 </main>
+<PdfModal />
 
 
 <footer>

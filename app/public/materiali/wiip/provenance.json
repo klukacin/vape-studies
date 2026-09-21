@@ -1,0 +1,29 @@
+[
+  {
+    "file": "/img/wiip/magnetic-ii.png",
+    "source": "https://wiip.hr/wp-content/uploads/2025/04/Wiip_Magnetic_II-HR-Cosmic_Black.png",
+    "sourcePage": "https://wiip.hr/proizvod/wiip-magnetic-ii-cosmic-black/",
+    "retrieved": "2026-09-21",
+    "bytes": 162506,
+    "sha256": "f041573b38892210e2215e2c5bc09ca78906fbb9af26be36c6760d322221aa43",
+    "modified": false
+  },
+  {
+    "file": "/img/wiip/x-pro.png",
+    "source": "https://wiip.hr/wp-content/uploads/2024/07/005166_1.png",
+    "sourcePage": "https://wiip.hr/proizvod/wiip-x-pro-pink/",
+    "retrieved": "2026-09-21",
+    "bytes": 367902,
+    "sha256": "add07353b3770ff88f6a1ff9605c86631deb3e1ebd05b22773d62973aad9f73a",
+    "modified": false
+  },
+  {
+    "file": "/materiali/wiip/crna-gora-registar.pdf",
+    "source": "https://wapi.gov.me/download/445d4bf0-6754-49ea-9045-6f43f98f28d0?version=1.0",
+    "sourcePage": "https://wapi.gov.me/download/445d4bf0-6754-49ea-9045-6f43f98f28d0?version=1.0",
+    "retrieved": "2026-09-21",
+    "bytes": 773668,
+    "sha256": "ea3892330182f4ad60b120cb53e36798999c066087779cbbf141d381ab1e1385",
+    "modified": false
+  }
+]

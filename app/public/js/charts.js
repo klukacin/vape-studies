@@ -438,6 +438,8 @@ label:{show:true,position:'top',color:C.ink2,fontSize:11,fontFamily:'ui-monospac
 (function(){
 const root=document.getElementById('pgal');if(!root)return;
 const PGAL={
+wiipMagnetic:{title:'Wiip Magnetic II · Wiip.hr',imgs:[['/img/wiip/magnetic-ii.png','Wiip Magnetic II Cosmic Black — fotografija proizvođača Wiip.hr']]},
+wiipXPro:{title:'Wiip X Pro · Wiip.hr',imgs:[['/img/wiip/x-pro.png','Wiip X Pro Pink — fotografija proizvođača Wiip.hr']]},
 juul:{title:'JUUL / JUUL2',imgs:[
 ['img/juul2.jpg','JUUL2 uređaj i podovi — EU/UK verzija, 18 mg/mL, 1,2 mL podovi (foto: juul.co.uk / evapo.co.uk)']]},
 vuse:{title:'Vuse Pro One · vuse.com/hr',imgs:[

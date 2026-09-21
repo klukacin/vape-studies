@@ -1869,6 +1869,200 @@ const STUDIES_DB = [
   "design": "Izvorni rad",
   "non": 0,
   "srclabel": "Izvorni rad"
+ },
+ {
+  "i": 143,
+  "name": "Wiip Magnetic II — tehnologija",
+  "year": 2026,
+  "cat": "Tehnologija / Wiip",
+  "design": "Primarni izvor · proizvođač, nije klinička studija",
+  "finding": "Tri načina rada: Chill, Daily i Boost; memorija postavke, USB-C i proizvođačeva tvrdnja o regulaciji temperature mikročipom.",
+  "non": 0,
+  "title": "Wiip Magnetic II — tehnologija",
+  "url": "https://wiip.hr/uredaji/wiip-magnetic-ii/",
+  "srclabel": "Izvorni dokument / stranica",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Kako radi",
+    "text": "Tipka bira Chill (manje aerosola), Daily (srednji intenzitet) ili Boost (više aerosola). Postavka se pamti. LED linije pokazuju napunjenost. Navedene su zaštite od pregrijavanja, kratkog spoja i prepunjavanja te automatsko gašenje pri neaktivnosti."
+   },
+   {
+    "heading": "Granice dostupnih podataka",
+    "text": "Stranica opisuje regulaciju temperature, ali ne objavljuje krivulje temperature, snagu pojedinog načina, otpor ni materijal grijača. Ovaj opis nije neovisna provjera emisija ili zdravstvenog rizika."
+   }
+  ]
+ },
+ {
+  "i": 144,
+  "name": "Wiip Magnetic II — specifikacije i cijena",
+  "year": 2026,
+  "cat": "Uređaji / Wiip",
+  "design": "Primarni izvor · proizvođač, nije klinička studija",
+  "finding": "14,99 € za uređaj Cosmic Black; Li-Ion 400 mAh, 3,7 V; USB-C. Cijena provjerena 21. 9. 2026.",
+  "non": 0,
+  "title": "Wiip Magnetic II — specifikacije i cijena",
+  "url": "https://wiip.hr/proizvod/wiip-magnetic-ii-cosmic-black/",
+  "srclabel": "Izvorni dokument / stranica",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Deklaracija uređaja",
+    "text": "Baterija: 400 mAh, nominalno 3,7 V. To odgovara približno 1,48 Wh po nazivnim vrijednostima (naš izračun), a ne snazi grijača. Uređaj ima promjenjive načine rada, LED indikator te zaštite od kratkog spoja i previsokog napona. EAN Cosmic Black: 3858895070281."
+   }
+  ],
+  "image": "/img/wiip/magnetic-ii.png"
+ },
+ {
+  "i": 145,
+  "name": "Wiip X Pro — uređaj i cijena",
+  "year": 2026,
+  "cat": "Uređaji / Wiip",
+  "design": "Primarni izvor · proizvođač, nije klinička studija",
+  "finding": "9,99 € za ponudu Pink; USB-C; deklarirano punjenje do 30 min. Kapacitet baterije nije naveden na provjerenoj stranici.",
+  "non": 0,
+  "title": "Wiip X Pro — uređaj i cijena",
+  "url": "https://wiip.hr/proizvod/wiip-x-pro-pink/",
+  "srclabel": "Izvorni dokument / stranica",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Što je potvrđeno",
+    "text": "Kućište je od eloksiranog aluminija. Deklaracija navodi USB-C i trajanje punjenja do 30 minuta. EAN Pink: 3858894180035. Specifikacija ne navodi kapacitet baterije, vate, temperaturu ni materijal grijača. Cijena se odnosi na prikazanu ponudu; sadržaj pakiranja provjeriti na izvornom proizvodu."
+   }
+  ],
+  "image": "/img/wiip/x-pro.png"
+ },
+ {
+  "i": 146,
+  "name": "Wiip X Pro — tehnologija i kompatibilnost",
+  "year": 2026,
+  "cat": "Tehnologija / Wiip",
+  "design": "Primarni izvor · proizvođač, nije klinička studija",
+  "finding": "Zamjenjivi unaprijed napunjeni Wiipodi, USB-C i aktivacija udisajem. Proizvođač navodi kompatibilnost svih Wiipoda sa svim Wiip uređajima.",
+  "non": 0,
+  "title": "Wiip X Pro — tehnologija i kompatibilnost",
+  "url": "https://wiip.hr/uredaji/wiip-x-pro/",
+  "srclabel": "Izvorni dokument / stranica",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Sustav i ponuda",
+    "text": "Uređaj koristi e-tekućinu s nikotinskim solima, ne zagrijava duhanski stick. Dostupan je u bojama Black, Sapphire Blue, Deep Red, Pink i Unicorn. Nikotinska koncentracija bira se izborom poda. Službena prezentacija starter kita navodi White Cherry Ice i Apple; sastav konkretne ponude može se promijeniti."
+   },
+   {
+    "heading": "Što iz toga ne slijedi",
+    "text": "Marketinške tvrdnje o manjem riziku ili prestanku pušenja nisu zamjena za kliničku studiju ovog modela. Rezultate JUUL-a ili Vusea ne prenosimo brojčano na Wiip."
+   }
+  ]
+ },
+ {
+  "i": 147,
+  "name": "Wiipod Magnetic Cola 10 mg/mL — deklaracija",
+  "year": 2026,
+  "cat": "Nikotin / Wiip",
+  "design": "Primarni izvor · proizvođač, nije klinička studija",
+  "finding": "2 mL, 10 mg/mL; deklarirano oslobađanje 0,07 mg/puff. Cijena 4,20 €. Podatak proizvođača, bez javnog protokola na stranici.",
+  "non": 0,
+  "title": "Wiipod Magnetic Cola 10 mg/mL — deklaracija",
+  "url": "https://wiip.hr/proizvod/wiipod-magnetic-cola-10-mg-ml/",
+  "srclabel": "Izvorni dokument / stranica",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Nikotin i sastav",
+    "text": "Ukupno u tekućini: 20 mg nikotina po podu (2 mL × 10 mg/mL, naš izračun). Osnova su glicerin, propilen glikol i nikotin salicilat, uz arome i rashladni sastojak. Deklarirani prinos po povlačenju nije izmjerena doza apsorbirana u tijelo."
+   },
+   {
+    "heading": "Usporedivost",
+    "text": "Na provjerenoj stranici nema opisa strojnog režima povlačenja, odabranog uređaja i načina rada, broja ponavljanja ni nesigurnosti. Vrijednost se zato ne može pripisati svakom povlačenju na Magnetic II ili X Pro, niti izravno usporediti s rezultatima drugih protokola."
+   }
+  ]
+ },
+ {
+  "i": 148,
+  "name": "Wiipod Magnetic Cola 18 mg/mL — deklaracija",
+  "year": 2026,
+  "cat": "Nikotin / Wiip",
+  "design": "Primarni izvor · proizvođač, nije klinička studija",
+  "finding": "2 mL, 18 mg/mL; deklarirano oslobađanje 0,14 mg/puff. Cijena 4,20 €. Podatak proizvođača, bez javnog protokola na stranici.",
+  "non": 0,
+  "title": "Wiipod Magnetic Cola 18 mg/mL — deklaracija",
+  "url": "https://wiip.hr/proizvod/wiipod-magnetic-cola-18-mg-ml/",
+  "srclabel": "Izvorni dokument / stranica",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Nikotin i sastav",
+    "text": "Ukupno u tekućini: 36 mg nikotina po podu (2 mL × 18 mg/mL, naš izračun). Osnova su glicerin, propilen glikol i nikotin salicilat, uz arome i rashladni sastojak. Deklarirani prinos po povlačenju nije izmjerena doza apsorbirana u tijelo."
+   },
+   {
+    "heading": "Usporedivost",
+    "text": "Na provjerenoj stranici nema opisa strojnog režima povlačenja, odabranog uređaja i načina rada, broja ponavljanja ni nesigurnosti. Vrijednost se zato ne može pripisati svakom povlačenju na Magnetic II ili X Pro, niti izravno usporediti s rezultatima drugih protokola."
+   }
+  ]
+ },
+ {
+  "i": 149,
+  "name": "Wiipod Magnetic Apple 10 mg/mL — deklaracija",
+  "year": 2026,
+  "cat": "Nikotin / Wiip",
+  "design": "Primarni izvor · proizvođač, nije klinička studija",
+  "finding": "2 mL, 10 mg/mL; deklarirano oslobađanje 0,05 mg/puff. Cijena 4,20 €. Podatak proizvođača, bez javnog protokola na stranici.",
+  "non": 0,
+  "title": "Wiipod Magnetic Apple 10 mg/mL — deklaracija",
+  "url": "https://wiip.hr/proizvod/wiipod-magnetic-apple-10-mg-ml/",
+  "srclabel": "Izvorni dokument / stranica",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Nikotin i sastav",
+    "text": "Ukupno u tekućini: 20 mg nikotina po podu (2 mL × 10 mg/mL, naš izračun). Osnova su glicerin, propilen glikol i nikotin salicilat, uz arome i rashladni sastojak. Deklarirani prinos po povlačenju nije izmjerena doza apsorbirana u tijelo."
+   },
+   {
+    "heading": "Usporedivost",
+    "text": "Na provjerenoj stranici nema opisa strojnog režima povlačenja, odabranog uređaja i načina rada, broja ponavljanja ni nesigurnosti. Vrijednost se zato ne može pripisati svakom povlačenju na Magnetic II ili X Pro, niti izravno usporediti s rezultatima drugih protokola."
+   }
+  ]
+ },
+ {
+  "i": 150,
+  "name": "Wiip — tvrdnje o ispitivanju i sukladnosti",
+  "year": 2026,
+  "cat": "Dokumentacija / Wiip",
+  "design": "Primarni izvor · proizvođač, nije klinička studija",
+  "finding": "Proizvođač navodi ispitivanja nikotina prema AFNOR XP D90-300-2/-3 i mehaničku provjeru prema CEN/TS 17287:2019.",
+  "non": 0,
+  "title": "Wiip — tvrdnje o ispitivanju i sukladnosti",
+  "url": "https://wiip.hr/budi-siguran-uz-wiip/",
+  "srclabel": "Izvorni dokument / stranica",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Javno objavljeno",
+    "text": "Stranica navodi EMC, RoHS i ispitivanja nikotina te otpornosti na pad. Cjeloviti laboratorijski izvještaji, tablice emisija, protokoli i grafovi za Magnetic II i X Pro nisu priloženi na ovoj stranici. Sukladnost proizvoda sama po sebi ne kvantificira dugoročni zdravstveni rizik."
+   }
+  ]
+ },
+ {
+  "i": 151,
+  "name": "Crna Gora — registar s povijesnim Wiip dokumentima",
+  "year": 2020,
+  "cat": "Registar / Wiip",
+  "design": "Službeni registar · povijesna dokumentacija",
+  "finding": "Str. 17: Wiip starter kit; str. 26–27: WiiPod, sigurnosno-tehnički listovi i referenca na AVERlabC180035 (2018.). Ne odnosi se na potvrđeno testiranje Magnetic II ili X Pro.",
+  "non": 0,
+  "title": "Crna Gora — registar s povijesnim Wiip dokumentima",
+  "url": "https://wapi.gov.me/download/445d4bf0-6754-49ea-9045-6f43f98f28d0?version=1.0",
+  "srclabel": "Izvorni dokument / stranica",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Kako čitati original",
+    "text": "Preuzeti PDF ima 27 stranica i sačuvan je u cijelosti. Navodi obavijesti iz 2019. i dokumente iz 2018.–2020. Na str. 27 spominje laboratorijski izvještaj AVERlabC180035, ali ne sadrži sam izvještaj ni njegove rezultate. To je trag do ranije dokumentacije marke, ne mjerenje ovih novih modela."
+   }
+  ],
+  "fullText": "/materiali/wiip/crna-gora-registar.pdf#page=17"
  }
 ];
 

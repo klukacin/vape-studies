@@ -1,0 +1,47 @@
+<dialog id="source-pdf" aria-labelledby="source-pdf-title">
+  <div class="pdf-toolbar">
+    <strong id="source-pdf-title">Izvorni PDF · lokalna kopija</strong>
+    <a id="source-pdf-direct" target="_blank" rel="noopener">Otvori zasebno ↗</a>
+    <button type="button" id="source-pdf-close" autofocus>Zatvori ×</button>
+  </div>
+  <p class="pdf-help">Ako se dokument ne prikaže, otvorite ga zasebno. Izvor i objašnjenje nalaze se u zapisu dokumenta.</p>
+  <iframe title="Pregled izvornog PDF dokumenta" id="source-pdf-frame"></iframe>
+</dialog>
+<style>
+ dialog {width:min(1200px,96vw);max-width:96vw;height:92dvh;max-height:92dvh;padding:1rem;background:#111;color:#ddd;border:1px solid #666;box-sizing:border-box}
+ dialog::backdrop {background:rgb(0 0 0 / 80%)}
+ .pdf-toolbar {display:flex;align-items:center;gap:1rem;flex-wrap:wrap}.pdf-toolbar strong{margin-right:auto}
+ button {color:#111;background:#ffd000;border:0;padding:.6rem 1rem;cursor:pointer;font:inherit}
+ .pdf-help {font-size:13px;margin:.5rem 0}
+ iframe {display:block;width:100%;height:calc(100% - 100px);border:0;background:white}
+</style>
+<script>
+const dialog = document.querySelector<HTMLDialogElement>('#source-pdf')!;
+const frame = document.querySelector<HTMLIFrameElement>('#source-pdf-frame')!;
+const direct = document.querySelector<HTMLAnchorElement>('#source-pdf-direct')!;
+let previous: HTMLElement | null = null;
+let overflow = '';
+document.addEventListener('click', event => {
+  const target = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[data-pdf]') : null;
+  if (!target || !(event instanceof MouseEvent) || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.button !== 0 || typeof dialog.showModal !== 'function') return;
+  const url = new URL(target.href);
+  if (url.origin !== location.origin || !url.pathname.endsWith('.pdf')) return;
+  event.preventDefault();
+  previous = target;
+  frame.src = url.href;
+  direct.href = url.href;
+  overflow = document.body.style.overflow;
+  document.body.style.overflow = 'hidden';
+  dialog.showModal();
+});
+document.querySelector('#source-pdf-close')!.addEventListener('click', () => dialog.close());
+dialog.addEventListener('click', event => {
+  const rect = dialog.getBoundingClientRect();
+  if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close();
+});
+dialog.addEventListener('close', () => {
+  frame.removeAttribute('src');
+  document.body.style.overflow = overflow;
+  previous?.focus();
+});
+</script>

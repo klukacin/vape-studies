@@ -5,7 +5,7 @@ const categories = [...new Set(studies.map(s => s.cat))].sort();
 <section id="db" class="reveal">
   <div class="eyebrow">Transparentnost · {studies.length} zapisa</div>
   <h2><span class="num">11</span>Baza studija</h2>
-  <p>Jedinstveni popis izvora. Naziv otvara izvorni rad; zasebna poveznica vodi na naš zapis i lokalne materijale kada su dostupni. ♦ označava usporedbu s nepušačima. Zapis s bibliografskim podacima nije isto što i puna kopija rada.</p>
+  <p>Jedinstveni popis znanstvenih i dokumentacijskih izvora. Proizvođačke stranice i registri označeni su u stupcu Dizajn; nisu neovisne studije. Naziv otvara izvorni rad; zasebna poveznica vodi na naš zapis i lokalne materijale kada su dostupni. ♦ označava usporedbu s nepušačima. Zapis s bibliografskim podacima nije isto što i puna kopija rada.</p>
   <div id="dbControls">
     <input type="search" id="dbSearch" aria-label="Pretraži studije" placeholder="traži: autor, godina, marker…" />
     <select id="dbCat" aria-label="Kategorija"><option value="">sve kategorije</option>{categories.map(c=><option value={c}>{c}</option>)}</select>
@@ -16,7 +16,7 @@ const categories = [...new Set(studies.map(s => s.cat))].sort();
     <thead><tr><th>#</th><th>Godina</th><th>Studija · izvor</th><th>Kategorija</th><th>Dizajn</th><th>Ključni nalaz</th><th>Kod nas</th></tr></thead>
     <tbody>{studies.map(s=><tr id={`study-${s.i}`} data-category={s.cat} data-control={s.non}>
       <td>{s.i}</td><td>{s.year}</td><td><a href={s.url} target="_blank" rel="noopener">{s.non==1?'♦ ':''}{s.name} ↗</a>{s.scholar==1 && <small> · pretraga izvora</small>}</td><td>{s.cat}</td><td>{s.design}</td><td>{s.finding}</td>
-      <td><a href={`/studije/${s.i}/`}>{s.fullText ? 'Lokalna kopija →' : 'Naš zapis →'}</a></td>
+      <td><a href={`/studije/${s.i}/`}>{s.fullText ? 'Lokalna kopija →' : s.sections?.length ? 'Prilagođeni prikaz →' : 'Naš zapis →'}</a></td>
     </tr>)}</tbody>
   </table></div>
 </section>
