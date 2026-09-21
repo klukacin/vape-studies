@@ -2063,6 +2063,165 @@ const STUDIES_DB = [
    }
   ],
   "fullText": "/materiali/wiip/crna-gora-registar.pdf#page=17"
+ },
+ {
+  "i": 152,
+  "name": "AFNOR XP D90-300-3 — izdanje 2022",
+  "year": 2022,
+  "url": "https://www.boutique.afnor.org/fr-fr/norme/xp-d903003/cigarettes-electroniques-et-eliquides-exigences-et-methodes-dessai-relative/fa197820/319142",
+  "srclabel": "Izvorni dokument",
+  "cat": "Standardi / Wiip",
+  "design": "Norma / propis / službeni izvještaj",
+  "non": 0,
+  "finding": "Informativni Prilog B sadrži indikativne ciljne vrijednosti emisija organskih tvari i metala. Javni sadržaj ne daje cijelu brojčanu tablicu.",
+  "title": "AFNOR XP D90-300-3 — izdanje 2022",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Opseg i ograničenje",
+    "text": "Urednički sažetak izvora. Ovaj zapis ne predstavlja laboratorijsko mjerenje temperature ili emisija Wiip uređaja. Poveznica ispod vodi na originalni dokument."
+   }
+  ]
+ },
+ {
+  "i": 153,
+  "name": "AFNOR — e-tekućine, uređaji i dokazivanje sukladnosti",
+  "year": 2015,
+  "url": "https://normalisation.afnor.org/actualites/cigarettes-electroniques-et-e-liquides/",
+  "srclabel": "Izvorni dokument",
+  "cat": "Standardi / Wiip",
+  "design": "Norma / propis / službeni izvještaj",
+  "non": 0,
+  "finding": "XP D90-300-1 obuhvaća uređaje/pregrijavanje, -2 e-tekućine. AFNOR razlikuje samodeklaraciju proizvođača i neovisnu certifikaciju.",
+  "title": "AFNOR — e-tekućine, uređaji i dokazivanje sukladnosti",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Opseg i ograničenje",
+    "text": "Urednički sažetak izvora. Ovaj zapis ne predstavlja laboratorijsko mjerenje temperature ili emisija Wiip uređaja. Poveznica ispod vodi na originalni dokument."
+   }
+  ]
+ },
+ {
+  "i": 154,
+  "name": "Europska komisija — CASP2021 e-cigarettes and liquids",
+  "year": 2022,
+  "url": "https://mpo.gov.cz/assets/en/consumer-protection/products-safety/market-surveillance-activities-2021/2023/1/Final-report_2.pdf",
+  "srclabel": "Izvorni dokument",
+  "cat": "Standardi / Wiip",
+  "design": "Norma / propis / službeni izvještaj",
+  "non": 0,
+  "finding": "Nadzor tržišta s ispitivanjima prema CEN/TS 17287:2019 i drugim metodama; izvorne tablice emisija i sigurnosnih provjera. Nije studija Wiip Magnetic II / X Pro.",
+  "title": "Europska komisija — CASP2021 e-cigarettes and liquids",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Opseg i ograničenje",
+    "text": "Urednički sažetak izvora. Ovaj zapis ne predstavlja laboratorijsko mjerenje temperature ili emisija Wiip uređaja. Poveznica ispod vodi na originalni dokument."
+   }
+  ],
+  "fullText": "/materiali/standardi/casp2021-e-cigarettes.pdf"
+ },
+ {
+  "i": 155,
+  "name": "TPD — Direktiva 2014/40/EU, članak 20",
+  "year": 2014,
+  "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A02014L0040-20150106",
+  "srclabel": "Izvorni dokument",
+  "cat": "Standardi / Wiip",
+  "design": "Norma / propis / službeni izvještaj",
+  "non": 0,
+  "finding": "Nikotinska tekućina ≤20 mg/mL; uložak/spremnik ≤2 mL, bočica za ponovno punjenje ≤10 mL. Koncentracija nije doza po povlačenju.",
+  "title": "TPD — Direktiva 2014/40/EU, članak 20",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Opseg i ograničenje",
+    "text": "Urednički sažetak izvora. Ovaj zapis ne predstavlja laboratorijsko mjerenje temperature ili emisija Wiip uređaja. Poveznica ispod vodi na originalni dokument."
+   }
+  ]
+ },
+ {
+  "i": 156,
+  "name": "RoHS — Delegirana direktiva (EU) 2015/863",
+  "year": 2015,
+  "url": "https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX%3A32015L0863",
+  "srclabel": "Izvorni dokument",
+  "cat": "Standardi / Wiip",
+  "design": "Norma / propis / službeni izvještaj",
+  "non": 0,
+  "finding": "Ograničenja masenih udjela tvari u homogenim materijalima: 0,1% za navedene tvari, 0,01% za kadmij. Nisu granice emisija aerosola; primjenjive iznimke treba zasebno provjeriti.",
+  "title": "RoHS — Delegirana direktiva (EU) 2015/863",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Opseg i ograničenje",
+    "text": "Urednički sažetak izvora. Ovaj zapis ne predstavlja laboratorijsko mjerenje temperature ili emisija Wiip uređaja. Poveznica ispod vodi na originalni dokument."
+   }
+  ]
+ },
+ {
+  "i": 157,
+  "name": "EMC — Direktiva 2014/30/EU",
+  "year": 2014,
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014L0030",
+  "srclabel": "Izvorni dokument",
+  "cat": "Standardi / Wiip",
+  "design": "Norma / propis / službeni izvještaj",
+  "non": 0,
+  "finding": "Elektromagnetska kompatibilnost: smetnje i otpornost opreme. Ne propisuje toksikološku ocjenu aerosola niti identificira grijač.",
+  "title": "EMC — Direktiva 2014/30/EU",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Opseg i ograničenje",
+    "text": "Urednički sažetak izvora. Ovaj zapis ne predstavlja laboratorijsko mjerenje temperature ili emisija Wiip uređaja. Poveznica ispod vodi na originalni dokument."
+   }
+  ]
+ },
+ {
+  "i": 158,
+  "name": "Vuse Pro One — hrvatska ponuda i značajke",
+  "year": 2026,
+  "url": "https://www.vuse.com/hr/hr/vuse-pro-one-creamy-tobacco.html",
+  "srclabel": "Izvorni dokument",
+  "cat": "Dokumentacija / Vuse",
+  "design": "Proizvođačka deklaracija",
+  "non": 0,
+  "finding": "Dva načina rada, USB-C, punjenje za 65 minuta, odvojiva baterija, do 1000 udisaja po podu. Kategorijska HR stranica navodi cijenu od 11 € (21. 9. 2026.).",
+  "title": "Vuse Pro One — hrvatska ponuda i značajke",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Opseg i ograničenje",
+    "text": "Deklaracija proizvođača, ne neovisna studija. Ne prenosi se automatski na druge modele ili sva tržišta."
+   }
+  ],
+  "materials": [
+   {
+    "title": "Službena HR ponuda i cijene",
+    "url": "https://www.vuse.com/hr/hr/shop/vuse-pro-one.html"
+   }
+  ]
+ },
+ {
+  "i": 159,
+  "name": "Vuse Pro One — deklaracija FlavourFlow i baterije",
+  "year": 2026,
+  "url": "https://www.vuse.com/ca/en/buy-online/products/creamy-tobacco-vuse-pro-one",
+  "srclabel": "Izvorni dokument",
+  "cat": "Dokumentacija / Vuse",
+  "design": "Proizvođačka deklaracija",
+  "non": 0,
+  "finding": "Kanadska specifikacija: keramička tehnologija FlavourFlow, 530 mAh, USB-C, VapourBoost, 2 mL pod. Jačine nikotina i ponude ovise o tržištu.",
+  "title": "Vuse Pro One — deklaracija FlavourFlow i baterije",
+  "accessed": "21. 9. 2026.",
+  "sections": [
+   {
+    "heading": "Opseg i ograničenje",
+    "text": "Deklaracija proizvođača, ne neovisna studija. Ne prenosi se automatski na druge modele ili sva tržišta."
+   }
+  ]
  }
 ];
 

@@ -36,17 +36,15 @@ mk('chartTemp',{
 tooltip:{...baseTip,trigger:'item',formatter:p=>`Temperaturni raspon<br><b>${p.value[1]}–${p.value[2]} °C</b>`},
 grid:{left:230,right:100,top:30,bottom:50},
 xAxis:{type:'value',name:'°C',nameTextStyle:{color:C.ink2},min:0,max:1100,...baseAxis},
-yAxis:{type:'category',data:['Nepušač (referenca)','Pod-uređaji 1,2 Ω · ~10 W','Pod-uređaji 0,6 Ω · ~21 W','Vuse Pro One (procjena)','JUUL — prosjek atomizera','JUUL — grijaći element','ENVA Sol (procjena vršne)','PG/VG prag razgradnje','Dry burn — suhi fitilj','Cigareta — vrh pri puhanju'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
+yAxis:{type:'category',data:['Nepušač (referenca)','Pod-uređaji 1,2 Ω · ~10 W','Pod-uređaji 0,6 Ω · ~21 W','Vuse Pro One — nema mjerenja','JUUL — prosjek atomizera','JUUL — grijaći element','ENVA Sol — nema mjerenja','PG/VG prag razgradnje','Dry burn — suhi fitilj','Cigareta — vrh pri puhanju'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
 series:[{type:'custom',renderItem:(p,api)=>{const y=api.coord([0,api.value(0)])[1];const x1=api.coord([api.value(1),0])[0];const x2=api.coord([api.value(2),0])[0];
 return{type:'group',children:[{type:'rect',shape:{x:x1,y:y-11,width:Math.max(x2-x1,2),height:22},style:{fill:api.value(3),opacity:.92}},{type:'text',style:{x:x2+7,y,text:api.value(1)+'–'+api.value(2)+' °C',fill:C.ink,fontSize:11,verticalAlign:'middle'}}]};},
 data:[
 [0,36,37,C.non],
 [1,63,90,C.ecig],
 [2,103,150,C.ecig],
-[3,60,180,C.vuse],
 [4,150,300,C.juul],
 [5,200,250,C.juul],
-[6,120,200,C.enva],
 [7,250,250,'#d94f70'],
 [8,350,1008,'#8a2f2f'],
 [9,600,900,C.cig]],
@@ -170,68 +168,6 @@ series:[
 ],
 graphic:[{type:'text',left:70,bottom:0,style:{text:'Dualni ≈ pušači; ekskluzivni vaperi blizu nepušača (krv); urinski Cd ipak viši kod vapera (PATH)',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
 });
-
-/* ---------- 09 nicotine per puff ---------- */
-(function(){
-const cats=['Vuse Pro One (procjena)','ENVA Sol (procjena)','IQOS + TEREA (mjereno)','JUUL2 EU 18 mg/mL (procjena)','JUUL 5% SAD (mjereno)','Cigareta — dim (referenca)'];
-const mins=[40,48,70,22,72,100];
-const ranges=[40,96,50,28,92,200];
-const cols=[C.vuse,C.enva,'#7d8a9e',C.juul,C.juul,C.cig];
-const labs=['~40–80','48–144','~70–120','22–50','72–164','100–300'];
-mk('chartNicotine',{
-tooltip:{...baseTip,formatter:p=>{const i=cats.indexOf(p.name);return `${p.name}<br>nikotin po puffu: <b>${labs[i]}</b> µg`}},
-grid:{left:250,right:90,top:20,bottom:50},
-xAxis:{type:'value',min:0,max:350,name:'µg nikotina po puffu',nameLocation:'middle',nameGap:30,...baseAxis,nameTextStyle:{color:C.ink2}},
-yAxis:{type:'category',data:cats,...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
-series:[
-{type:'bar',stack:'r',barWidth:20,itemStyle:{color:'transparent'},data:mins,tooltip:{show:false},emphasis:{disabled:true},silent:true},
-{type:'bar',stack:'r',barWidth:20,data:ranges.map((v,i)=>({value:v,itemStyle:{color:cols[i]}})),
-label:{show:true,position:'right',color:C.ink,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace',formatter:p=>labs[p.dataIndex]+' µg'}}
-],
-graphic:[{type:'text',left:250,bottom:0,style:{text:'mjereno: JUUL 5% (Prochaska 2021) · IQOS/TEREA (neovisna mjerenja aerosola) · ostalo = sadržaj poda/sticka ÷ deklarirani puffovi',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
-});
-})();
-
-/* ---------- 10 cost per 100 puffs ---------- */
-mk('chartCost',{
-tooltip:{trigger:'axis',...baseTip,axisPointer:{type:'shadow'},formatter:p=>`${p[0].name}<br><b>${p[0].value.toFixed(2)} €</b> po 100 puffova`},
-grid:{left:230,right:90,top:20,bottom:50},
-xAxis:{type:'value',max:3.5,name:'€ po 100 puffova (HR maloprodaja 2026)',...baseAxis,nameTextStyle:{color:C.ink2}},
-yAxis:{type:'category',data:['Vuse Pod Golden Tobacco','ENVA Sol sticks (XXL, 300/stick)','ENVA Sol sticks (2/1, 300/stick)','ENVA Sol sticks (XXL, 200/stick)','TEREA (IQOS ILUMA)','ENVA Sol sticks (2/1, 200/stick)','Cigareta (Marlboro Red/Gold)','JUUL2 pod (UK — nije u HR)'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
-series:[{type:'bar',barWidth:18,
-data:[
-{value:0.41,itemStyle:{color:C.vuse}},
-{value:0.78,itemStyle:{color:C.enva}},
-{value:1.15,itemStyle:{color:'#d9a520'}},
-{value:1.17,itemStyle:{color:'rgba(255,184,0,.55)'}},
-{value:1.54,itemStyle:{color:C.juul}},
-{value:1.73,itemStyle:{color:'rgba(217,165,32,.5)'}},
-{value:2.13,itemStyle:{color:C.cig}},
-{value:2.93,itemStyle:{color:'#8b94a1'}}
-],
-label:{show:true,position:'right',color:C.ink,fontFamily:'ui-monospace,Menlo,monospace',formatter:p=>p.value.toFixed(2)+' €'}
-}],
-graphic:[{type:'text',left:230,bottom:0,style:{text:'ENVA stick 200–300 puffova (danski trgovac: ~300) · XXL = 69,90 €/30 stickova (2,33 €/stick) · Vuse ~1000/pod · TEREA ~14/stick · cigareta ~12 · parilica.hr, nargila-shop.hr, carina',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
-});
-
-/* ---------- 10 monthly cost: ekvivalent 1 kutije + 2x/3x scenariji ---------- */
-mk('chartMonthly',{
-tooltip:{trigger:'axis',...baseTip,axisPointer:{type:'shadow'},formatter:p=>p.map(x=>`${x.marker} ${x.seriesName}: <b>${x.value.toFixed(0)} €</b>/mj`).join('<br>')},
-legend:{textStyle:{color:C.ink2},top:0},
-grid:{left:70,right:30,top:44,bottom:40},
-xAxis:{type:'category',data:['Ekvivalent kutije/dan (240 puff)','E-cig: duplo puffova (480)','E-cig: trostruko (720)'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
-yAxis:{type:'value',name:'€ / mjesec',...baseAxis,nameTextStyle:{color:C.ink2}},
-series:[
-{name:'Cigarete (Marlboro)',type:'bar',barWidth:'12%',itemStyle:{color:C.cig},data:[153,null,null],
-label:{show:true,position:'top',color:C.ink,fontSize:10,fontFamily:'ui-monospace,Menlo,monospace',formatter:p=>p.value==null?'':p.value.toFixed(0)+' €'}},
-{name:'Vuse podovi',type:'bar',barWidth:'12%',itemStyle:{color:C.vuse},data:[29.52,59.04,88.56],
-label:{show:true,position:'top',color:C.ink,fontSize:10,fontFamily:'ui-monospace,Menlo,monospace',formatter:p=>p.value==null?'':p.value.toFixed(0)+' €'}},
-{name:'TEREA (IQOS)',type:'bar',barWidth:'12%',itemStyle:{color:C.juul},data:[110.57,221.14,331.71]},
-{name:'ENVA 2/1 — 200/stick',type:'bar',barWidth:'12%',itemStyle:{color:'rgba(217,165,32,.5)'},data:[124.20,248.40,372.60]},
-{name:'ENVA 2/1 — 300/stick',type:'bar',barWidth:'12%',itemStyle:{color:'#d9a520'},data:[82.80,165.60,248.40]},
-{name:'ENVA XXL — 200/stick',type:'bar',barWidth:'12%',itemStyle:{color:'rgba(255,184,0,.55)'},data:[83.88,167.76,251.64]},
-{name:'ENVA XXL — 300/stick',type:'bar',barWidth:'12%',itemStyle:{color:C.enva},data:[55.92,111.84,167.76]}
-]});
 
 /* ---------- 04 NNAL ---------- */
 mk('chartNNAL',{

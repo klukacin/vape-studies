@@ -22,10 +22,10 @@ const usage = {
   'Emisije / arome': ['#emissions', '§07 Emisije'],
   'Emisije / keramika': ['#emissions', '§07 Keramika i zavojnice'],
   'Emisije / metodologija': ['#emissions', '§07 Emisije'],
-  'Emisije / Vuse': ['#emissions', '§07 Emisije · #market §10'],
+  'Emisije / Vuse': ['#emissions', '§07 Emisije · #market §12'],
   'Emisije / usporedba uređaja': ['#emissions', '§07 Emisije'],
   'Emisije / snaga': ['#emissions', '§07 Emisije i snaga'],
-  'Emisije / nikotin': ['#market', '§10 Nikotin po puffu'],
+  'Emisije / nikotin': ['#market', '§12 Nikotin po puffu'],
   'Biomarkeri / meta': ['#biomarkers', '§04 Biomarkeri kod ljudi'],
   'Biomarkeri / PATH': ['#biomarkers', '§04 Biomarkeri kod ljudi'],
   'Biomarkeri / VOC': ['#biomarkers', '§04 VOC metaboliti — sve 4 grupe'],
@@ -63,15 +63,15 @@ const usage = {
   'Rizik / model': ['#hero', '§01 Uvod i modeli rizika'],
   'EVALI': ['#disease', '§06 EVALI'],
   'Regulativa': ['#enva', '§09 Regulativa (TPD, EU-CEG, FDA)'],
-  'Sinteza': ['#conclusion', '§13 Zaključak'],
-  'Sinteza / HTP': ['#conclusion', '§13 Sinteza HTP'],
-  'Sinteza / klinička': ['#switching', '§08/§13 Klinička sinteza'],
-  'Sinteza / karbonili': ['#emissions', '§07/§13 Sinteza karbonila'],
+  'Sinteza': ['#conclusion', '§15 Zaključak'],
+  'Sinteza / HTP': ['#conclusion', '§15 Sinteza HTP'],
+  'Sinteza / klinička': ['#switching', '§08/§15 Klinička sinteza'],
+  'Sinteza / karbonili': ['#emissions', '§07/§15 Sinteza karbonila'],
   'Sinteza / EU': ['#enva', '§09 EU kontekst'],
   'Sinteza / neuro': ['#disease', '§06 Neurološki ishodi'],
   'Tehnologija / keramika': ['#emissions', '§07 Keramika i zavojnice'],
 };
-const used = s.cat.includes('Wiip') ? ['#wiip', '§10 Wiip: uređaji, tehnologija i dokazi'] : usage[s.cat] || ['#db', '§11 Baza studija'];
+const used = s.cat.includes('Vuse') ? ['#vuse', '§10 Vuse: posebna analiza'] : s.cat.includes('Wiip') ? ['#wiip', '§11 Wiip: uređaji, tehnologija i dokazi'] : usage[s.cat] || ['#db', '§13 Baza studija'];
 ---
 <Base title={`#${s.i} ${s.name} (${s.year}) — Baza studija | Deep Research`} base="../../">
   <section class="reveal on">

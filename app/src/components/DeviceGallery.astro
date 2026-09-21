@@ -1,0 +1,66 @@
+<div id="uredaji"><p class="chart-note">Šest uređaja i cigarete kao referenca · <a href="/#market">usporedba cijena i nikotina ↓</a></p>
+  <div class="grid3 device-cards">
+    <div class="card">
+      <h3 class="device-title">JUUL / JUUL2</h3>
+      <div class="pimg"><button class="pgal-open" data-gal="juul" type="button"><img src="img/juul2.jpg" alt="JUUL2 uređaj i podovi" loading="lazy"><span class="pgal-hint">klik za slike (1)</span></button></div>
+      <p style="font-size:13px">Zatvoreni sustav podova. Za usporedbe ispod koristimo JUUL2: 18 mg/mL i 1,2 mL. Rezultati za američki JUUL 5% označeni su zasebno.</p>
+      <div class="psrc">foto: juul.co.uk / evapo.co.uk</div>
+    </div>
+    <div class="card">
+      <h3 class="device-title">Vuse Pro One (FlavourFlow™)</h3>
+      <div class="pimg"><button class="pgal-open" data-gal="vuse" type="button"><img src="img/vuse-pro-one-hr.jpg" alt="Vuse Pro One uređaji i pod (vuse.com/hr)" loading="lazy"><span class="pgal-hint">klik za slike (4)</span></button></div>
+      <p style="font-size:13px">Keramički FlavourFLOW™ grijač, 2 mL pod, 18 mg/mL nikotinska sol, „do 1000 puffova" po podu, tipka za intenzitet, 530 mAh, metalik završetak. U HR u tri boje i okusima Creamy Tobacco / Berry Blend / Blueberry Ice. </p>
+      <div class="psrc">foto: vuse.com/hr</div>
+    </div>
+    <div class="card">
+      <h3 class="device-title">ENVA Sol</h3>
+      <div class="pimg"><button class="pgal-open" data-gal="enva" type="button"><img src="img/enva-sol.jpg" alt="ENVA Sol uređaj sa stickom" loading="lazy"><span class="pgal-hint">klik za slike (4)</span></button></div>
+      <p style="font-size:13px">Cigaretnog formata; 500 mAh (≈3 sticka/punjenje), child-lock, USB-C, TLA kontrola temperature; tekući ekstrakt duhana u stickovima od 0,8 mL / 18 mg/mL.</p>
+      <div class="psrc">foto: myenva.com</div>
+    </div>
+    <div class="card">
+      <h3 class="device-title">IQOS ILUMA i (grijani duhan)</h3>
+      <div class="pimg"><button class="pgal-open" data-gal="iqos" type="button"><img src="img/iqos-iluma-i-one.jpg" alt="IQOS ILUMA i ONE uređaj" loading="lazy"><span class="pgal-hint">klik za slike (4)</span></button></div>
+      <p style="font-size:13px">Nije e-cigareta: indukcijom grije <strong>pravi duhan</strong> (TEREA stickovi) na ~350 °C, bez izgaranja. ~14 puffova / 6 min po sticku, 20 korištenja po punjenju.</p>
+      <div class="psrc">foto: iqos.com</div>
+    </div>
+    <div class="card">
+      <h3 class="device-title">Wiip Magnetic II</h3>
+      <div class="pimg"><button class="pgal-open" data-gal="wiipMagnetic" type="button"><img src="/img/wiip/magnetic-ii.png" alt="Wiip Magnetic II Cosmic Black i pakiranje" loading="lazy"><span class="pgal-hint">Otvori sliku</span></button></div>
+      <p style="font-size:13px"><strong>14,99 € · 400 mAh · 3,7 V · USB-C.</strong> Uređaj bez poda. Tri načina rada: Chill, Daily i Boost, s memorijom odabira.</p>
+      <p class="psrc">Fotografija i specifikacije: Wiip.hr · <a href="/studije/144/">lokalni prikaz izvora</a> · <a href="/studije/143/">tehnologija</a></p>
+    </div>
+    <div class="card">
+      <h3 class="device-title">Wiip X Pro</h3>
+      <div class="pimg"><button class="pgal-open" data-gal="wiipXPro" type="button"><img src="/img/wiip/x-pro.png" alt="Wiip X Pro Pink i pakiranje" loading="lazy"><span class="pgal-hint">Otvori sliku</span></button></div>
+      <p style="font-size:13px"><strong>9,99 € · USB-C.</strong> Cijena prikazane Pink ponude. Deklarirano punjenje do 30 minuta; kapacitet baterije nije naveden u provjerenoj specifikaciji.</p>
+      <p class="psrc">Fotografija i specifikacije: Wiip.hr · <a href="/studije/145/">lokalni prikaz izvora</a> · <a href="/studije/146/">tehnologija</a></p>
+    </div>
+    <div class="card">
+      <h3 class="device-title">Referenca: cigarete</h3>
+      <div class="pimg"><button class="pgal-open" data-gal="cig" type="button"><img src="img/marlboro-karton.jpg" alt="Marlboro karton cigareta" loading="lazy"><span class="pgal-hint">klik za slike (1)</span></button></div>
+      <p style="font-size:13px">Marlboro Red/Gold: 5,10 € po pakiranju od 20 u Hrvatskoj (cjenik Carinske uprave) — mjera za sve usporedbe cijene po puffu i štete.</p>
+      <div class="psrc">cjenik carine, rujan 2026</div>
+    </div>
+  </div>
+
+  <div id="pgal" aria-hidden="true">
+    <div class="pg-card">
+      <button id="pgalX" aria-label="Zatvori" type="button">×</button>
+      <div class="pg-title" id="pgalTitle"></div>
+      <div class="pg-stage"><img id="pgalImg" src="" alt=""><button class="pg-nav pg-prev" id="pgalPrev" aria-label="Prethodna" type="button">‹</button><button class="pg-nav pg-next" id="pgalNext" aria-label="Sljedeća" type="button">›</button></div>
+      <div class="pg-cap" id="pgalCap"></div>
+      <div class="pg-count" id="pgalCount"></div>
+    </div>
+  </div>
+
+</div>
+<style>
+.device-cards {grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+.device-cards .card {display:flex;flex-direction:column;min-width:0}
+.device-cards .device-title {font-size:16px;font-family:var(--sans);line-height:1.4;font-weight:600;min-height:2.8em;margin:0 0 1rem;color:var(--ink)}
+.device-cards .pimg {height:240px;min-height:240px;flex:none}
+.device-cards .pgal-open {height:100%;display:flex;align-items:center;justify-content:center}
+.device-cards .pimg img {width:100%;height:100%;max-height:100%;object-fit:contain}
+.device-cards .psrc {margin-top:auto;padding-top:1rem}
+</style>
