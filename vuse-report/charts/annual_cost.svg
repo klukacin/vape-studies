@@ -1,0 +1,139 @@
+<svg width="980" height="560" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 980 560">
+<rect width="980" height="560" x="0" y="0" fill="#fff"></rect>
+<path d="M279.5 90L279.5 513" fill="none" pointer-events="visible" stroke="#e5e9ee" class="zr3-cls-30"></path>
+<path d="M378.5 90L378.5 513" fill="none" pointer-events="visible" stroke="#e5e9ee" class="zr3-cls-30"></path>
+<path d="M476.5 90L476.5 513" fill="none" pointer-events="visible" stroke="#e5e9ee" class="zr3-cls-30"></path>
+<path d="M574.5 90L574.5 513" fill="none" pointer-events="visible" stroke="#e5e9ee" class="zr3-cls-30"></path>
+<path d="M673.5 90L673.5 513" fill="none" pointer-events="visible" stroke="#e5e9ee" class="zr3-cls-30"></path>
+<path d="M771.5 90L771.5 513" fill="none" pointer-events="visible" stroke="#e5e9ee" class="zr3-cls-30"></path>
+<path d="M870.5 90L870.5 513" fill="none" pointer-events="visible" stroke="#e5e9ee" class="zr3-cls-30"></path>
+<path d="M279.5 513L279.5 90" fill="none" pointer-events="visible" stroke="#54555a" stroke-linecap="round" class="zr3-cls-30"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;" xml:space="preserve" y="6" transform="translate(574.6875 543)" fill="#1f3b57">USD per year</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12.5px;font-family:Helvetica, Arial, sans-serif;" xml:space="preserve" transform="translate(271.375 482.7857)" fill="#1f3b57">Little cigars/cigarillos, 2/day ($1.50 ea)</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12.5px;font-family:Helvetica, Arial, sans-serif;" xml:space="preserve" transform="translate(271.375 422.3571)" fill="#1f3b57">Vuse Alto, 3 pods/week</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12.5px;font-family:Helvetica, Arial, sans-serif;" xml:space="preserve" transform="translate(271.375 361.9286)" fill="#1f3b57">Cigarettes, 1 pack/day — North Carolina ($7.95)</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12.5px;font-family:Helvetica, Arial, sans-serif;" xml:space="preserve" transform="translate(271.375 301.5)" fill="#1f3b57">Vuse Alto, 1 pod/day</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12.5px;font-family:Helvetica, Arial, sans-serif;" xml:space="preserve" transform="translate(271.375 241.0714)" fill="#1f3b57">Cigarettes, 1 pack/day — national avg ($10.34)</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12.5px;font-family:Helvetica, Arial, sans-serif;" xml:space="preserve" transform="translate(271.375 180.6429)" fill="#1f3b57">Premium cigar, 1/day ($12)</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12.5px;font-family:Helvetica, Arial, sans-serif;" xml:space="preserve" transform="translate(271.375 120.2143)" fill="#1f3b57">Cigarettes, 1 pack/day — New York ($14.85)</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;" y="6" transform="translate(279.375 521)" fill="#54555a">$0</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;" y="6" transform="translate(377.8125 521)" fill="#54555a">$1,000</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;" y="6" transform="translate(476.25 521)" fill="#54555a">$2,000</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;" y="6" transform="translate(574.6875 521)" fill="#54555a">$3,000</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;" y="6" transform="translate(673.125 521)" fill="#54555a">$4,000</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;" y="6" transform="translate(771.5625 521)" fill="#54555a">$5,000</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;" y="6" transform="translate(870 521)" fill="#54555a">$6,000</text>
+<path d="M279.4 470.8l107.8 0l0 24l-107.8 0Z" fill="#8c5a3b" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" class="zr3-cls-31 zr3-cls-32"></path>
+<path d="M279.4 410.4l142 0l0 24l-142 0Z" fill="#2a9d8f" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" class="zr3-cls-33 zr3-cls-34"></path>
+<path d="M279.4 349.9l285.7 0l0 24l-285.7 0Z" fill="#c1554e" ecmeta_series_index="0" ecmeta_data_index="2" ecmeta_ssr_type="chart" class="zr3-cls-35 zr3-cls-36"></path>
+<path d="M279.4 289.5l332.3 0l0 24l-332.3 0Z" fill="#2a9d8f" ecmeta_series_index="0" ecmeta_data_index="3" ecmeta_ssr_type="chart" class="zr3-cls-37 zr3-cls-34"></path>
+<path d="M279.4 229.1l371.5 0l0 24l-371.5 0Z" fill="#c1554e" ecmeta_series_index="0" ecmeta_data_index="4" ecmeta_ssr_type="chart" class="zr3-cls-38 zr3-cls-36"></path>
+<path d="M279.4 168.6l431.2 0l0 24l-431.2 0Z" fill="#8c5a3b" ecmeta_series_index="0" ecmeta_data_index="5" ecmeta_ssr_type="chart" class="zr3-cls-39 zr3-cls-32"></path>
+<path d="M279.4 108.2l533.5 0l0 24l-533.5 0Z" fill="#c1554e" ecmeta_series_index="0" ecmeta_data_index="6" ecmeta_ssr_type="chart" class="zr3-cls-40 zr3-cls-36"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;font-weight:bold;" transform="translate(392.1641 482.7857)" fill="#1f3b57">$1,095</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;font-weight:bold;" transform="translate(426.4203 422.3571)" fill="#1f3b57">$1,443</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;font-weight:bold;" transform="translate(570.0406 361.9286)" fill="#1f3b57">$2,902</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;font-weight:bold;" transform="translate(616.7 301.5)" fill="#1f3b57">$3,376</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;font-weight:bold;" transform="translate(655.8781 241.0714)" fill="#1f3b57">$3,774</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;font-weight:bold;" transform="translate(715.5313 180.6429)" fill="#1f3b57">$4,380</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;font-weight:bold;" transform="translate(817.9063 120.2143)" fill="#1f3b57">$5,420</text>
+<path d="M-330.4 -5l660.8 0l0 52l-660.8 0Z" transform="translate(490 20)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#3c3c41" stroke-width="0" class="zr3-cls-30"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:20px;font-family:Helvetica, Arial, sans-serif;font-weight:bold;" xml:space="preserve" y="10" transform="translate(490 20)" fill="#1f3b57">Estimated Annual Cost by Usage Scenario (2025–26 prices)</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;" xml:space="preserve" y="36" transform="translate(490 20)" fill="#8d99ae">Cigarette pack prices: Tobaccoinsider 2026 state averages | Vuse pods: ~$9.25/pod (2-pack $18.50) | Cigars: typical retail</text>
+<style ><![CDATA[
+.zr3-cls-30:hover {
+pointer-events:none;
+}
+.zr3-cls-31 {
+animation:zr3-ani-0 1s cubic-bezier(0.65,0,0.35,1) both;
+}
+.zr3-cls-32:hover {
+cursor:pointer;
+fill:rgba(154,99,64,1);
+}
+.zr3-cls-33 {
+animation:zr3-ani-1 1s cubic-bezier(0.65,0,0.35,1) both;
+}
+.zr3-cls-34:hover {
+cursor:pointer;
+fill:rgba(46,172,157,1);
+}
+.zr3-cls-35 {
+animation:zr3-ani-2 1s cubic-bezier(0.65,0,0.35,1) both;
+}
+.zr3-cls-36:hover {
+cursor:pointer;
+fill:rgba(212,93,85,1);
+}
+.zr3-cls-37 {
+animation:zr3-ani-3 1s cubic-bezier(0.65,0,0.35,1) both;
+}
+.zr3-cls-38 {
+animation:zr3-ani-4 1s cubic-bezier(0.65,0,0.35,1) both;
+}
+.zr3-cls-39 {
+animation:zr3-ani-5 1s cubic-bezier(0.65,0,0.35,1) both;
+}
+.zr3-cls-40 {
+animation:zr3-ani-6 1s cubic-bezier(0.65,0,0.35,1) both;
+}
+@keyframes zr3-ani-0 {
+0% {
+d:path("M279.4 470.8l0 0l0 24l0 0Z");
+}
+100% {
+d:path("M279.4 470.8l107.8 0l0 24l-107.8 0Z");
+}
+}
+@keyframes zr3-ani-1 {
+0% {
+d:path("M279.4 410.4l0 0l0 24l0 0Z");
+}
+100% {
+d:path("M279.4 410.4l142 0l0 24l-142 0Z");
+}
+}
+@keyframes zr3-ani-2 {
+0% {
+d:path("M279.4 349.9l0 0l0 24l0 0Z");
+}
+100% {
+d:path("M279.4 349.9l285.7 0l0 24l-285.7 0Z");
+}
+}
+@keyframes zr3-ani-3 {
+0% {
+d:path("M279.4 289.5l0 0l0 24l0 0Z");
+}
+100% {
+d:path("M279.4 289.5l332.3 0l0 24l-332.3 0Z");
+}
+}
+@keyframes zr3-ani-4 {
+0% {
+d:path("M279.4 229.1l0 0l0 24l0 0Z");
+}
+100% {
+d:path("M279.4 229.1l371.5 0l0 24l-371.5 0Z");
+}
+}
+@keyframes zr3-ani-5 {
+0% {
+d:path("M279.4 168.6l0 0l0 24l0 0Z");
+}
+100% {
+d:path("M279.4 168.6l431.2 0l0 24l-431.2 0Z");
+}
+}
+@keyframes zr3-ani-6 {
+0% {
+d:path("M279.4 108.2l0 0l0 24l0 0Z");
+}
+100% {
+d:path("M279.4 108.2l533.5 0l0 24l-533.5 0Z");
+}
+}
+]]>
+
+</style>
+</svg>

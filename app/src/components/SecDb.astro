@@ -1,0 +1,17 @@
+<section id="db" class="reveal">
+  <div class="eyebrow">Transparentnost</div>
+  <h2><span class="num">11</span>Baza studija</h2>
+  <p>Sve studije koje stoje iza brojki na ovoj stranici. Filtriraj po kategoriji ili traži po autoru/markeru. Studije označene ♦ mjerile su iste markere i kod nepušača (referentna grupa). <strong>Klik na naziv studije otvara njezin zapis</strong> s bibliografskim podacima i linkom na izvor — ili pregledaj <a href="studije/">cijelu bazu na zasebnoj stranici ↗</a>.</p>
+  <div id="dbControls">
+    <input type="text" id="dbSearch" placeholder="traži: autor, marker, uređaj…">
+    <select id="dbCat"><option value="">sve kategorije</option></select>
+    <select id="dbNon"><option value="">sve studije</option><option value="1">♦ s kontrolom nepušača</option></select>
+  </div>
+  <div id="studyCount"></div>
+  <div style="overflow-x:auto">
+  <table class="data" id="studyTable">
+    <thead><tr><th>#</th><th>Godina</th><th>Studija / autori</th><th>Kategorija</th><th>Dizajn · N</th><th>Ključni nalaz</th></tr></thead>
+    <tbody id="studyBody"></tbody>
+  </table>
+  </div>
+</section>

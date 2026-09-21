@@ -1,0 +1,44 @@
+<section id="enva" class="reveal">
+  <div class="eyebrow">Fokus analize</div>
+  <h2><span class="num">09</span>ENVA Sol — ima li najviše štetnih tvari zbog temperature?</h2>
+  <p>Kratki odgovor: <strong>nitko ne zna, jer nijedna neovisna studija nije mjerila ENVA-in aerosol ni biomarkere njenih korisnika</strong>. Ali literatura daje dva mehanizma po kojima bi ENVA mogla biti najopterećenija od trojice — i jedan po kojem ne mora biti.</p>
+
+  <div class="grid2">
+    <div class="card">
+      <div class="k">Rizik 1 · temperatura</div>
+      <p style="font-size:13.5px">Energetska procjena (500 mAh, ~300 puffova/punjenje, 2 s puff) daje ~9–14 W — toplije od Vuse Pro One (~6 W) i bliže JUUL-ovom režimu. TLA sustav navodno drži temperaturu kontroliranom; ali bez objavljenih °C i bez neovisnih mjerenja, „kontrola temperature" je marketinška tvrdnja. Karbonilna krivulja iz §02 kaže da je svaki vat u ovom rasponu još relativno bezazlen — prava opasnost počinje tek kad fitilj presuši.</p>
+    </div>
+    <div class="card">
+      <div class="k">Rizik 2 · ekstrakt duhana</div>
+      <p style="font-size:13.5px">Ovo je važniji mehanizam. Jin i sur. (2022) pokazali su da e-tekućine s <strong>nitritnim onečišćenjem i manjim alkaloidima duhana stvaraju TSNA (NNK, NNN) tijekom same aerosolizacije</strong> — NNK 12,0 ng/g u aerosolu iz tekućine sa samo 2 µg/g nitrita, gdje je tekućina imala 0,64 ng/g. Farsalinos je obrnuto pokazao: čista tekućina bez nitrita → TSNA u aerosolu nedetektabilni. Prirodni ekstrakt duhana po definiciji nosi duhanske alkaloide i potencijalno nitrate/nitrite — upravo prekursore koji u syntetičkim tekućinama ne postoje.</p>
+    </div>
+  </div>
+
+  <div id="chartENVA" class="chart"></div>
+  <p class="chart-note">NNK: tekućina vs aerosol pri različitim razinama nitrita (Jin i sur. 2022) — demonstrira stvaranje TSNA tijekom aerosolizacije iz duhanskih prekursora.</p>
+
+  <table class="data">
+    <tr><th>Dimenzija</th><th>ENVA Sol</th><th>Vuse Pro One</th><th>JUUL</th></tr>
+    <tr><td>Neovisne studije proizvoda</td><td><span class="n">0</span> (stanje 2026.)</td><td>Više (BAT + akademske; ePen/ePod linija)</td><td>Više (kliničke + akademske)</td></tr>
+    <tr><td>Temperaturni režim (procjena)</td><td>~9–14 W, vršno ~160–200 °C (TLA)</td><td>~6 W, vršno ~140–180 °C</td><td>Element 200–250 °C, prosjek atomizera &lt;300 °C, aktivna regulacija</td></tr>
+    <tr><td>TSNA rizik iz formulacije</td><td><span class="n">Povišen</span> — ekstrakt duhana = alkaloidi + potencijalni nitriti</td><td>Nizak — pročišćeni nikotin + arome</td><td>Nizak — pročišćeni nikotin, benzoeva kiselina</td></tr>
+    <tr><td>Karbonilni rizik</td><td>Umjeren (topliji režim, bez javnih mjerenja)</td><td>Nizak (najhladniji)</td><td>Nizak-mjeren (najniže emisije u Son 2020)</td></tr>
+    <tr><td>Grijaći element (javno poznato)</td><td><strong>Nepoznato</strong> — proizvođač ne deklarira tip</td><td><strong>Potvrđeno: keramički grijač (FlavourFlow™)</strong> — tekućina kroz keramiku, bez izravnog kontakta sa žicom</td><td>Deklarirano: nichrome grijač + inox vod aerosola</td></tr>
+    <tr><td>Metalni potpis aerosola</td><td>Nema mjerenja (ekstrakt duhana može dodati Cd/Pb/As iz tla)</td><td>Bez direktnih mjerenja; po analogiji s keramikom: teški metali ~razina urbanog zraka, glavni potpis silikati</td><td>Ni/Cr izmjereni, među najnižima apsolutno (mala snaga)</td></tr>
+    <tr><td>Neurotoksični rizik metala (mozak)</td><td>Nepoznat</td><td>Nizak (keramika; ali silikati neistraženi)</td><td>Umjeren (Ni/Cr iz žice, male apsolutne doze)</td></tr>
+    <tr><td>Regulatorna provjera</td><td>EU TPD notifikacija — EC-ID 02828-25-90142 (preko Nizozemske); bez FDA; dosje nije javno</td><td>FDA PMTA odobrenje (SAD)</td><td>FDA PMTA odobrenje 2025. (SAD)</td></tr>
+  </table>
+
+  <h3>ENVA-ina „dozvola": što se zapravo može provjeriti — a što ne</h3>
+  <p>ENVA Sol se u EU prodaje na temelju <strong>TPD notifikacije</strong> (Duhanjska direktiva 2014/40/EU). Proizvođač navodi <strong>EC-ID 02828-25-90142</strong>, a notifikacija je za Europu podnesena preko <strong>Nizozemske</strong> (uvoznički kanal). Ključno je razumjeti što to jest — i što nije. TPD je <em>notifikacijski</em>, ne odobravajući sustav: proizvođač ili uvoznik najmanje 6 mjeseci prije stavljanja na tržište podnosi dosje kroz <strong>EU Common Entry Gate (EU-CEG)</strong> — sastav tekućine, emisije, toksikološke podatke, količinu i isporuku nikotina. Nadležno tijelo dosje <em>prima i registrira</em>; ne „odobrava" ga niti samo mjeri proizvod. To je fundamentalno drugačije od američkog FDA PMTA sustava gdje agencija stvarno ocjenjuje dokaze prije odobrenja.</p>
+  <p><strong>Mogu li se „ti papiri" naći u Nizozemskoj?</strong> Praktično ne — i to je sustavno, ne slučajno. EU-CEG nema javno pretraživu bazu u koju bi potrošač upisao EC-ID i pročitao dosje: podaci o emisijama i toksikologiji dostupni su samo regulatorima država članica i Komisije. Nizozemska (RIVM/NVWA) također ne objavljuje registar notificiranih proizvoda s pripadajućom dokumentacijom. Javno se može provjeriti samo: (1) nosi li pakiranje obavezna TPD upozorenja i deklaraciju nikotina (ENVA Sol stickovi: „18 mg nikotinska sol" — deklarirano), (2) je li proizvod na RAPEX listi opasnih proizvoda (nije), i (3) neizravno — prisustvo u legalnoj maloprodaji (parilica.hr, Wolt HR) sugerira da je notifikacija formalno uredna, jer trgovci riskiraju kazne prodajom nenotificiranih proizvoda. Europski kontakti tvrtke vidljivi su preko izlagačkog profila na sajmu InterTabac (Eason Liu, CEO; Jason Tian, Head of Europe) i službenog myenva.com — ali ni na jednom javnom kanalu nema objavljenih laboratorijskih izvještaja o emisijama.</p>
+  <div class="callout"><strong>U jednoj rečenici:</strong> „EU dozvola iz Nizozemske" dokazuje da je dosje <em>podnesen</em> i da proizvod smije legalno biti na tržištu — ne da je itko neovisan izmjerio što ENVA Sol stvarno emitira. Do neovisnih mjerenja, ENVA-ina TPD notifikacija je dokaz legalnosti, ne dokaz sigurnosti.</div>
+
+  <div class="pimg" style="background:#fff;margin-top:1.2em"><img src="img/enva-znacajke.jpg" alt="ENVA Sol — značajke prema proizvođaču" loading="lazy" style="max-height:340px"></div>
+  <p class="chart-note">ENVA Sol prema proizvođaču: „tekući duhan", 1 pakiranje stickova ≈ 20 cigareta, do 3 sticka po punjenju, meki filter-uložak. Izvor: myenva.com — marketinški materijal, ne neovisno mjerenje.</p>
+
+  <div class="callout">
+    <h4>Odgovor na tvoju hipotezu</h4>
+    <p>Temperatura sama po sebi (<em>ako</em> TLA radi kako je rečeno) nije dovoljna da ENVA bude najgora — 160–200 °C je i dalje ispod praga razgradnje PG/VG. <strong>Pravi razlog za oprez je sirovina:</strong> mehanizam Jin (2022) pokazuje da duhanski ekstrakt u prisustvu nitrita stvara karcinogene TSNA već pri temperaturama aerosolizacije, ne izgaranja. Dok ENVA ne objavi neovisna mjerenja NNK/NNN u aerosolu i NNAL u korisnika, razumna pretpostavka je: <strong>ENVA Sol vjerojatno nosi više TSNA od Vuse-a i JUUL-a, ali sve tri su redove veličine ispod cigareta i cigara</strong> — gdje NNAL dnevnih korisnika iznosi 30–45x više od bilo kojeg vapera.</p>
+  </div>
+</section>

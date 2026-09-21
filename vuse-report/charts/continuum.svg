@@ -1,0 +1,52 @@
+<svg width="980" height="380" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 980 380">
+<rect width="980" height="380" x="0" y="0" fill="#fff"></rect>
+<text dominant-baseline="central" text-anchor="start" style="font: bold 14px Helvetica, Arial, sans-serif" xml:space="preserve" y="7" transform="translate(60 112)" fill="#2a9d8f">Lower risk →</text>
+<text dominant-baseline="central" text-anchor="start" style="font: bold 14px Helvetica, Arial, sans-serif" xml:space="preserve" y="7" transform="translate(835.16 112)" fill="#c1554e">→ Higher risk</text>
+<path d="M53.2 172.2L206.8 172.2A6 6 0 0 1 212.8 178.2L212.8 204.2A6 6 0 0 1 206.8 210.2L53.2 210.2A6 6 0 0 1 47.2 204.2L47.2 178.2A6 6 0 0 1 53.2 172.2Z" fill="#2a9d8f" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" class="zr2-cls-15"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font: 13px Helvetica, Arial, sans-serif" xml:space="preserve" x="130" y="232.7" fill="#1f3b57">Nicotine replacement</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 13px Helvetica, Arial, sans-serif" xml:space="preserve" x="130" y="245.7" fill="#1f3b57">therapy (patch, gum)</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: bold 13px Helvetica, Arial, sans-serif" xml:space="preserve" x="130" y="202.7" fill="#fff">LOWEST RISK</text>
+<path d="M233.2 172.2L386.8 172.2A6 6 0 0 1 392.8 178.2L392.8 204.2A6 6 0 0 1 386.8 210.2L233.2 210.2A6 6 0 0 1 227.2 204.2L227.2 178.2A6 6 0 0 1 233.2 172.2Z" fill="#5fb8a8" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" class="zr2-cls-16"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font: 13px Helvetica, Arial, sans-serif" xml:space="preserve" x="310" y="232.7" fill="#1f3b57">E-cigarettes / vapes</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 13px Helvetica, Arial, sans-serif" xml:space="preserve" x="310" y="245.7" fill="#1f3b57">(e.g., Vuse)</text>
+<path d="M413.2 172.2L566.8 172.2A6 6 0 0 1 572.8 178.2L572.8 204.2A6 6 0 0 1 566.8 210.2L413.2 210.2A6 6 0 0 1 407.2 204.2L407.2 178.2A6 6 0 0 1 413.2 172.2Z" fill="#e9c46a" ecmeta_series_index="0" ecmeta_data_index="2" ecmeta_ssr_type="chart" class="zr2-cls-17"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font: 13px Helvetica, Arial, sans-serif" xml:space="preserve" x="490" y="232.7" fill="#1f3b57">Heated tobacco</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 13px Helvetica, Arial, sans-serif" xml:space="preserve" x="490" y="245.7" fill="#1f3b57">(e.g., IQOS, glo)</text>
+<path d="M593.2 172.2L746.8 172.2A6 6 0 0 1 752.8 178.2L752.8 204.2A6 6 0 0 1 746.8 210.2L593.2 210.2A6 6 0 0 1 587.2 204.2L587.2 178.2A6 6 0 0 1 593.2 172.2Z" fill="#8c5a3b" ecmeta_series_index="0" ecmeta_data_index="3" ecmeta_ssr_type="chart" class="zr2-cls-18"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font: 13px Helvetica, Arial, sans-serif" x="670" y="232.7" fill="#1f3b57">Cigars</text>
+<path d="M773.2 172.2L926.8 172.2A6 6 0 0 1 932.8 178.2L932.8 204.2A6 6 0 0 1 926.8 210.2L773.2 210.2A6 6 0 0 1 767.2 204.2L767.2 178.2A6 6 0 0 1 773.2 172.2Z" fill="#c1554e" ecmeta_series_index="0" ecmeta_data_index="4" ecmeta_ssr_type="chart" class="zr2-cls-19"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font: 13px Helvetica, Arial, sans-serif" x="850" y="232.7" fill="#1f3b57">Cigarettes</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: bold 13px Helvetica, Arial, sans-serif" xml:space="preserve" x="850" y="202.7" fill="#fff">HIGHEST RISK</text>
+<path d="M-304 -5l608 0l0 64l-608 0Z" transform="translate(490 20)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#3c3c41" stroke-width="0" class="zr2-cls-20"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:20px;font-family:Helvetica, Arial, sans-serif;font-weight:bold;" xml:space="preserve" y="10" transform="translate(490 20)" fill="#1f3b57">The Continuum of Risk Across Nicotine Products (FDA Framework)</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;" xml:space="preserve" y="36" transform="translate(490 20)" fill="#8d99ae">Conceptual ordering per FDA’s “continuum of risk” — combusted products are the most harmful;</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Helvetica, Arial, sans-serif;" xml:space="preserve" y="48" transform="translate(490 20)" fill="#8d99ae">non-combusted products generally carry lower risk. No tobacco product is safe.</text>
+<style ><![CDATA[
+.zr2-cls-15:hover {
+cursor:pointer;
+fill:rgba(46,172,157,1);
+}
+.zr2-cls-16:hover {
+cursor:pointer;
+fill:rgba(104,202,184,1);
+}
+.zr2-cls-17:hover {
+cursor:pointer;
+fill:rgba(255,215,116,1);
+}
+.zr2-cls-18:hover {
+cursor:pointer;
+fill:rgba(154,99,64,1);
+}
+.zr2-cls-19:hover {
+cursor:pointer;
+fill:rgba(212,93,85,1);
+}
+.zr2-cls-20:hover {
+pointer-events:none;
+}
+
+]]>
+
+</style>
+</svg>

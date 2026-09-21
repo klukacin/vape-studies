@@ -1,0 +1,117 @@
+---
+import Base from '../../layouts/Base.astro';
+import STUDIES_DB from '../../data/studies.js';
+
+export function getStaticPaths() {
+  return STUDIES_DB.map(s => ({
+    params: { id: String(s.i) },
+    props: { s },
+  }));
+}
+
+const { s } = Astro.props;
+const prev = s.i > 1 ? s.i - 1 : null;
+const next = s.i < STUDIES_DB.length ? s.i + 1 : null;
+
+// gdje se studija koristi na glavnoj stranici — mapiranje po kategoriji
+const usage = {
+  'Emisije / karbonili': ['#emissions', '§07 Emisije: karbonili i snaga'],
+  'Emisije / temperatura': ['#temp', '§02 Temperatura: fizika izgaranja'],
+  'Emisije / metali': ['#emissions', '§07 Emisije: metali iz zavojnice'],
+  'Emisije / TSNA': ['#emissions', '§07 Emisije'],
+  'Emisije / arome': ['#emissions', '§07 Emisije'],
+  'Emisije / keramika': ['#emissions', '§07 Keramika i zavojnice'],
+  'Emisije / metodologija': ['#emissions', '§07 Emisije'],
+  'Emisije / Vuse': ['#emissions', '§07 Emisije · #market §10'],
+  'Emisije / usporedba uređaja': ['#emissions', '§07 Emisije'],
+  'Emisije / snaga': ['#emissions', '§07 Emisije i snaga'],
+  'Emisije / nikotin': ['#market', '§10 Nikotin po puffu'],
+  'Biomarkeri / meta': ['#biomarkers', '§04 Biomarkeri kod ljudi'],
+  'Biomarkeri / PATH': ['#biomarkers', '§04 Biomarkeri kod ljudi'],
+  'Biomarkeri / VOC': ['#biomarkers', '§04 VOC metaboliti — sve 4 grupe'],
+  'Biomarkeri / kotinin': ['#biomarkers', '§04 Kotinin'],
+  'Biomarkeri / TSNA': ['#biomarkers', '§04 NNAL'],
+  'Biomarkeri / TSNA+VOC': ['#biomarkers', '§04 Biomarkeri'],
+  'Biomarkeri / adolescencija': ['#biomarkers', '§04 VOC adolescenti'],
+  'Biomarkeri / metali': ['#biomarkers', '§04 Krvni i urinski metali'],
+  'Biomarkeri / cigare': ['#markers', '§03 Opći markeri · §04 NNAL cigare'],
+  'Biomarkeri / premium cigare': ['#markers', '§03/§04 cigare'],
+  'Biomarkeri / pasivna': ['#biomarkers', '§04 Pasivno izlaganje'],
+  'Biomarkeri / upala': ['#markers', '§03 Opći markeri upale'],
+  'Biomarkeri / mozak': ['#biomarkers', '§04 Biomarkeri mozga'],
+  'Klinička / switching': ['#switching', '§08 Kliničke switching studije'],
+  'Klinička / prestanak': ['#switching', '§08 Prestanak pušenja'],
+  'Klinička / HTP': ['#switching', '§08 HTP / IQOS studije'],
+  'Klinička / IQOS': ['#switching', '§08 IQOS kliničke studije'],
+  'Klinička / dugoročna': ['#switching', '§08 Dugoročne studije'],
+  'Klinička / presječna': ['#biomarkers', '§04 Biomarkeri'],
+  'Kardio / akutno': ['#cardio', '§05 Srce i krvne žile — akutno'],
+  'Kardio / kronično': ['#cardio', '§05 Kardiovaskularno — kronično'],
+  'Kardio / djeca pasivno': ['#cardio', '§05 Pasivno izlaganje djece'],
+  'Kardio / HTP': ['#cardio', '§05 HTP i kardiovaskularno'],
+  'Ishodi / CVD': ['#disease', '§06 Ishodi: kardiovaskularne bolesti'],
+  'Ishodi / MI': ['#disease', '§06 Infarkt miokarda'],
+  'Ishodi / stroke': ['#disease', '§06 Moždani udar'],
+  'Ishodi / KOPB': ['#disease', '§06 KOPB'],
+  'Ishodi / respiratorno': ['#disease', '§06 Respiratorni ishodi'],
+  'Ishodi / cigare': ['#disease', '§06 Cigare — ishodi'],
+  'Ishodi / cigare smrtnost': ['#disease', '§06 Cigare — smrtnost'],
+  'Ishodi / meta': ['#disease', '§06 Meta-analize ishoda'],
+  'Mehanizam / DNA': ['#disease', '§06 Mehanizmi oštećenja DNA'],
+  'Mehanizam / rak': ['#disease', '§06 Mehanizmi raka'],
+  'Mehanizam / rasprava': ['#disease', '§06 Znanstvena rasprava'],
+  'Rizik / model': ['#hero', '§01 Uvod i modeli rizika'],
+  'EVALI': ['#disease', '§06 EVALI'],
+  'Regulativa': ['#enva', '§09 Regulativa (TPD, EU-CEG, FDA)'],
+  'Sinteza': ['#conclusion', '§13 Zaključak'],
+  'Sinteza / HTP': ['#conclusion', '§13 Sinteza HTP'],
+  'Sinteza / klinička': ['#switching', '§08/§13 Klinička sinteza'],
+  'Sinteza / karbonili': ['#emissions', '§07/§13 Sinteza karbonila'],
+  'Sinteza / EU': ['#enva', '§09 EU kontekst'],
+  'Sinteza / neuro': ['#disease', '§06 Neurološki ishodi'],
+  'Tehnologija / keramika': ['#emissions', '§07 Keramika i zavojnice'],
+};
+const used = usage[s.cat] || ['#db', '§11 Baza studija'];
+---
+<Base title={`#${s.i} ${s.name} (${s.year}) — Baza studija | Deep Research`} base="../../">
+  <section class="reveal on">
+    <div class="eyebrow">Zapis #{s.i} / {STUDIES_DB.length} · <a href="../" style="border:none">← svi zapisi</a></div>
+    <h2><span class="num">{String(s.i).padStart(2,'0')}</span>{s.non == 1 ? '♦ ' : ''}{s.name} ({s.year})</h2>
+
+    {s.title && <h3 style="font-weight:500">{s.title}</h3>}
+
+    <div class="grid3">
+      <div class="card"><div class="k">Kategorija</div><p style="font-size:14px">{s.cat}</p></div>
+      <div class="card"><div class="k">Dizajn / izvor</div><p style="font-size:14px">{s.design}</p></div>
+      <div class="card"><div class="k">Kontrola nepušača</div><p style="font-size:14px">{s.non == 1 ? '♦ Da — usporedba s nepušačima' : 'Ne / nije primjenjivo'}</p></div>
+    </div>
+
+    <h3>Ključni nalaz</h3>
+    <p>{s.finding}</p>
+
+    {s.journal && (
+      <h3>Bibliografski podaci</h3>
+      <table class="data">
+        <tr><th>Časopis</th><td>{s.journal}</td></tr>
+        {s.authors && <tr><th>Autori</th><td>{s.authors}</td></tr>}
+        {s.pubdate && <tr><th>Objavljeno</th><td>{s.pubdate}</td></tr>}
+        {s.doi && <tr><th>DOI</th><td>{s.doi}</td></tr>}
+        {s.pmid && <tr><th>PMID</th><td>{s.pmid}</td></tr>}
+      </table>
+    )}
+
+    <div class="callout">
+      <h4>Izvor</h4>
+      <p><a href={s.url} target="_blank" rel="noopener">{s.srclabel} →</a></p>
+      {s.scholar == 1 && <p style="font-size:13px;color:var(--ink2)">Za ovaj zapis link otvara Google Scholar pretragu po autoru i godini — prvi rezultati vode na izvorni rad i časopis. Provjerene PubMed poveznice postoje za 42 ključne studije u bazi.</p>}
+    </div>
+
+    <p class="chart-note">Gdje se koristi na stranici: <a href="../../{used[0]}">{used[1]}</a>. Zapisi označeni ♦ imaju kontrolnu grupu nepušača — najjači tip dokaza za usporedbe grupa.</p>
+
+    <div style="display:flex;justify-content:space-between;margin-top:2em;gap:1em;flex-wrap:wrap">
+      {prev ? <a href={`../${prev}/`}>← #{prev}</a> : <span></span>}
+      <a href="../">svi zapisi</a>
+      {next ? <a href={`../${next}/`}>#{next} →</a> : <span></span>}
+    </div>
+  </section>
+</Base>
