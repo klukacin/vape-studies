@@ -2222,6 +2222,43 @@ const STUDIES_DB = [
     "text": "Deklaracija proizvođača, ne neovisna studija. Ne prenosi se automatski na druge modele ili sva tržišta."
    }
   ]
+ },
+ {
+  "i": 160,
+  "name": "Benowitz, Hukkanen i Jacob",
+  "year": 2009,
+  "cat": "Emisije / nikotin",
+  "design": "Pregled farmakologije",
+  "non": 0,
+  "title": "Nicotine Chemistry, Metabolism, Kinetics and Biomarkers",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2953858/",
+  "srclabel": "PMC · izvorni rad",
+  "pmid": "19184645",
+  "finding": "Duhan cigareta sadrži oko 1,5% nikotina po masi (15 mg/g); prosječna cigareta 10–14 mg, uz prosječno 1–1,5 mg sistemski apsorbiranog nikotina.",
+  "sections": [
+   {
+    "heading": "Što se uspoređuje",
+    "text": "Opći rasponi za cigarete, ne mjerenje aktualnog hrvatskog Marlboro proizvoda. Ukupni sadržaj duhana, strojni prinos dima i apsorpcija različite su veličine."
+   }
+  ]
+ },
+ {
+  "i": 161,
+  "name": "IQOS Egypt — deklaracija nikotina",
+  "year": 2025,
+  "cat": "Emisije / nikotin",
+  "design": "Proizvođačka informacija",
+  "non": 0,
+  "title": "Comparing Nicotine Levels in Cigarettes, IQOS, and Vapes in Egypt",
+  "url": "https://www.iqos.com/eg/en/news/nicotine-levels-cigarettes-iqos-vapes.html",
+  "srclabel": "IQOS · izvorna objava",
+  "finding": "Proizvođač navodi oko 0,5 mg isporučenog nikotina po TEREA sticku. To nije podatak o ukupnom sadržaju u duhanu ni potvrđena apsorpcija korisnika.",
+  "sections": [
+   {
+    "heading": "Ograničenje podatka",
+    "text": "Objava od 26. 6. 2025. za egipatsko tržište ne navodi protokol mjerenja za ovu brojku. Ne prenosimo je na hrvatske varijante kao potvrđeno mjerenje; koncentracija mg/g i ukupni sadržaj mg/stick ostaju nepotvrđeni."
+   }
+  ]
  }
 ];
 

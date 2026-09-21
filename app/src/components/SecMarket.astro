@@ -11,7 +11,7 @@ const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFracti
   <h3>Uređaj, potrošni dio i cijena</h3>
   <div class="compare-scroll"><table class="data">
     <thead><tr><th>Proizvod</th><th>Početni uređaj / kit</th><th>Potrošni dio</th><th>Tehnologija</th><th>Izvor / status</th></tr></thead>
-    <tbody>{devices.map(d=><tr><th>{d.name}</th><td>{d.kit===0?'Nije potreban':d.kit==null?'Nema potvrđene EUR cijene':`${fmt(d.kit)} €`}</td><td>{d.priceLabel}</td><td>{d.heater}</td><td><a href={d.source}>{d.sourceLabel}</a></td></tr>)}</tbody>
+    <tbody>{devices.map(d=><tr><th>{d.name}</th><td>{d.kit===0?'Nije potreban':d.kit==null?'Nema potvrđene EUR cijene':`${fmt(d.kit)} €`}</td><td>{d.priceLabel}</td><td>{d.heater}</td><td><a href={d.source} aria-label={`Izvor: ${d.name}`}>Izvor ↗</a></td></tr>)}</tbody>
   </table></div>
   <p class="chart-note">Vuse: službena HR početna cijena kita od 11 €; Wiip: 14,99 € / 9,99 €, provjereno 21. 9. 2026. ENVA (29 €), IQOS (39 €), cijene ostalih potrošnih dijelova i JUUL UK preuzeti su iz ranijeg cjenovnog pregleda i služe kao polazište, ne kao potvrda aktualne ponude. Kitovi nemaju isti sadržaj. Dostava nije uključena. JUUL cijenu u GBP ne pretvaramo automatski u EUR.</p>
   <h3>Početni trošak uređaja / kita</h3>
@@ -20,11 +20,12 @@ const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFracti
   </div>
   <p class="chart-note">Zajednička skala 0–40 €. Cigarete: 0 € zasebnog uređaja; to nije trošak potrošnje.</p>
 
-  <h3>Nikotin: usporedba na istoj osnovi</h3>
+  <h3>Nikotin: sadržaj proizvoda i isporučena količina</h3>
   <div class="compare-scroll"><table class="data">
-    <thead><tr><th>Proizvod</th><th>Volumen tekućine</th><th>Koncentracija</th><th>Nikotin u tekućini cijelog poda/sticka</th><th>Prinos / ograničenje</th></tr></thead>
-    <tbody>{devices.map(d=><tr><th>{d.name}</th><td>{d.volume==null?'Nije e-tekućina':`${fmt(d.volume)} mL`}</td><td>{d.strength==null?'Nije primjenjivo':`${d.strength} mg/mL`}</td><td>{liquidContent(d)==null?'Nije usporedivo na ovoj osnovi':`${fmt(liquidContent(d))} mg`}</td><td>{d.dose}</td></tr>)}</tbody>
+    <thead><tr><th>Proizvod</th><th>Tekućina / duhan</th><th>Koncentracija</th><th>Ukupni nikotin po podu / sticku / cigareti</th><th>Prinos / ograničenje</th></tr></thead>
+    <tbody>{devices.map(d=><tr><th>{d.name}</th><td>{d.volume==null?'Duhan':`${fmt(d.volume)} mL`}</td><td>{d.strength==null?(d.id==='cig'?'≈15 mg/g duhana (1,5%)':'mg/g: nije potvrđeno'):`${d.strength} mg/mL`}</td><td>{liquidContent(d)==null?(d.id==='cig'?'10–14 mg / cigareta':'mg/stick: nije potvrđeno'):`${fmt(liquidContent(d))} mg`}</td><td>{d.id==='cig'?<>Prosječno 1–1,5 mg apsorbirano po cigareti; opći podatak, ne specifično za Marlboro. <a href="/studije/160/">Izvor ↗</a></>:d.id==='iqos'?<>≈0,5 mg isporučeno/stick prema proizvođaču (Egipat); metoda nije navedena, nije potvrda za HR. <a href="/studije/161/">Izvor ↗</a></>:d.dose}</td></tr>)}</tbody>
   </table></div>
+  <p class="chart-note">Za duhan je koncentracija u mg/g, za tekućinu u mg/mL. Ukupni sadržaj proizvoda nije isto što i prinos aerosola ili doza apsorbirana u tijelu. Cigaretni raspon odnosi se na opće podatke iz literature; za TEREA-u ukupan sadržaj i koncentracija nisu potvrđeni. Graf ispod prikazuje samo sadržaj e-tekućine.</p>
   <div class="comparison-bars" aria-label="Nikotin u tekućini, linearna skala od 0 do 40 mg">
     {devices.map(d=><div class="comparison-row"><strong>{d.name}</strong><div class="bar-track"><span class="bar-fill nicotine" style={`width:${(liquidContent(d)??0)/40*100}%`}></span></div><span>{liquidContent(d)==null?'Nije primjenjivo':`${fmt(liquidContent(d))} mg`}</span></div>)}
   </div>
@@ -35,14 +36,24 @@ const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFracti
   <form id="cost-model">
     <div class="cost-controls"><label>Puffova dnevno <input id="daily-puffs" type="number" min="0" max="10000" step="1" value="240" /></label><label>Graf prikazuje <select id="cost-period"><option value="hundred">€ / 100 puffova</option><option value="month" selected>€ / 30 dana</option><option value="year">€ / 365 dana</option></select></label><button type="reset">Vrati početne vrijednosti</button></div>
     <p class="cost-legend"><span class="cheap">Zeleno: najniži trošak</span> → <span class="expensive">crveno: najviši trošak</span> među izračunatim scenarijima. Boje uspoređuju cijenu, ne štetnost; nepoznate vrijednosti ostaju neutralne.</p>
-    <table class="data cost-table">
-      <thead><tr><th>Proizvod / scenarij</th><th>Ulazne vrijednosti</th><th>Troškovi i ušteda</th></tr></thead>
-      <tbody>{costScenarios.map(d=><tr data-cost-row={d.id}>
-        <th scope="row">{d.name}<small>{d.unit} · {d.puffNote}</small></th>
-        <td><div class="cost-inputs"><label>€ / {d.unit}<input aria-label={`Cijena jednog potrošnog dijela: ${d.name}`} data-price type="number" min="0" max="10000" step="any" value={d.price??''} placeholder="Unesite €" /></label><label>Puffova / {d.unit}<input aria-label={`Puffova po potrošnom dijelu: ${d.name}`} data-puffs type="number" min="1" max="100000" step="1" value={d.puffs??''} placeholder="Nepoznato" /></label></div></td>
-        <td><dl class="cost-values"><div><dt>100 puffova</dt><dd data-output="hundred">—</dd></div><div><dt>30 dana</dt><dd data-output="month">—</dd></div><div><dt>365 dana</dt><dd data-output="year">—</dd></div><div class="saving"><dt>Ušteda / godinu<br />prema cigaretama</dt><dd data-saving>—</dd></div></dl></td>
-      </tr>)}</tbody>
-    </table>
+    <p class="chart-note">Proizvodi su u stupcima; pomaknite tablicu vodoravno za ostale uređaje. Nazivi redaka ostaju vidljivi.</p>
+    <div class="matrix-scroll" tabindex="0" role="region" aria-label="Kalkulator troškova po proizvodima"><table class="data cost-table">
+      <thead><tr><th scope="col">Stavka</th>{costScenarios.map(d=><th scope="col">{d.name}</th>)}</tr></thead>
+      <tbody>
+        <tr><th scope="row">Potrošni dio</th>{costScenarios.map(d=><td>{d.unit}</td>)}</tr>
+        <tr><th scope="row">Cijena dijela (€)</th>{costScenarios.map(d=><td><input aria-label={`Cijena: ${d.name}`} data-price={d.id} type="number" min="0" max="10000" step="any" value={d.price??''} placeholder="Unesite €" /></td>)}</tr>
+        <tr><th scope="row">Puffova po dijelu</th>{costScenarios.map(d=><td><input aria-label={`Puffova: ${d.name}`} data-puffs={d.id} type="number" min="1" max="100000" step="1" value={d.puffs??''} placeholder="Nepoznato" /></td>)}</tr>
+        {[['hundred','Trošak / 100 puffova'],['month','Trošak / 30 dana'],['year','Trošak / 365 dana']].map(([metric,label])=><tr><th scope="row">{label}</th>{costScenarios.map(d=><td data-product={d.id} data-output={metric}>—</td>)}</tr>)}
+        <tr><th scope="row">Ušteda / godinu<br />prema cigaretama</th>{costScenarios.map(d=><td data-saving={d.id}>—</td>)}</tr>
+        <tr><th scope="row">Pretpostavka</th>{costScenarios.map(d=><td><small>{d.puffNote}</small></td>)}</tr>
+      </tbody>
+    </table></div>
+    <h3>Mjesečni scenariji — svaki broj puffova u svom retku</h3>
+    <p class="chart-note">Svaki redak koristi isti broj dnevnih puffova za sve proizvode i 30 dana. Klik na broj puffova prenosi taj scenarij u kalkulator i graf ispod. Nema pretvaranja u nikotinski ekvivalent kutije cigareta.</p>
+    <div class="matrix-scroll" tabindex="0" role="region" aria-label="Mjesečni troškovi po dnevnoj potrošnji"><table class="data cost-table scenario-table">
+      <thead><tr><th scope="col">Puffova / dan</th>{costScenarios.map(d=><th scope="col">{d.name}</th>)}</tr></thead>
+      <tbody>{[120,140,240,360,480,720,960,1440].map(puffs=><tr data-scenario={puffs}><th scope="row"><button type="button" data-daily={puffs}>{puffs}</button></th>{costScenarios.map(d=><td data-monthly={d.id} data-daily-count={puffs}>—</td>)}</tr>)}</tbody>
+    </table></div>
   </form>
   <div id="cost-bars" class="comparison-bars" aria-label="Izračun troškova, svi proizvodi na istoj linearnoj skali">
     {costScenarios.map(d=><div class="comparison-row" data-cost-bar={d.id}><strong>{d.name}</strong><div class="bar-track"><span class="bar-fill" style="width:0%"></span></div><span data-value>Potrebni podaci</span></div>)}
@@ -55,44 +66,57 @@ const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFracti
 <style>
 .compare-scroll{overflow-x:auto}.compare-scroll table{min-width:760px}.compare-scroll small{display:block;font-weight:400;font-size:11px;color:var(--ink2);margin-top:.5rem}
 .comparison-bars{margin:1.5rem 0;display:grid;gap:1rem}.comparison-row{display:grid;grid-template-columns:180px minmax(60px,1fr) 150px;align-items:center;gap:1rem;font-size:13px}.comparison-row strong{font-weight:500}.bar-track{height:20px;border-left:1px solid #888;background:rgba(255,255,255,.025)}.bar-fill{display:block;height:100%;background:var(--amber)}.bar-fill.nicotine{background:var(--vuse)}
-.cost-table{width:100%;table-layout:fixed}.cost-table th:first-child{width:30%}.cost-table th:nth-child(2){width:25%}.cost-table small{display:block;font-weight:400;font-size:12px;color:var(--ink2);margin-top:.6rem}.cost-inputs{display:grid;gap:1rem}.cost-values{margin:0;display:grid;gap:.5rem}.cost-values>div{display:flex;justify-content:space-between;align-items:center;gap:.7rem}.cost-values dt{font-size:12px;color:var(--ink2)}.cost-values dd{margin:0;padding:.3rem .5rem;border-radius:3px;font-variant-numeric:tabular-nums;text-align:right}.cost-values .saving{border-top:1px solid var(--line);padding-top:.5rem}.cost-legend{font-size:13px;max-width:none}.cheap{color:hsl(130 65% 72%)}.expensive{color:hsl(0 65% 72%)}
-@media(max-width:800px){.cost-table thead{display:none}.cost-table,.cost-table tbody,.cost-table tr,.cost-table th,.cost-table td{display:block;width:100%!important}.cost-table tr{padding:1rem 0;border-bottom:1px solid var(--line)}.cost-table td,.cost-table th{border:0;padding:.5rem 0}.cost-inputs{grid-template-columns:1fr 1fr}.cost-values{max-width:100%}}
+.matrix-scroll{overflow-x:auto;margin:1rem 0 2rem;max-width:100%;isolation:isolate}.cost-table{width:max-content;min-width:100%;table-layout:fixed;border-collapse:separate;border-spacing:0}.cost-table th,.cost-table td{min-width:145px;width:145px;padding:.75rem;vertical-align:top;font-variant-numeric:tabular-nums}.cost-table th:first-child{position:sticky;left:0;z-index:2;background:var(--bg);min-width:170px;width:170px;box-shadow:2px 0 var(--line)}.cost-table small{display:block;font-weight:400;font-size:11px;color:var(--ink2)}.cost-table input{width:100%;max-width:120px}.cost-table tbody th{font-family:var(--sans);font-size:13px;text-transform:none;letter-spacing:normal}.scenario-table tr.selected th{border-left:3px solid var(--amber)}.scenario-table button{padding:.35rem .75rem}.cost-legend{font-size:13px;max-width:none}.cheap{color:hsl(130 65% 72%)}.expensive{color:hsl(0 65% 72%)}
 .cost-controls{display:flex;gap:1.2rem;flex-wrap:wrap;align-items:end;margin:1.5rem 0}label{display:grid;gap:.4rem;font-size:13px}input,select,button{background:var(--bg2);border:1px solid var(--line);color:var(--ink);padding:.6rem;font:inherit}input{width:110px}button{cursor:pointer}input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--amber)}
 @media(max-width:650px){.comparison-row{grid-template-columns:1fr 110px;gap:.4rem}.comparison-row strong{grid-column:1/-1}.comparison-row .bar-track{grid-column:1}.comparison-row>span{font-size:12px}}
 </style>
 <script>
-import {costs} from '../data/devices.js';
+import {costs,costScenarios} from '../data/devices.js';
 const form=document.querySelector<HTMLFormElement>('#cost-model')!;
-const rows=[...form.querySelectorAll<HTMLTableRowElement>('[data-cost-row]')];
 const daily=document.querySelector<HTMLInputElement>('#daily-puffs')!;
 const period=document.querySelector<HTMLSelectElement>('#cost-period')!;
 const euro=(v:number)=>v.toLocaleString('hr-HR',{minimumFractionDigits:2,maximumFractionDigits:2})+' €';
+function paint(cell:HTMLElement,value:number|null,known:number[]){
+ cell.textContent=value==null?'Nema podatka':euro(value);
+ const low=Math.min(...known),high=Math.max(...known);
+ const hue=value==null||low===high?null:130*(1-(value-low)/(high-low));
+ cell.style.color=hue==null?'':`hsl(${hue} 65% 72%)`;
+ cell.style.background=hue==null?'':`hsl(${hue} 65% 45% / .13)`;
+}
 function update(){
- const results=rows.map(row=>{const price=row.querySelector<HTMLInputElement>('[data-price]')!;const puffs=row.querySelector<HTMLInputElement>('[data-puffs]')!;return {row,id:row.dataset.costRow,result:price.validity.valid&&puffs.validity.valid&&daily.validity.valid?costs(price.valueAsNumber,puffs.valueAsNumber,daily.valueAsNumber):null};});
+ const results=costScenarios.map(d=>{
+  const price=form.querySelector<HTMLInputElement>(`[data-price="${d.id}"]`)!;
+  const puffs=form.querySelector<HTMLInputElement>(`[data-puffs="${d.id}"]`)!;
+  const valid=price.validity.valid&&puffs.validity.valid;
+  return {id:d.id,price:price.valueAsNumber,puffs:puffs.valueAsNumber,valid,result:valid&&daily.validity.valid?costs(price.valueAsNumber,puffs.valueAsNumber,daily.valueAsNumber):null};
+ });
  const ref=results.find(r=>r.id==='cig')?.result;
  const key=period.value as 'hundred'|'month'|'year';
- const maximum=Math.max(1,...results.map(r=>r.result?.[key]??0));
- const colorFor=(value:number,metric:'hundred'|'month'|'year')=>{
-  const known=results.flatMap(r=>r.result?[r.result[metric]]:[]);
-  const low=Math.min(...known),high=Math.max(...known);
-  return high===low?null:130*(1-(value-low)/(high-low));
- };
- for(const {row,id,result} of results){
-  for(const cell of row.querySelectorAll<HTMLElement>('[data-output]')){
+ const known=results.flatMap(r=>r.result?[r.result[key]]:[]);
+ const maximum=Math.max(1,...known);
+ for(const {id,result} of results){
+  for(const cell of form.querySelectorAll<HTMLElement>(`[data-product="${id}"]`)){
    const metric=cell.dataset.output as 'hundred'|'month'|'year';
-   cell.textContent=result?euro(result[metric]):'Potrebni podaci';
-   const hue=result?colorFor(result[metric],metric):null;
-   cell.style.color=hue==null?'':`hsl(${hue} 65% 72%)`;
-   cell.style.background=hue==null?'':`hsl(${hue} 65% 45% / .13)`;
+   paint(cell,result?.[metric]??null,results.flatMap(r=>r.result?[r.result[metric]]:[]));
   }
-  row.querySelector('[data-saving]')!.textContent=id==='cig'?'Referenca':result&&ref?euro(ref.year-result.year):'—';
+  form.querySelector(`[data-saving="${id}"]`)!.textContent=id==='cig'?'Referenca':result&&ref?euro(ref.year-result.year):'—';
   const bar=document.querySelector<HTMLElement>(`[data-cost-bar="${id}"]`)!;
-  bar.querySelector<HTMLElement>('.bar-fill')!.style.width=result?`${result[key]/maximum*100}%`:'0%';
-  const hue=result?colorFor(result[key],key):null;
-  bar.querySelector<HTMLElement>('.bar-fill')!.style.background=hue==null?'var(--ink3)':`hsl(${hue} 65% 72%)`;
+  const fill=bar.querySelector<HTMLElement>('.bar-fill')!;
+  fill.style.width=result?`${result[key]/maximum*100}%`:'0%';
+  const low=Math.min(...known),high=Math.max(...known);
+  fill.style.background=result&&high!==low?`hsl(${130*(1-(result[key]-low)/(high-low))} 65% 72%)`:'var(--ink3)';
   bar.querySelector('[data-value]')!.textContent=result?euro(result[key]):'Potrebni podaci';
  }
- document.querySelector('#cost-scale')!.textContent=`Zajednička linearna skala od 0 do ${euro(maximum)} · ${period.selectedOptions[0].textContent}. Pozitivna ušteda znači manji trošak od scenarija cigareta.`;
+ for(const row of form.querySelectorAll<HTMLElement>('[data-scenario]')){
+  const n=Number(row.dataset.scenario);
+  const values=results.map(r=>({id:r.id,value:r.valid?costs(r.price,r.puffs,n)?.month??null:null}));
+  const known=values.flatMap(r=>r.value==null?[]:[r.value]);
+  for(const r of values)paint(row.querySelector<HTMLElement>(`[data-monthly="${r.id}"]`)!,r.value,known);
+  row.classList.toggle('selected',n===daily.valueAsNumber);
+  row.querySelector('button')!.setAttribute('aria-pressed',String(n===daily.valueAsNumber));
+ }
+ document.querySelector('#cost-scale')!.textContent=`${daily.validity.valid&&Number.isFinite(daily.valueAsNumber)?daily.valueAsNumber:'—'} puffova dnevno · ${period.selectedOptions[0].textContent} · linearna skala 0–${euro(maximum)}. Pozitivna ušteda znači manji trošak od scenarija cigareta.`;
 }
+for(const button of form.querySelectorAll<HTMLButtonElement>('[data-daily]'))button.addEventListener('click',()=>{daily.value=button.dataset.daily!;period.value='month';update();});
 form.addEventListener('submit',e=>e.preventDefault());form.addEventListener('input',update);form.addEventListener('reset',()=>requestAnimationFrame(update));update();
 </script>
