@@ -13,3 +13,10 @@ export function costs(price,puffs,daily){
  if(!Number.isFinite(price)||price<0||!Number.isFinite(puffs)||puffs<=0||!Number.isFinite(daily)||daily<0)return null;
  return {hundred:100*price/puffs,month:30*daily*price/puffs,year:365*daily*price/puffs};
 }
+
+// Four explicit ENVA scenarios; puff counts are assumptions, not measured yields.
+export const costScenarios = devices.flatMap(device => device.id !== 'enva' ? [device] :
+ [{pack:'2/1',price:6.90/2},{pack:'XXL',price:69.90/30}].flatMap(({pack,price}) =>
+  [200,300].map(puffs => ({...device,id:`enva${pack==='XXL'?'XXL':'Regular'}${puffs}`,
+   name:`ENVA Sol ${pack} · ${puffs} puffova/stick`,price,puffs,
+   puffNote:`Scenarij ${puffs} puffova; ${pack==='XXL'?'69,90 € / 30 stickova, paket s uređajem':'6,90 € / 2 sticka'}`}))));

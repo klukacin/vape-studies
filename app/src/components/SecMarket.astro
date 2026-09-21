@@ -1,5 +1,5 @@
 ---
-import {devices,liquidContent} from '../data/devices.js';
+import {devices,liquidContent,costScenarios} from '../data/devices.js';
 const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFractionDigits:2});
 ---
 <section id="market" class="reveal">
@@ -32,22 +32,29 @@ const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFracti
   <p>Odaberite scenarij potrošnje i po potrebi izmijenite cijenu ili trajnost potrošnog dijela. <strong>Isti broj puffova ne znači istu dozu nikotina.</strong> Za Wiip broj puffova po podu nije potvrđen: računica ostaje prazna dok ne unesete vlastitu pretpostavku. JUUL također traži vašu cijenu u eurima.</p>
   <form id="cost-model">
     <div class="cost-controls"><label>Puffova dnevno <input id="daily-puffs" type="number" min="0" max="10000" step="1" value="240" /></label><label>Graf prikazuje <select id="cost-period"><option value="hundred">€ / 100 puffova</option><option value="month" selected>€ / 30 dana</option><option value="year">€ / 365 dana</option></select></label><button type="reset">Vrati početne vrijednosti</button></div>
-    <div class="compare-scroll"><table class="data">
-      <thead><tr><th>Proizvod / računica</th><th>€ po jednom potrošnom dijelu</th><th>Puffova po tom dijelu</th><th>€ / 100 puffova</th><th>€ / 30 dana</th><th>€ / 365 dana</th><th>Ušteda / godinu prema cigaretama</th></tr></thead>
-      <tbody>{devices.map(d=><tr data-cost-row={d.id}><th>{d.name}<small>{d.unit} · {d.puffNote}</small></th><td><input aria-label={`Cijena jednog potrošnog dijela: ${d.name}`} data-price type="number" min="0" max="10000" step="any" value={d.price??''} placeholder="Unesite €" /></td><td><input aria-label={`Puffova po potrošnom dijelu: ${d.name}`} data-puffs type="number" min="1" max="100000" step="1" value={d.puffs??''} placeholder="Nepoznato" /></td><td data-output="hundred">—</td><td data-output="month">—</td><td data-output="year">—</td><td data-saving>—</td></tr>)}</tbody>
-    </table></div>
+    <p class="cost-legend"><span class="cheap">Zeleno: najniži trošak</span> → <span class="expensive">crveno: najviši trošak</span> među izračunatim scenarijima. Boje uspoređuju cijenu, ne štetnost; nepoznate vrijednosti ostaju neutralne.</p>
+    <table class="data cost-table">
+      <thead><tr><th>Proizvod / scenarij</th><th>Ulazne vrijednosti</th><th>Troškovi i ušteda</th></tr></thead>
+      <tbody>{costScenarios.map(d=><tr data-cost-row={d.id}>
+        <th scope="row">{d.name}<small>{d.unit} · {d.puffNote}</small></th>
+        <td><div class="cost-inputs"><label>€ / {d.unit}<input aria-label={`Cijena jednog potrošnog dijela: ${d.name}`} data-price type="number" min="0" max="10000" step="any" value={d.price??''} placeholder="Unesite €" /></label><label>Puffova / {d.unit}<input aria-label={`Puffova po potrošnom dijelu: ${d.name}`} data-puffs type="number" min="1" max="100000" step="1" value={d.puffs??''} placeholder="Nepoznato" /></label></div></td>
+        <td><dl class="cost-values"><div><dt>100 puffova</dt><dd data-output="hundred">—</dd></div><div><dt>30 dana</dt><dd data-output="month">—</dd></div><div><dt>365 dana</dt><dd data-output="year">—</dd></div><div class="saving"><dt>Ušteda / godinu<br />prema cigaretama</dt><dd data-saving>—</dd></div></dl></td>
+      </tr>)}</tbody>
+    </table>
   </form>
   <div id="cost-bars" class="comparison-bars" aria-label="Izračun troškova, svi proizvodi na istoj linearnoj skali">
-    {devices.map(d=><div class="comparison-row" data-cost-bar={d.id}><strong>{d.name}</strong><div class="bar-track"><span class="bar-fill" style="width:0%"></span></div><span data-value>Potrebni podaci</span></div>)}
+    {costScenarios.map(d=><div class="comparison-row" data-cost-bar={d.id}><strong>{d.name}</strong><div class="bar-track"><span class="bar-fill" style="width:0%"></span></div><span data-value>Potrebni podaci</span></div>)}
   </div>
   <p id="cost-scale" class="chart-note" aria-live="polite"></p>
   <noscript><p>Za prilagodljivi izračun uključite JavaScript. Formula: trošak = cijena jednog potrošnog dijela × broj dnevnih puffova ÷ puffovi po dijelu × broj dana.</p></noscript>
-  <p class="chart-note">Izračuni ne uključuju početni uređaj ni zaokruživanje na cijela pakiranja. Godina ima 365, prikazani mjesec 30 dana. „Do 1000” za Vuse predstavlja optimističnu deklariranu trajnost. ENVA je postavljena na 100 puffova po sticku; možete isprobati 200 ili 300 kao vlastite scenarije. Raniji XXL paket (69,90 € / 30 stickova) možete modelirati cijenom 2,33 € po sticku, ali paket uključuje i uređaj i nije trajna cijena nadopune.</p>
+  <p class="chart-note">Izračuni ne uključuju početni uređaj ni zaokruživanje na cijela pakiranja. Godina ima 365, prikazani mjesec 30 dana. „Do 1000” za Vuse predstavlja optimističnu deklariranu trajnost. ENVA ima četiri zasebna scenarija: 2/1 i XXL, svaki s 200 ili 300 puffova po sticku. Ti brojevi nisu potvrđeni mjerenjem. Ranije cijene: 6,90 € / 2 sticka = 3,45 € po sticku; XXL 69,90 € / 30 stickova = 2,33 € po sticku. XXL paket uključuje i uređaj i nije trajna cijena nadopune.</p>
   <p>Stvarna potrošnja razlikuje se među ljudima i studijama: <a href="/studije/140/">EMIT</a>, <a href="/studije/141/">Dautzenberg</a> i <a href="/studije/142/">PATH</a>. Ovi scenariji ne pretvaraju puffove u medicinski ekvivalent cigareta. Nepoznat podatak označen je tekstom, nikad nulom.</p>
 </section>
 <style>
 .compare-scroll{overflow-x:auto}.compare-scroll table{min-width:760px}.compare-scroll small{display:block;font-weight:400;font-size:11px;color:var(--ink2);margin-top:.5rem}
 .comparison-bars{margin:1.5rem 0;display:grid;gap:1rem}.comparison-row{display:grid;grid-template-columns:180px minmax(60px,1fr) 150px;align-items:center;gap:1rem;font-size:13px}.comparison-row strong{font-weight:500}.bar-track{height:20px;border-left:1px solid #888;background:rgba(255,255,255,.025)}.bar-fill{display:block;height:100%;background:var(--amber)}.bar-fill.nicotine{background:var(--vuse)}
+.cost-table{width:100%;table-layout:fixed}.cost-table th:first-child{width:30%}.cost-table th:nth-child(2){width:25%}.cost-table small{display:block;font-weight:400;font-size:12px;color:var(--ink2);margin-top:.6rem}.cost-inputs{display:grid;gap:1rem}.cost-values{margin:0;display:grid;gap:.5rem}.cost-values>div{display:flex;justify-content:space-between;align-items:center;gap:.7rem}.cost-values dt{font-size:12px;color:var(--ink2)}.cost-values dd{margin:0;padding:.3rem .5rem;border-radius:3px;font-variant-numeric:tabular-nums;text-align:right}.cost-values .saving{border-top:1px solid var(--line);padding-top:.5rem}.cost-legend{font-size:13px;max-width:none}.cheap{color:hsl(130 65% 72%)}.expensive{color:hsl(0 65% 72%)}
+@media(max-width:800px){.cost-table thead{display:none}.cost-table,.cost-table tbody,.cost-table tr,.cost-table th,.cost-table td{display:block;width:100%!important}.cost-table tr{padding:1rem 0;border-bottom:1px solid var(--line)}.cost-table td,.cost-table th{border:0;padding:.5rem 0}.cost-inputs{grid-template-columns:1fr 1fr}.cost-values{max-width:100%}}
 .cost-controls{display:flex;gap:1.2rem;flex-wrap:wrap;align-items:end;margin:1.5rem 0}label{display:grid;gap:.4rem;font-size:13px}input,select,button{background:var(--bg2);border:1px solid var(--line);color:var(--ink);padding:.6rem;font:inherit}input{width:110px}button{cursor:pointer}input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--amber)}
 @media(max-width:650px){.comparison-row{grid-template-columns:1fr 110px;gap:.4rem}.comparison-row strong{grid-column:1/-1}.comparison-row .bar-track{grid-column:1}.comparison-row>span{font-size:12px}}
 </style>
@@ -63,11 +70,24 @@ function update(){
  const ref=results.find(r=>r.id==='cig')?.result;
  const key=period.value as 'hundred'|'month'|'year';
  const maximum=Math.max(1,...results.map(r=>r.result?.[key]??0));
+ const colorFor=(value:number,metric:'hundred'|'month'|'year')=>{
+  const known=results.flatMap(r=>r.result?[r.result[metric]]:[]);
+  const low=Math.min(...known),high=Math.max(...known);
+  return high===low?null:130*(1-(value-low)/(high-low));
+ };
  for(const {row,id,result} of results){
-  for(const cell of row.querySelectorAll<HTMLElement>('[data-output]'))cell.textContent=result?euro(result[cell.dataset.output as 'hundred'|'month'|'year']):'Potrebni podaci';
+  for(const cell of row.querySelectorAll<HTMLElement>('[data-output]')){
+   const metric=cell.dataset.output as 'hundred'|'month'|'year';
+   cell.textContent=result?euro(result[metric]):'Potrebni podaci';
+   const hue=result?colorFor(result[metric],metric):null;
+   cell.style.color=hue==null?'':`hsl(${hue} 65% 72%)`;
+   cell.style.background=hue==null?'':`hsl(${hue} 65% 45% / .13)`;
+  }
   row.querySelector('[data-saving]')!.textContent=id==='cig'?'Referenca':result&&ref?euro(ref.year-result.year):'—';
   const bar=document.querySelector<HTMLElement>(`[data-cost-bar="${id}"]`)!;
   bar.querySelector<HTMLElement>('.bar-fill')!.style.width=result?`${result[key]/maximum*100}%`:'0%';
+  const hue=result?colorFor(result[key],key):null;
+  bar.querySelector<HTMLElement>('.bar-fill')!.style.background=hue==null?'var(--ink3)':`hsl(${hue} 65% 72%)`;
   bar.querySelector('[data-value]')!.textContent=result?euro(result[key]):'Potrebni podaci';
  }
  document.querySelector('#cost-scale')!.textContent=`Zajednička linearna skala od 0 do ${euro(maximum)} · ${period.selectedOptions[0].textContent}. Pozitivna ušteda znači manji trošak od scenarija cigareta.`;
