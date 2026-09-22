@@ -2832,7 +2832,31 @@ const STUDIES_DB = [
     "text": "Ovo je sinteza dokaza za cigarete; nije izravna trostruka usporedba modernih e-cigareta, cigareta i cigara."
    }
   ]
- }
+ },
+ {
+  "i": 185,
+  "name": "Pappas i sur. — metalne čestice u podovima",
+  "year": 2021,
+  "title": "Toxic Metal-Containing Particles in Aerosols from Pod-Type Electronic Cigarettes",
+  "doi": "10.1093/jat/bkaa088",
+  "pmid": "32672822",
+  "cat": "Emisije / metali",
+  "design": "Laboratorijsko mjerenje aerosola · JUUL, myblu i Vuse Alto · SP-ICP-MS i DLS",
+  "finding": "Broj i veličina čestica koje sadrže metale razlikovali su se među uređajima i podovima. Nisu mjereni metali u mozgu ni klinički ishodi.",
+  "non": 0,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7839233/",
+  "srclabel": "PMC · puni tekst, slike i tablice",
+  "sections": [
+    {
+      "heading": "Metoda",
+      "text": "Ispitana su po dva okusa triju marki. Aerosol je prikupljen kroz 75 povlačenja: 55 mL, 3 sekunde, razmak 30 sekundi (CORESTA 81). Analizirane su čestice s kromom, željezom, niklom, bakrom, cinkom, kositrom i olovom."
+    },
+    {
+      "heading": "Primjena na Vuse",
+      "text": "Vuse Alto opisan je s poroznim silikatnim blokom (6,5 W; 1,1 Ω). To nije Vuse Pro One. Mjerenje metalnih čestica ne dokazuje otpuštanje silikatnih čestica ni dugoročni rizik određenog uređaja."
+    }
+  ]
+}
 ];
 
 export default STUDIES_DB;
