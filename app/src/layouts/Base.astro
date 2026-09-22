@@ -39,6 +39,7 @@ a:hover{border-bottom-color:var(--amber)}
 #outline ol li{margin-bottom:.15em}
 #outline ol a{display:block;padding:.45em .7em;border:none;border-left:2px solid transparent;color:var(--ink2);font-size:13px;transition:all .18s}
 #outline ol a::before{counter-increment:sec;content:counter(sec,decimal-leading-zero);font-family:var(--mono);font-size:10px;color:var(--ink3);margin-right:.7em}
+#outline ol a.subsection::before{counter-increment:none;content:"06a"}
 #outline ol a:hover{color:var(--ink);border-left-color:var(--ink3)}
 #outline ol a.active{color:var(--amber);border-left-color:var(--amber);background:rgba(255,184,0,.06)}
 #outline .foot{margin-top:2.5em;font-size:11px;color:var(--ink3);font-family:var(--mono);line-height:1.7}
@@ -232,6 +233,7 @@ footer .disc{border:1px solid var(--line);padding:1.4em 1.6em;margin-top:1.5em;l
     <li><a href="#biomarkers">Biomarkeri kod ljudi</a></li>
     <li><a href="#cardio">Srce, krvne žile, upala</a></li>
     <li><a href="#disease">Ishodi bolesti i smrtnost</a></li>
+    <li><a href="#lungs" class="subsection">Pluća i disanje</a></li>
     <li class="grp">II · Fokus: e-cig · metali · keramika</li>
     <li><a href="#emissions">Emisije, metali, keramika</a></li>
     <li><a href="#switching">Kliničke switching studije</a></li>

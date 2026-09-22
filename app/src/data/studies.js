@@ -963,15 +963,15 @@ const STUDIES_DB = [
   "year": 2020,
   "cat": "Ishodi / respiratorno",
   "design": "PATH longitudinalno",
-  "finding": "Vaping: AOR 1,29 incidentne respiratorne bolesti, neovisno o pušenju",
+  "finding": "PATH: aktualna uporaba povezana s incidentnim samoprijavljenim respiratornim bolestima, AOR 1,29 (1,03–1,61), nakon statističke prilagodbe. Uzročnost nije dokazana.",
   "non": 0,
-  "pmid": "34376874",
-  "title": "CANNABIS LEGALIZATION IN STATE LEGISLATURES: PUBLIC HEALTH OPPORTUNITY AND RISK",
-  "journal": "Marquette law review",
-  "authors": "Orenstein DG, Glantz SA",
-  "pubdate": "2020 Summer",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/34376874/",
-  "srclabel": "PubMed 34376874 · Marquette law review"
+  "pmid": "31859175",
+  "doi": "10.1016/j.amepre.2019.07.028",
+  "title": "Association of E-Cigarette Use With Respiratory Disease Among Adults: A Longitudinal Analysis",
+  "journal": "American Journal of Preventive Medicine",
+  "authors": "Bhatta DN, Glantz SA",
+  "url": "https://doi.org/10.1016/j.amepre.2019.07.028",
+  "srclabel": "Izvorni rad · ispravljena bibliografska poveznica"
  },
  {
   "i": 72,
@@ -1024,17 +1024,16 @@ const STUDIES_DB = [
   "name": "Xie W. i sur.",
   "year": 2020,
   "cat": "Ishodi / respiratorno",
-  "design": "PATH · presječna",
-  "finding": "E-cig i respiratorna simptomatologija",
+  "design": "PATH · longitudinalno",
+  "finding": "Prospektivna analiza povezanosti uporabe e-cigareta s incidentnim samoprijavljenim respiratornim stanjima; nije dokaz uzročnosti.",
   "non": 0,
-  "pmid": "33998857",
-  "title": "Carbonyl Compounds in Mainstream Smoke of Hemp Cigarettes",
-  "journal": "Cannabis and cannabinoid research",
-  "authors": "Ward AM, Ebbert JO",
-  "pubdate": "2021 Aug",
-  "doi": "10.1089/can.2020.0039",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/33998857/",
-  "srclabel": "PubMed 33998857 · Cannabis and cannabinoid research"
+  "pmid": "33180127",
+  "doi": "10.1001/jamanetworkopen.2020.20816",
+  "title": "Association of Electronic Cigarette Use With Incident Respiratory Conditions Among US Adults From 2013 to 2018",
+  "journal": "JAMA Network Open",
+  "authors": "Xie W i sur.",
+  "url": "https://doi.org/10.1001/jamanetworkopen.2020.20816",
+  "srclabel": "Izvorni rad · ispravljena bibliografska poveznica"
  },
  {
   "i": 76,
@@ -2462,6 +2461,262 @@ const STUDIES_DB = [
    {
     "heading": "Sastav i označavanje",
     "text": "Royal navodi 3-metilciklopentan-1,2-dion i EUH208 upozorenje o mogućoj alergijskoj reakciji. To nije kvantitativno mjerenje te tvari u aerosolu ni procjena dugoročnog rizika."
+   }
+  ]
+ },
+ {
+  "i": 170,
+  "name": "Chaffee i sur.",
+  "year": 2021,
+  "doi": "10.1016/j.ypmed.2021.106766",
+  "title": "E-cigarette use and adverse respiratory symptoms among adolescents and Young adults in the United States",
+  "design": "Presječna analiza · četiri populacije",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 0,
+  "url": "https://doi.org/10.1016/j.ypmed.2021.106766",
+  "srclabel": "Izvorni znanstveni rad",
+  "accessed": "22. 9. 2026.",
+  "finding": "Češća uporaba (≥6 dana u mjesecu) povezana je s bronhitičnim simptomima (prilagođeni OR 1,56; 95% CI 1,37–1,77) i zaduhom (1,68; 1,35–2,08).",
+  "sections": [
+   {
+    "heading": "Populacija i dizajn",
+    "text": "10.483 mladih; različite pušačke povijesti. Presječna analiza · četiri populacije."
+   },
+   {
+    "heading": "Što nalaz ne dokazuje",
+    "text": "Samoprijava i presječni dizajn; ≥6 dana nije mjera broja puffova ni definicija cjelodnevnog vapinga. Nije dokazana uzročnost."
+   },
+   {
+    "heading": "Povezanost i uzročnost",
+    "text": "Ovaj nalaz sam po sebi ne dokazuje da je vaping uzrok bolesti. Ne prenosi se automatski na Wiip, Vuse Pro One ili drugi konkretan model."
+   }
+  ]
+ },
+ {
+  "i": 171,
+  "name": "Tackett i sur.",
+  "year": 2024,
+  "doi": "10.1136/thorax-2022-218670",
+  "title": "Prospective study of e-cigarette use and respiratory symptoms in adolescents and young adults",
+  "design": "Prospektivno · četiri vala 2014.–2018.",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 0,
+  "url": "https://doi.org/10.1136/thorax-2022-218670",
+  "srclabel": "Izvorni znanstveni rad",
+  "accessed": "22. 9. 2026.",
+  "finding": "Nakon prilagodbe: bronhitični simptomi OR 1,55 (1,18–2,05), zaduha 1,48 (1,01–2,18); aktualno piskanje 1,41 (0,99–2,01), interval uključuje 1.",
+  "sections": [
+   {
+    "heading": "Populacija i dizajn",
+    "text": "2.094 mladih; uz kontrolu cigareta i kanabisa. Prospektivno · četiri vala 2014.–2018.."
+   },
+   {
+    "heading": "Što nalaz ne dokazuje",
+    "text": "Nisu svi sudionici doživotni nepušači. Vremensko praćenje jača dokaz o povezanosti, ali ne uklanja sve moguće druge uzroke."
+   },
+   {
+    "heading": "Povezanost i uzročnost",
+    "text": "Ovaj nalaz sam po sebi ne dokazuje da je vaping uzrok bolesti. Ne prenosi se automatski na Wiip, Vuse Pro One ili drugi konkretan model."
+   }
+  ]
+ },
+ {
+  "i": 172,
+  "name": "Hariri i sur.",
+  "year": 2022,
+  "doi": "10.1056/evidoa2100051",
+  "title": "E-Cigarette Use, Small Airway Fibrosis, and Constrictive Bronchiolitis",
+  "design": "Klinička serija · biopsije",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 0,
+  "url": "https://doi.org/10.1056/evidoa2100051",
+  "srclabel": "Izvorni znanstveni rad",
+  "accessed": "22. 9. 2026.",
+  "finding": "U sva četiri slučaja nađeno je ožiljkavanje malih dišnih putova i konstriktivni bronhiolitis, uz postupne respiratorne tegobe.",
+  "sections": [
+   {
+    "heading": "Populacija i dizajn",
+    "text": "Četiri bivša pušača; intenzivan vaping 3–8 godina. Klinička serija · biopsije."
+   },
+   {
+    "heading": "Što nalaz ne dokazuje",
+    "text": "Odabrani slučajevi bez kontrolne skupine. Ne određuju učestalost bolesti; ne mogu potpuno razdvojiti učinak vapinga i prethodnog pušenja. Autori navode posredan dokaz."
+   },
+   {
+    "heading": "Povezanost i uzročnost",
+    "text": "Ovaj nalaz sam po sebi ne dokazuje da je vaping uzrok bolesti. Ne prenosi se automatski na Wiip, Vuse Pro One ili drugi konkretan model."
+   }
+  ]
+ },
+ {
+  "i": 173,
+  "name": "Shores i sur.",
+  "year": 2026,
+  "doi": "10.15288/jsad.25-00388",
+  "title": "E-Cigarette Use Trajectories and Respiratory Symptoms in Adolescents and Young Adults: Sustained Use Linked to Greater Symptom Frequency",
+  "design": "Praćenje · 12 mjeseci",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 0,
+  "url": "https://doi.org/10.15288/jsad.25-00388",
+  "srclabel": "Izvorni znanstveni rad",
+  "accessed": "22. 9. 2026.",
+  "finding": "Kontinuirana uporaba povezana je s višim rezultatom ATS upitnika nakon prilagodbe. Ukupan broj simptoma i dana sa simptomima tada više nije bio statistički značajan; u simptomatskoj podskupini dio povezanosti ostaje.",
+  "sections": [
+   {
+    "heading": "Populacija i dizajn",
+    "text": "751 sudionik, 15–24 godine. Praćenje · 12 mjeseci."
+   },
+   {
+    "heading": "Što nalaz ne dokazuje",
+    "text": "Samoprijava; mješovita povijest uporabe. Različiti ishodi daju različite rezultate. Ne dokazuje uzročnost ni trajno oštećenje."
+   },
+   {
+    "heading": "Povezanost i uzročnost",
+    "text": "Ovaj nalaz sam po sebi ne dokazuje da je vaping uzrok bolesti. Ne prenosi se automatski na Wiip, Vuse Pro One ili drugi konkretan model."
+   }
+  ]
+ },
+ {
+  "i": 174,
+  "name": "Xie i sur.",
+  "year": 2022,
+  "doi": "10.1164/rccm.202107-1718OC",
+  "title": "Association of Electronic Cigarette Use with Respiratory Symptom Development among U.S. Young Adults",
+  "design": "PATH · prospektivna analiza",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 0,
+  "url": "https://doi.org/10.1164/rccm.202107-1718OC",
+  "srclabel": "Izvorni znanstveni rad",
+  "accessed": "22. 9. 2026.",
+  "finding": "Uporaba e-cigareta povezana je s naknadnim simptomima piskanja; povezanost ostaje i među osobama koje nisu pušile klasične cigarete.",
+  "sections": [
+   {
+    "heading": "Populacija i dizajn",
+    "text": "Mladi odrasli; zasebna analiza onih koji nisu pušili cigarete. PATH · prospektivna analiza."
+   },
+   {
+    "heading": "Što nalaz ne dokazuje",
+    "text": "Simptomi su samoprijavljeni; nije mjeren pad plućne funkcije niti dokazana uzročnost. Podskupina nepušača korisnija je od same statističke prilagodbe za pušenje."
+   },
+   {
+    "heading": "Povezanost i uzročnost",
+    "text": "Ovaj nalaz sam po sebi ne dokazuje da je vaping uzrok bolesti. Ne prenosi se automatski na Wiip, Vuse Pro One ili drugi konkretan model."
+   }
+  ]
+ },
+ {
+  "i": 175,
+  "name": "Polosa i sur.",
+  "year": 2017,
+  "doi": "10.1038/s41598-017-14043-2",
+  "title": "Health impact of E-cigarettes: a prospective 3.5-year study of regular daily users who have never smoked",
+  "design": "Mala prospektivna kohorta · 3,5 godine",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 1,
+  "url": "https://doi.org/10.1038/s41598-017-14043-2",
+  "srclabel": "Izvorni znanstveni rad",
+  "accessed": "22. 9. 2026.",
+  "finding": "Nisu nađene značajne promjene ispitivanih pokazatelja plućne funkcije, dosljedni respiratorni simptomi ni patološki HRCT nalazi.",
+  "sections": [
+   {
+    "heading": "Populacija i dizajn",
+    "text": "Devet dnevnih vapera bez povijesti pušenja i 12 kontrola. Mala prospektivna kohorta · 3,5 godine."
+   },
+   {
+    "heading": "Što nalaz ne dokazuje",
+    "text": "Vrlo malen uzorak ne može isključiti rijetku štetu ni posljedice desetljeća uporabe. Negativan nalaz nije dokaz sigurnosti. Autor prijavljuje, među ostalim, savjetovanje za ECITA-u."
+   },
+   {
+    "heading": "Povezanost i uzročnost",
+    "text": "Ovaj nalaz sam po sebi ne dokazuje da je vaping uzrok bolesti. Ne prenosi se automatski na Wiip, Vuse Pro One ili drugi konkretan model."
+   }
+  ]
+ },
+ {
+  "i": 176,
+  "name": "Goicoechea i sur. · VERITAS",
+  "year": 2024,
+  "doi": "10.1038/s41598-024-80221-8",
+  "title": "Respiratory symptoms among e-cigarette users without an established smoking history in the VERITAS cohort",
+  "design": "Presječna internetska anketa",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 1,
+  "url": "https://doi.org/10.1038/s41598-024-80221-8",
+  "srclabel": "Izvorni znanstveni rad",
+  "accessed": "22. 9. 2026.",
+  "finding": "Prilagođeni rezultat simptoma: 1,61 u vapera i 1,43 u kontrola. Razlika 0,18 manja je od autorskog praga kliničke važnosti 0,57.",
+  "sections": [
+   {
+    "heading": "Populacija i dizajn",
+    "text": "491 vaper; bez ustaljene povijesti pušenja (<100 cigareta u životu). Presječna internetska anketa."
+   },
+   {
+    "heading": "Što nalaz ne dokazuje",
+    "text": "Dopušteno ranije eksperimentiranje s cigaretama; nije isto što i nikada ni jedna cigareta. Samoprijava, odabir sudionika i presječni dizajn ograničavaju zaključke."
+   },
+   {
+    "heading": "Povezanost i uzročnost",
+    "text": "Ovaj nalaz sam po sebi ne dokazuje da je vaping uzrok bolesti. Ne prenosi se automatski na Wiip, Vuse Pro One ili drugi konkretan model."
+   },
+   {
+    "heading": "Prijavljeni interesi",
+    "text": "Među autorima su predstavnici organizacija korisnika i industrijskih udruga vapinga; dio autora prijavljuje savjetničke ili financijske veze. Detaljna izjava dostupna je u izvornom radu. To je relevantan kontekst procjene, ne razlog za automatsko odbacivanje rezultata."
+   }
+  ]
+ },
+ {
+  "i": 177,
+  "name": "Delmas i sur. · Constances",
+  "year": 2024,
+  "doi": "10.1016/j.rmed.2023.107496",
+  "title": "Electronic cigarette use and respiratory symptoms in the French population-based Constances cohort",
+  "design": "Presječna analiza početnih podataka kohorte",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 0,
+  "url": "https://doi.org/10.1016/j.rmed.2023.107496",
+  "srclabel": "Izvorni znanstveni rad",
+  "accessed": "22. 9. 2026.",
+  "finding": "Među nepušačima cigareta ikadašnja uporaba e-cigareta povezana je s višim rezultatom simptoma astme kod oba spola; veća prevalencija kroničnog bronhitisa pronađena je samo kod žena.",
+  "sections": [
+   {
+    "heading": "Populacija i dizajn",
+    "text": "136.276 odraslih ukupno; zasebna analiza nepušača cigareta. Presječna analiza početnih podataka kohorte."
+   },
+   {
+    "heading": "Što nalaz ne dokazuje",
+    "text": "Naziv kohorte ne znači da ova analiza prati nastanak bolesti. Presječni podaci ne određuju je li uporaba prethodila simptomima. Autori ne prijavljuju sukob interesa."
+   },
+   {
+    "heading": "Povezanost i uzročnost",
+    "text": "Ovaj nalaz sam po sebi ne dokazuje da je vaping uzrok bolesti. Ne prenosi se automatski na Wiip, Vuse Pro One ili drugi konkretan model."
+   }
+  ]
+ },
+ {
+  "i": 178,
+  "name": "Caci i sur.",
+  "year": 2025,
+  "doi": "10.1016/j.clinme.2025.100295",
+  "title": "Respiratory effects of electronic cigarette use in individuals who never smoked: A systematic review",
+  "design": "Sustavni pregled · deset prospektivnih studija",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 0,
+  "url": "https://doi.org/10.1016/j.clinme.2025.100295",
+  "srclabel": "Izvorni znanstveni rad",
+  "accessed": "22. 9. 2026.",
+  "finding": "Nema dosljednog dokaza težih respiratornih ishoda u dostupnim podacima; moguća povezanost s kašljem i piskanjem ovisi o modelu analize.",
+  "sections": [
+   {
+    "heading": "Populacija i dizajn",
+    "text": "Osobe bez ustaljene povijesti pušenja; praćenje približno 1–5 godina. Sustavni pregled · deset prospektivnih studija."
+   },
+   {
+    "heading": "Što nalaz ne dokazuje",
+    "text": "Osam radova koristi PATH pa nisu osam neovisnih populacija. Mali broj vapera, kratko praćenje i široke definicije uporabe ograničavaju zaključak; odsutnost dokaza nije dokaz odsutnosti štete."
+   },
+   {
+    "heading": "Povezanost i uzročnost",
+    "text": "Ovaj nalaz sam po sebi ne dokazuje da je vaping uzrok bolesti. Ne prenosi se automatski na Wiip, Vuse Pro One ili drugi konkretan model."
    }
   ]
  }

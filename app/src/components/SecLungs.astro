@@ -1,0 +1,39 @@
+---
+import {respiratoryStudies} from '../data/respiratory.js';
+---
+<section id="lungs" class="reveal">
+  <div class="eyebrow">Pluća · disanje · prethodno pušenje · provjereno 22. 9. 2026.</div>
+  <h2><span class="num">06a</span>Pluća i disanje: što pokazuju istraživanja?</h2>
+  <div class="callout">
+    <h4>Povezanost nije dokazana uzročnost</h4>
+    <p>U dijelu istraživanja vaping prati više kašlja, iskašljavanja, piskanja ili zaduhe. <strong>Prikazani opservacijski radovi sami po sebi ne dokazuju da je vaping uzrok tih tegoba.</strong> Prethodno pušenje, kanabis, astma i način odabira sudionika mogu utjecati na nalaze. Ni nalaz bez statistički značajne razlike nije dokaz dugoročne sigurnosti. <a href="/studije/171/">Praćenje simptoma</a> · <a href="/studije/178/">Sustavni pregled</a>.</p>
+  </div>
+  <p>Razlikujemo <strong>simptome koje korisnik prijavljuje</strong>, objektivna mjerenja plućne funkcije i klinički potvrđene promjene tkiva. Rezultat upitnika nije dijagnoza KOPB-a, a nalaz iz nekoliko biopsija ne govori koliko često oštećenje nastaje u svim korisnicima. <a href="/studije/175/">Plućna funkcija</a> · <a href="/studije/172/">Biopsije</a>.</p>
+  <h3>Osobe koje prije nisu pušile: posebno važna skupina</h3>
+  <p>„Isključivi vaper” može biti bivši pušač. Zato ovdje odvajamo radove s nepušačima ili njihovim zasebnim analizama. Definicije se razlikuju: <a href="/studije/176/">VERITAS</a> dopušta manje od 100 cigareta tijekom života; to ne znači nužno da osoba nikad nije probala cigaretu.</p>
+  <div class="lungs-studies">
+    {respiratoryStudies.filter(s=>s.group==='never').map(s=><article class="lung-study">
+      <h4><a href={`/studije/${s.i}/`}>{s.name} ({s.year}) ↗</a></h4>
+      <p class="study-population">{s.population} · {s.design}</p>
+      <p>{s.finding}</p><p class="study-limit"><strong>Ograničenje:</strong> {s.limits}</p>
+    </article>)}
+  </div>
+  <h3>Intenzivna uporaba, simptomi i klinički slučajevi</h3>
+  <div class="lungs-studies">
+    {respiratoryStudies.filter(s=>s.group==='mixed').map(s=><article class="lung-study">
+      <h4><a href={`/studije/${s.i}/`}>{s.name} ({s.year}) ↗</a></h4>
+      <p class="study-population">{s.population} · {s.design}</p>
+      <p>{s.finding}</p><p class="study-limit"><strong>Ograničenje:</strong> {s.limits}</p>
+    </article>)}
+  </div>
+  <p class="chart-note">OR je omjer izgleda, a ne postotak oboljelih ni izravno relativni rizik. CI je interval pouzdanosti; uključuje li 1, rezultat nije statistički značajan na uobičajenoj razini od 5%. Radove iz iste kohorte PATH ne zbrajamo kao neovisne potvrde.</p>
+  <div class="callout">
+    <h4>Što još ne možemo izračunati</h4>
+    <p>Ovi radovi ne daju pouzdanu vezu „500 puffova dnevno → određeni postotak oštećenja pluća”. Dani uporabe, broj povlačenja i količina udahnutog aerosola nisu ista mjera. Nedostaje dovoljno dugih praćenja intenzivnih korisnika s dobro opisanom izloženošću. <a href="/studije/170/">Učestalost uporabe</a> · <a href="/studije/178/">Praznine u dokazima</a>.</p>
+    <p>Ovo nisu mjerenja baš za Wiip Magnetic II, X Pro, Vuse Pro One ili ENVA Sol. Iz njih ne određujemo sigurnu temperaturu ni rangiramo te uređaje po plućnom riziku.</p>
+  </div>
+  <p>Ranije PATH analize u bazi: <a href="/studije/71/">Bhatta i Glantz (2020)</a> i <a href="/studije/75/">Xie i sur. (2020)</a>. Njihove su bibliografske poveznice ispravljene. Svaki novi rad iznad ima vlastiti zapis, sažetak i poveznicu na original.</p>
+</section>
+<style>
+.lungs-studies{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.5rem 0 2.5rem}.lung-study{border:1px solid var(--line);padding:1.3rem;min-width:0}.lung-study h4{font-size:16px;margin:0 0 .7rem}.lung-study p{font-size:14px;max-width:none}.lung-study .study-population{font-size:12px;color:var(--ink3)}.study-limit{border-top:1px solid var(--line);padding-top:.8rem}.lung-study p:last-child{margin-bottom:0}@media(max-width:900px){.lungs-studies{grid-template-columns:1fr}}
+</style>
