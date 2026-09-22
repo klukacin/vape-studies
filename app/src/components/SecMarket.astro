@@ -30,7 +30,7 @@ const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFracti
   <div class="comparison-bars" aria-label="Nikotin u tekućini, linearna skala od 0 do 40 mg">
     {devices.map(d=><div class="comparison-row"><strong>{d.name}</strong><div class="bar-track"><span class="bar-fill nicotine" style={`width:${(liquidContent(d)??0)/40*100}%`}></span></div><span>{liquidContent(d)==null?'Nije primjenjivo':`${fmt(liquidContent(d))} mg`}</span></div>)}
   </div>
-  <p class="chart-note">0–40 mg, sadržaj tekućine = volumen × koncentracija. Za oba Wiipa prikazan je kompatibilni Cola 18 pod; Cola 10 i Apple 10 imaju 20 mg u 2 mL. Ovo nije doza u krvi niti usporedba štetnosti. <a href="/studije/147/">Cola 10</a> · <a href="/studije/148/">Cola 18</a> · <a href="/studije/149/">Apple 10</a> · <a href="/studije/124/">JUUL 5% literatura</a>.</p>
+  <p class="chart-note">0–40 mg, sadržaj tekućine = volumen × koncentracija. Za oba Wiipa prikazan je kompatibilni Cola 18 pod; Gold 18 i Royal 18 također imaju 36 mg, a Cola 10 i Apple 10 imaju 20 mg u 2 mL. Ovo nije doza u krvi niti usporedba štetnosti. <a href="/studije/168/">Gold 18</a> · <a href="/studije/169/">Royal 18</a> · <a href="/studije/147/">Cola 10</a> · <a href="/studije/148/">Cola 18</a> · <a href="/studije/149/">Apple 10</a> · <a href="/studije/124/">JUUL 5% literatura</a>.</p>
 
   <h3>Trošak po 100 puffova, mjesečno i godišnje</h3>
   <p>Odaberite scenarij potrošnje i po potrebi izmijenite cijenu ili trajnost potrošnog dijela. <strong>Isti broj puffova ne znači istu dozu nikotina.</strong> Za Wiip broj puffova po podu nije potvrđen: računica ostaje prazna dok ne unesete vlastitu pretpostavku.</p>

@@ -1875,7 +1875,7 @@ const STUDIES_DB = [
   "year": 2026,
   "cat": "Tehnologija / Wiip",
   "design": "Primarni izvor · proizvođač, nije klinička studija",
-  "finding": "Tri načina rada: Chill, Daily i Boost; memorija postavke, USB-C i proizvođačeva tvrdnja o regulaciji temperature mikročipom.",
+  "finding": "Tri načina rada: Chill, Daily i Boost; memorija postavke, USB-C i proizvođačeva tvrdnja o regulaciji temperature mikročipom. Fotografirane upute (#167) ograničavaju bijeli/visoki način na Wiipod Sensation.",
   "non": 0,
   "title": "Wiip Magnetic II — tehnologija",
   "url": "https://wiip.hr/uredaji/wiip-magnetic-ii/",
@@ -1889,6 +1889,10 @@ const STUDIES_DB = [
    {
     "heading": "Granice dostupnih podataka",
     "text": "Stranica opisuje regulaciju temperature, ali ne objavljuje krivulje temperature, snagu pojedinog načina, otpor ni materijal grijača. Ovaj opis nije neovisna provjera emisija ili zdravstvenog rizika."
+   },
+   {
+    "heading": "Dopuna iz uputa, 22. 9. 2026.",
+    "text": "Fotografije u zapisu #167 navode ljubičasti niski, plavi srednji i bijeli visoki način. Bijeli način isključivo je za Sensation; raniji opis Boost ne treba tumačiti kao način za svaki pod."
    }
   ]
  },
@@ -2346,6 +2350,118 @@ const STUDIES_DB = [
    {
     "heading": "Tumačenje i ograničenja",
     "text": "Laboratorijski model tekućine, plina i simuliranih materijala grijača nije mjerenje doze iz određenog komercijalnog poda. Ne određuje sigurnu temperaturu keramike."
+   }
+  ]
+ },
+ {
+  "year": 2026,
+  "cat": "Tehnologija / Wiip",
+  "non": 0,
+  "accessed": "22. 9. 2026.",
+  "i": 167,
+  "name": "Wiip — fotografirane upute i ambalaža",
+  "title": "Magnetic II i Wiipod: osam fotografija dokumentacije",
+  "url": "/materiali/wiip/dokumentacija/8892.jpg",
+  "srclabel": "Fotografija izvorne ambalaže",
+  "design": "Dokumentacija proizvođača · korisničke fotografije",
+  "finding": "Magnetic II: ljubičasti niski, plavi srednji i bijeli visoki način rada; bijeli je isključivo za Wiipod Sensation. USB-C 5 V / 550 mA odnosi se na punjenje.",
+  "materials": [
+   {
+    "url": "/materiali/wiip/dokumentacija/8892.jpg",
+    "title": "Kutija Magnetic II — načini rada i podrijetlo"
+   },
+   {
+    "url": "/materiali/wiip/dokumentacija/8893.jpg",
+    "title": "Upute Magnetic II — pregled uređaja"
+   },
+   {
+    "url": "/materiali/wiip/dokumentacija/8894.jpg",
+    "title": "Upute Magnetic II — punjenje i načini rada"
+   },
+   {
+    "url": "/materiali/wiip/dokumentacija/8895.jpg",
+    "title": "Upute Magnetic II — uporaba i čuvanje"
+   },
+   {
+    "url": "/materiali/wiip/dokumentacija/8896.jpg",
+    "title": "Wiipod — višejezične upute, prva strana"
+   },
+   {
+    "url": "/materiali/wiip/dokumentacija/8897.jpg",
+    "title": "Wiipod — višejezične upute, druga strana"
+   },
+   {
+    "url": "/materiali/wiip/dokumentacija/8898.jpg",
+    "title": "Gold Tobacco 18 — kutija i deklaracija"
+   },
+   {
+    "url": "/materiali/wiip/dokumentacija/8899.jpg",
+    "title": "Royal Tobacco 18 — deklaracija na blisteru"
+   }
+  ],
+  "documentPhotos": true,
+  "sections": [
+   {
+    "heading": "Podrijetlo materijala",
+    "text": "Fotografije uputa i ambalaže dostavio je korisnik 22. 9. 2026. Ovo je dokumentacija proizvoda, ne laboratorijski izvještaj. Godina zapisa označava primitak fotografija, ne datum izdavanja uputa."
+   },
+   {
+    "heading": "Što možemo potvrditi",
+    "text": "Upute navode čuvanje na 5–25 °C; to nije temperatura grijača. Kutija navodi proizvodnju u Kini i sastavljanje u Hrvatskoj. Podovi se kupuju zasebno. Ovi podaci o uređaju odnose se na Magnetic II, ne automatski na X Pro."
+   },
+   {
+    "heading": "Što nedostaje",
+    "text": "Nema sastava grijača, otpora, radne snage, izmjerene temperature, broja povlačenja po podu ni rezultata emisijskog testa. Iz struje punjenja ne izvodimo snagu grijača."
+   }
+  ]
+ },
+ {
+  "year": 2026,
+  "cat": "Tehnologija / Wiip",
+  "non": 0,
+  "accessed": "22. 9. 2026.",
+  "i": 168,
+  "name": "Wiipod Magnetic Gold Tobacco 18 — deklaracija",
+  "title": "Gold Tobacco 18 mg/mL",
+  "url": "https://wiip.hr/proizvod/wiipod-magnetic-gold-tobacco-18-mg-ml/",
+  "srclabel": "Wiip.hr — izvorna deklaracija",
+  "design": "Deklaracija proizvođača",
+  "finding": "2 mL × 18 mg/mL = 36 mg nikotina u tekućini; deklarirano oslobađanje 0,0736 mg/puff. Cijena 4,20 € na datum provjere.",
+  "sections": [
+   {
+    "heading": "Identifikacija",
+    "text": "UFI SMP3-MF4Y-C60E-0HN6. Deklaracija odgovara nazivu proizvoda na dostavljenoj ambalaži; precizan broj za oslobađanje provjeren je na službenoj stranici."
+   },
+   {
+    "heading": "Granice tumačenja",
+    "text": "Nije objavljen cjelovit protokol s testnim uređajem i načinom rada. Deklarirano oslobađanje nije apsorpcija u tijelo, a 36 mg nije doza po povlačenju. Iz tih brojeva ne računamo trajanje poda ni relativnu štetnost."
+   }
+  ]
+ },
+ {
+  "year": 2026,
+  "cat": "Tehnologija / Wiip",
+  "non": 0,
+  "accessed": "22. 9. 2026.",
+  "i": 169,
+  "name": "Wiipod Magnetic Royal Tobacco 18 — deklaracija",
+  "title": "Royal Tobacco 18 mg/mL",
+  "url": "https://wiip.hr/proizvod/wiipod-magnetic-royal-tobacco-18-mg-ml/",
+  "srclabel": "Wiip.hr — izvorna deklaracija",
+  "design": "Deklaracija proizvođača",
+  "finding": "2 mL × 18 mg/mL = 36 mg nikotina u tekućini; deklarirano oslobađanje 0,0695 mg/puff. Cijena 4,20 € na datum provjere.",
+  "sections": [
+   {
+    "heading": "Identifikacija",
+    "text": "UFI 3AD0-YGSH-U608-602G. Deklaracija odgovara nazivu proizvoda na dostavljenoj ambalaži; precizan broj za oslobađanje provjeren je na službenoj stranici."
+   },
+   {
+    "heading": "Granice tumačenja",
+    "text": "Nije objavljen cjelovit protokol s testnim uređajem i načinom rada. Deklarirano oslobađanje nije apsorpcija u tijelo, a 36 mg nije doza po povlačenju. Iz tih brojeva ne računamo trajanje poda ni relativnu štetnost."
+   },
+   {
+    "heading": "Sastav i označavanje",
+    "text": "Royal navodi 3-metilciklopentan-1,2-dion i EUH208 upozorenje o mogućoj alergijskoj reakciji. To nije kvantitativno mjerenje te tvari u aerosolu ni procjena dugoročnog rizika."
    }
   ]
  }

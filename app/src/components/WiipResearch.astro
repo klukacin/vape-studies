@@ -3,10 +3,11 @@ import InlineGallery from './InlineGallery.astro';
 import WiipStandards from './WiipStandards.astro';
 ---
 <section id="wiip" class="reveal">
-  <div class="eyebrow">Wiip · provjereno 21. rujna 2026.</div>
+  <div class="eyebrow">Wiip · provjereno 22. rujna 2026.</div>
   <h2><span class="num">11</span>Wiip — posebna analiza</h2>
   <InlineGallery gallery="wiip" />
   <p>Magnetic II i X Pro: deklaracije, tehnologija i granice dostupnih dokaza. <a href="/#uredaji">Fotografije svih uređaja ↓</a> · <a href="/#market">zajednička usporedba ↓</a></p>
+  <div class="callout"><h4>Dopuna iz originalnih uputa i ambalaže</h4><p><strong>Bijeli, visoki način rada Magnetic II namijenjen je isključivo Wiipodu Sensation.</strong> Ljubičasti označava niski, a plavi srednji način. USB-C <strong>5 V / 550 mA</strong> opisuje punjenje; <strong>5–25 °C</strong> uvjete čuvanja. Nijedan podatak ne određuje temperaturu grijača. <a href="/studije/167/">Upute i svih osam fotografija →</a></p></div>
   <WiipStandards />
   <p class="chart-note">Cijene su snimka službene hrvatske ponude na datum provjere, bez dostave i graviranja. Sadržaj starter kita provjeriti na aktualnom izvoru. Fotografije su pohranjene kod nas, izvor Wiip.hr.</p>
   <div class="table-scroll"><table class="data">
@@ -14,7 +15,7 @@ import WiipStandards from './WiipStandards.astro';
     <thead><tr><th>Značajka</th><th>Magnetic II</th><th>X Pro</th></tr></thead>
     <tbody>
       <tr><th>Potrošni dio</th><td colspan="2">Zamjenjivi, unaprijed napunjeni Wiipodi. Proizvođač navodi međusobnu kompatibilnost Wiip uređaja i podova.</td></tr>
-      <tr><th>Upravljanje</th><td>Tri načina rada, tipka i memorija postavke.</td><td>Aktivacija udisajem; na provjerenoj stranici nema izbora triju načina rada.</td></tr>
+      <tr><th>Upravljanje</th><td>Ljubičasti niski, plavi srednji, bijeli visoki — bijeli samo za Sensation. Tipka i memorija postavke. <a href="/studije/167/">Upute</a></td><td>Aktivacija udisajem; na provjerenoj stranici nema izbora triju načina rada.</td></tr>
       <tr><th>Temperatura</th><td>Proizvođač navodi regulaciju mikročipom. Nema objavljenih °C ni krivulja mjerenja.</td><td>Nema potvrđenog raspona °C.</td></tr>
       <tr><th>Snaga / grijač</th><td colspan="2">Vati, otpor i materijal grijača nisu objavljeni u pregledanim specifikacijama. Nije potvrđeno da je grijač keramički.</td></tr>
       <tr><th>Izvori u bazi</th><td><a href="/studije/143/">Tehnologija</a> · <a href="/studije/144/">Specifikacija</a></td><td><a href="/studije/146/">Tehnologija</a> · <a href="/studije/145/">Specifikacija</a></td></tr>
@@ -23,26 +24,22 @@ import WiipStandards from './WiipStandards.astro';
   <h3>Wiipod: koncentracija, ukupni sadržaj i prinos nisu ista mjera</h3>
   <p>Na provjerenim Magnetic podovima cijena je <strong>4,20 € za 2 mL</strong>, odnosno 2,10 €/mL. Sastav navodi glicerin, propilen glikol, nikotin salicilat i dodatke ovisne o aromi. Isti uređaj s različitim podom zato nije ista kombinacija za mjerenje emisija.</p>
   <div class="table-scroll"><table class="data">
-    <caption>Tri provjerene deklaracije Wiipod Magnetic</caption>
+    <caption>Pet provjerenih deklaracija Wiipod Magnetic</caption>
     <thead><tr><th>Pod / izvor</th><th>Koncentracija</th><th>Nikotin u tekućini cijelog poda¹</th><th>Deklarirano oslobađanje²</th></tr></thead>
     <tbody>
       <tr><td><a href="/studije/147/">Cola 10</a></td><td>10 mg/mL</td><td>20 mg</td><td>0,07 mg/puff = 70 µg/puff</td></tr>
       <tr><td><a href="/studije/148/">Cola 18</a></td><td>18 mg/mL</td><td>36 mg</td><td>0,14 mg/puff = 140 µg/puff</td></tr>
+      <tr><td><a href="/studije/168/">Gold Tobacco 18</a></td><td>18 mg/mL</td><td>36 mg</td><td>0,0736 mg/puff = 73,6 µg/puff</td></tr>
+      <tr><td><a href="/studije/169/">Royal Tobacco 18</a></td><td>18 mg/mL</td><td>36 mg</td><td>0,0695 mg/puff = 69,5 µg/puff</td></tr>
       <tr><td><a href="/studije/149/">Apple 10</a></td><td>10 mg/mL</td><td>20 mg</td><td>0,05 mg/puff = 50 µg/puff</td></tr>
     </tbody>
   </table></div>
   <p class="chart-note">¹ Izračun: 2 mL × koncentracija. ² Podatak proizvođača; na stranicama nije objavljen protokol, uređaj i način rada korišten pri testiranju. Ovo nije mjerenje apsorpcije u krv. Brojke ne pretvaramo u „ekvivalent cigareta” niti procjenu zdravstvenog rizika.</p>
-  <figure class="wiip-figure">
-    <figcaption>Nikotin u tekućini cijelog poda (mg) · linearno od nule</figcaption>
-    <svg viewBox="0 0 760 185" role="img" aria-labelledby="wiip-chart-title wiip-chart-desc">
-      <title id="wiip-chart-title">Ukupni sadržaj nikotina u tri Wiipoda</title>
-      <desc id="wiip-chart-desc">Cola 10 i Apple 10 imaju 20 mg, Cola 18 ima 36 mg nikotina u 2 mL tekućine. Ovo nije apsorbirana doza.</desc>
-      <g fill="none" stroke="#34383d"><path d="M170 15V150 M305 15V150 M440 15V150 M575 15V150 M710 15V150"/></g>
-      <g fill="#36a59b"><rect x="170" y="25" width="270" height="24"/><rect x="170" y="70" width="486" height="24"/><rect x="170" y="115" width="270" height="24"/></g>
-      <g fill="#ddd" font-size="15" font-family="sans-serif"><text x="8" y="43">Cola 10 mg/mL</text><text x="8" y="88">Cola 18 mg/mL</text><text x="8" y="133">Apple 10 mg/mL</text><text x="450" y="43">20</text><text x="666" y="88">36</text><text x="450" y="133">20</text></g>
-      <g fill="#aaa" font-size="13" text-anchor="middle"><text x="170" y="172">0</text><text x="305" y="172">10</text><text x="440" y="172">20</text><text x="575" y="172">30</text><text x="710" y="172">40 mg</text></g>
-    </svg>
-    <p class="chart-note">Naš graf iz deklaracija <a href="/studije/147/">Cola 10</a>, <a href="/studije/148/">Cola 18</a> i <a href="/studije/149/">Apple 10</a>; izvorne stranice nemaju znanstvene grafove emisija za ova dva uređaja.</p>
+  <p><strong>Ista koncentracija ne znači isti prinos.</strong> Gold, Royal i Cola 18 imaju po 36 mg nikotina u tekućini, ali različite deklaracije oslobađanja. Bez zajedničkog protokola te brojke ne dokazuju razliku u apsorpciji ili štetnosti. <a href="/studije/168/">Gold</a> · <a href="/studije/169/">Royal</a> · <a href="/studije/148/">Cola</a>.</p>
+  <p>Royalova ambalaža navodi <strong>3-metilciklopentan-1,2-dion</strong> i upozorenje EUH208 o mogućoj alergijskoj reakciji. Količina u aerosolu nije navedena. <a href="/studije/169/">Deklaracija</a> · <a href="/studije/167/">Fotografije</a>.</p>
+  <figure class="wiip-figure"><figcaption>Nikotin u tekućini cijelog poda · mg, linearno od nule</figcaption>
+    {[['Cola 10',20,147],['Cola 18',36,148],['Gold Tobacco 18',36,168],['Royal Tobacco 18',36,169],['Apple 10',20,149]].map(([label,value,id])=><div class="pod-bar"><a href={`/studije/${id}/`}>{label}</a><div class="pod-track"><span style={`width:${Number(value)/40*100}%`}></span></div><span>{value} mg</span></div>)}
+    <p class="chart-note">Skala 0–40 mg. Izračun iz volumena i koncentracije deklarirane za svaki pod; nije apsorbirana doza.</p>
   </figure>
   <div class="callout">
     <h4>Što je pronađeno u istraživanju</h4>
@@ -53,6 +50,7 @@ import WiipStandards from './WiipStandards.astro';
   <p>HTML izvori imaju <strong>urednički prilagođene prikaze</strong> u našoj bazi, uz originalne poveznice; nisu označeni kao puni znanstveni radovi. Za procjenu Wiipa nedostaju mjerenja s točno navedenim podom, režimom povlačenja i načinom rada te tablice karbonila, metala i nikotina.</p>
 </section>
 <style>
+.pod-bar{display:grid;grid-template-columns:150px 1fr 60px;gap:12px;align-items:center;margin:12px 0;font-size:13px}.pod-track{background:var(--bg2)}.pod-track span{display:block;height:20px;background:#36a59b}
 .table-scroll {overflow-x:auto}.table-scroll table {min-width:600px}
 caption {text-align:left;color:var(--ink2);padding:1rem 0}
 .wiip-figure {margin:2rem 0}.wiip-figure svg {width:100%;height:auto;min-width:480px}.wiip-figure {overflow-x:auto}

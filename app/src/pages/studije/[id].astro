@@ -88,7 +88,7 @@ const used = s.cat.includes('Vuse') ? ['#vuse', '§10 Vuse: posebna analiza'] : 
 
     <div class="callout">
       <h4>Materijali kod nas</h4>
-      {s.fullText ? <p><a href={s.fullText} data-pdf={s.fullText?.split("#")[0].endsWith(".pdf")}>Otvori lokalnu kopiju dokumenta →</a></p> : s.sections?.length ? <p>Urednički prilagođen prikaz HTML izvora, u dizajnu naše stranice. Sažima provjerene podatke; nije doslovna kopija cijele izvorne stranice ni neovisna studija.</p> : <p>Ovdje je bibliografski zapis i sažetak nalaza. Puni tekst i prilozi još nisu pohranjeni u ovom repozitoriju; izvorni rad dostupan je putem poveznice ispod.</p>}
+      {s.documentPhotos ? <p>Osam fotografija izvornih uputa i ambalaže, dostavljenih 22. 9. 2026. Otvorite fotografiju za čitanje u punoj veličini. Sažetak ispod nije laboratorijska studija.</p> : s.fullText ? <p><a href={s.fullText} data-pdf={s.fullText?.split("#")[0].endsWith(".pdf")}>Otvori lokalnu kopiju dokumenta →</a></p> : s.sections?.length ? <p>Urednički prilagođen prikaz HTML izvora, u dizajnu naše stranice. Sažima provjerene podatke; nije doslovna kopija cijele izvorne stranice ni neovisna studija.</p> : <p>Ovdje je bibliografski zapis i sažetak nalaza. Puni tekst i prilozi još nisu pohranjeni u ovom repozitoriju; izvorni rad dostupan je putem poveznice ispod.</p>}
       {s.materials?.map(m=><p><a href={m.url}>{m.title}</a></p>)}
     </div>
     {s.accessed && <p class="chart-note">Pristupljeno izvoru: {s.accessed} Podaci proizvođača i cijene odnose se na datum provjere.</p>}
