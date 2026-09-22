@@ -4,7 +4,14 @@ const C={cig:'#e05d4f',cigar:'#b07843',ecig:'#3aa896',vuse:'#2f9e8f',juul:'#6d7f
 const baseAxis={axisLine:{lineStyle:{color:C.line}},axisLabel:{color:C.ink2,fontFamily:'ui-monospace,Menlo,monospace',fontSize:11},splitLine:{lineStyle:{color:'rgba(255,255,255,.05)'}}};
 const baseTip={trigger:'axis',backgroundColor:'#161412',borderColor:C.line,textStyle:{color:C.ink,fontSize:12}};
 const charts=[];
-function mk(id,opt){const el=document.getElementById(id);if(!el)return;const ch=echarts.init(el,null,{renderer:'canvas'});ch.setOption(opt);charts.push(ch);return ch;}
+function readingOption(value){
+ const light=document.documentElement.dataset.theme!=='dark', css=getComputedStyle(document.documentElement);
+ const colors={'rgba(255,255,255,.9)':css.getPropertyValue('--ink').trim(),'rgba(255,255,255,.6)':css.getPropertyValue('--ink2').trim(),'rgba(255,255,255,.38)':css.getPropertyValue('--ink3').trim(),'rgba(255,255,255,.12)':css.getPropertyValue('--line').trim(),'rgba(255,255,255,.05)':css.getPropertyValue('--line').trim(),'#161412':css.getPropertyValue('--bg2').trim(),'#ddd':css.getPropertyValue('--ink').trim(),'#aaa':css.getPropertyValue('--ink2').trim()};
+ function visit(v){if(Array.isArray(v))return v.map(visit);if(v&&typeof v==='object'){const out={};for(const [k,x] of Object.entries(v))out[k]=k==='fontSize'&&typeof x==='number'?x*(document.documentElement.dataset.textSize==='l'?1.2:document.documentElement.dataset.textSize==='s'?.9:1):visit(x);return out;}return light&&typeof v==='string'&&colors[v]?colors[v]:v;}
+ return visit(value);
+}
+window.addEventListener('readingchange',()=>charts.forEach(c=>{c.setOption(readingOption(c.readingOriginal),true);c.resize();}));
+function mk(id,opt){const el=document.getElementById(id);if(!el)return;const ch=echarts.init(el,null,{renderer:'canvas'});ch.readingOriginal=opt;ch.setOption(readingOption(opt));charts.push(ch);return ch;}
 window.addEventListener('resize',()=>charts.forEach(c=>c.resize()));
 
 /* ---------- hero canvas: temperature wave ---------- */

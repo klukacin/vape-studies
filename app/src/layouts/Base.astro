@@ -1,4 +1,5 @@
 ---
+import ReadingControls from '../components/ReadingControls.astro';
 import PdfModal from '../components/PdfModal.astro';
 // Base layout — Deep Research (Astro)
 const { title = 'Toplina i otrovi — ENVA Sol, Vuse, JUUL, Wiip, cigarete i cigare | Deep Research', desc = 'Usporedba temperatura, emisija i biomarkera: cigarete, cigare, nepušači, JUUL, Vuse Pro One, ENVA Sol i Wiip — sinteza 130+ studija.', base = './' } = Astro.props;
@@ -7,6 +8,9 @@ const { title = 'Toplina i otrovi — ENVA Sol, Vuse, JUUL, Wiip, cigarete i cig
 <html lang="hr">
 <head>
 <meta charset="utf-8">
+<script is:inline>
+(()=>{let p={};try{p=JSON.parse(localStorage.getItem('reading-preferences')||'{}')||{};}catch{}document.documentElement.dataset.theme=['dark','light','soft'].includes(p.theme)?p.theme:'dark';document.documentElement.dataset.textSize=['s','m','l'].includes(p.size)?p.size:'m';})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content={desc}>
@@ -214,9 +218,11 @@ footer .disc{border:1px solid var(--line);padding:1.4em 1.6em;margin-top:1.5em;l
 .gterm p{font-size:13px;margin-bottom:0}
 .gt-extra{color:var(--ink3);margin-top:.5em}
 </style>
+<link rel="stylesheet" href="reading.css">
 <script is:inline src="js/echarts.min.js"></script>
 </head>
 <body>
+<ReadingControls />
 <div id="topbar">
   <div class="tb-brand">Deep Research · duhan &amp; e-cigarete</div>
   <button id="navToggle" aria-label="Otvori navigaciju"><span></span><span></span><span></span></button>

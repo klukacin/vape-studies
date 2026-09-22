@@ -1,0 +1,19 @@
+:root{--reading-body:16px;--reading-detail:13px;--reading-note:12px;color-scheme:dark}
+:root[data-text-size=s]{--reading-body:14px;--reading-detail:12px;--reading-note:11px}
+:root[data-text-size=l]{--reading-body:20px;--reading-detail:17px;--reading-note:15px}
+:root[data-theme=light]{color-scheme:light;--bg:#fff;--bg2:#f2f4f6;--bg3:#e9edf0;--ink:#20272d;--ink2:#454e57;--ink3:#606b75;--line:#ccd2d8;--amber:#815300;--amber2:#8c4500;--ecig:#19786a;--vuse:#19786a}
+:root[data-theme=soft]{color-scheme:light;--bg:#f4efdf;--bg2:#ebe4d2;--bg3:#e2dac6;--ink:#35392f;--ink2:#505447;--ink3:#676958;--line:#c9c4af;--amber:#77501c;--amber2:#80502c;--ecig:#32755f;--vuse:#32755f}
+html[data-theme] body{font-size:var(--reading-body)}
+html[data-theme] main p,html[data-theme] main blockquote,html[data-theme] main li{font-size:var(--reading-body)!important}
+html[data-theme] main :is(.chart-note,.src,.small,.study-population,.design,.eyebrow){font-size:var(--reading-note)!important}
+html[data-theme] main :is(td,th,input,select,button,.comparison-row){font-size:var(--reading-detail)}
+html[data-theme] main h3{font-size:calc(var(--reading-body) + 1px)}
+html[data-theme] #topbar{background:var(--bg)}
+html[data-theme] table.data td{border-bottom-color:var(--line)}
+html[data-theme] :is(input,select){background:var(--bg2);color:var(--ink);border-color:var(--line)}
+html[data-theme] .bar-track{background:var(--bg2)}
+@media(max-width:1080px){#topbar .tb-brand{padding-right:45px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+html[data-theme=light] .cost-table td,html[data-theme=soft] .cost-table td{color:var(--ink)!important}
+html[data-theme=light] .cheap,html[data-theme=soft] .cheap{color:#226a36}
+html[data-theme=light] .expensive,html[data-theme=soft] .expensive{color:#a12d2d}
