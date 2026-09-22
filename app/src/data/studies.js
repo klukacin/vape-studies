@@ -2719,6 +2719,119 @@ const STUDIES_DB = [
     "text": "Ovaj nalaz sam po sebi ne dokazuje da je vaping uzrok bolesti. Ne prenosi se automatski na Wiip, Vuse Pro One ili drugi konkretan model."
    }
   ]
+ },
+ {
+  "i": 179,
+  "name": "Schneller i sur.",
+  "year": 2020,
+  "doi": "10.1093/ntr/ntaa199",
+  "title": "Cross-Sectional Association Between Exclusive and Concurrent Use of Cigarettes, ENDS, and Cigars, the Three Most Popular Tobacco Products, and Wheezing Symptoms Among U.S. Adults",
+  "design": "PATH W3 · presječno, 28.082 odraslih",
+  "finding": "Za ikadašnje piskanje: cigarete AOR 2,62 (95% CI 2,35–2,91), e-cigarete 1,49 (1,14–1,95), prema skupini bez aktualne uporabe. Za isključive cigare nije nađena statistički značajna povezanost.",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 0,
+  "url": "https://doi.org/10.1093/ntr/ntaa199",
+  "srclabel": "Izvorni znanstveni rad",
+  "sections": [
+   {
+    "heading": "Ograničenja usporedbe",
+    "text": "Isti uzorak i ishod omogućuju usporedbu, ali skupine nemaju izjednačenu dozu. Referenca nije nužno doživotni nepušač. Aktualna uporaba ne znači svakodnevnu uporabu; presječni dizajn ne utvrđuje uzročnost."
+   }
+  ]
+ },
+ {
+  "i": 180,
+  "name": "Sharma i sur.",
+  "year": 2024,
+  "doi": "10.1186/s12931-024-02818-x",
+  "title": "Respiratory symptoms and outcomes among cigar smokers: findings from the Population Assessment of Tobacco and Health (PATH) study waves 2–5 (2014–2019)",
+  "design": "PATH · longitudinalno, 7.930 odraslih",
+  "finding": "Ustaljeni aktualni pušači cigara imali su više novih funkcionalno važnih respiratornih simptoma: AOR 1,62 (1,02–2,60); cigare i cigarete zajedno 2,55 (1,57–4,14), prema onima koji nisu pušili cigare ni cigarete.",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 0,
+  "url": "https://doi.org/10.1186/s12931-024-02818-x",
+  "srclabel": "Izvorni znanstveni rad",
+  "sections": [
+   {
+    "heading": "Ograničenja usporedbe",
+    "text": "Obuhvaća tradicionalne cigare, cigarillose i filtrirane cigare; rezultat se ne odnosi posebno na povremenu premium cigaru. Ustaljena uporaba nije nužno dnevna. Isključeni su KOPB i druge neastmatske respiratorne bolesti; nije dokaz uzročnosti."
+   }
+  ]
+ },
+ {
+  "i": 181,
+  "name": "Iribarren i sur.",
+  "year": 1999,
+  "doi": "10.1056/NEJM199906103402301",
+  "title": "Effect of Cigar Smoking on the Risk of Cardiovascular Disease, Chronic Obstructive Pulmonary Disease, and Cancer in Men",
+  "design": "Kohorta · 17.774 muškarca bez prethodnog pušenja cigareta",
+  "finding": "Među 1.546 pušača cigara u odnosu na 16.228 nepušača: relativni rizik prve hospitalizacije ili smrti zbog KOPB-a 1,45 (1,10–1,91). Praćenje respiratornih ishoda do 1995.",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 1,
+  "url": "https://doi.org/10.1056/NEJM199906103402301",
+  "srclabel": "Izvorni znanstveni rad",
+  "sections": [
+   {
+    "heading": "Ograničenja usporedbe",
+    "text": "Dugoročni klinički ishod, a ne samo upitnik simptoma. Muški, povijesni uzorak; ne daje izravnu usporedbu s današnjim e-cigaretama niti univerzalni rizik svake cigare."
+   }
+  ]
+ },
+ {
+  "i": 182,
+  "name": "Scanlon i sur. · Lung Health Study",
+  "year": 2000,
+  "doi": "10.1164/ajrccm.161.2.9901044",
+  "title": "Smoking cessation and lung function in mild-to-moderate chronic obstructive pulmonary disease. The Lung Health Study",
+  "design": "Petogodišnja analiza plućne funkcije u ispitivanju prestanka pušenja",
+  "finding": "Kod trajnih apstinenata naknadni prosječni pad FEV₁ bio je 31 mL/godinu, a kod onih koji su nastavili pušiti 62 mL/godinu. Sudionici su već imali blagu do umjerenu opstrukciju.",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 0,
+  "url": "https://doi.org/10.1164/ajrccm.161.2.9901044",
+  "srclabel": "Izvorni znanstveni rad",
+  "sections": [
+   {
+    "heading": "Ograničenja usporedbe",
+    "text": "FEV₁ je volumen izdahnut u prvoj sekundi forsiranog izdisaja. Program prestanka bio je randomiziran, uspješan prestanak nije; ove prosjeke ne prenosimo na zdrave vapere ili pušače cigara."
+   }
+  ]
+ },
+ {
+  "i": 183,
+  "name": "Sargent i sur.",
+  "year": 2022,
+  "doi": "10.1093/ntr/ntac080",
+  "title": "Tobacco Use and Respiratory Symptoms Among Adults: Findings From the Longitudinal Population Assessment of Tobacco and Health (PATH) Study 2014–2016",
+  "design": "PATH · 16.295 odraslih bez KOPB-a",
+  "finding": "Pušenje cigareta bilo je glavni pokretač povezanosti s funkcionalno važnim simptomima. Za isključive cigare i e-cigarete većina usporedbi nije bila značajna; rezultat e-cigareta ovisio je o pragu simptoma i prilagodbi za prethodno pušenje.",
+  "cat": "Ishodi / pluća i disanje",
+  "non": 0,
+  "url": "https://doi.org/10.1093/ntr/ntac080",
+  "srclabel": "Izvorni znanstveni rad",
+  "sections": [
+   {
+    "heading": "Ograničenja usporedbe",
+    "text": "Kratko praćenje, samoprijava i različita učestalost uporabe. Dijeli PATH podatke s drugim analizama; nije neovisna populacija. Neznačajan rezultat nije potvrda sigurnosti."
+   }
+  ]
+ },
+ {
+  "i": 184,
+  "name": "US Surgeon General — respiratorne bolesti",
+  "year": 2004,
+  "title": "The Health Consequences of Smoking: Respiratory Diseases",
+  "cat": "Ishodi / pluća i disanje",
+  "design": "Sinteza dokaza o uzročnosti",
+  "finding": "Ukupni dokazi podupiru uzročnu vezu pušenja cigareta i KOPB-a. Oprez pri tumačenju pojedinog opservacijskog rada ne poništava tu utvrđenu vezu.",
+  "non": 0,
+  "url": "https://www.ncbi.nlm.nih.gov/books/NBK44694/",
+  "srclabel": "Izvorni izvještaj · NCBI Bookshelf",
+  "sections": [
+   {
+    "heading": "Primjena",
+    "text": "Ovo je sinteza dokaza za cigarete; nije izravna trostruka usporedba modernih e-cigareta, cigareta i cigara."
+   }
+  ]
  }
 ];
 

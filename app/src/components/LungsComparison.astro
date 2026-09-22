@@ -1,0 +1,29 @@
+---
+import studies from '../data/studies.js';
+const extra=studies.filter(s=>[180,181,182,183].includes(s.i));
+---
+<div id="lungs-comparison">
+  <h3>Cigarete, cigare i e-cigarete — usporedba istog ishoda</h3>
+  <p><a href="/studije/179/">Schneller i sur. (2020)</a> usporedili su tri skupine u istom PATH uzorku. Ishod je <strong>ikadašnje piskanje u prsima</strong>, ne dijagnoza ni godišnji gubitak plućne funkcije. Referenca su osobe bez aktualne uporabe uspoređivanih proizvoda, uključujući bivše korisnike.</p>
+  <div class="comparison-scroll"><table class="data">
+    <caption>PATH W3 · 28.082 odraslih · isti prilagođeni model</caption>
+    <thead><tr><th>Isključiva aktualna uporaba</th><th>Prilagođeni omjer izgleda (AOR)</th><th>Što rezultat znači</th></tr></thead>
+    <tbody>
+      <tr><th>Cigarete</th><td>2,62 · 95% CI 2,35–2,91</td><td>Viši izgledi za piskanje u odnosu na referencu.</td></tr>
+      <tr><th>E-cigarete</th><td>1,49 · 95% CI 1,14–1,95</td><td>Viši izgledi u odnosu na referencu; niža procjena nego za cigarete.</td></tr>
+      <tr><th>Cigare</th><td>Nije nađena značajna povezanost</td><td>To nije nulti rizik niti dokaz da su cigare sigurnije od e-cigareta.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="chart-note">Izvor: <a href="/studije/179/">rad i ograničenja</a>. AOR nije postotak korisnika sa simptomima. Usporedba ne izjednačava broj dnevnih povlačenja, godine uporabe ili inhalaciju. Zato je ne nazivamo usporedbom jednakih doza redovitog pušenja.</p>
+  <h3>Redovito pušenje: simptomi, KOPB i plućna funkcija</h3>
+  <div class="evidence-grid">{extra.map(s=><article><h4><a href={`/studije/${s.i}/`}>{s.name} ({s.year}) ↗</a></h4><p class="design">{s.design}</p><p>{s.finding}</p><p><strong>Ograničenje:</strong> {s.sections[0].text}</p></article>)}</div>
+  <div class="callout"><h4>Tri skupine, različita čvrstoća dokaza</h4>
+    <p><strong>Cigarete:</strong> uzročna veza s KOPB-om utvrđena je ukupnim dokazima; prestanak usporava pad funkcije kod pušača s opstrukcijom. <a href="/studije/184/">Sinteza uzročnosti</a> · <a href="/studije/182/">Mjerenja FEV₁</a>.</p>
+    <p><strong>Cigare:</strong> kratkoročne analize simptoma nisu jednoznačne, ali dugoročna kohorta nalazi viši rizik ozbiljnih ishoda KOPB-a i bez prethodnog pušenja cigareta. Tradicionalne cigare, cigarillosi i filtrirane cigare nisu ista izloženost. <a href="/studije/180/">PATH</a> · <a href="/studije/181/">Dugoročno praćenje</a>.</p>
+    <p><strong>E-cigarete:</strong> dio radova nalazi više simptoma, a dugoročni klinički ishodi i učinci intenzivne uporabe ostaju slabije razjašnjeni. <a href="/studije/178/">Pregled nepušača</a> · <a href="/studije/183/">Usporedba u PATH-u</a>.</p>
+  </div>
+  <p>Za cigare je posebno važno <strong>koliko često osoba puši i udiše li dim</strong>. Prikazani brojevi ne daju zasebnu pouzdanu procjenu za svakodnevnu cigaru bez inhalacije nasuprot svakodnevnoj cigari s inhalacijom. Ne pretvaramo ih u opću ljestvicu „e-cigareta → cigara → cigareta”. <a href="/studije/165/">Kontekst inhalacije</a>.</p>
+</div>
+<style>
+.comparison-scroll{overflow-x:auto}.comparison-scroll table{min-width:620px}caption{text-align:left;color:var(--ink2);padding:1rem 0}.evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.5rem 0}.evidence-grid article{border:1px solid var(--line);padding:1.3rem;min-width:0}.evidence-grid h4{font-size:16px;margin:0 0 .7rem}.evidence-grid p{font-size:14px;max-width:none}.evidence-grid .design{font-size:12px;color:var(--ink3)}@media(max-width:900px){.evidence-grid{grid-template-columns:1fr}}
+</style>
