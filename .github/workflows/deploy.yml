@@ -50,14 +50,14 @@ jobs:
         run: |
           worker="https://vape-studies.nosco-703.workers.dev"
           public="https://vape-studies.research.lukacin.com"
-          for i in $(seq 1 10); do
-            code=$(curl -sS -o /dev/null -w '%{http_code}' "$worker/" || echo 000)
-            [ "$code" = "200" ] && { echo "worker OK (200) $worker"; break; }
-            echo "attempt $i: HTTP $code"; sleep 6
-            [ "$i" = "10" ] && { echo "::error::worker healthcheck failed ($code)"; exit 1; }
-          done
+          # Asset routes can become available after the root page does.
           for path in / /studije/ /studije/1/ /js/charts.js; do
-            code=$(curl -sS -o /dev/null -w '%{http_code}' "$worker$path" || echo 000)
-            [ "$code" = "200" ] || { echo "::error::$path answered $code"; exit 1; }
+            for i in $(seq 1 10); do
+              code=$(curl -sS -o /dev/null -w '%{http_code}' "$worker$path" || echo 000)
+              [ "$code" = "200" ] && { echo "worker OK (200) $worker$path"; break; }
+              echo "$path attempt $i: HTTP $code"
+              [ "$i" = "10" ] && { echo "::error::$path answered $code after $i attempts"; exit 1; }
+              sleep 6
+            done
           done
           echo "public $public -> HTTP $(curl -sS -o /dev/null -w '%{http_code}' "$public/" || echo 000)"
