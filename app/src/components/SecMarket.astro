@@ -9,6 +9,7 @@ const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFracti
   <h2><span class="num">12</span>Uređaji, cijene i nikotin</h2>
   <DeviceGallery />
   <p>JUUL2, Vuse Pro One, ENVA Sol, IQOS ILUMA i ONE, Wiip Magnetic II i Wiip X Pro — šest uređaja, uz cigarete kao referencu. <a href="/#uredaji">Sve fotografije ↑</a> · zasebne analize: <a href="/#enva">ENVA Sol</a>, <a href="/#vuse">Vuse</a>, <a href="/#wiip">Wiip</a>.</p>
+  <div class="callout"><h4>Što IQOS predstavlja u usporedbi?</h4><p><strong>IQOS je grijani duhan.</strong> Zagrijava duhanski stick; e-cigareta zagrijava tekućinu, a cigareta ili cigara izgara duhan. U ovom tržišnom pregledu prikazujemo ILUMA i ONE s TEREA stickovima. Pojedini znanstveni radovi ispituju raniji IQOS s HEETS stickovima: njihov rezultat ne prenosimo automatski na ILUMA/TEREA. Primjer je <a href="/studije/190/">studija nikotina u krvi</a>.</p></div>
   <h3>Uređaj, potrošni dio i cijena</h3>
   <div class="compare-scroll"><table class="data">
     <thead><tr><th>Proizvod</th><th>Početni uređaj / kit</th><th>Potrošni dio</th><th>Tehnologija</th><th>Izvor / status</th></tr></thead>
@@ -27,6 +28,7 @@ const fmt=(n)=>n==null?'Nije potvrđeno':n.toLocaleString('hr-HR',{maximumFracti
     <tbody>{devices.map(d=><tr><th>{d.name}</th><td>{d.volume==null?'Duhan':`${fmt(d.volume)} mL`}</td><td>{d.strength==null?(d.id==='cig'?'≈15 mg/g duhana (1,5%)':'mg/g: nije potvrđeno'):`${d.strength} mg/mL`}</td><td>{liquidContent(d)==null?(d.id==='cig'?'10–14 mg / cigareta':'mg/stick: nije potvrđeno'):`${fmt(liquidContent(d))} mg`}</td><td>{d.id==='cig'?<>Prosječno 1–1,5 mg apsorbirano po cigareti; opći podatak, ne specifično za Marlboro. <a href="/studije/160/">Izvor ↗</a></>:d.id==='iqos'?<>≈0,5 mg isporučeno/stick prema proizvođaču (Egipat); metoda nije navedena, nije potvrda za HR. <a href="/studije/161/">Izvor ↗</a></>:d.dose}</td></tr>)}</tbody>
   </table></div>
   <p class="chart-note">Za duhan je koncentracija u mg/g, za tekućinu u mg/mL. Ukupni sadržaj proizvoda nije isto što i prinos aerosola ili doza apsorbirana u tijelu. Cigaretni raspon odnosi se na opće podatke iz literature; za TEREA-u ukupan sadržaj i koncentracija nisu potvrđeni. Graf ispod prikazuje samo sadržaj e-tekućine.</p>
+  <p>Stvarni unos pogledajte u <a href="/#nicotine-blood">usporedbi nikotina u krvi: cigareta, IQOS i JUUL</a>. <a href="/studije/191/">Cigare su istražene zasebno</a>, drugim postupkom.</p>
   <div class="comparison-bars" aria-label="Nikotin u tekućini, linearna skala od 0 do 40 mg">
     {devices.map(d=><div class="comparison-row"><strong>{d.name}</strong><div class="bar-track"><span class="bar-fill nicotine" style={`width:${(liquidContent(d)??0)/40*100}%`}></span></div><span>{liquidContent(d)==null?'Nije primjenjivo':`${fmt(liquidContent(d))} mg`}</span></div>)}
   </div>

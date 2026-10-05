@@ -1,0 +1,39 @@
+{
+  "retrieved": "2026-10-05",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9778798/",
+  "title": "Chemical Elements, Flavor Chemicals, and Nicotine in Unused and Used Electronic Cigarettes Aged 5–10 Years and Effects of pH",
+  "doi": "10.3390/ijerph192416931",
+  "license": "CC BY",
+  "files": [
+    {
+      "name": "PMC9778798.1.pdf",
+      "size": 1875384,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9778798.1/PMC9778798.1.pdf?md5=21be6db00917518f250fcefecf32ef0a"
+    },
+    {
+      "name": "ijerph-19-16931-g001.jpg",
+      "size": 101299,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9778798.1/ijerph-19-16931-g001.jpg?md5=2499c5dca8417d7d8b393c6095fd8859"
+    },
+    {
+      "name": "ijerph-19-16931-g002.jpg",
+      "size": 206228,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9778798.1/ijerph-19-16931-g002.jpg?md5=6f9c5937532b8077c4fd7a55b36eca73"
+    },
+    {
+      "name": "ijerph-19-16931-g003.jpg",
+      "size": 122829,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9778798.1/ijerph-19-16931-g003.jpg?md5=6182a1f1986012c247ea4a1e270e588d"
+    },
+    {
+      "name": "ijerph-19-16931-g004.jpg",
+      "size": 95769,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9778798.1/ijerph-19-16931-g004.jpg?md5=e3f7f115667c74867bb00f4bed403b7b"
+    },
+    {
+      "name": "ijerph-19-16931-s001.zip",
+      "size": 5186834,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9778798.1/ijerph-19-16931-s001.zip?md5=80e87c471bc342c83008b8c82eee19fc"
+    }
+  ]
+}

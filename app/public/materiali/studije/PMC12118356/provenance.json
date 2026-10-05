@@ -1,0 +1,55 @@
+{
+  "retrieved": "2026-10-05",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12118356/",
+  "title": "Quantification of 16 Metals in Fluids and Aerosols From Ultrasonic Pod-Style Cigarettes and Comparison to Electronic Cigarettes",
+  "doi": "10.1289/EHP15648",
+  "license": "Public domain according to EHP article permissions statement, except where otherwise noted",
+  "files": [
+    {
+      "name": "PMC12118356.1.pdf",
+      "size": 3346006,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12118356.1/PMC12118356.1.pdf?md5=a14aea6852bf27b74d260447f2d54a47"
+    },
+    {
+      "name": "ehp15648.s001.acco.pdf",
+      "size": 1793188,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12118356.1/ehp15648.s001.acco.pdf?md5=12dc5a8a680a03dd6e47839811bef3a8"
+    },
+    {
+      "name": "ehp15648.smcontents.508.pdf",
+      "size": 13225,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12118356.1/ehp15648.smcontents.508.pdf?md5=777310bb17352da3af1a9c2944140955"
+    },
+    {
+      "name": "ehp15648_f1.jpg",
+      "size": 4696397,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12118356.1/ehp15648_f1.jpg?md5=777d46b6dd5efd54319128e714db5e9e"
+    },
+    {
+      "name": "ehp15648_f2.jpg",
+      "size": 815542,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12118356.1/ehp15648_f2.jpg?md5=3ca0d29c6a583de96b2393dff61b8753"
+    },
+    {
+      "name": "ehp15648_f3.jpg",
+      "size": 503084,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12118356.1/ehp15648_f3.jpg?md5=cc51eb2f2765e1bffabc41314681218c"
+    },
+    {
+      "name": "ehp15648_f4.jpg",
+      "size": 638140,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12118356.1/ehp15648_f4.jpg?md5=b42f3a20908568665e43d53edf93c0fe"
+    },
+    {
+      "name": "ehp15648_f5.jpg",
+      "size": 443453,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12118356.1/ehp15648_f5.jpg?md5=e0a782198d14ffe8d4c2e8677b252ca1"
+    },
+    {
+      "name": "ehp15648_f6.jpg",
+      "size": 150093,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12118356.1/ehp15648_f6.jpg?md5=c18fbe142fb538c8c47ec36e78a24881"
+    }
+  ],
+  "license_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12118356/"
+}

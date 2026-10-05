@@ -43,7 +43,7 @@ mk('chartTemp',{
 tooltip:{...baseTip,trigger:'item',formatter:p=>`Temperaturni raspon<br><b>${p.value[1]}–${p.value[2]} °C</b>`},
 grid:{left:230,right:100,top:30,bottom:50},
 xAxis:{type:'value',name:'°C',nameTextStyle:{color:C.ink2},min:0,max:1100,...baseAxis},
-yAxis:{type:'category',data:['Nepušač (referenca)','Pod-uređaji 1,2 Ω · ~10 W','Pod-uređaji 0,6 Ω · ~21 W','Vuse Pro One — nema mjerenja','JUUL — prosjek atomizera','JUUL — grijaći element','ENVA Sol — nema mjerenja','PG/VG prag razgradnje','Dry burn — suhi fitilj','Cigareta — vrh pri puhanju'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
+yAxis:{type:'category',data:['Nepušač (referenca)','Pod-uređaji 1,2 Ω · ~10 W','Pod-uređaji 0,6 Ω · ~21 W','Vuse Pro One — nema mjerenja','JUUL — prosjek atomizera','JUUL — grijaći element','ENVA Sol — nema mjerenja','Top-coil — laboratorijski suhi test','Cigareta — vrh pri puhanju'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
 series:[{type:'custom',renderItem:(p,api)=>{const y=api.coord([0,api.value(0)])[1];const x1=api.coord([api.value(1),0])[0];const x2=api.coord([api.value(2),0])[0];
 return{type:'group',children:[{type:'rect',shape:{x:x1,y:y-11,width:Math.max(x2-x1,2),height:22},style:{fill:api.value(3),opacity:.92}},{type:'text',style:{x:x2+7,y,text:api.value(1)+'–'+api.value(2)+' °C',fill:C.ink,fontSize:11,verticalAlign:'middle'}}]};},
 data:[
@@ -52,10 +52,8 @@ data:[
 [2,103,150,C.ecig],
 [4,150,300,C.juul],
 [5,200,250,C.juul],
-[7,250,250,'#d94f70'],
-[8,350,1008,'#8a2f2f'],
-[9,600,900,C.cig]],
-markLine:{symbol:'none',lineStyle:{color:'#d94f70',type:'dashed'},label:{color:'#d94f70',fontSize:11,formatter:'~250 °C — početak pirolize PG/VG'},data:[{xAxis:250}]}
+[7,322,1008,'#8a2f2f'],
+[8,600,900,C.cig]]
 }]});
 
 /* ---------- 02 power: separate absolute emissions and composition ---------- */
@@ -147,7 +145,7 @@ data:[
 {value:259,itemStyle:{color:'#d94f70'}}],
 label:{show:true,position:'right',color:C.ink,fontFamily:'ui-monospace,Menlo,monospace',formatter:'+{c}%'}
 }],
-graphic:[{type:'text',right:20,bottom:0,style:{text:'Woo i sur. 2021/2026 · striatum ako nije drugačije navedeno · Pb i Cr = najproblematičniji',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
+graphic:[{type:'text',right:20,bottom:0,style:{text:'Re i sur. 2021 · miševi · odabrana tkiva i dvije doze izloženosti',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
 });
 
 /* ---------- 03e blood metals ---------- */

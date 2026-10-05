@@ -40,14 +40,14 @@ const STUDIES_DB = [
   "design": "Lab · ES&T",
   "finding": "Glycidol i propilen-oksid u aerosolu; akrolein raste 10x pri 4,8 V; single-coil gori",
   "non": 0,
-  "pmid": "26719373",
-  "title": "Cytotoxicity of Thirdhand Smoke and Identification of Acrolein as a Volatile Thirdhand Smoke Chemical That Inhibits Cell Proliferation",
-  "journal": "Toxicological sciences : an official journal of the Society of Toxicology",
-  "authors": "Bahl V, Weng NJ, Schick SF, Sleiman M, Whitehead J, Ibarra A",
-  "pubdate": "2016 Mar",
-  "doi": "10.1093/toxsci/kfv327",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/26719373/",
-  "srclabel": "PubMed 26719373 · Toxicological sciences : an official journal of the Society of Toxicology"
+  "pmid": "27461870",
+  "title": "Emissions from Electronic Cigarettes: Key Parameters Affecting the Release of Harmful Chemicals",
+  "journal": "Environmental Science & Technology",
+  "authors": "Sleiman M, Logue JM, Montesinos VN, Russell ML, Litter MI, Gundel LA, Destaillats H",
+  "pubdate": "2016 Sep 6",
+  "doi": "10.1021/acs.est.6b01741",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/27461870/",
+  "srclabel": "PubMed 27461870 · Environmental Science & Technology"
  },
  {
   "i": 4,
@@ -80,18 +80,19 @@ const STUDIES_DB = [
  {
   "i": 6,
   "name": "Farsalinos i sur.",
-  "year": 2017,
+  "year": 2018,
   "cat": "Emisije / metodologija",
   "design": "Lab + iskusni vaperi",
-  "finding": "Ekstremne emisije = suhi udar koji korisnici izbjegavaju; novi atomizer 94–99,8% manje karbonila",
+  "finding": "U repliciranim uvjetima CE4v2 stvara suhe udisaje; Nautilus Mini bez suhih udisaja imao je niske emisije aldehida. Rezultati ovise o atomizeru i uvjetima testa.",
   "non": 0,
-  "pmid": "25994768",
-  "title": "Farsalinos 2017 carbonyls experienced",
-  "journal": "Nicotine Tob Res",
-  "authors": "",
-  "pubdate": "2017",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/25994768/",
-  "srclabel": "PubMed 25994768 · Nicotine Tob Res"
+  "pmid": "29109042",
+  "title": "Aldehyde levels in e-cigarette aerosol: Findings from a replication study and from use of a new-generation device",
+  "journal": "Food and Chemical Toxicology",
+  "authors": "Farsalinos KE, Kistler KA, Pennington A, Spyrou A, Kouretas D, Gillman G",
+  "pubdate": "2018 Jan · online 2017 Nov 3",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/29109042/",
+  "srclabel": "PubMed 29109042 · Food and Chemical Toxicology",
+  "doi": "10.1016/j.fct.2017.11.002"
  },
  {
   "i": 7,
@@ -1426,15 +1427,30 @@ const STUDIES_DB = [
  },
  {
   "i": 107,
-  "name": "Woo i sur. (mozak)",
+  "name": "Re i sur. — metali u mozgu miševa",
   "year": 2021,
   "cat": "Biomarkeri / mozak",
-  "design": "Miš · 2 mj. · ICP-MS 9 regija",
-  "finding": "Akumulacija neurotoksičnih metala u mozgu: Pb +185% striatum, +259% korteks; Cu +42%; Fe +26%; Mn +18%; krv: Cr +41%",
-  "non": 1,
-  "url": "https://scholar.google.com/scholar?q=Woo%20%28mozak%29%202021%20e-cigarette%20tobacco%20cigar",
-  "srclabel": "Google Scholar — pretraga izvora",
-  "scholar": 1
+  "design": "15 miševa · 3 skupine po 5 · 2 mjeseca · ICP-MS",
+  "finding": "Izloženost aerosolu povećala je koncentracije pojedinih metala u određenim područjima mišjeg mozga. Primjer pri višoj dozi: Pb +185%, Cu +42%, Fe +26% i Mn +18% u strijatumu. Nisu mjereni klinički ishodi kod ljudi.",
+  "non": 0,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8578258/",
+  "srclabel": "PMC · izvorni rad",
+  "title": "Exposure to e-cigarette aerosol over two months induces accumulation of neurotoxic metals and alteration of essential metals in mouse brain",
+  "doi": "10.1016/j.envres.2021.111557",
+  "pmid": "34245728",
+  "journal": "Environmental research",
+  "sections": [
+   {
+    "heading": "Što kontrola znači",
+    "text": "Kontrolna skupina bili su neizloženi miševi. Ovo nije usporedba ljudskih nepušača i vapera. Dvije izložene skupine primale su različite doze aerosola, a rezultati ovise o metalu, području tkiva i dozi."
+   },
+   {
+    "heading": "Ograničenja",
+    "text": "Malen životinjski uzorak; nema izravnog mjerenja metala u ljudskom mozgu ni dokaza da određeni model e-cigarete uzrokuje neurodegenerativnu bolest. Raniji naziv Woo i časopis Chemical Research in Toxicology bili su pogrešni."
+   }
+  ],
+  "authors": "Re Diane B.; Hilpert Markus; Saglimbeni Brianna; Strait Madeleine; Ilievski Vesna; Coady Maxine; Talayero Maria; Wilmsen Kai; Chesnais Helene; Balac Olgica; Glabonjat Ronald A.; Slavkovich Vesna; Yan Beizhan; Graziano Joseph; Navas-Acien Ana; Kleiman Norman J.",
+  "pubdate": "2021-07-08"
  },
  {
   "i": 108,
@@ -2856,7 +2872,340 @@ const STUDIES_DB = [
       "text": "Vuse Alto opisan je s poroznim silikatnim blokom (6,5 W; 1,1 Ω). To nije Vuse Pro One. Mjerenje metalnih čestica ne dokazuje otpuštanje silikatnih čestica ni dugoročni rizik određenog uređaja."
     }
   ]
-}
+},
+ {
+  "i": 186,
+  "name": "Salazar i sur. — jednokratni uređaji",
+  "year": 2025,
+  "title": "Elevated Toxic Element Emissions from Popular Disposable E-Cigarettes: Sources, Life Cycle, and Health Risks",
+  "doi": "10.1021/acscentsci.5c00641",
+  "cat": "Emisije / metali",
+  "design": "Laboratorij · 21 uređaj · ELF Bar, Flum Pebble, Esco Bar",
+  "finding": "U ispitivanim jednokratnim uređajima emisije metala mijenjale su se kroz vijek uporabe. U dijelovima Esco Bar uređaja identificirana je legura s olovom; autori su modelirali prekoračenja pragova rizika za neke metale.",
+  "non": 0,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12395296/",
+  "srclabel": "PMC · izvorni znanstveni rad",
+  "sections": [
+   {
+    "heading": "Što je mjereno",
+    "text": "Analiza dijelova uređaja, tekućine i aerosola uključivala je ukupne koncentracije i kemijske oblike kroma i antimona. Ispitano je sedam varijanti triju marki, svaka u triplikatu. Neki uređaji praćeni su do 1500 puffova."
+   },
+   {
+    "heading": "Kako tumačiti rizik",
+    "text": "Procjena rizika temelji se na emisijama i pretpostavkama izloženosti. Nisu praćene bolesti korisnika. Usporedba emisije jednog metala s cigaretama nije usporedba ukupne štetnosti; rezultati se ne prenose na Vuse Pro One, Wiip ili IQOS."
+   },
+   {
+    "heading": "Lokalna kopija i licenca",
+    "text": "Puni PDF, slike i dostupni prilozi preuzeti su 5. 10. 2026. iz NCBI PMC Open Data zbirke. Sačuvani su izvorni dokumenti i poveznica na izvor; licenca: CC BY."
+   }
+  ],
+  "pmid": "40893954",
+  "fullText": "/materiali/studije/PMC12395296/PMC12395296.1.pdf",
+  "materials": [
+   {
+    "title": "Izvorna slika · oc5c00641_0001.jpg",
+    "url": "/materiali/studije/PMC12395296/oc5c00641_0001.jpg"
+   },
+   {
+    "title": "Izvorna slika · oc5c00641_0002.jpg",
+    "url": "/materiali/studije/PMC12395296/oc5c00641_0002.jpg"
+   },
+   {
+    "title": "Izvorna slika · oc5c00641_0003.jpg",
+    "url": "/materiali/studije/PMC12395296/oc5c00641_0003.jpg"
+   },
+   {
+    "title": "Izvorna slika · oc5c00641_0004.jpg",
+    "url": "/materiali/studije/PMC12395296/oc5c00641_0004.jpg"
+   },
+   {
+    "title": "Izvorna slika · oc5c00641_0005.jpg",
+    "url": "/materiali/studije/PMC12395296/oc5c00641_0005.jpg"
+   },
+   {
+    "title": "Izvorna slika · oc5c00641_0006.jpg",
+    "url": "/materiali/studije/PMC12395296/oc5c00641_0006.jpg"
+   },
+   {
+    "title": "Izvorna slika · oc5c00641_0007.jpg",
+    "url": "/materiali/studije/PMC12395296/oc5c00641_0007.jpg"
+   },
+   {
+    "title": "Izvorna slika · oc5c00641_m001.jpg",
+    "url": "/materiali/studije/PMC12395296/oc5c00641_m001.jpg"
+   },
+   {
+    "title": "Izvorna slika · oc5c00641_m002.jpg",
+    "url": "/materiali/studije/PMC12395296/oc5c00641_m002.jpg"
+   },
+   {
+    "title": "Prilog · oc5c00641_si_001.pdf",
+    "url": "/materiali/studije/PMC12395296/oc5c00641_si_001.pdf"
+   },
+   {
+    "title": "Prilog · oc5c00641_si_002.xlsx",
+    "url": "/materiali/studije/PMC12395296/oc5c00641_si_002.xlsx"
+   },
+   {
+    "title": "ACS · priopćenje o ovom radu",
+    "url": "https://www.acs.org/pressroom/presspacs/2025/june/metals-found-in-disposable-e-cigarette-vapor-could-pose-health-risks.html"
+   },
+   {
+    "title": "POST · pregled sastavnih dijelova i zdravstvenih dokaza",
+    "url": "https://post.parliament.uk/health-effects-of-vape-device-components/"
+   },
+   {
+    "title": "Medical Toxicology · sekundarni blog",
+    "url": "https://medicaltoxic.com/blogs/hidden-heavy-metals-in-vapes-new-study-reveals-dangerous-ex"
+   }
+  ],
+  "authors": "Salazar Mark R.; Saini Lalima; Nguyen Tran B.; Pinkerton Kent E.; Madl Amy K.; Cole Austin M.; Poulin Brett A.",
+  "journal": "ACS Central Science",
+  "pubdate": "2025-06-25"
+ },
+ {
+  "i": 187,
+  "name": "Williams i sur. — starenje i pH tekućine",
+  "year": 2022,
+  "title": "Chemical Elements, Flavor Chemicals, and Nicotine in Unused and Used Electronic Cigarettes Aged 5–10 Years and Effects of pH",
+  "doi": "10.3390/ijerph192416931",
+  "cat": "Emisije / metali",
+  "design": "Laboratorij · 89 uzoraka tekućine · 10 marki prve generacije",
+  "finding": "U tekućinama iz uređaja pohranjenih 5–10 godina izmjereni su metali, nikotin i arome. Uzorci s više kiselina i nižim pH imali su više metala; kod nekih proizvoda koncentracije su nakon uporabe bile više.",
+  "non": 0,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9778798/",
+  "srclabel": "PMC · izvorni znanstveni rad",
+  "sections": [
+   {
+    "heading": "Opseg mjerenja",
+    "text": "Mjerenja se odnose na tekućinu iz povijesnih uređaja prve generacije, uključujući neuporabljene i korištene proizvode. Koncentracija u tekućini nije doza u aerosolu ili krvi."
+   },
+   {
+    "heading": "Primjena",
+    "text": "Nalaz podupire važnost starenja, kontakta s dijelovima uređaja i pH. Ne daje dozu za suvremeni pod niti učinak na pluća ili mozak korisnika."
+   },
+   {
+    "heading": "Lokalna kopija i licenca",
+    "text": "Puni PDF, slike i dostupni prilozi preuzeti su 5. 10. 2026. iz NCBI PMC Open Data zbirke. Sačuvani su izvorni dokumenti i poveznica na izvor; licenca: CC BY."
+   }
+  ],
+  "pmid": "36554813",
+  "fullText": "/materiali/studije/PMC9778798/PMC9778798.1.pdf",
+  "materials": [
+   {
+    "title": "Izvorna slika · ijerph-19-16931-g001.jpg",
+    "url": "/materiali/studije/PMC9778798/ijerph-19-16931-g001.jpg"
+   },
+   {
+    "title": "Izvorna slika · ijerph-19-16931-g002.jpg",
+    "url": "/materiali/studije/PMC9778798/ijerph-19-16931-g002.jpg"
+   },
+   {
+    "title": "Izvorna slika · ijerph-19-16931-g003.jpg",
+    "url": "/materiali/studije/PMC9778798/ijerph-19-16931-g003.jpg"
+   },
+   {
+    "title": "Izvorna slika · ijerph-19-16931-g004.jpg",
+    "url": "/materiali/studije/PMC9778798/ijerph-19-16931-g004.jpg"
+   },
+   {
+    "title": "Prilog · ijerph-19-16931-s001.zip",
+    "url": "/materiali/studije/PMC9778798/ijerph-19-16931-s001.zip"
+   }
+  ],
+  "authors": "Williams Monique; Luo Wentai; McWhirter Kevin; Ikegbu Omeka; Talbot Prue",
+  "journal": "International Journal of Environmental Research and Public Health",
+  "pubdate": "2022-12-16"
+ },
+ {
+  "i": 188,
+  "name": "Omaiye i Talbot — ultrazvučni podovi",
+  "year": 2025,
+  "title": "Quantification of 16 Metals in Fluids and Aerosols From Ultrasonic Pod-Style Cigarettes and Comparison to Electronic Cigarettes",
+  "doi": "10.1289/EHP15648",
+  "cat": "Emisije / metali",
+  "design": "Laboratorij · SURGE, JUUL i druge marke · ICP-OES, SEM/EDS",
+  "finding": "U ultrazvučnim uređajima SURGE i usporednim e-cigaretama izmjereno je 16 elemenata u barem jednom uzorku. SURGE je imao relativno visoke razine arsena i selena; prijenos iz tekućine u aerosol razlikovao se po elementima.",
+  "non": 0,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12118356/",
+  "srclabel": "PMC · izvorni znanstveni rad",
+  "sections": [
+   {
+    "heading": "Tehnologija",
+    "text": "SURGE koristi sonikator umjesto klasične grijaće zavojnice. Autori navode da se sonikator zagrijava tijekom rada; moguće izvore elemenata uključuju sastojci tekućine i dijelovi uređaja."
+   },
+   {
+    "heading": "Ograničenja",
+    "text": "Ultrazvučna atomizacija sama po sebi ne jamči nisku emisiju metala. Ukupno izmjereni silicij ne utvrđuje vrstu silike ni dugoročni klinički rizik. Ovo nije test Wiipa, Vuse Pro One ili IQOS-a."
+   },
+   {
+    "heading": "Lokalna kopija i licenca",
+    "text": "Puni PDF, slike i dostupni prilozi preuzeti su 5. 10. 2026. iz NCBI PMC Open Data zbirke. Sačuvani su izvorni dokumenti i poveznica na izvor; licenca: javna domena prema napomeni EHP-a u radu."
+   }
+  ],
+  "pmid": "40207990",
+  "fullText": "/materiali/studije/PMC12118356/PMC12118356.1.pdf",
+  "materials": [
+   {
+    "title": "Prilog · ehp15648.s001.acco.pdf",
+    "url": "/materiali/studije/PMC12118356/ehp15648.s001.acco.pdf"
+   },
+   {
+    "title": "Prilog · ehp15648.smcontents.508.pdf",
+    "url": "/materiali/studije/PMC12118356/ehp15648.smcontents.508.pdf"
+   },
+   {
+    "title": "Izvorna slika · ehp15648_f1.jpg",
+    "url": "/materiali/studije/PMC12118356/ehp15648_f1.jpg"
+   },
+   {
+    "title": "Izvorna slika · ehp15648_f2.jpg",
+    "url": "/materiali/studije/PMC12118356/ehp15648_f2.jpg"
+   },
+   {
+    "title": "Izvorna slika · ehp15648_f3.jpg",
+    "url": "/materiali/studije/PMC12118356/ehp15648_f3.jpg"
+   },
+   {
+    "title": "Izvorna slika · ehp15648_f4.jpg",
+    "url": "/materiali/studije/PMC12118356/ehp15648_f4.jpg"
+   },
+   {
+    "title": "Izvorna slika · ehp15648_f5.jpg",
+    "url": "/materiali/studije/PMC12118356/ehp15648_f5.jpg"
+   },
+   {
+    "title": "Izvorna slika · ehp15648_f6.jpg",
+    "url": "/materiali/studije/PMC12118356/ehp15648_f6.jpg"
+   }
+  ],
+  "authors": "Omaiye Esther E.; Talbot Prue",
+  "journal": "Environmental Health Perspectives",
+  "pubdate": "2025-05-28"
+ },
+ {
+  "i": 189,
+  "name": "Gaur i Agnihotri — metali u kanabis patronama",
+  "year": 2025,
+  "title": "Heavy Metals in Cannabis Vapes and Their Health Implications—A Scoping Review",
+  "doi": "10.1155/tswj/9529544",
+  "cat": "Emisije / metali",
+  "design": "Scoping pregled · 9 radova do veljače 2024.",
+  "finding": "Pregled opisuje metale u kanabis tekućinama i aerosolima te utjecaj dijelova uređaja, starenja, pH i temperature. Nijedan uključeni rad nije izravno procijenio zdravstvene posljedice tih metala.",
+  "non": 0,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12380516/",
+  "srclabel": "PMC · izvorni znanstveni rad",
+  "sections": [
+   {
+    "heading": "Odvojena skupina proizvoda",
+    "text": "Kanabis patrone mogu imati drugačije otopine, aditive i konstrukciju od nikotinskih podova. Nalaze ne prenosimo automatski na Vuse, Wiip ili ENVA."
+   },
+   {
+    "heading": "Što pregled ne utvrđuje",
+    "text": "Predloženi mehanizmi i moguća veza s EVALI-jem nisu dokaz da su izmjereni metali uzrokovali bolest. Pregled ne daje temperaturu ni dozu za naše uređaje."
+   },
+   {
+    "heading": "Lokalna kopija i licenca",
+    "text": "Puni PDF, slike i dostupni prilozi preuzeti su 5. 10. 2026. iz NCBI PMC Open Data zbirke. Sačuvani su izvorni dokumenti i poveznica na izvor; licenca: CC BY."
+   }
+  ],
+  "pmid": "40874048",
+  "fullText": "/materiali/studije/PMC12380516/PMC12380516.1.pdf",
+  "materials": [
+   {
+    "title": "Izvorna slika · TSWJ2025-9529544.001.jpg",
+    "url": "/materiali/studije/PMC12380516/TSWJ2025-9529544.001.jpg"
+   },
+   {
+    "title": "Izvorna slika · TSWJ2025-9529544.002.jpg",
+    "url": "/materiali/studije/PMC12380516/TSWJ2025-9529544.002.jpg"
+   },
+   {
+    "title": "Izvorna slika · TSWJ2025-9529544.003.jpg",
+    "url": "/materiali/studije/PMC12380516/TSWJ2025-9529544.003.jpg"
+   },
+   {
+    "title": "Izvorna slika · TSWJ2025-9529544.004.jpg",
+    "url": "/materiali/studije/PMC12380516/TSWJ2025-9529544.004.jpg"
+   }
+  ],
+  "authors": "",
+  "journal": "The Scientific World Journal",
+  "pubdate": "2025-08-19"
+ },
+ {
+  "i": 190,
+  "name": "Phillips-Waller i sur. — nikotin u krvi",
+  "year": 2021,
+  "title": "Nicotine Delivery and User Ratings of IQOS Heated Tobacco System Compared With Cigarettes, Juul, and Refillable E-Cigarettes",
+  "doi": "10.1093/ntr/ntab094",
+  "cat": "Biomarkeri / nikotin",
+  "design": "Unutar istih 22 sudionika · 5 minuta uporabe · uzorci krvi do 30 minuta",
+  "finding": "Medijan vršne koncentracije nikotina, korigirane za početnu razinu: IQOS 8,3; vlastita cigareta 12,9; JUUL 19,6 ng/mL. Sudionici su bili iskusni vaperi koji su povremeno pušili, a ne iskusni korisnici IQOS-a.",
+  "non": 0,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8496472/",
+  "srclabel": "PMC · izvorni znanstveni rad",
+  "sections": [
+   {
+    "heading": "Proizvodi i postupak",
+    "text": "Ispitan je IQOS s HEETS stickovima, američki JUUL s 59 mg/mL te, u poduzorku od osam osoba, dva punjiva uređaja s 20 mg/mL tekućinom. Nije testiran IQOS ILUMA s TEREA-om, JUUL2, Vuse Pro One ili Wiip."
+   },
+   {
+    "heading": "Kako čitati brojke",
+    "text": "ng/mL označava koncentraciju nikotina u plazmi; nije broj miligrama apsorbiranih po proizvodu. Razlika vršnih koncentracija IQOS-a i cigarete nije bila statistički značajna. IQOS je u punoj analizi imao manju AUC od cigarete i JUUL-a; rezultat prema cigareti osjetljiv je na analizu sudionika s povišenom početnom razinom."
+   },
+   {
+    "heading": "Lokalna kopija i licenca",
+    "text": "Puni PDF, slike i dostupni prilozi preuzeti su 5. 10. 2026. iz NCBI PMC Open Data zbirke. Sačuvani su izvorni dokumenti i poveznica na izvor; licenca: CC BY."
+   }
+  ],
+  "pmid": "33983450",
+  "fullText": "/materiali/studije/PMC8496472/PMC8496472.1.pdf",
+  "materials": [
+   {
+    "title": "Prilog · ntab094_suppl_supplementary_materials.docx",
+    "url": "/materiali/studije/PMC8496472/ntab094_suppl_supplementary_materials.docx"
+   },
+   {
+    "title": "Prilog · ntab094_suppl_supplementary_taxonomy_form.pdf",
+    "url": "/materiali/studije/PMC8496472/ntab094_suppl_supplementary_taxonomy_form.pdf"
+   },
+   {
+    "title": "Izvorna slika · ntab094f0001.jpg",
+    "url": "/materiali/studije/PMC8496472/ntab094f0001.jpg"
+   },
+   {
+    "title": "Izvorna slika · ntab094f0002.jpg",
+    "url": "/materiali/studije/PMC8496472/ntab094f0002.jpg"
+   }
+  ],
+  "authors": "Phillips-Waller Anna; Przulj Dunja; Pesola Francesca; Smith Katie Myers; Hajek Peter",
+  "journal": "Nicotine & Tobacco Research",
+  "pubdate": "2021-11"
+ },
+ {
+  "i": 191,
+  "name": "Claus i sur. — unos nikotina iz cigara",
+  "year": 2018,
+  "title": "Use Behaviors, Dependence, and Nicotine Exposure Associated with Ad Libitum Cigar Smoking",
+  "doi": "10.18001/trs.4.1.2",
+  "cat": "Biomarkeri / nikotin",
+  "design": "77 isključivih pušača cigara · vlastiti proizvod · do 1 sat",
+  "finding": "Pušenje cigare povećalo je nikotin u plazmi. Veće cigare i samoprijavljeno inhaliranje bili su povezani s višom izloženošću; vrsta cigare i način pušenja bitno utječu na unos.",
+  "non": 0,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5837054/",
+  "srclabel": "PMC · izvorni znanstveni rad",
+  "sections": [
+   {
+    "heading": "Ograničenje usporedbe",
+    "text": "Sudionici su se razlikovali po vrsti cigare, prethodnom pušenju cigareta i inhaliranju. Nije korišten isti protokol kao u usporedbi IQOS-a, cigareta i JUUL-a. Zato rezultate ne spajamo u jednu ljestvicu doze."
+   }
+  ],
+  "pmid": "29516029",
+  "authors": "Claus Eric D.; Moeller Benjamin C.; Harbour Darlene; Kuehl Philip J.; McGuire Michael; Vivar Juan C.; Schroeder Megan J.",
+  "journal": "Tobacco regulatory science",
+  "pubdate": "2018-01"
+ }
 ];
 
 export default STUDIES_DB;

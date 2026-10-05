@@ -30,6 +30,7 @@ const usage = {
   'Biomarkeri / PATH': ['#biomarkers', '§04 Biomarkeri kod ljudi'],
   'Biomarkeri / VOC': ['#biomarkers', '§04 VOC metaboliti — sve 4 grupe'],
   'Biomarkeri / kotinin': ['#biomarkers', '§04 Kotinin'],
+  'Biomarkeri / nikotin': ['#nicotine-blood', '§04 Nikotin u krvi'],
   'Biomarkeri / TSNA': ['#biomarkers', '§04 NNAL'],
   'Biomarkeri / TSNA+VOC': ['#biomarkers', '§04 Biomarkeri'],
   'Biomarkeri / adolescencija': ['#biomarkers', '§04 VOC adolescenti'],
@@ -90,7 +91,7 @@ const used = s.cat.includes('Vuse') ? ['#vuse', '§10 Vuse: posebna analiza'] : 
     <div class="callout">
       <h4>Materijali kod nas</h4>
       {s.documentPhotos ? <p>Osam fotografija izvornih uputa i ambalaže, dostavljenih 22. 9. 2026. Otvorite fotografiju za čitanje u punoj veličini. Sažetak ispod nije laboratorijska studija.</p> : s.fullText ? <p><a href={s.fullText} data-pdf={s.fullText?.split("#")[0].endsWith(".pdf")}>Otvori lokalnu kopiju dokumenta →</a></p> : s.sections?.length ? <p>Urednički sažetak izvora u dizajnu naše stranice. Nije puni tekst rada; izvorni dokument dostupan je putem poveznice ispod.</p> : <p>Ovdje je bibliografski zapis i sažetak nalaza. Puni tekst i prilozi još nisu pohranjeni u ovom repozitoriju; izvorni rad dostupan je putem poveznice ispod.</p>}
-      {s.materials?.map(m=><p><a href={m.url}>{m.title}</a></p>)}
+      {s.materials?.map(m=><p><a href={m.url} data-pdf={m.url.split("#")[0].endsWith(".pdf")}>{m.title}</a></p>)}
     </div>
     {s.accessed && <p class="chart-note">Pristupljeno izvoru: {s.accessed} Podaci proizvođača i cijene odnose se na datum provjere.</p>}
     {s.image && <figure><a href={s.image} target="_blank" rel="noopener"><img src={s.image} alt={s.name} style="max-width:100%;width:440px;height:auto" /></a><figcaption>Fotografija proizvođača, Wiip.hr. Klik otvara izvornu sliku pohranjenu kod nas.</figcaption></figure>}

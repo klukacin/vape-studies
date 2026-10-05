@@ -1,0 +1,34 @@
+{
+  "retrieved": "2026-10-05",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8496472/",
+  "title": "Nicotine Delivery and User Ratings of IQOS Heated Tobacco System Compared With Cigarettes, Juul, and Refillable E-Cigarettes",
+  "doi": "10.1093/ntr/ntab094",
+  "license": "CC BY",
+  "files": [
+    {
+      "name": "PMC8496472.1.pdf",
+      "size": 442723,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8496472.1/PMC8496472.1.pdf?md5=858c4798c0a637ab695df4244bc2554c"
+    },
+    {
+      "name": "ntab094_suppl_supplementary_materials.docx",
+      "size": 28569,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8496472.1/ntab094_suppl_supplementary_materials.docx?md5=759eac435a4c91290f197e881ff33f3e"
+    },
+    {
+      "name": "ntab094_suppl_supplementary_taxonomy_form.pdf",
+      "size": 245279,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8496472.1/ntab094_suppl_supplementary_taxonomy_form.pdf?md5=cb098dfee3ec070440a4fb63570a1c68"
+    },
+    {
+      "name": "ntab094f0001.jpg",
+      "size": 45412,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8496472.1/ntab094f0001.jpg?md5=31b7ce13bb43921b12718602ccbe8503"
+    },
+    {
+      "name": "ntab094f0002.jpg",
+      "size": 43619,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8496472.1/ntab094f0002.jpg?md5=9bf45e88dccfa6b83d6a3b030c55ca37"
+    }
+  ]
+}
