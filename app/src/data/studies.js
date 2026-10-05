@@ -1594,14 +1594,15 @@ const STUDIES_DB = [
  },
  {
   "i": 116,
-  "name": "Vuse Alto — FEELM",
-  "year": 2024,
+  "name": "FEELM — keramička platforma",
+  "year": 2026,
   "cat": "Tehnologija / keramika",
-  "design": "FDA PMTA dokumentacija",
-  "finding": "FDA-odobreni Alto podovi koriste FEELM keramičku zavojnicu — ista platforma kao Pro One",
+  "design": "Proizvođački opis · nije neovisna studija",
+  "finding": "FEELM Inside deklarira keramički grijač s prevučenim filmom. Ovaj izvor ne potvrđuje identičnu konstrukciju Vuse Alto i Pro One; emisije svakog modela zahtijevaju vlastita mjerenja.",
   "non": 0,
-  "url": "https://www.feelmtech.com/",
-  "srclabel": "FEELM (Smoore)"
+  "url": "https://www.feelmtech.com/solution/inside/",
+  "srclabel": "FEELM Inside (Smoore) — proizvođač",
+  "accessed": "2026-10-05"
  },
  {
   "i": 117,

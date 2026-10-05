@@ -42,6 +42,7 @@ The first chart no longer presents unsupported generic-pod temperature ranges. C
 - Source199: EP4483731A1, metal film on ceramic. Applicant's Ni/Cr results have inadequate elemental assay/LOD/n/protocol documentation. Patent does not identify a retail Vuse ProOne/Pro pod.
 - Source200: US20150359262A1 / US9861129B2 porous-ceramic preparation patent. Starting-mixture recipe does not establish the finished composition or emitted particles of a commercial Vuse pod.
 - Source202: manufacturer's ProOne99% claim averages nine selected constituents, with no linked public lab table. It is not99% lower health risk or an independently verified metal result.
+- Source116 now describes the manufacturer's FEELM Inside platform, rather than presenting a generic vendor homepage as FDA documentation or proof of identical Alto/ProOne construction. The footer no longer refers to the removed ENVA temperature estimates or composite risk score.
 
 ## Original materials and validation
 
