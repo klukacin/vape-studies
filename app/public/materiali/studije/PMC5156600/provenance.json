@@ -1,0 +1,27 @@
+{
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5156600/",
+  "doi": "10.1016/j.dib.2016.11.047",
+  "license": "CC BY",
+  "licenseText": "https://creativecommons.org/licenses/by/4.0/This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
+  "retrieved": "2026-10-05",
+  "files": [
+    {
+      "name": "PMC5156600.1.pdf",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5156600.1/PMC5156600.1.pdf?md5=3eda921a58b2d3b3d9b29be387d8472c",
+      "md5": "3eda921a58b2d3b3d9b29be387d8472c",
+      "bytes": 218895
+    },
+    {
+      "name": "PMC5156600.1.xml",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5156600.1/PMC5156600.1.xml?md5=80e40e791ec35a15cca533273e2f8bfc",
+      "md5": "80e40e791ec35a15cca533273e2f8bfc",
+      "bytes": 65877
+    },
+    {
+      "name": "mmc1.zip",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5156600.1/mmc1.zip?md5=52a9dac16c8f667390f8626144112fa8",
+      "md5": "52a9dac16c8f667390f8626144112fa8",
+      "bytes": 8153837
+    }
+  ]
+}

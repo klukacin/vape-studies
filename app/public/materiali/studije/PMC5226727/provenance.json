@@ -1,0 +1,69 @@
+{
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5226727/",
+  "doi": "10.1371/journal.pone.0169811",
+  "license": "CC BY",
+  "licenseText": "https://creativecommons.org/licenses/by/4.0/This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+  "retrieved": "2026-10-05",
+  "files": [
+    {
+      "name": "PMC5226727.1.pdf",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5226727.1/PMC5226727.1.pdf?md5=5bd0790e77901be654d953548f86d039",
+      "md5": "5bd0790e77901be654d953548f86d039",
+      "bytes": 1230243
+    },
+    {
+      "name": "PMC5226727.1.xml",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5226727.1/PMC5226727.1.xml?md5=9869d03140f0edc04c780e13b32b052f",
+      "md5": "9869d03140f0edc04c780e13b32b052f",
+      "bytes": 78599
+    },
+    {
+      "name": "pone.0169811.g001.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5226727.1/pone.0169811.g001.jpg?md5=536d1a6822d77f0c3dfe5eb11b8dc9c2",
+      "md5": "536d1a6822d77f0c3dfe5eb11b8dc9c2",
+      "bytes": 68369
+    },
+    {
+      "name": "pone.0169811.g002.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5226727.1/pone.0169811.g002.jpg?md5=9cf1f07367386cf11e4b9f8e0dda3ef1",
+      "md5": "9cf1f07367386cf11e4b9f8e0dda3ef1",
+      "bytes": 56980
+    },
+    {
+      "name": "pone.0169811.g003.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5226727.1/pone.0169811.g003.jpg?md5=ecc6026b7141e32af9ac337c23935afe",
+      "md5": "ecc6026b7141e32af9ac337c23935afe",
+      "bytes": 92745
+    },
+    {
+      "name": "pone.0169811.g004.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5226727.1/pone.0169811.g004.jpg?md5=72ec807aa3b55b8c349b62b205f331f6",
+      "md5": "72ec807aa3b55b8c349b62b205f331f6",
+      "bytes": 63589
+    },
+    {
+      "name": "pone.0169811.g005.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5226727.1/pone.0169811.g005.jpg?md5=fd1f15ccb6fdcde9044f478b5c5d3c17",
+      "md5": "fd1f15ccb6fdcde9044f478b5c5d3c17",
+      "bytes": 56108
+    },
+    {
+      "name": "pone.0169811.t001.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5226727.1/pone.0169811.t001.jpg?md5=fb9ba27d4f4575b1f081c1340d99e156",
+      "md5": "fb9ba27d4f4575b1f081c1340d99e156",
+      "bytes": 84311
+    },
+    {
+      "name": "pone.0169811.t002.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5226727.1/pone.0169811.t002.jpg?md5=a740954fc4356f3b9b479630c1dddda2",
+      "md5": "a740954fc4356f3b9b479630c1dddda2",
+      "bytes": 87454
+    },
+    {
+      "name": "pone.0169811.t003.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5226727.1/pone.0169811.t003.jpg?md5=cb3a5454bb92ae52e751fb5521683997",
+      "md5": "cb3a5454bb92ae52e751fb5521683997",
+      "bytes": 46138
+    }
+  ]
+}

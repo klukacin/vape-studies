@@ -40,6 +40,7 @@ import WiipStandards from './WiipStandards.astro';
   <figure class="wiip-figure"><figcaption>Nikotin u tekućini cijelog poda · mg, linearno od nule</figcaption>
     {[['Cola 10',20,147],['Cola 18',36,148],['Gold Tobacco 18',36,168],['Royal Tobacco 18',36,169],['Apple 10',20,149]].map(([label,value,id])=><div class="pod-bar"><a href={`/studije/${id}/`}>{label}</a><div class="pod-track"><span style={`width:${Number(value)/40*100}%`}></span></div><span>{value} mg</span></div>)}
     <p class="chart-note">Skala 0–40 mg. Izračun iz volumena i koncentracije deklarirane za svaki pod; nije apsorbirana doza.</p>
+    <p class="graph-iqos"><strong>IQOS · N/A:</strong> TEREA nije e-tekućina. Sadržaj nikotina u duhanskom sticku ne prikazujemo kao mg nikotina u tekućini. <a href="/#market">Usporedba svih uređaja ↗</a></p>
   </figure>
   <div class="callout">
     <h4>Što je pronađeno u istraživanju</h4>

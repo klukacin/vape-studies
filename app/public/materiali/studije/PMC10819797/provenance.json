@@ -1,0 +1,45 @@
+{
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10819797/",
+  "doi": "10.3390/toxics12010065",
+  "license": "CC BY",
+  "licenseText": "https://creativecommons.org/licenses/by/4.0/Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).",
+  "retrieved": "2026-10-05",
+  "files": [
+    {
+      "name": "PMC10819797.1.pdf",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10819797.1/PMC10819797.1.pdf?md5=7ee92e4eb7430b8694ffabe57f187991",
+      "md5": "7ee92e4eb7430b8694ffabe57f187991",
+      "bytes": 1860646
+    },
+    {
+      "name": "PMC10819797.1.xml",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10819797.1/PMC10819797.1.xml?md5=f73ebeb8754c7ca3425f0316739964a2",
+      "md5": "f73ebeb8754c7ca3425f0316739964a2",
+      "bytes": 86369
+    },
+    {
+      "name": "toxics-12-00065-g001.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10819797.1/toxics-12-00065-g001.jpg?md5=7517e6f6115eed2162107b26f8b3a2ba",
+      "md5": "7517e6f6115eed2162107b26f8b3a2ba",
+      "bytes": 120444
+    },
+    {
+      "name": "toxics-12-00065-g002a.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10819797.1/toxics-12-00065-g002a.jpg?md5=8b9decd41ee2203c4e60177ee9051ecd",
+      "md5": "8b9decd41ee2203c4e60177ee9051ecd",
+      "bytes": 68518
+    },
+    {
+      "name": "toxics-12-00065-g002b.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10819797.1/toxics-12-00065-g002b.jpg?md5=e02a9d1a3eb96e5382c25db0c61feeb2",
+      "md5": "e02a9d1a3eb96e5382c25db0c61feeb2",
+      "bytes": 36065
+    },
+    {
+      "name": "toxics-12-00065-g003.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10819797.1/toxics-12-00065-g003.jpg?md5=e222930494d7d9752a5d57ad7eb470fe",
+      "md5": "e222930494d7d9752a5d57ad7eb470fe",
+      "bytes": 43525
+    }
+  ]
+}

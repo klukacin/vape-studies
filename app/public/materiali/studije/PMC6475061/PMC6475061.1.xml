@@ -1,0 +1,1214 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article article-type="research-article" xml:lang="en" dtd-version="1.4"><front><journal-meta><journal-id journal-id-type="nlm-ta">J Am Heart Assoc</journal-id><journal-id journal-id-type="iso-abbrev">J Am Heart Assoc</journal-id><journal-id journal-id-type="pmc-domain-id">1888</journal-id><journal-id journal-id-type="pmc-domain">jaha</journal-id><journal-id journal-id-type="nlm-id">101580524</journal-id><journal-id journal-id-type="publisher-id">JAH3</journal-id><journal-title-group><journal-title>Journal of the American Heart Association: Cardiovascular and Cerebrovascular Disease</journal-title></journal-title-group><issn pub-type="epub">2047-9980</issn><publisher><publisher-name>Wiley</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC6475061</article-id><article-id pub-id-type="pmcid-ver">PMC6475061.1</article-id><article-id pub-id-type="pmcaid">6475061</article-id><article-id pub-id-type="pmcaiid">6475061</article-id><article-id pub-id-type="pmid">30879375</article-id><article-id pub-id-type="doi">10.1161/JAHA.118.010455</article-id><article-id pub-id-type="publisher-id">JAH33811</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Original Research</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Research</subject><subj-group subj-group-type="heading"><subject>Vascular Medicine</subject></subj-group></subj-group></article-categories><title-group><article-title>Acute Effects of Heat‐Not‐Burn, Electronic Vaping, and Traditional Tobacco Combustion Cigarettes: The Sapienza University of Rome‐Vascular Assessment of Proatherosclerotic Effects of Smoking (<styled-content style="fixed-case">SUR</styled-content>‐<styled-content style="fixed-case">VAPES</styled-content>) 2 Randomized Trial</article-title><alt-title alt-title-type="left-running-head">Biondi‐Zoccai et al</alt-title></title-group><contrib-group><contrib id="jah33811-cr-0001" contrib-type="author" corresp="yes"><name name-style="western"><surname>Biondi‐Zoccai</surname><given-names initials="G">Giuseppe</given-names></name><degrees>MD, MStat</degrees><address><email>giuseppe.biondizoccai@uniroma1.it</email></address><xref ref-type="aff" rid="jah33811-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="jah33811-aff-0002">
+<sup>2</sup>
+</xref><xref ref-type="author-notes" rid="jah33811-note-1002">
+<sup>†</sup>
+</xref></contrib><contrib id="jah33811-cr-0002" contrib-type="author"><name name-style="western"><surname>Sciarretta</surname><given-names initials="S">Sebastiano</given-names></name><degrees>MD, PhD</degrees><xref ref-type="aff" rid="jah33811-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="jah33811-aff-0002">
+<sup>2</sup>
+</xref><xref ref-type="author-notes" rid="jah33811-note-1002">
+<sup>†</sup>
+</xref></contrib><contrib id="jah33811-cr-0003" contrib-type="author"><name name-style="western"><surname>Bullen</surname><given-names initials="C">Christopher</given-names></name><degrees>MD</degrees><xref ref-type="aff" rid="jah33811-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="jah33811-cr-0004" contrib-type="author"><name name-style="western"><surname>Nocella</surname><given-names initials="C">Cristina</given-names></name><degrees>PhD</degrees><xref ref-type="aff" rid="jah33811-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="jah33811-cr-0005" contrib-type="author"><name name-style="western"><surname>Violi</surname><given-names initials="F">Francesco</given-names></name><degrees>MD</degrees><xref ref-type="aff" rid="jah33811-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="jah33811-cr-0006" contrib-type="author"><name name-style="western"><surname>Loffredo</surname><given-names initials="L">Lorenzo</given-names></name><degrees>MD</degrees><xref ref-type="aff" rid="jah33811-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="jah33811-cr-0007" contrib-type="author"><name name-style="western"><surname>Pignatelli</surname><given-names initials="P">Pasquale</given-names></name><degrees>MD</degrees><xref ref-type="aff" rid="jah33811-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="jah33811-cr-0008" contrib-type="author"><name name-style="western"><surname>Perri</surname><given-names initials="L">Ludovica</given-names></name><degrees>MD</degrees><xref ref-type="aff" rid="jah33811-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="jah33811-cr-0009" contrib-type="author"><name name-style="western"><surname>Peruzzi</surname><given-names initials="M">Mariangela</given-names></name><degrees>MD, PhD</degrees><xref ref-type="aff" rid="jah33811-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="jah33811-cr-0010" contrib-type="author"><name name-style="western"><surname>Marullo</surname><given-names initials="AGM">Antonino G.M.</given-names></name><degrees>MD, PhD</degrees><xref ref-type="aff" rid="jah33811-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="jah33811-cr-0011" contrib-type="author"><name name-style="western"><surname>De Falco</surname><given-names initials="E">Elena</given-names></name><degrees>PhD</degrees><xref ref-type="aff" rid="jah33811-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="jah33811-cr-0012" contrib-type="author"><name name-style="western"><surname>Chimenti</surname><given-names initials="I">Isotta</given-names></name><degrees>PhD</degrees><xref ref-type="aff" rid="jah33811-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="jah33811-cr-0013" contrib-type="author"><name name-style="western"><surname>Cammisotto</surname><given-names initials="V">Vittoria</given-names></name><degrees>MSc</degrees><xref ref-type="aff" rid="jah33811-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="jah33811-cr-0014" contrib-type="author"><name name-style="western"><surname>Valenti</surname><given-names initials="V">Valentina</given-names></name><degrees>MD</degrees><xref ref-type="aff" rid="jah33811-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="jah33811-cr-0015" contrib-type="author"><name name-style="western"><surname>Coluzzi</surname><given-names initials="F">Flaminia</given-names></name><degrees>MD</degrees><xref ref-type="aff" rid="jah33811-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="jah33811-cr-0016" contrib-type="author"><name name-style="western"><surname>Cavarretta</surname><given-names initials="E">Elena</given-names></name><degrees>MD</degrees><xref ref-type="aff" rid="jah33811-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="jah33811-cr-0017" contrib-type="author"><name name-style="western"><surname>Carrizzo</surname><given-names initials="A">Albino</given-names></name><degrees>PhD</degrees><xref ref-type="aff" rid="jah33811-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="jah33811-cr-0018" contrib-type="author"><name name-style="western"><surname>Prati</surname><given-names initials="F">Francesco</given-names></name><degrees>MD</degrees><xref ref-type="aff" rid="jah33811-aff-0005">
+<sup>5</sup>
+</xref><xref ref-type="aff" rid="jah33811-aff-0006">
+<sup>6</sup>
+</xref></contrib><contrib id="jah33811-cr-0019" contrib-type="author"><name name-style="western"><surname>Carnevale</surname><given-names initials="R">Roberto</given-names></name><degrees>PhD</degrees><xref ref-type="aff" rid="jah33811-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="author-notes" rid="jah33811-note-1003">
+<sup>‡</sup>
+</xref></contrib><contrib id="jah33811-cr-0020" contrib-type="author"><name name-style="western"><surname>Frati</surname><given-names initials="G">Giacomo</given-names></name><degrees>MD, MSc</degrees><xref ref-type="aff" rid="jah33811-aff-0002">
+<sup>2</sup>
+</xref><xref ref-type="aff" rid="jah33811-aff-0003">
+<sup>3</sup>
+</xref><xref ref-type="author-notes" rid="jah33811-note-1003">
+<sup>‡</sup>
+</xref></contrib></contrib-group><aff id="jah33811-aff-0001">
+<label><sup>1</sup></label>
+<named-content content-type="organisation-division">Department of Medico‐Surgical Sciences and Biotechnologies</named-content>
+<institution>Sapienza University of Rome</institution>
+<named-content content-type="city">Latina</named-content>
+<country country="IT">Italy</country>
+</aff><aff id="jah33811-aff-0002">
+<label><sup>2</sup></label>
+<institution>IRCCS NEUROMED</institution>
+<named-content content-type="city">Pozzilli</named-content>
+<country country="IT">Italy</country>
+</aff><aff id="jah33811-aff-0003">
+<label><sup>3</sup></label>
+<named-content content-type="organisation-division">National Institute for Health Innovation</named-content>
+<named-content content-type="organisation-division">School of Population Health</named-content>
+<named-content content-type="organisation-division">Faculty of Medical and Health Sciences</named-content>
+<institution>The University of Auckland</institution>
+<country country="NZ">New Zealand</country>
+</aff><aff id="jah33811-aff-0004">
+<label><sup>4</sup></label>
+<named-content content-type="organisation-division">Department of Internal Medicine and Medical Specialties</named-content>
+<institution>Sapienza University of Rome</institution>
+<country country="IT">Italy</country>
+</aff><aff id="jah33811-aff-0005">
+<label><sup>5</sup></label>
+<named-content content-type="organisation-division">Division of Cardiology</named-content>
+<institution>San Giovanni Addolorata Hospital</institution>
+<named-content content-type="city">Rome</named-content>
+<country country="IT">Italy</country>
+</aff><aff id="jah33811-aff-0006">
+<label><sup>6</sup></label>
+<institution>Centro Per La Lotta Contro L'Infarto</institution>
+<named-content content-type="city">Rome</named-content>
+<country country="IT">Italy</country>
+</aff><author-notes><corresp id="correspondenceTo"><label>*</label><bold>Correspondence to:</bold> Giuseppe Biondi‐Zoccai, MD, MStat, Department of Medico‐Surgical Sciences and Biotechnologies, Sapienza University of Rome, Corso della Repubblica 74, 04100 Latina, Italy. E‐mail: <email>giuseppe.biondizoccai@uniroma1.it</email></corresp><fn fn-type="equal" id="jah33811-note-1002"><label>†</label><p>Dr Biondi‐Zoccai and Dr Sciarretta equally contributed to this work.</p></fn><fn id="jah33811-note-1003"><label>‡</label><p>Dr Carnevale and Dr Frati are co‐senior authors.</p></fn></author-notes><pub-date pub-type="epub"><day>16</day><month>3</month><year>2019</year></pub-date><pub-date pub-type="collection"><day>19</day><month>3</month><year>2019</year></pub-date><volume>8</volume><issue>6</issue><issue-id pub-id-type="pmc-issue-id">333060</issue-id><issue-id pub-id-type="doi">10.1002/jah3.2019.8.issue-6</issue-id><elocation-id>e010455</elocation-id><history><date date-type="received"><day>27</day><month>7</month><year>2018</year></date><date date-type="accepted"><day>18</day><month>12</month><year>2018</year></date></history><pub-history><event event-type="pmc-release"><date><day>19</day><month>03</month><year>2019</year></date></event><event event-type="pmc-live"><date><day>24</day><month>04</month><year>2019</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2025-09-02 15:25:14.960"><day>02</day><month>09</month><year>2025</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2019 The Authors. Published on behalf of the American Heart Association, Inc., by Wiley.</copyright-statement><license license-type="creativeCommonsBy-nc"><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbynclicense">https://creativecommons.org/licenses/by-nc/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited and is not used for commercial purposes.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="JAH3-8-e010455.pdf"/><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:JAH3-8-e010455.pdf"/><abstract id="jah33811-abs-0001"><sec id="jah33811-sec-0001"><title>Background</title><p>Little clinical research on new‐generation heat‐not‐burn cigarettes (<styled-content style="fixed-case">HNBC</styled-content>) in comparison with electronic vaping cigarettes (<styled-content style="fixed-case">EVC</styled-content>) and traditional tobacco combustion cigarettes (<styled-content style="fixed-case">TC</styled-content>) has been reported. We aimed to appraise the acute effects of single use of <styled-content style="fixed-case">HNBC</styled-content>,<styled-content style="fixed-case"> EVC,</styled-content> and <styled-content style="fixed-case">TC</styled-content> in healthy smokers.</p></sec><sec id="jah33811-sec-0002"><title>Methods and Results</title><p>This was an independent, cross‐over, randomized trial in 20 <styled-content style="fixed-case">TC</styled-content> smokers, with allocation to different cycles of <styled-content style="fixed-case">HNBC</styled-content>,<styled-content style="fixed-case"> EVC</styled-content>, and <styled-content style="fixed-case">TC</styled-content>. All participants used all types of products, with an intercycle washout of 1 week. End points were oxidative stress, antioxidant reserve, platelet activation, flow‐mediated dilation, blood pressure, and satisfaction scores. Single use of any product led to an adverse impact on oxidative stress, antioxidant reserve, platelet function, flow‐mediated dilation, and blood pressure. <styled-content style="fixed-case">HNBC</styled-content> had less impact than <styled-content style="fixed-case">EVC</styled-content> and <styled-content style="fixed-case">TC</styled-content> on soluble Nox2‐derived peptide (respectively, <italic toggle="yes">P</italic>=0.004 and 0.001), 8‐iso‐prostaglandin F2α‐<styled-content style="fixed-case">III</styled-content> (<italic toggle="yes">P</italic>=0.004 and &lt;0.001), and vitamin E (<italic toggle="yes">P</italic>=0.018 and 0.044). <styled-content style="fixed-case">HNBC</styled-content> and <styled-content style="fixed-case">EVC</styled-content> were equally less impactful than <styled-content style="fixed-case">TCs</styled-content> on flow‐mediated dilation (<italic toggle="yes">P</italic>=0.872 for <styled-content style="fixed-case">HNBC</styled-content> versus <styled-content style="fixed-case">EVC</styled-content>), H<sub>2</sub>O<sub>2</sub> (<italic toggle="yes">P</italic>=0.522), H<sub>2</sub>O<sub>2</sub> breakdown activity (<italic toggle="yes">P</italic>=0.091), soluble <styled-content style="fixed-case">CD</styled-content>40 ligand (<italic toggle="yes">P</italic>=0.849), and soluble P‐selectin (<italic toggle="yes">P</italic>=0.821). The effect of <styled-content style="fixed-case">HNBC</styled-content> and, to a lesser extent <styled-content style="fixed-case">EVC</styled-content>, on blood pressure was less evident than that of <styled-content style="fixed-case">TC</styled-content>, whereas <styled-content style="fixed-case">HNBC</styled-content> appeared more satisfying than <styled-content style="fixed-case">EVC</styled-content> (all <italic toggle="yes">P</italic>&lt;0.05).</p></sec><sec id="jah33811-sec-0003"><title>Conclusions</title><p>Acute effects of <styled-content style="fixed-case">HNBC</styled-content>,<styled-content style="fixed-case"> EVC,</styled-content> and <styled-content style="fixed-case">TC</styled-content> are different on several oxidative stress, antioxidant reserve, platelet function, cardiovascular, and satisfaction dimensions, with <styled-content style="fixed-case">TCs</styled-content> showing the most detrimental changes in clinically relevant features.</p></sec><sec id="jah33811-sec-0004"><title>Clinical Trial Registration</title><p>
+<styled-content style="fixed-case">URL</styled-content>: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://www.clinicaltrials.gov">http://www.clinicaltrials.gov</ext-link>. Unique identifier: <styled-content style="fixed-case">NCT</styled-content>03301129.</p></sec></abstract><kwd-group kwd-group-type="author-generated"><kwd id="jah33811-kwd-0001">flow‐induced dilation</kwd><kwd id="jah33811-kwd-0002">oxidative stress</kwd><kwd id="jah33811-kwd-0003">platelet</kwd><kwd id="jah33811-kwd-0004">platelet aggregation</kwd><kwd id="jah33811-kwd-0005">smoking</kwd></kwd-group><kwd-group kwd-group-type="subject-categories"><title>Subject Categories</title><kwd>Vascular Biology</kwd><kwd>Platelets</kwd><kwd>Oxidant Stress</kwd><kwd>Risk Factors</kwd><kwd>Vascular Disease</kwd></kwd-group><funding-group><award-group><funding-source>Sapienza University of Rome</funding-source><award-id>RM11715C7852D47E</award-id><award-id>RM11715C7CCE6251</award-id></award-group></funding-group><counts><fig-count count="2"/><table-count count="4"/><page-count count="29"/><word-count count="8198"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY-NC</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>jah33811</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>19 March 2019</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:5.6.1 mode:remove_FC converted:19.03.2019</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="jah33811-cit-1001">(<source xml:lang="en">J Am Heart Assoc</source>. <year>2019</year>;<volume>8</volume>:<elocation-id>e010455</elocation-id> DOI: <pub-id pub-id-type="doi">10.1161/JAHA.118.010455</pub-id>.)<pub-id pub-id-type="pmid">30879375</pub-id><pub-id pub-id-type="pmcid">PMC6475061</pub-id></mixed-citation>
+</p></notes></front><body><p>
+<boxed-text position="anchor" content-type="box" id="jah33811-blkfxd-0001" orientation="portrait"><sec id="jah33811-sec-0006"><title>Clinical Perspective</title><sec id="jah33811-sec-0007"><title>What Is New?</title><p>
+<list list-type="bullet" id="jah33811-list-0001"><list-item><p>Limited comparative research on new‐generation heat‐not‐burn cigarettes, electronic vaping cigarettes, and traditional tobacco combustion cigarettes (TCs) has been reported.</p></list-item><list-item><p>We performed a cross‐over, randomized trial in 20 TC smokers, with allocation to different cycles of heat‐not‐burn cigarettes, electronic vaping cigarettes, and TCs, without any funding from tobacco or electronic vaping cigarette companies.</p></list-item></list>
+</p></sec><sec id="jah33811-sec-0008"><title>What Are the Clinical Implications?</title><p>
+<list list-type="bullet" id="jah33811-list-0002"><list-item><p>We found that acute effects of heat‐not‐burn cigarettes, electronic vaping cigarettes, and TCs are different on several oxidative stress, antioxidant reserve, platelet function, cardiovascular, and satisfaction dimensions, with TCs showing the most detrimental changes in clinically relevant features, thus suggesting that these modified risk products may indeed prove as a useful tool to quit TCs.</p></list-item></list>
+</p></sec></sec></boxed-text>
+</p><sec id="jah33811-sec-0009"><title>Introduction</title><p>It is estimated that cigarette smoking explains almost 90% of lung cancer risk in men and 70% to 80% in women and is responsible for ≈140 000 premature deaths annually from cardiovascular disease.<xref rid="jah33811-bib-0001" ref-type="ref">1</xref>, <xref rid="jah33811-bib-0002" ref-type="ref">2</xref> Among the different harmful effects of smoking, oxidative stress plays an important role. Indeed, smoking may impair oxidative balance by inducing the production of reactive oxygen species and by weakening the antioxidant defense systems. Moreover, smoking promotes atherothrombosis by inducing platelet activation, and we previously demonstrated that chronic smokers displayed different levels of biomarkers of oxidative stress and platelet activation compared with nonsmokers, and also responded differently to different types of cigarettes.<xref rid="jah33811-bib-0003" ref-type="ref">3</xref>, <xref rid="jah33811-bib-0004" ref-type="ref">4</xref>
+</p><p>Electronic vaping cigarettes (EVCs), modern technological surrogates of traditional tobacco combustion cigarettes (TCs), were introduced in 2004.<xref rid="jah33811-bib-0005" ref-type="ref">5</xref>, <xref rid="jah33811-bib-0006" ref-type="ref">6</xref> They are battery‐operated aerosolizing devices using liquids that entail a mixture of glycerol and propylene glycol, flavors, and, most commonly, nicotine ranging from 1.6 to 19 mg/cartridge.<xref rid="jah33811-bib-0007" ref-type="ref">7</xref> EVCs are considered a relatively less harmful alternative to TCs given that no combustion occurs, and indeed several patent applications describe EVCs as electronic atomization cigarettes that contain only nicotine without tobacco tar.<xref rid="jah33811-bib-0008" ref-type="ref">8</xref> However, their long‐term safety remains largely uncertain, especially in patients with established clinical disease.<xref rid="jah33811-bib-0009" ref-type="ref">9</xref>
+</p><p>A new‐generation heat‐not‐burn cigarette (HNBC) has been recently introduced.<xref rid="jah33811-bib-0010" ref-type="ref">10</xref> This device heats a disposable tobacco stick with a thin metallic blade. The stick is maintained at a controlled heating temperature up to 350°C, without combustion, fire, ash, or smoke. In addition, in contrast to EVCs, HNBCs do not vaporize liquid‐containing flavorings, propylene glycol, and vegetable glycerol. However, this new device needs to be fully examined in clinical studies, particularly in the cardiovascular system.<xref rid="jah33811-bib-0011" ref-type="ref">11</xref>
+</p><p>Recently, we and others highlighted the acute adverse effects in vivo and in vitro of EVCs on vascular function, oxidative stress, and platelet activation, which are recognized as pathophysiological factors for atherosclerosis development and progression and, ultimately, vascular disease.<xref rid="jah33811-bib-0012" ref-type="ref">12</xref>, <xref rid="jah33811-bib-0013" ref-type="ref">13</xref>, <xref rid="jah33811-bib-0014" ref-type="ref">14</xref> Specifically, we found that EVCs had less impact than TCs on oxidative stress, flow‐mediated dilation (FMD), and platelet aggregation. Moreover, Nabavizadeh et al demonstrated that, in rats, acute exposures to HNBC aerosol impairs endothelial function, assessed by FMD.<xref rid="jah33811-bib-0015" ref-type="ref">15</xref> However, no independent comparative data on the acute impact of HNBCs on vascular function, oxidative stress, and platelet activation are available in chronic TC users.</p><p>We thus aimed at comparing HNBCs, EVCs, and TCs, focusing on acute effects on oxidative stress, FMD, platelet function, blood pressure, and satisfaction.</p></sec><sec id="jah33811-sec-0010"><title>Methods</title><p>The data, analytical methods, and study materials of this trial will be made available to other researchers for purposes of reproducing the results or replicating the procedure, upon written request.</p><sec id="jah33811-sec-0011"><title>Design</title><p>This was an independent, randomized, cross‐over study conducted in 2017 at Sapienza University of Rome, Latina, Italy. All participants provided written informed consent. The study was approved by the ethics committee of Sapienza University of Rome (06‐27‐2014, protocol number 813/14) and conducted in accord with the Declaration of Helsinki. No funding, directly or indirectly, was received from any HNBC, EVC, or TC manufacturer or supplier, or affiliated organizations.</p></sec><sec id="jah33811-sec-0012"><title>Participants</title><p>We recruited apparently healthy subjects, on the basis of the following: (1) no acute or chronic organic, metabolic, and inflammatory disease; (2) no fever or infection within 3 months; (3) no cardiovascular symptoms; (4) no allergies; and (5) normal blood pressure levels and heart rhythm at screening. Women were not pregnant and not menstruating when the experiment was performed. In the month preceding the study and subsequently, none of the participants took vitamin E, other antioxidant supplements, or other drugs known to affect or modulate oxidative stress, FMD, platelet function, or blood pressure. A 1‐week washout from any tobacco product was recommended at study entry and before each experimental cycle, and smoking history (time when smoking had begun) and intensity (ie, number of daily cigarettes) was self‐reported.</p></sec><sec id="jah33811-sec-0013"><title>Procedures</title><p>Participants were previously tutored on how to use the different devices correctly by means of standardized videos. They were then randomly allocated to 6 different cycles of using a single HNBC, EVC, and TC. Participants either smoked a single TC from a leading brand (Marlboro Gold; Philip Morris International, Neuchatel, Switzerland) with a mean nicotine content of 0.60 mg per cigarette according to the package label, vaped 9 puffs from a leading tobacco‐flavored EVC (Blu Pro, Fontem, Netherlands), charged with a nicotine cartridge with a mean nicotine content of 16 mg, equivalent to 250 puffs according to the package label, thus yielding 0.58 mg of nicotine content in 9 puffs, or used a leading HNBC (THS2.2 IQOS with Heets; Amber Label, Philip Morris International) having a mean nicotine content of 0.50 mg per stick according to the manufacturer. Two investigators (who were past smokers or current users of all the devices) directly supervised all sessions to prevent incorrect product use or hyperventilation.</p><p>The randomization list was computer generated, and subjects were unaware of the assignment until each smoking session commenced. Participants eventually used all 3 products, with an intercycle washout period of 1 week. Blood samples were drawn just before and immediately after using each allocated product and analyzed for markers of oxidative stress, antioxidant reserve, platelet function, and cotinine levels. Endothelial dysfunction (as assessed by FMD) and cardiovascular parameters were analyzed, as previously reported.<xref rid="jah33811-bib-0012" ref-type="ref">12</xref>
+</p><p>A 7‐question product satisfaction questionnaire was administrated after each smoking session, posing the following questions: “was the cigarette satisfying?”; “was the cigarette enjoyable?”; “did you experience a bad taste?”; “did you suffer from unexpected cough?”; “did smoking make you feel sick?”; “did smoking give you energy?”; and “soon after smoking did your desire for another cigarette decrease?”. Each feature was scored using a visual analogue scale, spanning from 0 (no effect) to 100 (maximum effect) according to Shiffman and Terhorst.<xref rid="jah33811-bib-0016" ref-type="ref">16</xref>
+</p><p>All measurements were conducted by personnel blinded to the actual product used by the participant during each experimental session.</p></sec><sec id="jah33811-sec-0014"><title>Laboratory Analysis</title><p>All materials for laboratory tests were from Sigma‐Aldrich (St. Louis, MO), unless otherwise specified. Blood obtained from subjects was collected in blood collection tubes with or without anticoagulant and centrifuged at 300<italic toggle="yes">g</italic> for 10 minutes to obtain supernatant. Serum and plasma samples were instantly stored at −80°C until use with the antioxidant butylated hydroxytoluene at a final concentration of 20 mmol/L.</p><p>Ultrasound assessment of basal brachial diameter and endothelial‐dependent FMD of the brachial artery were investigated according to current guidelines.<xref rid="jah33811-bib-0016" ref-type="ref">16</xref>, <xref rid="jah33811-bib-0017" ref-type="ref">17</xref> Briefly, the study was performed in a temperature‐controlled room (22.8°C) with subjects in a resting, supine state. All evaluations were performed between 8 and 10 <sc>am;</sc> brachial artery diameter was imaged using a 7.5‐MHz linear array transducer ultrasound system (Vivid S6; GE Healthcare, Little Chalfont, UK) equipped with electronic callipers, vascular software for 2‐dimensional imaging, color and spectral Doppler, and internal ECG. The brachial artery was imaged at a location 3 to 7 cm above the antecubital crease. In order to create a flow stimulus in the brachial artery, a sphygmomanometric cuff was placed on the forearm. The cuff was inflated at least 50 mm Hg above systolic pressure to occlude artery inflow for 5 minutes. All vasodilatation measurements were made at the end of diastole. FMD was expressed as change in poststimulus diameter evaluated as percentage of the baseline diameter.<xref rid="jah33811-bib-0018" ref-type="ref">18</xref>
+</p><p>Serum levels of soluble Nox2‐derived peptide, a marker of NADPH oxidase activation, were detected by an ELISA method as previously described by Carnevale et al.<xref rid="jah33811-bib-0019" ref-type="ref">19</xref> Intra‐ and interassay coefficients of variation were 8.9% and 9%, respectively. Values are expressed as pg/mL.</p><p>Nitric oxide bioavailability was measured in serum by a colorimetric assay kit (Arbor Assays, Ann Arbor, MI). Intra‐ and interassay coefficients of variation were 4.4% and 6.8%, respectively. Values are expressed as μmol/L.</p><p>Quantification of isoprostanes was performed measuring serum 8‐iso‐PGF2α‐III (8‐iso‐PGF2α‐III) by enzyme immunoassay method (DRG International, Springfield, NJ). Intra‐ and interassay coefficients of variation were 5.8% and 5.0%, respectively. Values are expressed as pmol/L.</p><p>H<sub>2</sub>O<sub>2</sub> was evaluated by a colorimetric detection kit (Arbor Assays) and is expressed as μmol/L. Intra‐ and interassay coefficients of variation were 5.9% and 7.3%, respectively.</p><p>Serum H<sub>2</sub>O<sub>2</sub> breakdown activity (HBA) was measured with an HBA assay kit (Aurogene, Rome, Italy). Briefly, serum sample (2.5 μL) was incubated with H<sub>2</sub>O<sub>2</sub> and sample diluent at 37°C for 30 minutes. At the end of 30 minutes, stop solution was added and samples were then centrifuged at 3000 g for 5 minutes. Finally, the supernatant was read at 230 nm by a UV‐visible single‐beam spectrophotometer (A380; AOE Instruments Shangai Co, Shangai, China). Percentage of HBA was calculated according to the following formula: % Of HBA=[(Ac−As)/Ac]×100 where Ac is the absorbance of H<sub>2</sub>O<sub>2</sub> 1.4 mg/mL and As is the absorbance in the presence of the serum sample.</p><p>To measure vitamin E, serum samples (100 μL) were supplemented with tocopheryl acetate (internal standard), deproteinized by the addition of methanol, and centrifuged at 3000<italic toggle="yes">g</italic> for 10 minutes, as previously described.<xref rid="jah33811-bib-0020" ref-type="ref">20</xref> The collected upper phase was analyzed using an Agilent 1200 Infinity series high‐performance liquid chromatography system (Agilent Technologies, Santa Clara, CA) equipped with an Eclipse Plus C18 column (4.6×100 mm). Vitamin E levels are presented as the ratio (μmol/mmol) between α‐tocopherol concentration (μmol/L) and serum total cholesterol concentration (mmol/L).<xref rid="jah33811-bib-0021" ref-type="ref">21</xref>
+</p><p>Platelet levels of soluble CD40L and P‐selectin were measured in citrated blood samples centrifuged 15 minutes at 3000<italic toggle="yes">g</italic>. sCD40L levels were evaluated by a commercial immunoassay (Diaclone, Besancon, France), and values are expressed as ng/mL; intra‐ and interassay coefficients of variation were 4% and 6.8%, respectively. Soluble P‐selectin levels were evaluated by a commercial immunoassay (Diaclone), and values are expressed as ng/mL; intra‐ and interassay coefficients of variation were 5.6% and 7.5%, respectively.</p><p>Serum levels of cotinine, a metabolite of nicotine and the primary biomarker for the determination of tobacco exposure,<xref rid="jah33811-bib-0022" ref-type="ref">22</xref> were evaluated by a commercial immunoassay (Origene, Rockville, MD), and values are expressed as ng/mL; intra‐ and interassay coefficients of variation were &lt;10%.</p><p>Finally, we also measured systolic, diastolic, and mean blood pressure with an automated sphygmomanometer, averaging 3 measurements taken 3 minutes apart.</p><p>Notably, blood draws and blood pressure measurements were performed on the dominant arm (with blood draws preceding blood pressure measurements), whereas FMD was measured on the nondominant arm of each participant (Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S1</xref>).</p></sec><sec id="jah33811-sec-0015"><title>End Points and Analyses</title><p>End points were blood levels of soluble Nox2‐derived peptide, nitric oxide (NO) bioavailability, H<sub>2</sub>O<sub>2</sub>, HBA, 8‐iso‐PGF2α‐III, vitamin E, CD40 ligand, P‐selectin, cotinine FMD, blood pressure, and subjective satisfaction scores.</p></sec><sec id="jah33811-sec-0016"><title>Statistical Analysis</title><p>Continuous variables are reported as means (SD) and categorical variables as counts (percentage). The main inferential analysis was based on a multilevel mixed‐effects linear model, with an identity covariance matrix, forcing in the model each end point value, timing of sampling, product type, and their interaction as fixed effects, with participant and order as random effects (Data <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S1</xref>), similar to the model already used for the SUR‐VAPES (Sapienza University of Rome‐Vascular Assessment of Proatherosclerotic Effects of Smoking) 1 trial.<xref rid="jah33811-bib-0012" ref-type="ref">12</xref> Additional analyses were run solely for descriptive purposes subgrouping by product type. Multilevel mixed‐effects linear analyses are reported as point estimates of effect (95% CIs) and corresponding <italic toggle="yes">P</italic> values. In addition, we performed nonparametric analyses with Wilcoxon signed‐ranks test for satisfaction scores, with reporting based on median (first–third quartile). Although no formal sample‐size computation was performed, the study was originally designed to include 20 nonsmokers and 20 smokers to achieve adequate statistical power, in keeping with a previous study from our group.<xref rid="jah33811-bib-0012" ref-type="ref">12</xref> Because of issues in enrolling nonsmokers and have them use 3 different types of tobacco products, the nonsmoker arm of the study was discontinued at the beginning of the trial. Statistical significance was set at the 2‐tailed 0.05 level, without multiplicity adjustment. Computations were performed with Stata software (version 13; StataCorp LP, College Station, TX).</p></sec></sec><sec id="jah33811-sec-0017"><title>Results</title><p>The study was conducted between September and December 2017. Notably, as many as 30 subjects had to be excluded after initial screening either because unwilling to refrain from smoking for the required washout period or for the concomitant presence of a clinical condition which qualified them for study exclusion. Table <xref rid="jah33811-tbl-0001" ref-type="table">1</xref> shows baseline characteristics of study subjects: In particular, 70% were women and most usually smoked between 11 and 30 TCs per day. Moreover, 2 women were on oral contraceptives during the experiment.</p><table-wrap id="jah33811-tbl-0001" xml:lang="en" orientation="portrait" position="float"><label>Table 1</label><caption><p>Baseline Features</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">Subjects</th><th align="left" valign="top" rowspan="1" colspan="1">20</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Age, y</td><td align="left" rowspan="1" colspan="1">35±13</td></tr><tr><td align="left" rowspan="1" colspan="1">Male sex</td><td align="left" rowspan="1" colspan="1">6 (30%)</td></tr><tr><td align="left" rowspan="1" colspan="1">Height, cm</td><td align="left" rowspan="1" colspan="1">171±8</td></tr><tr><td align="left" rowspan="1" colspan="1">Weight, kg</td><td align="left" rowspan="1" colspan="1">70±18</td></tr><tr><td align="left" rowspan="1" colspan="1">Body mass index, kg/m<sup>2</sup>
+</td><td align="left" rowspan="1" colspan="1">24±5</td></tr><tr><td align="left" rowspan="1" colspan="1">Waist‐hip ratio</td><td align="left" rowspan="1" colspan="1">0.92±0.10</td></tr><tr><td align="left" rowspan="1" colspan="1">Time since beginning smoking, y</td><td align="left" rowspan="1" colspan="1">15±12</td></tr><tr><td align="left" colspan="2" rowspan="1">Cigarettes smoked per day</td></tr><tr><td align="left" style="padding-left:10%" rowspan="1" colspan="1">&lt;10</td><td align="left" rowspan="1" colspan="1">9 (45%)</td></tr><tr><td align="left" style="padding-left:10%" rowspan="1" colspan="1">11 to 20</td><td align="left" rowspan="1" colspan="1">9 (45%)</td></tr><tr><td align="left" style="padding-left:10%" rowspan="1" colspan="1">21 to 30</td><td align="left" rowspan="1" colspan="1">2 (10%)</td></tr><tr><td align="left" rowspan="1" colspan="1">Systolic blood pressure, mm Hg</td><td align="left" rowspan="1" colspan="1">116±15</td></tr><tr><td align="left" rowspan="1" colspan="1">Diastolic blood pressure, mm Hg</td><td align="left" rowspan="1" colspan="1">75±10</td></tr><tr><td align="left" rowspan="1" colspan="1">Total serum cholesterol, mg/dL</td><td align="left" rowspan="1" colspan="1">181±12</td></tr><tr><td align="left" rowspan="1" colspan="1">Family history of cardiovascular disease</td><td align="left" rowspan="1" colspan="1">10 (50%)</td></tr><tr><td align="left" rowspan="1" colspan="1">Previous cardiovascular disease</td><td align="left" rowspan="1" colspan="1">0</td></tr><tr><td align="left" rowspan="1" colspan="1">Concomitant pharmacological therapy (contraceptives, antiepileptics, or thyroid replacement therapy)</td><td align="left" rowspan="1" colspan="1">5 (25%)</td></tr></tbody></table></table-wrap><sec id="jah33811-sec-0018"><title>Oxidative Stress Profile</title><p>To evaluate oxidative stress profile, we analyzed the levels of sNox2‐dp, a small peptide released after platelet activation, which is a measure of Nox2 activation. As shown in Figure <xref rid="jah33811-fig-0001" ref-type="fig">1</xref> and Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3,</xref> we observed an increase of sNox2‐dp release after smoking each device (19.9±9.9 versus 36.5±6.8 pg/mL, <italic toggle="yes">P</italic>&lt;0.001 for EVC; 23.1±8.4 versus 44.1±17.1 pg/mL, <italic toggle="yes">P</italic>&lt;0.001 for TC; 22.8±7.6 versus 29.9±5.0 pg/mL, <italic toggle="yes">P</italic>&lt;0.001 for HNBC; Table <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S1</xref>). Moreover, we evaluated the production of H<sub>2</sub>O<sub>2</sub>, a nonradical oxygen species which permeates through cell membranes which is chemically stable. The results showed a significant increase of H<sub>2</sub>O<sub>2</sub> for each smoking device (7.4±3.4 versus 14.8±2.9 μmol/L, <italic toggle="yes">P</italic>&lt;0.001 for EVC; 7.6±4.5 versus 19.5±13.9 μmol/L, <italic toggle="yes">P</italic>&lt;0.001 for TC; 6.3±3.5 versus 12.8±3.6 μmol/L, <italic toggle="yes">P</italic>&lt;0.001 for HNBC; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S2</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>).</p><fig fig-type="Figure" xml:lang="en" id="jah33811-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>Impact of using electronic cigarette (<styled-content style="fixed-case">EVC</styled-content>), traditional tobacco cigarette (<styled-content style="fixed-case">TC</styled-content>), and heat‐not‐burn cigarette (<styled-content style="fixed-case">HNBC</styled-content>) on blood levels of soluble Nox2‐derived peptide. Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="nlm-graphic-1" position="float" orientation="portrait" xlink:href="JAH3-8-e010455-g001.jpg"/></fig><table-wrap id="jah33811-tbl-0002" xml:lang="en" orientation="portrait" position="float"><label>Table 2</label><caption><p>Descriptive Analysis<xref ref-type="fn" rid="jah33811-note-0005">a</xref>
+</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="2" valign="top" colspan="1">Feature</th><th align="left" colspan="3" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">Before Smoking</th><th align="left" colspan="3" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">After Smoking</th></tr><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">EVC</th><th align="left" valign="top" rowspan="1" colspan="1">TC</th><th align="left" valign="top" rowspan="1" colspan="1">HNBC</th><th align="left" valign="top" rowspan="1" colspan="1">EVC</th><th align="left" valign="top" rowspan="1" colspan="1">TC</th><th align="left" valign="top" rowspan="1" colspan="1">HNBC</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Soluble Nox2‐derived peptide, pg/mL</td><td align="left" rowspan="1" colspan="1">19.9±9.9</td><td align="left" rowspan="1" colspan="1">23.1±8.4</td><td align="left" rowspan="1" colspan="1">22.8±7.6</td><td align="left" rowspan="1" colspan="1">36.5±6.8</td><td align="left" rowspan="1" colspan="1">44.1±17.1</td><td align="left" rowspan="1" colspan="1">29.9±5.0</td></tr><tr><td align="left" rowspan="1" colspan="1">Nitric oxide bioavailability, μmol/L</td><td align="left" rowspan="1" colspan="1">24.9±13.6</td><td align="left" rowspan="1" colspan="1">25.8±18.9</td><td align="left" rowspan="1" colspan="1">24.4±16.5</td><td align="left" rowspan="1" colspan="1">17.0±5.4</td><td align="left" rowspan="1" colspan="1">12.7±6.6</td><td align="left" rowspan="1" colspan="1">19.8±6.6</td></tr><tr><td align="left" rowspan="1" colspan="1">H<sub>2</sub>O<sub>2</sub> production, μmol/L</td><td align="left" rowspan="1" colspan="1">7.4±3.4</td><td align="left" rowspan="1" colspan="1">7.6±4.5</td><td align="left" rowspan="1" colspan="1">6.3±3.5</td><td align="left" rowspan="1" colspan="1">14.8±2.9</td><td align="left" rowspan="1" colspan="1">19.5±13.9</td><td align="left" rowspan="1" colspan="1">12.8±3.6</td></tr><tr><td align="left" rowspan="1" colspan="1">H<sub>2</sub>O<sub>2</sub> breakdown activity, %</td><td align="left" rowspan="1" colspan="1">54.5±18.4</td><td align="left" rowspan="1" colspan="1">54.1±17.1</td><td align="left" rowspan="1" colspan="1">55.4±9.9</td><td align="left" rowspan="1" colspan="1">37.3±7.6</td><td align="left" rowspan="1" colspan="1">25.3±13.0</td><td align="left" rowspan="1" colspan="1">47.0±10.2</td></tr><tr><td align="left" rowspan="1" colspan="1">8‐iso‐prostaglandin F‐2α‐III, pmol/L</td><td align="left" rowspan="1" colspan="1">151±18</td><td align="left" rowspan="1" colspan="1">152±20</td><td align="left" rowspan="1" colspan="1">158±23</td><td align="left" rowspan="1" colspan="1">231±31</td><td align="left" rowspan="1" colspan="1">276±29</td><td align="left" rowspan="1" colspan="1">207±36</td></tr><tr><td align="left" rowspan="1" colspan="1">Vitamin E, μmol/mmol</td><td align="left" rowspan="1" colspan="1">4.27±1.30</td><td align="left" rowspan="1" colspan="1">3.95±1.62</td><td align="left" rowspan="1" colspan="1">4.11±1.09</td><td align="left" rowspan="1" colspan="1">2.71±1.07</td><td align="left" rowspan="1" colspan="1">2.55±0.91</td><td align="left" rowspan="1" colspan="1">3.81±1.37</td></tr><tr><td align="left" rowspan="1" colspan="1">Soluble CD40 ligand, ng/mL</td><td align="left" rowspan="1" colspan="1">3.20±1.16</td><td align="left" rowspan="1" colspan="1">3.10±1.22</td><td align="left" rowspan="1" colspan="1">3.00±1.22</td><td align="left" rowspan="1" colspan="1">4.25±2.12</td><td align="left" rowspan="1" colspan="1">5.26±1.97</td><td align="left" rowspan="1" colspan="1">4.18±1.56</td></tr><tr><td align="left" rowspan="1" colspan="1">Soluble P‐selectin, ng/mL</td><td align="left" rowspan="1" colspan="1">6.45±1.07</td><td align="left" rowspan="1" colspan="1">6.76±1.28</td><td align="left" rowspan="1" colspan="1">6.63±1.22</td><td align="left" rowspan="1" colspan="1">7.97±1.65</td><td align="left" rowspan="1" colspan="1">11.58±3.56</td><td align="left" rowspan="1" colspan="1">8.03±1.40</td></tr><tr><td align="left" rowspan="1" colspan="1">Flow‐mediated dilation, %</td><td align="left" rowspan="1" colspan="1">6.14±3.17</td><td align="left" rowspan="1" colspan="1">6.20±3.26</td><td align="left" rowspan="1" colspan="1">6.10±3.01</td><td align="left" rowspan="1" colspan="1">3.72±3.14</td><td align="left" rowspan="1" colspan="1">2.40±1.89</td><td align="left" rowspan="1" colspan="1">3.79±2.68</td></tr><tr><td align="left" rowspan="1" colspan="1">Systolic blood pressure, mm Hg</td><td align="left" rowspan="1" colspan="1">121.7±6.5</td><td align="left" rowspan="1" colspan="1">121.5±8.3</td><td align="left" rowspan="1" colspan="1">122.8±6.2</td><td align="left" rowspan="1" colspan="1">130.6±6.5</td><td align="left" rowspan="1" colspan="1">132.4±6.2</td><td align="left" rowspan="1" colspan="1">129.7±6.4</td></tr><tr><td align="left" rowspan="1" colspan="1">Diastolic blood pressure, mm Hg</td><td align="left" rowspan="1" colspan="1">72.2±4.4</td><td align="left" rowspan="1" colspan="1">73.3±4.8</td><td align="left" rowspan="1" colspan="1">73.3±4.7</td><td align="left" rowspan="1" colspan="1">78.0±4.8</td><td align="left" rowspan="1" colspan="1">80.2±5.2</td><td align="left" rowspan="1" colspan="1">76.9±5.0</td></tr><tr><td align="left" rowspan="1" colspan="1">Mean blood pressure, mm Hg</td><td align="left" rowspan="1" colspan="1">88.7±3.6</td><td align="left" rowspan="1" colspan="1">89.4±4.7</td><td align="left" rowspan="1" colspan="1">89.8±4.4</td><td align="left" rowspan="1" colspan="1">95.5±3.6</td><td align="left" rowspan="1" colspan="1">97.6±3.4</td><td align="left" rowspan="1" colspan="1">94.5±4.1</td></tr><tr><td align="left" rowspan="1" colspan="1">Cotinine, ng/mL</td><td align="left" rowspan="1" colspan="1">31.6±16.6</td><td align="left" rowspan="1" colspan="1">34.4±19.3</td><td align="left" rowspan="1" colspan="1">30.4±12.0</td><td align="left" rowspan="1" colspan="1">64.4±11.1</td><td align="left" rowspan="1" colspan="1">65.5±10.2</td><td align="left" rowspan="1" colspan="1">61.0±16.7</td></tr></tbody></table><table-wrap-foot><fn id="jah33811-note-0004"><p>EVC indicates electronic vaping cigarette; HNBC, heat‐not‐burn cigarette; TC, traditional tobacco cigarette.</p></fn><fn id="jah33811-note-0005"><label>a</label><p>Reported as mean±SD.</p></fn></table-wrap-foot></table-wrap><table-wrap id="jah33811-tbl-0003" xml:lang="en" orientation="portrait" position="float"><label>Table 3</label><caption><p>Main Inferential Analysis<xref ref-type="fn" rid="jah33811-note-0007">a</xref>
+</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="2" valign="top" colspan="1">Feature</th><th align="left" colspan="3" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">Before vs After Smoking <italic toggle="yes">P</italic> Value</th><th align="left" colspan="3" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">Interaction <italic toggle="yes">P</italic> Value</th></tr><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">EVC</th><th align="left" valign="top" rowspan="1" colspan="1">TC</th><th align="left" valign="top" rowspan="1" colspan="1">HNBC</th><th align="left" valign="top" rowspan="1" colspan="1">EVC vs TC</th><th align="left" valign="top" rowspan="1" colspan="1">EVC vs HNBC</th><th align="left" valign="top" rowspan="1" colspan="1">TC vs HNBC</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Soluble Nox2‐derived peptide</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">0.318</td><td align="left" rowspan="1" colspan="1">0.004</td><td align="left" rowspan="1" colspan="1">0.001</td></tr><tr><td align="left" rowspan="1" colspan="1">Nitric oxide bioavailability</td><td align="left" rowspan="1" colspan="1">0.006</td><td align="left" rowspan="1" colspan="1">0.006</td><td align="left" rowspan="1" colspan="1">0.206</td><td align="left" rowspan="1" colspan="1">0.308</td><td align="left" rowspan="1" colspan="1">0.470</td><td align="left" rowspan="1" colspan="1">0.093</td></tr><tr><td align="left" rowspan="1" colspan="1">H<sub>2</sub>O<sub>2</sub> production</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">0.092</td><td align="left" rowspan="1" colspan="1">0.522</td><td align="left" rowspan="1" colspan="1">0.042</td></tr><tr><td align="left" rowspan="1" colspan="1">H<sub>2</sub>O<sub>2</sub> breakdown activity</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">0.006</td><td align="left" rowspan="1" colspan="1">0.038</td><td align="left" rowspan="1" colspan="1">0.091</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td></tr><tr><td align="left" rowspan="1" colspan="1">8‐iso‐prostaglandin F‐2α‐III</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">0.004</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td></tr><tr><td align="left" rowspan="1" colspan="1">Vitamin E</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">0.001</td><td align="left" rowspan="1" colspan="1">0.422</td><td align="left" rowspan="1" colspan="1">0.768</td><td align="left" rowspan="1" colspan="1">0.018</td><td align="left" rowspan="1" colspan="1">0.044</td></tr><tr><td align="left" rowspan="1" colspan="1">Soluble CD40 ligand</td><td align="left" rowspan="1" colspan="1">0.047</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.046</td><td align="left" rowspan="1" colspan="1">0.849</td><td align="left" rowspan="1" colspan="1">0.071</td></tr><tr><td align="left" rowspan="1" colspan="1">Soluble P‐selectin</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">0.821</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td></tr><tr><td align="left" rowspan="1" colspan="1">Flow‐mediated dilation</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">0.074</td><td align="left" rowspan="1" colspan="1">0.872</td><td align="left" rowspan="1" colspan="1">0.048</td></tr><tr><td align="left" rowspan="1" colspan="1">Systolic blood pressure</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">0.121</td><td align="left" rowspan="1" colspan="1">0.122</td><td align="left" rowspan="1" colspan="1">0.002</td></tr><tr><td align="left" rowspan="1" colspan="1">Diastolic blood pressure</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">0.009</td><td align="left" rowspan="1" colspan="1">0.532</td><td align="left" rowspan="1" colspan="1">0.106</td><td align="left" rowspan="1" colspan="1">0.046</td></tr><tr><td align="left" rowspan="1" colspan="1">Mean blood pressure</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">0.306</td><td align="left" rowspan="1" colspan="1">0.053</td><td align="left" rowspan="1" colspan="1">0.009</td></tr><tr><td align="left" rowspan="1" colspan="1">Cotinine</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">&lt;0.001</td><td align="left" rowspan="1" colspan="1">0.782</td><td align="left" rowspan="1" colspan="1">0.722</td><td align="left" rowspan="1" colspan="1">0.935</td></tr></tbody></table><table-wrap-foot><fn id="jah33811-note-0006"><p>EVC indicates electronic vaping cigarette; HNBC, heat‐not‐burn cigarette; TC, traditional tobacco cigarette.</p></fn><fn id="jah33811-note-0007"><label>a</label><p>Reported as <italic toggle="yes">P</italic> values, whereas point estimates of effect (95% CIs) are reported in Table <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S1</xref>.</p></fn></table-wrap-foot></table-wrap><p>Finally, we analyzed 8‐iso‐PGF2α, an isoprostane produced by the nonenzymatic peroxidation of arachidonic acid in membrane phospholipids, which is a reliable biomarker of oxidative damage in vivo. We observed a significant increase of 8‐iso‐PGF2α production after smoking (151±18 versus 231±31, <italic toggle="yes">P</italic>&lt;0.001 for EVC; 152±20 versus 276±29, <italic toggle="yes">P</italic>&lt;0.001 for TC; 158±23 versus 207±36, <italic toggle="yes">P</italic>&lt;0.001 for HNBC; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S3</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>). Furthermore, as reported in Table <xref rid="jah33811-tbl-0002" ref-type="table">2</xref>, we observed that levels of oxidative stress biomarkers returned to baseline before each exposure given the adequate washout period.</p></sec><sec id="jah33811-sec-0019"><title>Antioxidant Status</title><p>Antioxidant systems, which include enzymatic and nonenzymatic antioxidants, play a role in blocking harmful effects of reactive oxygen species. In this study, we evaluated levels of vitamin E, a powerful endogenus nonenzymatic antioxidant, and HBA, which is a measure of H<sub>2</sub>O<sub>2</sub> neutralized by cellular enzymes. The results showed a significantly decrease of vitamin E levels after using EVC and TC (4.27±1.30 versus 2.71±1.07 μmol/mmol, <italic toggle="yes">P</italic>&lt;0.001 for EVC; 3.95±1.62 versus 2.55±0.91 μmol/mmol, <italic toggle="yes">P</italic>&lt;0.001 for TC; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S4</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>). No changes were observed for vitamin E levels after using HNBC (4.11±1.09 versus 3.81±1.37 μmol/mmol, <italic toggle="yes">P</italic>=0.422; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S3</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>). As regards HBA measurement, we observed a significant reduction in the ability to detoxify H<sub>2</sub>O<sub>2</sub> after EVC and TC (54.5±18.4% versus 37.3±7.6%, <italic toggle="yes">P</italic>&lt;0.001 for EVC; 54.1±17.1% versus 25.3±13.0%, <italic toggle="yes">P</italic>&lt;0.001 for TC; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S5</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>). A similarly significant reduction was observed for HBA after HNBC (55.4±9.9% versus 47.0±10.2%, <italic toggle="yes">P</italic>=0.006; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S3</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>).</p><p>Biomarkers of antioxidant status returned to baseline levels before repeat exposure to each smoke device (Table <xref rid="jah33811-tbl-0002" ref-type="table">2</xref>).</p></sec><sec id="jah33811-sec-0020"><title>Platelet Activation Assessment</title><p>To evaluate the role of different devices on platelet function, we analyzed 2 markers of platelet activation: sCD40L and soluble P‐selectin. Results showed a significant increase in sCD40L levels with each device (3.20±1.16 versus 4.25±2.12 ng/mL, <italic toggle="yes">P</italic>=0.047 for EVC; 3.10±1.22 versus 5.26±1.97 ng/mL, <italic toggle="yes">P</italic>&lt;0.001 for TC; 3.00±1.22 versus 4.18±1.56 ng/mL, <italic toggle="yes">P</italic>=0.007 for HNBC; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S6</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>) and similar findings for soluble P‐selectin (6.45±1.07 versus 7.97±1.65 ng/mL, <italic toggle="yes">P</italic>&lt;0.001 for EVC; 6.76±1.28 versus 11.58±3.56 ng/mL, <italic toggle="yes">P</italic>&lt;0.001 for TC; 6.63±1.22 versus 8.03±1.40 ng/mL, <italic toggle="yes">P</italic>&lt;0.001 for HNBC; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S7</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>). Biomarkers of platelet activation returned to baseline levels before repeat exposure to each smoke device (Table <xref rid="jah33811-tbl-0002" ref-type="table">2</xref>).</p></sec><sec id="jah33811-sec-0021"><title>Endothelial Dysfunction</title><p>We evaluated the impact of smoking on endothelial dysfunction analyzing FMD, NO bioavailability, and blood pressure. FMD analysis showed a significantly reduction after using each device (6.14±3.17% versus 3.72±3.14%, <italic toggle="yes">P</italic>&lt;0.001 for EVC; 6.20±3.26% versus 2.40±1.89%, <italic toggle="yes">P</italic>&lt;0.001 for TC; 6.10±3.01% versus 3.79±2.68%, <italic toggle="yes">P</italic>&lt;0.001 for HNBC; Figure <xref rid="jah33811-fig-0002" ref-type="fig">2</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>). Similar results were observed for systolic blood pressure (121.7±6.5 versus 130.6±6.5 mm Hg, <italic toggle="yes">P</italic>&lt;0.001 for EVC; 121.5±8.3 versus 132.4±6.2 mm Hg, <italic toggle="yes">P</italic>&lt;0.001 for TC; 122.8±6.2 versus 129.7±6.4 mm Hg, <italic toggle="yes">P</italic>&lt;0.001 for HNBC; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S8</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>), diastolic blood pressure (72.2±4.4 versus 78.0±4.8 mm Hg, <italic toggle="yes">P</italic>&lt;0.01 for EVC; 73.3±4.8 versus 80.2±5.2 mm Hg, <italic toggle="yes">P</italic>&lt;0.01 for TC; 73.3±4.7 versus 76.9±5.0 mm Hg, <italic toggle="yes">P</italic>&lt;0.01 for HNBC; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S9</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>), and mean blood pressure (88.7±3.6 versus 95.5±3.6 mm Hg, <italic toggle="yes">P</italic>&lt;0.001 for EVC; 89.4±4.7 versus 97.6±3.4 mm Hg, <italic toggle="yes">P</italic>&lt;0.001 for TC; 89.8±4.4 versus 94.5±4.1 mm Hg, <italic toggle="yes">P</italic>&lt;0.001 for HNBC; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S10</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>).</p><fig fig-type="Figure" xml:lang="en" id="jah33811-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>Impact of using electronic cigarette (<styled-content style="fixed-case">EVC</styled-content>), traditional tobacco cigarette (<styled-content style="fixed-case">TC</styled-content>), and heat‐not‐burn cigarette (<styled-content style="fixed-case">HNBC</styled-content>) on flow‐mediated dilation (<styled-content style="fixed-case">FMD</styled-content>). Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="nlm-graphic-3" position="float" orientation="portrait" xlink:href="JAH3-8-e010455-g002.jpg"/></fig><p>Focusing on NO bioavailability, we observed a significant reduction after EVC and TC (24.9±13.6 versus 17.0±5.4 μmol/L, <italic toggle="yes">P</italic>=0.006 for EVC; 25.8±18.9 versus 12.7±6.6 μmol/L, <italic toggle="yes">P</italic>=0.006 for TC; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S11</xref>; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>). Conversely, NO bioavailability did not change nonsignificantly with HNBCs (24.4±16.5 versus 19.8±6.6 μmol/L, <italic toggle="yes">P</italic>=0.206; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>). Finally, parameters of endothelial dysfunction returned to baseline levels before each repeat exposure (Table <xref rid="jah33811-tbl-0002" ref-type="table">2</xref>).</p></sec><sec id="jah33811-sec-0022"><title>Compliance Analysis</title><p>To evaluate smoking compliance, we analyzed serum levels of cotinine, a metabolite of nicotine and the primary biomarker for the determination of tobacco exposure, before and after smoking. The results showed that all tobacco products increased significantly cotinine levels (<italic toggle="yes">P</italic>&lt;0.001 for all; Tables <xref rid="jah33811-tbl-0002" ref-type="table">2</xref> and <xref rid="jah33811-tbl-0003" ref-type="table">3</xref>).</p></sec><sec id="jah33811-sec-0023"><title>Head‐to‐Head Comparisons of HNBC, EVC, and TC</title><p>HNBC and EVC were equally less impactful than TC for HBA, soluble CD40 ligand, and soluble P‐selectin (both <italic toggle="yes">P</italic>&lt;0.05 versus TC, <italic toggle="yes">P</italic>&gt;0.05 for HNBC versus EVC). Similar trends were found for FMD (<italic toggle="yes">P</italic>=0.872 for HNBC versus EVC; <italic toggle="yes">P</italic>=0.048 for HNBC versus TC; <italic toggle="yes">P</italic>=0.074 for EVC versus TC), H<sub>2</sub>O<sub>2</sub> (<italic toggle="yes">P</italic>=0.522 for HNBC versus EVC; <italic toggle="yes">P</italic>=0.042 for HNBC versus TC; <italic toggle="yes">P</italic>=0.092 for EVC versus TC), systolic blood pressure (<italic toggle="yes">P</italic>=0.122 for HNBC versus EVC; <italic toggle="yes">P</italic>=0.002 for HNBC versus TC; <italic toggle="yes">P</italic>=0.121 for EVC versus TC), diastolic blood pressure (<italic toggle="yes">P</italic>=0.106 for HNBC versus EVC; <italic toggle="yes">P</italic>=0.046 for HNBC versus TC; <italic toggle="yes">P</italic>=0.532 for EVC versus TC), and mean blood pressure (<italic toggle="yes">P</italic>=0.053 for HNBC versus EVC; <italic toggle="yes">P</italic>=0.009 for HNBC versus TC; <italic toggle="yes">P</italic>=0.306 for EVC versus TC). Conversely, HNBC were significantly less impactful than EVC and TC on soluble Nox2‐derived peptide (respectively <italic toggle="yes">P</italic>&lt;0.001 and <italic toggle="yes">P</italic>=0.004) and vitamin E (respectively <italic toggle="yes">P</italic>=0.044 and 0.018). Conversely, we found no nominally significant interaction effects for NO bioavailability or cotinine.</p></sec><sec id="jah33811-sec-0024"><title>Satisfaction Scores</title><p>Exploratory analysis of satisfaction scores (Table <xref rid="jah33811-tbl-0004" ref-type="table">4</xref>) suggested that TC were more enjoyable than both HNBC and EVC (both <italic toggle="yes">P</italic>&lt;0.05; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S12</xref>). In addition, EVC proved less satisfying than both TC (<italic toggle="yes">P</italic>=0.017) and HNBC (<italic toggle="yes">P</italic>=0.038), without significant differences between these 2 (<italic toggle="yes">P</italic>=0.239; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S13</xref>). Similarly, EVC were rated as less likely to decrease desire for another cigarette than TC (<italic toggle="yes">P</italic>=0.019) and HNBC (<italic toggle="yes">P</italic>=0.031), without significant differences between these 2 (<italic toggle="yes">P</italic>=0.581; Figure <xref rid="jah33811-sup-0001" ref-type="supplementary-material">S14</xref>).</p><table-wrap id="jah33811-tbl-0004" xml:lang="en" orientation="portrait" position="float"><label>Table 4</label><caption><p>Satisfaction Scores<xref ref-type="fn" rid="jah33811-note-0010">a</xref>
+</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="2" valign="top" colspan="1">Feature</th><th align="left" colspan="3" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">Median (First–Third Quartile)</th><th align="left" colspan="3" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">
+<italic toggle="yes">P</italic> Value</th></tr><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">EVC</th><th align="left" valign="top" rowspan="1" colspan="1">TC</th><th align="left" valign="top" rowspan="1" colspan="1">HNBC</th><th align="left" valign="top" rowspan="1" colspan="1">EVC vs TC</th><th align="left" valign="top" rowspan="1" colspan="1">EVC vs HNBC</th><th align="left" valign="top" rowspan="1" colspan="1">TC vs HNBC</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Was the cigarette satisfying?</td><td align="left" rowspan="1" colspan="1">0 (0–50)</td><td align="left" rowspan="1" colspan="1">63 (38–75)</td><td align="left" rowspan="1" colspan="1">50 (25–75)</td><td align="left" rowspan="1" colspan="1">0.017</td><td align="left" rowspan="1" colspan="1">0.038</td><td align="left" rowspan="1" colspan="1">0.239</td></tr><tr><td align="left" rowspan="1" colspan="1">Was the cigarette enjoyable?</td><td align="left" rowspan="1" colspan="1">25 (0–50)</td><td align="left" rowspan="1" colspan="1">75 (50–88)</td><td align="left" rowspan="1" colspan="1">50 (25–75)</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.073</td><td align="left" rowspan="1" colspan="1">0.038</td></tr><tr><td align="left" rowspan="1" colspan="1">Did you experience a bad taste?</td><td align="left" rowspan="1" colspan="1">0 (0–50)</td><td align="left" rowspan="1" colspan="1">0 (0–50)</td><td align="left" rowspan="1" colspan="1">25 (0–75)</td><td align="left" rowspan="1" colspan="1">0.895</td><td align="left" rowspan="1" colspan="1">0.353</td><td align="left" rowspan="1" colspan="1">0.435</td></tr><tr><td align="left" rowspan="1" colspan="1">Did you suffer from unexpected cough?</td><td align="left" rowspan="1" colspan="1">0 (0–0)</td><td align="left" rowspan="1" colspan="1">0 (0–0)</td><td align="left" rowspan="1" colspan="1">0 (0–0)</td><td align="left" rowspan="1" colspan="1">0.970</td><td align="left" rowspan="1" colspan="1">0.361</td><td align="left" rowspan="1" colspan="1">0.305</td></tr><tr><td align="left" rowspan="1" colspan="1">Did smoking make you feel sick?</td><td align="left" rowspan="1" colspan="1">0 (0–0)</td><td align="left" rowspan="1" colspan="1">0 (0–0)</td><td align="left" rowspan="1" colspan="1">0 (0–0)</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">0.564</td><td align="left" rowspan="1" colspan="1">0.317</td></tr><tr><td align="left" rowspan="1" colspan="1">Did smoking give you energy?</td><td align="left" rowspan="1" colspan="1">0 (0–25)</td><td align="left" rowspan="1" colspan="1">0 (0–25)</td><td align="left" rowspan="1" colspan="1">0 (0–25)</td><td align="left" rowspan="1" colspan="1">0.882</td><td align="left" rowspan="1" colspan="1">0.910</td><td align="left" rowspan="1" colspan="1">0.471</td></tr><tr><td align="left" rowspan="1" colspan="1">Soon after smoking did your desire for another cigarette decrease?</td><td align="left" rowspan="1" colspan="1">25 (0–50)</td><td align="left" rowspan="1" colspan="1">75 (25–100)</td><td align="left" rowspan="1" colspan="1">75 (25–75)</td><td align="left" rowspan="1" colspan="1">0.019</td><td align="left" rowspan="1" colspan="1">0.031</td><td align="left" rowspan="1" colspan="1">0.581</td></tr></tbody></table><table-wrap-foot><fn id="jah33811-note-0009"><p>EVC indicates electronic vaping cigarette; HNBC, heat‐not‐burn cigarette; TC, traditional tobacco cigarette.</p></fn><fn id="jah33811-note-0010"><label>a</label><p>Scored on a subjective scale from 0 (no effect) to 100 (maximum effect).</p></fn></table-wrap-foot></table-wrap></sec></sec><sec id="jah33811-sec-0025"><title>Discussion</title><p>In the present cross‐over randomized trial comparing the acute effects of HNBC, EVC, and TC, we found that use of any of these products was associated with acute detrimental effects on oxidative stress, antioxidant reserve, platelet function, FMD, and blood pressure.</p><p>The validity of the chosen end points is well established. Indeed, systemic oxidative stress plays a fundamental role in vascular damage and in atherogenesis.<xref rid="jah33811-bib-0023" ref-type="ref">23</xref> Reactive oxygen species are mostly generated by Nox2, an isoform from NADPH oxidase, that acts as an important regulator of platelet‐activation–associated thrombosis.<xref rid="jah33811-bib-0024" ref-type="ref">24</xref> Indeed, Nox2 has been shown to be associated with several cardiovascular risk factors, such as hypercholesterolemia<xref rid="jah33811-bib-0025" ref-type="ref">25</xref> and metabolic diseases,<xref rid="jah33811-bib-0026" ref-type="ref">26</xref>, <xref rid="jah33811-bib-0027" ref-type="ref">27</xref> and in patients with peripheral artery disease.<xref rid="jah33811-bib-0028" ref-type="ref">28</xref> Moreover, 8‐iso‐PGF2α and H<sub>2</sub>O<sub>2</sub> production and endhotelial dysfunction are associated with cardiovascular events.<xref rid="jah33811-bib-0028" ref-type="ref">28</xref>, <xref rid="jah33811-bib-0029" ref-type="ref">29</xref>, <xref rid="jah33811-bib-0030" ref-type="ref">30</xref>, <xref rid="jah33811-bib-0031" ref-type="ref">31</xref> Regarding physiological antioxidant capacity, the downregulation of the antioxidant system, such as vitamin E or enzymes devolved to H<sub>2</sub>O<sub>2</sub> detossification, is associated with an increased cardiovascular risk.<xref rid="jah33811-bib-0032" ref-type="ref">32</xref>, <xref rid="jah33811-bib-0033" ref-type="ref">33</xref>
+</p><p>Focusing in detail on our results, a hierarchy of effects was apparent for some measures, with HNBC and EVC less impactful than TC on some dimensions of oxidative stress, antioxidant reserve, platelet function, and blood pressure. In addition, HNBC had less acute effects on soluble Nox2‐derived peptide, 8‐iso‐PGF2α‐III, and vitamin E, and appeared more satisfying and capable of decreasing desire for continuing smoking than EVC.</p><p>The adverse impact of TC on health is well established, and smoking remains a leading preventable cause of morbidity and mortality worldwide.<xref rid="jah33811-bib-0034" ref-type="ref">34</xref> Despite the lack of combustion and while less detrimental than TC, EVC cannot be considered harmless.<xref rid="jah33811-bib-0009" ref-type="ref">9</xref>, <xref rid="jah33811-bib-0012" ref-type="ref">12</xref>, <xref rid="jah33811-bib-0035" ref-type="ref">35</xref>, <xref rid="jah33811-bib-0036" ref-type="ref">36</xref>, <xref rid="jah33811-bib-0037" ref-type="ref">37</xref>, <xref rid="jah33811-bib-0038" ref-type="ref">38</xref> The manufacturer of HNBC claims that they largely avoid pyrolysis and thus the generation of several harmful molecules, at least in relative terms, although this aspect may warrant additional study by independent investigation.<xref rid="jah33811-bib-0010" ref-type="ref">10</xref> It is also very likely that the acute detrimental effects of HNBC are mediated, at least in part, by nicotine.<xref rid="jah33811-bib-0039" ref-type="ref">39</xref>, <xref rid="jah33811-bib-0040" ref-type="ref">40</xref>
+</p><p>Our findings expand and refine knowledge on the acute comparative effects of HNBC, EVC, and TC and builds upon our recent work comparing EVC and TC for oxidative stress and FMD.<xref rid="jah33811-bib-0012" ref-type="ref">12</xref> The fact that oxidative stress, platelet activation, and blood pressure are less impacted by HNBC and EVC than by TC suggests that they might be less detrimental, whereas some similarities between HNBC and TC, in terms of subjective satisfaction, might make HNBC more suitable than EVC as a risk‐reduction product. Thus, these products cannot be considered equivalent in terms of risk, yet many opinion leaders, advocacy groups, and agencies call for complete abstinence from all products.<xref rid="jah33811-bib-0041" ref-type="ref">41</xref> Others have suggested that a more‐pragmatic risk‐reduction strategy could be more fruitful, at least in the short term.<xref rid="jah33811-bib-0042" ref-type="ref">42</xref> Our study provides information to guide future research on this topic, especially in light of the similar capacity of these products to deliver nicotine, as demonstrated by the nonsignificant interaction <italic toggle="yes">P</italic> values for cotinine.<xref rid="jah33811-bib-0043" ref-type="ref">43</xref>
+</p><p>Our work has, however, several limitations. The first is generalizability: we recruited from a homogeneous nonsmoking white population without overt clinical conditions, thus our findings cannot be directly applied to subjects with different features.<xref rid="jah33811-bib-0044" ref-type="ref">44</xref> We eventually avoided the enrollment of nonsmokers in the study given difficulties in having them smoke 3 types of tobacco products, and also in order to avoid any possible incentive versus EVC or HNBC from the study findings. Indeed, the actual aim of the SUR‐VAPES 2 trial is to provide preliminary data for subsequent longitudinal trials on the use of HNBC and EVC for smoking cessation in smokers with established cardiovascular disease. Conversely, we did not want to provide background for use of EVC or HNBC as a lower‐risk surrogate of TC in nonsmokers. Indeed, exposure to EVC advertisements has been shown to cause increases in smoking impulses among adults who were former smokers or did not smoke at all, reduce teenagers’ perceived risks of TC, and be associated with increased odds of EVC and TC use in both cross‐sectional and longitudinal studies.<xref rid="jah33811-bib-0045" ref-type="ref">45</xref>, <xref rid="jah33811-bib-0046" ref-type="ref">46</xref>, <xref rid="jah33811-bib-0047" ref-type="ref">47</xref> Second, the small sample size and exposure period limited to 1 product per session prevent us from providing very precise effect estimates or understanding how strongly the observed trends in oxidative markers are correlated with smoking as opposed to statistical noise. Third, our focus on acute effects of a single smoking session of HNBC, EVC, and TC after an adequate washout cannot inform the chronic comparative impact of these products, and it remains unclear whether these chronic tobacco users may lead to more persistent vascular changes and biochemical profiles that do not represent the direct influence of each exposure. Accordingly, the study lacks longitudinal exposure and follow‐up, decreasing our ability to understand whether the observed advantages of HNBC or EVC over TC from an oxidative standpoint are maintained with repetitive use of these smoking devices, or whether, for example, they lose significance in the long run. Fourth, we did not focus on other important health dimensions, in particular those of pulmonary function and carcinogenesis, which require further investigation. Fifth, given the levels of cotinine at baseline assessments, compliance to washout recommendations was suboptimal. Nevertheless, this did not appear to affect between‐device comparisons. Sixth, we did not adjust for multiplicity, but the mixed‐effect design can be considered relatively robust for multiple inferential estimates. Nonetheless, the risk of type 1 error persists and should be borne in mind by readers. In addition, the mechanistic impact of HNBC and EVC on oxidative stress, FMD, and platelet function was not addressed in detail in our work, which was designed with a pragmatic scope.<xref rid="jah33811-bib-0045" ref-type="ref">45</xref>, <xref rid="jah33811-bib-0046" ref-type="ref">46</xref> Details on satisfaction scores, while interesting given their important implications on the use of these approaches as a risk‐reduction strategy, are limited by their exploratory scope and require additional analyses.<xref rid="jah33811-bib-0047" ref-type="ref">47</xref>, <xref rid="jah33811-bib-0048" ref-type="ref">48</xref>, <xref rid="jah33811-bib-0049" ref-type="ref">49</xref> Finally, the absence of a control group not receiving any tobacco product or an experimental group using a pure nicotine inhaler did not allow us to provide external baseline and repeated measures, nor focus specifically on the effect of selective nicotine administration on oxidative stress, FMD, and platelet activation.</p><p>In conclusion, while our findings should be regarded as preliminary and needing confirmation in other similar experiments, we found that use by a group of healthy adult smokers of HNBC, EVC, and TC, based on equivalent nicotine consumption, was associated with acute multidimensional adverse effects on a range of biological and physiological markers. The finding that HNBC is less impactful than both EVC and TC for some end points, while intriguing, requires further corroboration in larger studies with cohort design, long‐term follow‐up, and clinically relevant end points.</p></sec><sec id="jah33811-sec-0026"><title>Author Contributions</title><p>Biondi‐Zoccai, Sciarretta, Pignatelli, Carnevale, and Frati conceived and designed the study; Bullen participated in study design, data interpretation, and manuscript drafting; Nocella and Cammisotto performed platelet analysis; Loffredo, Perri, and Pignatelli performed FMD assessment; De Falco, Carrizzo, and Chimenti performed NOX analysis; Marullo, Cavarretta, and Peruzzi performed patient enrollment; Valenti and Coluzzi provided questionnaires; Prati and Violi participated in data interpretation and manuscript drafting; Biondi‐Zoccai performed statistical analysis; Biondi‐Zoccai, Carnevale, Sciarretta, and Frati drafted the manuscript; all authors critically revised and approved the manuscript; Biondi‐Zoccai acts as guarantor of the study.</p></sec><sec id="jah33811-sec-0027"><title>Sources of Funding</title><p>This work was supported in part by grants from Sapienza University of Rome to Prof Frati (RM11715C7852D47E) and Prof De Falco (RM11715C7CCE6251), without any direct or indirect support from tobacco company.</p></sec><sec id="jah33811-sec-0028"><title>Disclosures</title><p>Prof Biondi‐Zoccai has consulted for Abbott Vascular and Bayer. The remaining authors have no disclosures to report.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data" id="jah33811-sup-0001" position="float" orientation="portrait"><caption><p>
+<bold>Data S1.</bold> Additional details on statistical analysis.</p><p>
+<bold>Table S1.</bold> Additional Inferential Analysis</p><p>
+<bold>Figure S1.</bold> Consolidated Standards of Reporting Trials (CONSORT) subject flow diagram (left panel) and measurement protocol (right panel). BP indicates blood pressure; EVC, electronic vaping cigarette; FMD, flow‐mediated dilation; HNBC, heat‐not‐burn cigarette; TC, traditional tobacco cigarette.</p><p>
+<bold>Figure S2.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on H<sub>2</sub>O<sub>2</sub> production. Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p><p>
+<bold>Figure S3.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on 8‐iso‐prostaglandin F‐2α‐III (8‐iso‐PGF2a). Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p><p>
+<bold>Figure S4.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on vitamin E. Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p><p>
+<bold>Figure S5.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on H<sub>2</sub>O<sub>2</sub> breakdown activity (HBA). Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p><p>
+<bold>Figure S6.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on soluble CD40 ligand. Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p><p>
+<bold>Figure S7.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on soluble P‐selectin. Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p><p>
+<bold>Figure S8.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on systolic blood pressure (SBP). Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p><p>
+<bold>Figure S9.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on diastolic blood pressure (DBP). Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p><p>
+<bold>Figure S10.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on mean blood pressure (MBP). Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p><p>
+<bold>Figure S11.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on nitric oxide (NO) bioavailability. Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p><p>
+<bold>Figure S12.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on smoking satisfaction, appraised with the explicit question “Was the cigarette enjoyable?”, and answers scored using a subjective scale from 0 (no effect) to 100 (maximum effect). Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p><p>
+<bold>Figure S13.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on smoking satisfaction, appraised with the explicit question “Was the cigarette satisfying?”, and answers scored using a subjective scale from 0 (no effect) to 100 (maximum effect). Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p><p>
+<bold>Figure S14.</bold> Impact of using electronic vaping cigarette (EVC), traditional tobacco cigarette (TC), and heat‐not‐burn cigarette (HNBC) on smoking satisfaction, appraised with the explicit question “Soon after smoking did your desire for another cigarette decrease?”, and answers scored using a subjective scale from 0 (no effect) to 100 (maximum effect). Box plots represent median, first quartile, third quartile, fifth percentile, 95th percentile, and outliers.</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="JAH3-8-e010455-s001.pdf" position="float" orientation="portrait"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ref-list content-type="cited-references" id="jah33811-bibl-0001"><title>References</title><ref id="jah33811-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="jah33811-cit-0001">
+<string-name name-style="western">
+<surname>Walser</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cui</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yanagawa</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lee</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Heinrich</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lee</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sharma</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dubinett</surname>
+<given-names>SM</given-names>
+</string-name>. <article-title>Smoking and lung cancer: the role of inflammation</article-title>. <source xml:lang="en">Proc Am Thorac Soc</source>. <year>2008</year>;<volume>5</volume>:<fpage>811</fpage>–<lpage>815</lpage>.<pub-id pub-id-type="pmid">19017734</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1513/pats.200809-100TH</pub-id><pub-id pub-id-type="pmcid">PMC4080902</pub-id></mixed-citation></ref><ref id="jah33811-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="jah33811-cit-0002">
+<string-name name-style="western">
+<surname>Stallones</surname>
+<given-names>RA</given-names>
+</string-name>. <article-title>The association between tobacco smoking and coronary heart disease</article-title>. <source xml:lang="en">Int J Epidemiol</source>. <year>2015</year>;<volume>44</volume>:<fpage>735</fpage>–<lpage>743</lpage>.<pub-id pub-id-type="pmid">26174518</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/ije/dyv124</pub-id></mixed-citation></ref><ref id="jah33811-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="jah33811-cit-0003">
+<string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Loffredo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignatelli</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nocella</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bartimoccia</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Di Santo</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martino</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Catasca</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Perri</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>Dark chocolate inhibits platelet isoprostanes via NOX2 down‐regulation in smokers</article-title>. <source xml:lang="en">J Thromb Haemost</source>. <year>2012</year>;<volume>10</volume>:<fpage>125</fpage>–<lpage>132</lpage>.<pub-id pub-id-type="pmid">22066819</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/j.1538-7836.2011.04558.x</pub-id></mixed-citation></ref><ref id="jah33811-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="jah33811-cit-0004">
+<string-name name-style="western">
+<surname>Loffredo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Perri</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Catasca</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Augelletti</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cangemi</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Albanese</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Piccheri</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nocella</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignatelli</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>NOX2‐mediated arterial dysfunction in smokers: acute effect of dark chocolate</article-title>. <source xml:lang="en">Heart</source>. <year>2011</year>;<volume>97</volume>:<fpage>1776</fpage>–<lpage>1781</lpage>.<pub-id pub-id-type="pmid">21807659</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1136/heartjnl-2011-300304</pub-id></mixed-citation></ref><ref id="jah33811-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="jah33811-cit-0005">
+<string-name name-style="western">
+<surname>Hahn</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Monakhova</surname>
+<given-names>YB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hengen</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kohl‐Himmelseher</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schüssler</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hahn</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kuballa</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lachenmeier</surname>
+<given-names>DW</given-names>
+</string-name>. <article-title>Electronic cigarettes: overview of chemical composition and exposure estimation</article-title>. <source xml:lang="en">Tob Induc Dis</source>. <year>2014</year>;<volume>12</volume>:<fpage>23</fpage>.<pub-id pub-id-type="pmid">25620905</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s12971-014-0023-6</pub-id><pub-id pub-id-type="pmcid">PMC4304610</pub-id></mixed-citation></ref><ref id="jah33811-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="jah33811-cit-0006">
+<string-name name-style="western">
+<surname>Tabuchi</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kiyohara</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hoshino</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bekki</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Inaba</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kunugita</surname>
+<given-names>N</given-names>
+</string-name>. <article-title>Awareness and use of electronic cigarettes and heat‐not‐burn tobacco products in Japan</article-title>. <source xml:lang="en">Addiction</source>. <year>2016</year>;<volume>111</volume>:<fpage>706</fpage>–<lpage>713</lpage>.<pub-id pub-id-type="pmid">26566956</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/add.13231</pub-id></mixed-citation></ref><ref id="jah33811-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="jah33811-cit-0007">
+<string-name name-style="western">
+<surname>Chen</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bullen</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dirks</surname>
+<given-names>K</given-names>
+</string-name>. <article-title>A comparative health risk assessment of electronic cigarettes and conventional cigarettes</article-title>. <source xml:lang="en">Int J Environ Res Public Health</source>. <year>2017</year>;<volume>14</volume>:<fpage>E382</fpage>.<pub-id pub-id-type="pmid">28379177</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijerph14040382</pub-id><pub-id pub-id-type="pmcid">PMC5409583</pub-id></mixed-citation></ref><ref id="jah33811-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="jah33811-cit-0008">
+<string-name name-style="western">
+<surname>Dinakar</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>O'Connor</surname>
+<given-names>GT</given-names>
+</string-name>. <article-title>The health effects of electronic cigarettes</article-title>. <source xml:lang="en">N Engl J Med</source>. <year>2016</year>;<volume>375</volume>:<fpage>2608</fpage>–<lpage>2609</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1056/NEJMc1613869</pub-id><pub-id pub-id-type="pmid">28029910</pub-id></mixed-citation></ref><ref id="jah33811-bib-0009"><label>9</label><mixed-citation publication-type="book" id="jah33811-cit-0009">
+<collab collab-type="authors">National Academies of Sciences, Engineering, and Medicine</collab>
+. <source xml:lang="en">Public Health Consequences of E‐Cigarettes</source>. <publisher-loc>Washington, DC</publisher-loc>: <publisher-name>The National Academies Press</publisher-name>; <year>2018</year> DOI: <pub-id pub-id-type="doi">10.17226/24952</pub-id>. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://www.nap.edu/read/24952/chapter/1">https://www.nap.edu/read/24952/chapter/1</ext-link>. Accessed December 13, 2018.</mixed-citation></ref><ref id="jah33811-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="jah33811-cit-0010">
+<string-name name-style="western">
+<surname>Schaller</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Keller</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Poget</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pratte</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kaelin</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>McHugh</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cudazzo</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Smart</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tricker</surname>
+<given-names>AR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gautier</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yerly</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Reis Pires</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Le Bouhellec</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ghosh</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hofer</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Garcia</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vanscheeuwijck</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Maeder</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Evaluation of the Tobacco Heating System 2.2, part 2: chemical composition, genotoxicity, cytotoxicity, and physical properties of the aerosol</article-title>. <source xml:lang="en">Regul Toxicol Pharmacol</source>. <year>2016</year>;<volume>81(Suppl 2)</volume>:<fpage>S27</fpage>–<lpage>S47</lpage>.<pub-id pub-id-type="pmid">27720919</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.yrtph.2016.10.001</pub-id></mixed-citation></ref><ref id="jah33811-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="jah33811-cit-0011">
+<string-name name-style="western">
+<surname>Auer</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Concha‐Lozano</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jacot‐Sadowski</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cornuz</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Berthet</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>Heat‐not‐burn tobacco cigarettes: smoke by any other name</article-title>. <source xml:lang="en">JAMA Intern Med</source>. <year>2017</year>;<volume>177</volume>:<fpage>1050</fpage>–<lpage>1052</lpage>.<pub-id pub-id-type="pmid">28531246</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1001/jamainternmed.2017.1419</pub-id><pub-id pub-id-type="pmcid">PMC5543320</pub-id></mixed-citation></ref><ref id="jah33811-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="jah33811-cit-0012">
+<string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sciarretta</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nocella</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Loffredo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Perri</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peruzzi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Marullo</surname>
+<given-names>AG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>De Falco</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chimenti</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Valenti</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Biondi‐Zoccai</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Frati</surname>
+<given-names>G</given-names>
+</string-name>. <article-title>Acute impact of tobacco vs electronic cigarette smoking on oxidative stress and vascular function</article-title>. <source xml:lang="en">Chest</source>. <year>2016</year>;<volume>150</volume>:<fpage>606</fpage>–<lpage>612</lpage>.<pub-id pub-id-type="pmid">27108682</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.chest.2016.04.012</pub-id></mixed-citation></ref><ref id="jah33811-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="jah33811-cit-0013">
+<string-name name-style="western">
+<surname>Nocella</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Biondi‐Zoccai</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sciarretta</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peruzzi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pagano</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Loffredo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignatelli</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bullen</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Frati</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>. <article-title>Impact of tobacco versus electronic cigarette smoking on platelet function</article-title>. <source xml:lang="en">Am J Cardiol</source>. <year>2018</year>;<volume>122</volume>:<fpage>1477</fpage>–<lpage>1481</lpage>.<pub-id pub-id-type="pmid">30170691</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.amjcard.2018.07.029</pub-id></mixed-citation></ref><ref id="jah33811-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="jah33811-cit-0014">
+<string-name name-style="western">
+<surname>Hom</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ghebrehiwet</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yin</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rubenstein</surname>
+<given-names>DA</given-names>
+</string-name>. <article-title>Platelet activation, adhesion, inflammation, and aggregation potential are altered in the presence of electronic cigarette extracts of variable nicotine concentrations</article-title>. <source xml:lang="en">Platelets</source>. <year>2016</year>;<volume>27</volume>:<fpage>694</fpage>–<lpage>702</lpage>.<pub-id pub-id-type="pmid">27096416</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3109/09537104.2016.1158403</pub-id></mixed-citation></ref><ref id="jah33811-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="jah33811-cit-0015">
+<string-name name-style="western">
+<surname>Nabavizadeh</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Havel</surname>
+<given-names>CM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ibrahim</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Derakhshandeh</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jacob Iii</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Springer</surname>
+<given-names>ML</given-names>
+</string-name>. <article-title>Vascular endothelial function is impaired by aerosol from a single IQOS HeatStick to the same extent as by cigarette smoke</article-title>. <source xml:lang="en">Tob Control</source>. <year>2018</year>;<volume>27</volume>:<fpage>s13</fpage>–<lpage>s19</lpage>.<pub-id pub-id-type="pmid">30206183</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1136/tobaccocontrol-2018-054325</pub-id><pub-id pub-id-type="pmcid">PMC6202192</pub-id></mixed-citation></ref><ref id="jah33811-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="jah33811-cit-0016">
+<string-name name-style="western">
+<surname>Shiffman</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Terhorst</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>Intermittent and daily smokers’ subjective responses to smoking</article-title>. <source xml:lang="en">Psychopharmacology</source>. <year>2017</year>;<volume>234</volume>:<fpage>2911</fpage>–<lpage>2917</lpage>.<pub-id pub-id-type="pmid">28721480</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00213-017-4682-x</pub-id><pub-id pub-id-type="pmcid">PMC5693764</pub-id></mixed-citation></ref><ref id="jah33811-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="jah33811-cit-0017">
+<string-name name-style="western">
+<surname>Corretti</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Anderson</surname>
+<given-names>TJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Benjamin</surname>
+<given-names>EJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Celermajer</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Charbonneau</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Creager</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Deanfield</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Drexler</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gerhard‐Herman</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Herrington</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vallance</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vita</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vogel</surname>
+<given-names>R</given-names>
+</string-name>; <collab collab-type="authors">International Brachial Artery Reactivity Task Force</collab>
+. <article-title>Guidelines for the ultrasound assessment of endothelial‐dependent flow‐mediated vasodilation of the brachial artery: a report of the International Brachial Artery Reactivity Task Force</article-title>. <source xml:lang="en">J Am Coll Cardiol</source>. <year>2002</year>;<volume>39</volume>:<fpage>257</fpage>–<lpage>265</lpage>.<pub-id pub-id-type="pmid">11788217</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/s0735-1097(01)01746-6</pub-id></mixed-citation></ref><ref id="jah33811-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="jah33811-cit-0018">
+<string-name name-style="western">
+<surname>Loffredo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Marcoccia</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignatelli</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Andreozzi</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Borgia</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cangemi</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chiarotti</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>Oxidative‐stress‐mediated arterial dysfunction in patients with peripheral arterial disease</article-title>. <source xml:lang="en">Eur Heart J</source>. <year>2007</year>;<volume>28</volume>:<fpage>608</fpage>–<lpage>612</lpage>.<pub-id pub-id-type="pmid">17298965</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/eurheartj/ehl533</pub-id></mixed-citation></ref><ref id="jah33811-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="jah33811-cit-0019">
+<string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Silvestri</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Loffredo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Novo</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cammisotto</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Castellani</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bartimoccia</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nocella</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>Oleuropein, a component of extra virgin olive oil, lowers post‐prandial glycaemia in healthy subjects</article-title>. <source xml:lang="en">Br J Clin Pharmacol</source>. <year>2018</year>;<volume>84</volume>:<fpage>1566</fpage>–<lpage>1574</lpage>.<pub-id pub-id-type="pmid">29577365</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/bcp.13589</pub-id><pub-id pub-id-type="pmcid">PMC6005585</pub-id></mixed-citation></ref><ref id="jah33811-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="jah33811-cit-0020">
+<string-name name-style="western">
+<surname>Aust</surname>
+<given-names>O</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sies</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Stahl</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Polidori</surname>
+<given-names>MC</given-names>
+</string-name>. <article-title>Analysis of lipophilic antioxidants in human serum and tissues: tocopherols and carotenoids</article-title>. <source xml:lang="en">J Chromatogr A</source>. <year>2001</year>;<volume>936</volume>:<fpage>83</fpage>–<lpage>93</lpage>.<pub-id pub-id-type="pmid">11761008</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/s0021-9673(01)01269-9</pub-id></mixed-citation></ref><ref id="jah33811-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="jah33811-cit-0021">
+<string-name name-style="western">
+<surname>Traber</surname>
+<given-names>MG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jialal</surname>
+<given-names>I</given-names>
+</string-name>. <article-title>Measurement of lipid‐soluble vitamins—further adjustment needed?</article-title>
+<source xml:lang="en">Lancet</source>. <year>2000</year>;<volume>355</volume>:<fpage>2013</fpage>–<lpage>2014</lpage>.<pub-id pub-id-type="pmid">10885350</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/S0140-6736(00)02345-X</pub-id></mixed-citation></ref><ref id="jah33811-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="jah33811-cit-0022">
+<string-name name-style="western">
+<surname>Benowitz</surname>
+<given-names>NL</given-names>
+</string-name>. <article-title>Cotinine as a biomarker of environmental tobacco smoke exposure</article-title>. <source xml:lang="en">Epidemiol Rev</source>. <year>1996</year>;<volume>18</volume>:<fpage>188</fpage>–<lpage>204</lpage>.<pub-id pub-id-type="pmid">9021312</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/oxfordjournals.epirev.a017925</pub-id></mixed-citation></ref><ref id="jah33811-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="jah33811-cit-0023">
+<string-name name-style="western">
+<surname>Bernhard</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>XL</given-names>
+</string-name>. <article-title>Smoking, oxidative stress and cardiovascular diseases—do anti‐oxidative therapies fail?</article-title>
+<source xml:lang="en">Curr Med Chem</source>. <year>2007</year>;<volume>14</volume>:<fpage>1703</fpage>–<lpage>1712</lpage>.<pub-id pub-id-type="pmid">17627508</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.2174/092986707781058959</pub-id></mixed-citation></ref><ref id="jah33811-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="jah33811-cit-0024">
+<string-name name-style="western">
+<surname>Fuentes</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gibbins</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Holbrook</surname>
+<given-names>LM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Palomo</surname>
+<given-names>I</given-names>
+</string-name>. <article-title>NADPH oxidase 2 (NOX2): a key target of oxidative stress‐mediated platelet activation and thrombosis</article-title>. <source xml:lang="en">Trends Cardiovasc Med</source>. <year>2018</year>;<volume>28</volume>:<fpage>429</fpage>–<lpage>434</lpage>.<pub-id pub-id-type="pmid">29661712</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.tcm.2018.03.001</pub-id></mixed-citation></ref><ref id="jah33811-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="jah33811-cit-0025">
+<string-name name-style="western">
+<surname>Loffredo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martino</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignatelli</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Catasca</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Perri</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Calabrese</surname>
+<given-names>CM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Palumbo</surname>
+<given-names>MM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Baratta</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Del Ben</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Angelico</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>Obesity and hypercholesterolemia are associated with NOX2 generated oxidative stress and arterial dysfunction</article-title>. <source xml:lang="en">J Pediatr</source>. <year>2012</year>;<volume>161</volume>:<fpage>1004</fpage>–<lpage>1009</lpage>.<pub-id pub-id-type="pmid">22727869</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jpeds.2012.05.042</pub-id></mixed-citation></ref><ref id="jah33811-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="jah33811-cit-0026">
+<string-name name-style="western">
+<surname>Del Ben</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Polimeni</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bartimoccia</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nocella</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Baratta</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Loffredo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignatelli</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Angelico</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>NOX2‐generated oxidative stress is associated with severity of ultrasound liver steatosis in patients with non‐alcoholic fatty liver disease</article-title>. <source xml:lang="en">BMC Gastroenterol</source>. <year>2014</year>;<volume>14</volume>:<fpage>81</fpage>.<pub-id pub-id-type="pmid">24758604</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/1471-230X-14-81</pub-id><pub-id pub-id-type="pmcid">PMC4014405</pub-id></mixed-citation></ref><ref id="jah33811-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="jah33811-cit-0027">
+<string-name name-style="western">
+<surname>Angelico</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Loffredo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignatelli</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Augelletti</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pacella</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Albanese</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mancini</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Di Santo</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Del Ben</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>Weight loss is associated with improved endothelial dysfunction via NOX2‐generated oxidative stress down‐regulation in patients with the metabolic syndrome</article-title>. <source xml:lang="en">Intern Emerg Med</source>. <year>2012</year>;<volume>7</volume>:<fpage>219</fpage>–<lpage>227</lpage>.<pub-id pub-id-type="pmid">21512794</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s11739-011-0591-x</pub-id></mixed-citation></ref><ref id="jah33811-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="jah33811-cit-0028">
+<string-name name-style="western">
+<surname>Loffredo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cangemi</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Angelico</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Augelletti</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Di Santo</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Calabrese</surname>
+<given-names>CM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Della Volpe</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignatelli</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Perri</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Basili</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>NOX2 up‐regulation is associated with artery dysfunction in patients with peripheral artery disease</article-title>. <source xml:lang="en">Int J Cardiol</source>. <year>2013</year>;<volume>165</volume>:<fpage>184</fpage>–<lpage>192</lpage>.<pub-id pub-id-type="pmid">22336250</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ijcard.2012.01.069</pub-id></mixed-citation></ref><ref id="jah33811-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="jah33811-cit-0029">
+<string-name name-style="western">
+<surname>Pignatelli</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pastori</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Farcomeni</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cangemi</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nocella</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bartimoccia</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vicario</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Saliola</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lip</surname>
+<given-names>GY</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>Serum NOX2 and urinary isoprostanes predict vascular events in patients with atrial fibrillation</article-title>. <source xml:lang="en">Thromb Haemost</source>. <year>2015</year>;<volume>113</volume>:<fpage>617</fpage>–<lpage>624</lpage>.<pub-id pub-id-type="pmid">25392853</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1160/TH14-07-0571</pub-id></mixed-citation></ref><ref id="jah33811-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="jah33811-cit-0030">
+<string-name name-style="western">
+<surname>Lambeth</surname>
+<given-names>JD</given-names>
+</string-name>. <article-title>NOX enzymes and the biology of reactive oxygen</article-title>. <source xml:lang="en">Nat Rev Immunol</source>. <year>2004</year>;<volume>4</volume>:<fpage>181</fpage>–<lpage>189</lpage>.<pub-id pub-id-type="pmid">15039755</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nri1312</pub-id></mixed-citation></ref><ref id="jah33811-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="jah33811-cit-0031">
+<string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sanguigni</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Plebani</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rossi</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Finocchi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignata</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>De Mattia</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martire</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pietrogrande</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martino</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gambineri</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Soresina</surname>
+<given-names>AR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignatelli</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martino</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Basili</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Loffredo</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>Hereditary deficiency of gp91(phox) is associated with enhanced arterial dilatation: results of a multicenter study</article-title>. <source xml:lang="en">Circulation</source>. <year>2009</year>;<volume>120</volume>:<fpage>1616</fpage>–<lpage>1622</lpage>.<pub-id pub-id-type="pmid">19805647</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1161/CIRCULATIONAHA.109.877191</pub-id></mixed-citation></ref><ref id="jah33811-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="jah33811-cit-0032">
+<string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nocella</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignatelli</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bartimoccia</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Stefanini</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Basili</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Novo</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>D'Amico</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cammisotto</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pastori</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>Blood hydrogen peroxide break‐down activity in healthy subjects and in patients at risk of cardiovascular events</article-title>. <source xml:lang="en">Atherosclerosis</source>. <year>2018</year>;<volume>274</volume>:<fpage>29</fpage>–<lpage>34</lpage>.<pub-id pub-id-type="pmid">29747088</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.atherosclerosis.2018.04.025</pub-id></mixed-citation></ref><ref id="jah33811-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="jah33811-cit-0033">
+<string-name name-style="western">
+<surname>Vardi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Levy</surname>
+<given-names>NS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Levy</surname>
+<given-names>AP</given-names>
+</string-name>. <article-title>Vitamin E in the prevention of cardiovascular disease: the importance of proper patient selection</article-title>. <source xml:lang="en">J Lipid Res</source>. <year>2013</year>;<volume>54</volume>:<fpage>2307</fpage>–<lpage>2314</lpage>.<pub-id pub-id-type="pmid">23505320</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1194/jlr.R026641</pub-id><pub-id pub-id-type="pmcid">PMC3735930</pub-id></mixed-citation></ref><ref id="jah33811-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="jah33811-cit-0034">
+<string-name name-style="western">
+<surname>Jha</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peto</surname>
+<given-names>R</given-names>
+</string-name>. <article-title>Global effects of smoking, of quitting, and of taxing tobacco</article-title>. <source xml:lang="en">N Engl J Med</source>. <year>2014</year>;<volume>370</volume>:<fpage>60</fpage>–<lpage>68</lpage>.<pub-id pub-id-type="pmid">24382066</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1056/NEJMra1308383</pub-id></mixed-citation></ref><ref id="jah33811-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="jah33811-cit-0035">
+<string-name name-style="western">
+<surname>Goniewicz</surname>
+<given-names>ML</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Knysak</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gawron</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kosmider</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sobczak</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kurek</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Prokopowicz</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jablonska‐Czapla</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rosik‐Dulewska</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Havel</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jacob</surname>
+<given-names>P</given-names>
+<suffix>III</suffix>
+</string-name>, <string-name name-style="western">
+<surname>Benowitz</surname>
+<given-names>N</given-names>
+</string-name>. <article-title>Levels of selected carcinogens and toxicants in vapour from electronic cigarettes</article-title>. <source xml:lang="en">Tob Control</source>. <year>2014</year>;<volume>23</volume>:<fpage>133</fpage>–<lpage>139</lpage>.<pub-id pub-id-type="pmid">23467656</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1136/tobaccocontrol-2012-050859</pub-id><pub-id pub-id-type="pmcid">PMC4154473</pub-id></mixed-citation></ref><ref id="jah33811-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="jah33811-cit-0036">
+<string-name name-style="western">
+<surname>Moheimani</surname>
+<given-names>RS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bhetraratana</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peters</surname>
+<given-names>KM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yang</surname>
+<given-names>BK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yin</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gornbein</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Araujo</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Middlekauff</surname>
+<given-names>HR</given-names>
+</string-name>. <article-title>Sympathomimetic effects of acute E‐cigarette use: role of nicotine and non‐nicotine constituents</article-title>. <source xml:lang="en">J Am Heart Assoc</source>. <year>2017</year>;<volume>6</volume>:<fpage>e006579</fpage> DOI: <pub-id pub-id-type="doi">10.1161/JAHA.117.006579</pub-id>.<pub-id pub-id-type="pmid">28931527</pub-id><pub-id pub-id-type="pmcid">PMC5634299</pub-id></mixed-citation></ref><ref id="jah33811-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="jah33811-cit-0037">
+<string-name name-style="western">
+<surname>Moheimani</surname>
+<given-names>RS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bhetraratana</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yin</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peters</surname>
+<given-names>KM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gornbein</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Araujo</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Middlekauff</surname>
+<given-names>HR</given-names>
+</string-name>. <article-title>Increased cardiac sympathetic activity and oxidative stress in habitual electronic cigarette users: implications for cardiovascular risk</article-title>. <source xml:lang="en">JAMA Cardiol</source>. <year>2017</year>;<volume>2</volume>:<fpage>278</fpage>–<lpage>284</lpage>.<pub-id pub-id-type="pmid">28146259</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1001/jamacardio.2016.5303</pub-id><pub-id pub-id-type="pmcid">PMC5626008</pub-id></mixed-citation></ref><ref id="jah33811-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="jah33811-cit-0038">
+<string-name name-style="western">
+<surname>Glasser</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Collins</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pearson</surname>
+<given-names>JL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Abudayyeh</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Niaura</surname>
+<given-names>RS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Abrams</surname>
+<given-names>DB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Villanti</surname>
+<given-names>AC</given-names>
+</string-name>. <article-title>Overview of electronic nicotine delivery systems: a systematic review</article-title>. <source xml:lang="en">Am J Prev Med</source>. <year>2017</year>;<volume>52</volume>:<fpage>e33</fpage>–<lpage>e66</lpage>.<pub-id pub-id-type="pmid">27914771</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.amepre.2016.10.036</pub-id><pub-id pub-id-type="pmcid">PMC5253272</pub-id></mixed-citation></ref><ref id="jah33811-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="jah33811-cit-0039">
+<string-name name-style="western">
+<surname>Liu</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lugo</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Spizzichino</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tabuchi</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pacifici</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gallus</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Heat‐not‐burn tobacco products: concerns from the Italian experience</article-title>. <source xml:lang="en">Tob Control</source>. <year>2019</year>;<volume>28</volume>:<fpage>113</fpage>–<lpage>114</lpage>.<pub-id pub-id-type="pmid">29374094</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1136/tobaccocontrol-2017-054054</pub-id></mixed-citation></ref><ref id="jah33811-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="jah33811-cit-0040">
+<string-name name-style="western">
+<surname>Davis</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Williams</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Talbot</surname>
+<given-names>P</given-names>
+</string-name>. <article-title>iQOS: evidence of pyrolysis and release of a toxicant from plastic</article-title>. <source xml:lang="en">Tob Control</source>. <year>2019</year>;<volume>28</volume>:<fpage>34</fpage>–<lpage>41</lpage>.<pub-id pub-id-type="pmid">29535257</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1136/tobaccocontrol-2017-054104</pub-id></mixed-citation></ref><ref id="jah33811-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="jah33811-cit-0041">
+<string-name name-style="western">
+<surname>Avdalovic</surname>
+<given-names>MV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Murin</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>POINT: does the risk of electronic cigarettes exceed potential benefits? Yes</article-title>. <source xml:lang="en">Chest</source>. <year>2015</year>;<volume>148</volume>:<fpage>580</fpage>–<lpage>582</lpage>.<pub-id pub-id-type="pmid">25836723</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1378/chest.15-0538</pub-id></mixed-citation></ref><ref id="jah33811-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="jah33811-cit-0042">
+<string-name name-style="western">
+<surname>Middlekauff</surname>
+<given-names>HR</given-names>
+</string-name>. <article-title>COUNTERPOINT: does the risk of electronic cigarettes exceed potential benefits? No</article-title>. <source xml:lang="en">Chest</source>. <year>2015</year>;<volume>148</volume>:<fpage>582</fpage>–<lpage>584</lpage>.<pub-id pub-id-type="pmid">25837266</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1378/chest.15-0540</pub-id></mixed-citation></ref><ref id="jah33811-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="jah33811-cit-0043">
+<string-name name-style="western">
+<surname>Fairchild</surname>
+<given-names>AL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lee</surname>
+<given-names>JS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bayer</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Curran</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>E‐cigarettes and the harm‐reduction continuum</article-title>. <source xml:lang="en">N Engl J Med</source>. <year>2018</year>;<volume>378</volume>:<fpage>216</fpage>–<lpage>219</lpage>.<pub-id pub-id-type="pmid">29342380</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1056/NEJMp1711991</pub-id></mixed-citation></ref><ref id="jah33811-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="jah33811-cit-0044">
+<string-name name-style="western">
+<surname>Mastrangeli</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cavarretta</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sciarretta</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peruzzi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Marullo</surname>
+<given-names>AGM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>De Falco</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chimenti</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Valenti</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bullen</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Roever</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Frati</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Biondi‐Zoccai</surname>
+<given-names>G</given-names>
+</string-name>. <article-title>Predictors of oxidative stress and vascular function in an experimental study of tobacco versus electronic cigarettes: a post‐hoc analysis of the SUR‐VAPES 1 (Sapienza University of Rome‐Vascular Assessment of Proatherosclerotic Effects of Smoking) Study</article-title>. <source xml:lang="en">Tob Induc Dis</source>. <year>2018</year>;<volume>16</volume>:<fpage>11</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.18332/tid/89975</pub-id><pub-id pub-id-type="pmcid">PMC6659516</pub-id><pub-id pub-id-type="pmid">31516418</pub-id></mixed-citation></ref><ref id="jah33811-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="jah33811-cit-0045">
+<string-name name-style="western">
+<surname>Calvieri</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tanzilli</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bartimoccia</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cangemi</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Arrivi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dominici</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cammisotto</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Viceconte</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mangieri</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Frati</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>Interplay between oxidative stress and platelet activation in coronary thrombus of STEMI patients</article-title>. <source xml:lang="en">Antioxidants (Basel)</source>. <year>2018</year>;<volume>7</volume>:<fpage>E83</fpage>.<pub-id pub-id-type="pmid">29970802</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/antiox7070083</pub-id><pub-id pub-id-type="pmcid">PMC6070897</pub-id></mixed-citation></ref><ref id="jah33811-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="jah33811-cit-0046">
+<string-name name-style="western">
+<surname>Carnevale</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Loffredo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nocella</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bartimoccia</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bucci</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>De Falco</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peruzzi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chimenti</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Biondi‐Zoccai</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pignatelli</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Violi</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Frati</surname>
+<given-names>G</given-names>
+</string-name>. <article-title>Epicatechin and catechin modulate endothelial activation induced by platelets of patients with peripheral artery disease</article-title>. <source xml:lang="en">Oxid Med Cell Longev</source>. <year>2014</year>;<volume>2014</volume>:<fpage>691015</fpage>.<pub-id pub-id-type="pmid">25180068</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1155/2014/691015</pub-id><pub-id pub-id-type="pmcid">PMC4142301</pub-id></mixed-citation></ref><ref id="jah33811-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="jah33811-cit-0047">
+<string-name name-style="western">
+<surname>Biondi‐Zoccai</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peruzzi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Frati</surname>
+<given-names>G</given-names>
+</string-name>. <article-title>E‐cigarettes, incentives, and drugs for smoking cessation</article-title>. <source xml:lang="en">N Engl J Med</source>. <year>2018</year>;<volume>379</volume>:<fpage>991</fpage>–<lpage>992</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1056/NEJMc1809349</pub-id><pub-id pub-id-type="pmid">30188641</pub-id></mixed-citation></ref><ref id="jah33811-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="jah33811-cit-0048">
+<string-name name-style="western">
+<surname>Auf</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Trepka</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Selim</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ben Taleb</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>De La Rosa</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cano</surname>
+<given-names>MÁ</given-names>
+</string-name>. <article-title>E‐cigarette marketing exposure and combustible tobacco use among adolescents in the United States</article-title>. <source xml:lang="en">Addict Behav</source>. <year>2018</year>;<volume>78</volume>:<fpage>74</fpage>–<lpage>79</lpage>.<pub-id pub-id-type="pmid">29127787</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.addbeh.2017.10.008</pub-id></mixed-citation></ref><ref id="jah33811-bib-0049"><label>49</label><mixed-citation publication-type="journal" id="jah33811-cit-0049">
+<string-name name-style="western">
+<surname>King</surname>
+<given-names>AC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Smith</surname>
+<given-names>LJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>McNamara</surname>
+<given-names>PJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cao</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>Second generation electronic nicotine delivery system vape pen exposure generalizes as a smoking cue</article-title>. <source xml:lang="en">Nicotine Tob Res</source>. <year>2018</year>;<volume>20</volume>:<fpage>246</fpage>–<lpage>252</lpage>.<pub-id pub-id-type="pmid">28082323</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/ntr/ntw327</pub-id><pub-id pub-id-type="pmcid">PMC7207065</pub-id></mixed-citation></ref></ref-list></back></article>

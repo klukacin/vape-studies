@@ -145,17 +145,17 @@ const STUDIES_DB = [
   "name": "Gillman i sur.",
   "year": 2016,
   "cat": "Emisije / snaga",
-  "design": "Lab · 5–11,4 W",
-  "finding": "Formaldehid 0,3→380 µg/10 puffova sa snagom",
+  "design": "Laboratorij · različiti uređaji i radne snage",
+  "finding": "Snaga i konstrukcija uređaja utječu na količinu aerosola i aldehida. Rad ne daje univerzalnu pretvorbu W u temperaturu.",
   "non": 0,
-  "pmid": "26707234",
-  "title": "Achieving Cardiovascular Health in Young Adulthood-Which Adolescent Factors Matter?",
-  "journal": "The Journal of adolescent health : official publication of the Society for Adolescent Medicine",
-  "authors": "Gooding HC, Milliren C, Shay CM, Richmond TK, Field AE, Gillman MW",
+  "pmid": "26743740",
+  "title": "Effect of variable power levels on the yield of total aerosol mass and formation of aldehydes in e-cigarette aerosols",
+  "journal": "Regulatory Toxicology and Pharmacology",
+  "authors": "Gillman IG; Kistler KA; Stewart EW; Paolantonio AR",
   "pubdate": "2016 Jan",
-  "doi": "10.1016/j.jadohealth.2015.09.011",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/26707234/",
-  "srclabel": "PubMed 26707234 · The Journal of adolescent health : official publication of the Society for Adolescent Medicine"
+  "doi": "10.1016/j.yrtph.2015.12.019",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/26743740/",
+  "srclabel": "PubMed · izvorni rad"
  },
  {
   "i": 11,
@@ -177,9 +177,10 @@ const STUDIES_DB = [
   "design": "Lab · PLoS ONE",
   "finding": "Top-coil: 322–1008 °C suho, 110–185 °C mokro — objašnjava varijabilnost emisija",
   "non": 0,
-  "url": "https://scholar.google.com/scholar?q=Chen%20W.%202018%20e-cigarette%20tobacco%20cigar",
-  "srclabel": "Google Scholar — pretraga izvora",
-  "scholar": 1
+  "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0195925",
+  "srclabel": "PLOS ONE · izvorni rad",
+  "title": "Measurement of heating coil temperature for e-cigarettes with a “top-coil” clearomizer",
+  "doi": "10.1371/journal.pone.0195925"
  },
  {
   "i": 13,
@@ -278,11 +279,18 @@ const STUDIES_DB = [
   "year": 2018,
   "cat": "Rizik / model",
   "design": "Model · 14 studija emisija",
-  "finding": "Karcinogena potentnost e-cig <1% dima; doživotni rizik EC 0,004 vs cigareta",
+  "finding": "Model emisija procjenjuje relativni doživotni višak rizika raka za HnB na oko 0,024 prema cigareti, uz 15 stickova/cigareta dnevno. Nije klinička procjena ukupne štetnosti.",
   "non": 0,
-  "url": "https://scholar.google.com/scholar?q=Stephens%20W.%202018%20e-cigarette%20tobacco%20cigar",
-  "srclabel": "Google Scholar — pretraga izvora",
-  "scholar": 1
+  "url": "https://tobaccocontrol.bmj.com/content/27/1/10",
+  "srclabel": "Tobacco Control · izvorni model",
+  "title": "Comparing the cancer potencies of emissions from vapourised nicotine products including e-cigarettes with those of tobacco smoke",
+  "doi": "10.1136/tobaccocontrol-2017-053808",
+  "sections": [
+   {
+    "heading": "Model, ne praćenje bolesti",
+    "text": "Podloga za HnB su prototipovi THS 2.2 s različitim duhanskim blendovima. Rizici 5,7×10⁻⁴ i 2,4×10⁻² daju omjer 0,024; relativna potentnost nije isti broj. Ne prenositi na ILUMA/TEREA ili kompozitni rizik svih bolesti."
+   }
+  ]
  },
  {
   "i": 21,
@@ -669,11 +677,13 @@ const STUDIES_DB = [
   "year": 2017,
   "cat": "Klinička / IQOS",
   "design": "RCT · 5 dana · Poljska",
-  "finding": "HPHC biomarkeri −47 do −96% uz jednak unos nikotina",
+  "finding": "THS 2.1: nakon pet dana nenikotinski biomarkeri 42,3–93,0% niži prema nastavljenom pušenju. PMI financiranje; nije ILUMA.",
   "non": 0,
-  "url": "https://scholar.google.com/scholar?q=L%C3%BCdicke%20%28THS%202.1%29%202017%20e-cigarette%20tobacco%20cigar",
-  "srclabel": "Google Scholar — pretraga izvora",
-  "scholar": 1
+  "url": "https://pubmed.ncbi.nlm.nih.gov/27613951/",
+  "srclabel": "PubMed · izvorni klinički rad",
+  "title": "Reduced Exposure to Harmful and Potentially Harmful Smoke Constituents With the Tobacco Heating System 2.1",
+  "doi": "10.1093/ntr/ntw164",
+  "pmid": "27613951"
  },
  {
   "i": 51,
@@ -683,9 +693,11 @@ const STUDIES_DB = [
   "design": "RCT · 5 dana · Poljska",
   "finding": "Značajna smanjenja BoE uz prelazak na THS",
   "non": 0,
-  "url": "https://scholar.google.com/scholar?q=Haziza%20%28THS%202.2%29%202016%20e-cigarette%20tobacco%20cigar",
-  "srclabel": "Google Scholar — pretraga izvora",
-  "scholar": 1
+  "url": "https://pubmed.ncbi.nlm.nih.gov/27816672/",
+  "srclabel": "PubMed · izvorni klinički rad",
+  "title": "Evaluation of the Tobacco Heating System 2.2. Part 8: 5-Day randomized reduced exposure clinical study in Poland",
+  "doi": "10.1016/j.yrtph.2016.11.003",
+  "pmid": "27816672"
  },
  {
   "i": 52,
@@ -695,9 +707,11 @@ const STUDIES_DB = [
   "design": "RCT · 90 dana · Japan",
   "finding": "Mentol THS: 50–94% smanjenja biomarkera",
   "non": 0,
-  "url": "https://scholar.google.com/scholar?q=L%C3%BCdicke%20%28mTHS%29%202018%20e-cigarette%20tobacco%20cigar",
-  "srclabel": "Google Scholar — pretraga izvora",
-  "scholar": 1
+  "url": "https://pubmed.ncbi.nlm.nih.gov/28177489/",
+  "srclabel": "PubMed · izvorni klinički rad",
+  "title": "Effects of Switching to the Tobacco Heating System 2.2 Menthol, Smoking Abstinence, or Continued Cigarette Smoking on Biomarkers of Exposure (Part 1)",
+  "doi": "10.1093/ntr/ntw287",
+  "pmid": "28177489"
  },
  {
   "i": 53,
@@ -793,7 +807,7 @@ const STUDIES_DB = [
   "year": 2019,
   "cat": "Kardio / akutno",
   "design": "Crossover · n=20 · SUR-VAPES",
-  "finding": "Svi proizvodi pogoršavaju oksidativni stres/FMD; HTP<e-cig<cigareta",
+  "finding": "Akutna FMD smanjila se nakon IQOS/HEETS, Blu Pro i Marlboro Gold u istih 20 pušača. Razlika promjene FMD između IQOS-a i e-cigarete nije statistički značajna.",
   "non": 0,
   "pmid": "30879375",
   "title": "Acute Effects of Heat-Not-Burn, Electronic Vaping, and Traditional Tobacco Combustion Cigarettes: The Sapienza University of Rome-Vascular Assessment of Proatherosclerotic Effects of Smoking ( SUR - VAPES ) 2 Randomized Trial",
@@ -802,7 +816,36 @@ const STUDIES_DB = [
   "pubdate": "2019 Mar 19",
   "doi": "10.1161/JAHA.118.010455",
   "url": "https://pubmed.ncbi.nlm.nih.gov/30879375/",
-  "srclabel": "PubMed 30879375 · Journal of the American Heart Association"
+  "srclabel": "PubMed 30879375 · Journal of the American Heart Association",
+  "sections": [
+   {
+    "heading": "Isti sudionici, kratki postupak",
+    "text": "Randomizirani crossover: THS 2.2 s jednim HEETS Amber stickom, devet udisaja Blu Pro te jedna Marlboro Gold cigareta odvojenim danima. FMD prije/poslije: IQOS 6,10±3,01 / 3,79±2,68%; Blu 6,14±3,17 / 3,72±3,14%; cigareta 6,20±3,26 / 2,40±1,89%. Prosjeci±SD. Interakcija promjene FMD e-cigareta prema IQOS-u p=0,872; cigareta prema IQOS-u p=0,048."
+   },
+   {
+    "heading": "Serumski kotinin",
+    "text": "Neposredno nakon uporabe: IQOS 61,0±16,7, Blu 64,4±11,1, cigareta 65,5±10,2 ng/mL (prosjek±SD). Kotinin nije trenutni vrh koncentracije nikotina, a akutni postupak nije dugoročna procjena bolesti."
+   },
+   {
+    "heading": "Lokalna kopija i licenca",
+    "text": "https://creativecommons.org/licenses/by-nc/4.0/ This is an open access article under the terms of the http://creativecommons.org/licenses/by-nc/4.0/ License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited and is not used for commercial purposes. Izvorni PDF i slike preuzeti su 5. 10. 2026. iz službene PMC Open Data arhive. Izvornici nisu mijenjani; MD5 i izvori su u provenance.json uz datoteke."
+   }
+  ],
+  "fullText": "/materiali/studije/PMC6475061/PMC6475061.1.pdf",
+  "materials": [
+   {
+    "title": "Izvorni materijal: JAH3-8-e010455-g001.jpg",
+    "url": "/materiali/studije/PMC6475061/JAH3-8-e010455-g001.jpg"
+   },
+   {
+    "title": "Izvorni materijal: JAH3-8-e010455-g002.jpg",
+    "url": "/materiali/studije/PMC6475061/JAH3-8-e010455-g002.jpg"
+   },
+   {
+    "title": "Izvorni materijal: JAH3-8-e010455-s001.pdf",
+    "url": "/materiali/studije/PMC6475061/JAH3-8-e010455-s001.pdf"
+   }
+  ]
  },
  {
   "i": 61,
@@ -2286,13 +2329,40 @@ const STUDIES_DB = [
   "title": "Chemical characterisation of the vapour emitted by an e-cigarette using a ceramic wick-based technology",
   "url": "https://doi.org/10.1038/s41598-022-19761-w",
   "srclabel": "Izvorni rad / dokument",
-  "design": "Laboratorij · BAT financiranje",
-  "finding": "Keramički fitilj s NiCr grijačem; pet kvantificiranih karbonila 0,02–0,19 µg/puff. Autori navode rad ispod 350 °C; to nije granica sigurnosti keramike.",
+  "design": "Laboratorij · Vype ePod1.0 · BAT financiranje",
+  "finding": "Vype ePod1.0: keramički fitilj i metalni NiCr grijač. Pet odabranih HPHC kvantificirano 0,14–100 ng/puff; to nisu pet karbonila. Nisu mjerene emisije elementarnih metala ili čestica keramike.",
   "non": 0,
   "sections": [
    {
-    "heading": "Tumačenje i ograničenja",
-    "text": "ISO 20768: 55 mL, 3 s, razmak 30 s. Dvije tekućine; analizirane organske emisije. Nije temperaturna mapa otpuštanja keramike ni dugoročna studija bolesti. Svi autori zaposleni u BAT-u. Ne prenositi rezultate na Pro One."
+    "heading": "Testirani proizvod i uvjeti",
+    "text": "Vype ePod1.0, 350 mAh, 6,5±0,5 W; pod 1,9 mL, ravni NiCr grijač 0,8–1,4 Ω i keramički fitilj. Berry Blast 18 mg/mL nikotin-benzoat i 57 mg/mL nikotin-laktat. ISO 20768: 55 mL, 3 s, razmak 30 s; prvih 50 udisaja, pet ponavljanja."
+   },
+   {
+    "heading": "Što je kvantificirano",
+    "text": "Sažetak za odabrani FDA/WHO popis HPHC navodi aceton, acetaldehid, formaldehid, naftalen i nornikotin, 0,14–100 ng/puff. Tablica 3 sadrži i druge mjerene karbonile i ketone te pozadinske uzorke. To nije analiza metala ni temperatura oslobađanja keramičkih čestica."
+   },
+   {
+    "heading": "Primjena na Pro One",
+    "text": "Autori su zaposlenici BAT-a; istraživanje je BAT financirano. Testiran je stariji ePod1.0, a ne Pro One ni aktualni FlavourFlow pod. Opis rada ispod 350 °C nije univerzalni prag sigurnosti. Fizička kompatibilnost poda ne dokazuje istu konstrukciju."
+   },
+   {
+    "heading": "Lokalna kopija i licenca",
+    "text": "https://creativecommons.org/licenses/by/4.0/ Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/. Izvorni PDF i slike preuzeti su 5. 10. 2026. iz službene PMC Open Data arhive. Izvornici nisu mijenjani; MD5 i izvori su u provenance.json uz datoteke."
+   }
+  ],
+  "doi": "10.1038/s41598-022-19761-w",
+  "pmid": "36192548",
+  "authors": "Pinto M. Isabel; Thissen J.; Hermes N.; Cunningham A.; Digard H.; Murphy J.",
+  "journal": "Scientific Reports",
+  "fullText": "/materiali/studije/PMC9529894/PMC9529894.1.pdf",
+  "materials": [
+   {
+    "title": "Izvorni materijal: 41598_2022_19761_Fig1_HTML.jpg",
+    "url": "/materiali/studije/PMC9529894/41598_2022_19761_Fig1_HTML.jpg"
+   },
+   {
+    "title": "Izvorni materijal: 41598_2022_19761_MOESM1_ESM.xlsx",
+    "url": "/materiali/studije/PMC9529894/41598_2022_19761_MOESM1_ESM.xlsx"
    }
   ]
  },
@@ -2863,16 +2933,16 @@ const STUDIES_DB = [
   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7839233/",
   "srclabel": "PMC · puni tekst, slike i tablice",
   "sections": [
-    {
-      "heading": "Metoda",
-      "text": "Ispitana su po dva okusa triju marki. Aerosol je prikupljen kroz 75 povlačenja: 55 mL, 3 sekunde, razmak 30 sekundi (CORESTA 81). Analizirane su čestice s kromom, željezom, niklom, bakrom, cinkom, kositrom i olovom."
-    },
-    {
-      "heading": "Primjena na Vuse",
-      "text": "Vuse Alto opisan je s poroznim silikatnim blokom (6,5 W; 1,1 Ω). To nije Vuse Pro One. Mjerenje metalnih čestica ne dokazuje otpuštanje silikatnih čestica ni dugoročni rizik određenog uređaja."
-    }
+   {
+    "heading": "Metoda",
+    "text": "Ispitana su po dva okusa triju marki. Aerosol je prikupljen kroz 75 povlačenja: 55 mL, 3 sekunde, razmak 30 sekundi (CORESTA 81). Analizirane su čestice s kromom, željezom, niklom, bakrom, cinkom, kositrom i olovom."
+   },
+   {
+    "heading": "Primjena na Vuse",
+    "text": "Vuse Alto opisan je s poroznim silikatnim blokom (6,5 W; 1,1 Ω). To nije Vuse Pro One. Mjerenje metalnih čestica ne dokazuje otpuštanje silikatnih čestica ni dugoročni rizik određenog uređaja."
+   }
   ]
-},
+ },
  {
   "i": 186,
   "name": "Salazar i sur. — jednokratni uređaji",
@@ -3205,6 +3275,377 @@ const STUDIES_DB = [
   "authors": "Claus Eric D.; Moeller Benjamin C.; Harbour Darlene; Kuehl Philip J.; McGuire Michael; Vivar Juan C.; Schroeder Megan J.",
   "journal": "Tobacco regulatory science",
   "pubdate": "2018-01"
+ },
+ {
+  "i": 192,
+  "name": "Wang i sur. — temperatura i karbonili",
+  "year": 2017,
+  "cat": "Emisije / temperatura",
+  "title": "A Device-Independent Evaluation of Carbonyl Emissions from Heated Electronic Cigarette Solvents",
+  "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169811",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Kontrolirani cijevni reaktor · čista otapala · termopar",
+  "finding": "Izmjerena temperatura reaktora povezana je s količinom formaldehida po mg otapala: PG 0,03 / 0,29 / 2,03 µg/mg pri 215 / 270 / 318 °C; VG 7,97 / 21,10 pri 270 / 318 °C.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Metoda i jedinice",
+    "text": "PG i VG zagrijavani su u reaktoru sa zrakom 200 mL/min. Temperatura staklene vune/reaktora mjerena je termoparom, a karbonili DNPH-HPLC metodom. Temperatura zraka na izlazu 25–76 °C nije temperatura reakcije. Količina je normalizirana na početnu masu otapala, ne na puff."
+   },
+   {
+    "heading": "Ponovljivost",
+    "text": "PG: 2–8 ponavljanja po temperaturi; navedeni prosjeci±SD: 0,03±0,03; 0,29±0,11; 2,03±0,80 µg/mg. VG prema tablici 2: pri 270 °C 7,97±1,08; pri 318 °C 21,10±3,80 µg/mg. Prikaz povezuje samo ove potvrđene točke, bez digitalizacije drugih točaka iz slike."
+   },
+   {
+    "heading": "Primjena na uređaje",
+    "text": "Ovo nisu izmjerene temperature ili doze Vusea, Wiipa, JUUL-a ili IQOS-a. Snaga W ne pretvara se u °C. Otapalo, katalitički materijal i režim reakcije utječu na rezultat; ne određuje univerzalni sigurnosni prag."
+   },
+   {
+    "heading": "Lokalna kopija i licenca",
+    "text": "https://creativecommons.org/licenses/by/4.0/ This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited. Izvorni PDF i slike preuzeti su 5. 10. 2026. iz službene PMC Open Data arhive. Izvornici nisu mijenjani; MD5 i izvori su u provenance.json uz datoteke."
+   }
+  ],
+  "pmid": "28076380",
+  "doi": "10.1371/journal.pone.0169811",
+  "authors": "Wang Ping; Chen Wenhao; Liao Jiawen; Matsuo Toshiki; Ito Kazuhide; Fowles Jeff; Shusterman Dennis; Mendell Mark; Kumagai Kazukiyo",
+  "journal": "PLoS ONE",
+  "fullText": "/materiali/studije/PMC5226727/PMC5226727.1.pdf",
+  "materials": [
+   {
+    "title": "Izvorni materijal: pone.0169811.g001.jpg",
+    "url": "/materiali/studije/PMC5226727/pone.0169811.g001.jpg"
+   },
+   {
+    "title": "Izvorni materijal: pone.0169811.g002.jpg",
+    "url": "/materiali/studije/PMC5226727/pone.0169811.g002.jpg"
+   },
+   {
+    "title": "Izvorni materijal: pone.0169811.g003.jpg",
+    "url": "/materiali/studije/PMC5226727/pone.0169811.g003.jpg"
+   },
+   {
+    "title": "Izvorni materijal: pone.0169811.g004.jpg",
+    "url": "/materiali/studije/PMC5226727/pone.0169811.g004.jpg"
+   },
+   {
+    "title": "Izvorni materijal: pone.0169811.g005.jpg",
+    "url": "/materiali/studije/PMC5226727/pone.0169811.g005.jpg"
+   },
+   {
+    "title": "Izvorni materijal: pone.0169811.t001.jpg",
+    "url": "/materiali/studije/PMC5226727/pone.0169811.t001.jpg"
+   },
+   {
+    "title": "Izvorni materijal: pone.0169811.t002.jpg",
+    "url": "/materiali/studije/PMC5226727/pone.0169811.t002.jpg"
+   },
+   {
+    "title": "Izvorni materijal: pone.0169811.t003.jpg",
+    "url": "/materiali/studije/PMC5226727/pone.0169811.t003.jpg"
+   }
+  ]
+ },
+ {
+  "i": 193,
+  "name": "Auer i sur. — temperatura i emisije IQOS-a",
+  "year": 2017,
+  "cat": "Emisije / temperatura",
+  "title": "Heat-Not-Burn Tobacco Cigarettes: Smoke by Any Other Name",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5543320/",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Laboratorij · stariji IQOS s oštricom",
+  "finding": "IQOS: temperatura 330±10 °C (SD, n=2), formaldehid 3,2±2,7 µg/stick (n=5); nisu rezultati za ILUMA/TEREA.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Metoda",
+    "text": "Termopar tipa K blizu grijaće oštrice, 3 Hz. Laboratorijski protokol 35 mL, dva udisaja/min. Prosječni broj puffova 12,6±2,4 (n=32). Temperatura i emisija imaju zasebna ponavljanja."
+   },
+   {
+    "heading": "Granice usporedbe",
+    "text": "320–340 °C predstavlja sredinu±SD, a ne najmanju i najveću temperaturu. µg/stick nisu µg/mg čistog otapala. Dijeljenje 3200 ng sa 12,6 puffova dalo bi približno 254 ng/puff, ali to je omjer zasebnih prosjeka, ne upareno mjerenje. Zato nije točka na krivulji PG/VG."
+   },
+   {
+    "heading": "Izvor",
+    "text": "Puni tekst je javno čitljiv na PMC-u; nije potvrđena otvorena licenca za lokalno objavljivanje izvornog PDF-a."
+   }
+  ],
+  "doi": "10.1001/jamainternmed.2017.1419",
+  "pmid": "28531246",
+  "journal": "JAMA Internal Medicine",
+  "authors": "Auer R; Concha-Lozano N; Jacot-Sadowski I; Cornuz J; Berthet A"
+ },
+ {
+  "i": 194,
+  "name": "Haziza i sur. — skup podataka THS 2.2",
+  "year": 2017,
+  "cat": "Klinička / IQOS",
+  "title": "Biomarker of exposure level data set in smokers switching from conventional cigarettes to Tobacco Heating System 2.2, continuing smoking or abstaining from smoking for 5 days",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5156600/",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "RCT · pet dana u Varšavi · THS80 / cigarete41 / apstinencija39 · PMI",
+  "finding": "Peti dan: NNAL49,65 pg/mg, COHb1,06%, 3-HPMA402,26 ng/mg i plazmatski kotinin Cavg239,99 ng/mL u THS skupini. Smanjena izloženost nekim toksikantima ne dokazuje smanjenu učestalost bolesti.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Tablica 1: iste skupine i isti dan",
+    "text": "THS / nastavak pušenja / apstinencija: NNAL49,65 /107,04 /41,51 pg/mg kreatinina; COHb1,06 /4,51 /0,99%; 3-HPMA402,26 /931,01 /245,69 ng/mg; kotinin239,99 /219,73 /2,05 ng/mL (plazma, ponderirani24h Cavg). Geometrijske sredine i95%CI. THS CI: NNAL42,47–58,05; COHb1,03–1,08; 3-HPMA366,55–441,45; kotinin211,30–272,58."
+   },
+   {
+    "heading": "Tablica 2: promjena od početka",
+    "text": "Aritmetički prosjek postotka smanjenja od početka do dana5 u THS skupini: NNAL53,98%, COHb76,20%, S-PMA(benzen)92,03%, MHBMA(butadien)84,98%, 3-HPMA(akrolein)49,68%. To nisu postotci iznad nepušača niti prilagođeni omjeri prema cigaretama iz tablice3."
+   },
+   {
+    "heading": "Ograničenja i CEMA",
+    "text": "Svi sudionici prethodno su pušili. Petodnevna apstinencija nije skupina nikad-pušača, a NNAL ima dugo vrijeme eliminacije. Financiranje i autori povezani s PMI-jem. CEMA u ovom radu znači metabolit akrilonitrila; ne zamijeniti s akroleinskim CEMA u PATH izvoru. Online18.11.2016, izdanje2017. Prateći podaci izvornom kliničkom radu #51."
+   },
+   {
+    "heading": "Lokalna kopija i licenca",
+    "text": "https://creativecommons.org/licenses/by/4.0/ This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/). Izvorni PDF i slike preuzeti su 5. 10. 2026. iz službene PMC Open Data arhive. Izvornici nisu mijenjani; MD5 i izvori su u provenance.json uz datoteke."
+   }
+  ],
+  "pmid": "27995164",
+  "doi": "10.1016/j.dib.2016.11.047",
+  "authors": "Haziza Christelle; de La Bourdonnaye Guillaume; Skiada Dimitra; Ancerewicz Jacek; Baker Gizelle; Picavet Patrick; Lüdicke Frank",
+  "journal": "Data in Brief",
+  "fullText": "/materiali/studije/PMC5156600/PMC5156600.1.pdf",
+  "materials": [
+   {
+    "title": "Izvorni materijal: mmc1.zip",
+    "url": "/materiali/studije/PMC5156600/mmc1.zip"
+   }
+  ]
+ },
+ {
+  "i": 195,
+  "name": "Gray i sur. — metali u podovima Vuse Alto",
+  "year": 2022,
+  "cat": "Emisije / metali",
+  "title": "Toxic Metals in Liquid and Aerosol from Pod-Type Electronic Cigarettes",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9531718/",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Laboratorij · JUUL, myblu i Vuse Alto · ICP-MS",
+  "finding": "Izmjerene su razlike i velika varijabilnost metala u tekućini i aerosolu podova. Vuse Alto s keramičkim fitiljem nije Pro One ni Pod Pro.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Primjena na Vuse",
+    "text": "Porozni keramički fitilj ne uklanja metalni grijač i kontakte kao moguće izvore metala. Rad ispituje konkretne tadašnje proizvode i podove; ne prenosi se na današnji Pro One ili FlavourFlow konstrukciju."
+   },
+   {
+    "heading": "Pristup izvorniku",
+    "text": "Javni puni tekst i tablice na PMC-u. Oznaka TDM u arhivi nije dozvola lokalne redistribucije cijelog rada; ovdje je vlastiti sažetak i poveznica na izvornik."
+   }
+  ],
+  "pmid": "33270129",
+  "doi": "10.1093/jat/bkaa185",
+  "authors": "Gray Naudia; Halstead Mary; Valentin-Blasini Liza; Watson Clifford; Pappas R. Steven",
+  "journal": "Journal of analytical toxicology"
+ },
+ {
+  "i": 196,
+  "name": "Vuse — Pro, Classic i Intense podovi",
+  "year": 2026,
+  "cat": "Tehnologija / Vuse",
+  "title": "Discover Full Range of Vuse Vape Pods",
+  "url": "https://www.vuse.com/en-gb/pages/discover-vuse-vape-pods",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Službeni UK katalog · proizvođački podatak",
+  "finding": "Classic Pods ranije su se zvali Pro Pods; Intense imaju novu/poboljšanu keramiku. Kompatibilnost s istom baterijom nije dokaz istog grijača.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Identitet proizvoda",
+    "text": "Nazive poda i generaciju treba zabilježiti zasebno od baterijskog uređaja. Promjene konstrukcije i različita tržišta ograničavaju prijenos ranijih testova ePod1.0 na Pro One."
+   },
+   {
+    "heading": "Vrsta dokaza",
+    "text": "Službena specifikacija, bez recenzirane tablice emisija ili metala za aktualni pod."
+   }
+  ],
+  "accessed": "2026-10-05"
+ },
+ {
+  "i": 197,
+  "name": "BAT Omni — razvoj Vuse uređaja",
+  "year": 2026,
+  "cat": "Tehnologija / Vuse",
+  "title": "Our Vapour Products",
+  "url": "https://www.asmokelessworld.com/gb/en/chapters/chapter-5/our-vapour-products",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Proizvođački opis tehnologije",
+  "finding": "BAT navodi Pro2023 i ProOne2025. Keramički fitilj djeluje uz metalni grijaći element; naziv keramika ne znači odsutnost metala.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Opseg",
+    "text": "Povijest i opis obitelji uređaja. Nije neovisna analiza aktualnog pod-grijača niti potvrda da neki konkretan patent ulazi u prodajni proizvod."
+   }
+  ],
+  "accessed": "2026-10-05"
+ },
+ {
+  "i": 198,
+  "name": "Inter Scientific — VUSE Pro u Refilla izvještaju",
+  "year": 2025,
+  "cat": "Emisije / Vuse",
+  "title": "Evaluation of the Refilla ENDS, SR24227 V2 / PN24227",
+  "url": "https://refillavape.com/downloads/refilla-inter-scientific-report.pdf",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Komercijalni laboratorijski izvještaj · AYR Labs · bez recenzije",
+  "finding": "Za usporedni VUSE Pro prijavljen Ni0,07 i0,32 µg/100 puffova u dva uzastopna bloka. Ne potvrđuje model Pro One.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Vrijednosti i metoda",
+    "text": "Tablica5.2.1, str.10: blok0–100:0,07 µg/100; blok100–200:0,32 µg/100; prosjek0,195 µg/100. Naveden ICP-MS. Fotografija na str.18 nosi oznaku VUSE PRO; nema preciznog SKU-a, n/SD i pouzdanog povezivanja nikotinske jačine s tablicom nikla."
+   },
+   {
+    "heading": "Ograničenja",
+    "text": "Izvještaj naručen za konkurentski Refilla proizvod; 50mL/3s/30s izričito opisuje Refilla postupak, usporedni Pro nije potpuno specificiran. Izračun projekcije2000puffova nije aritmetički dosljedan i ovdje se ne koristi. Izdano10.2.2025; nema potvrđene licence za lokalnu kopiju."
+   }
+  ],
+  "authors": "Chris Corbett; odobrila Victoria Hotchkiss",
+  "pubdate": "2025-02-10"
+ },
+ {
+  "i": 199,
+  "name": "Patent — metalni film na keramici",
+  "year": 2025,
+  "cat": "Tehnologija / keramika",
+  "title": "EP4483731A1: Metal heating film, preparation method therefor, and application thereof",
+  "url": "https://patents.google.com/patent/EP4483731A1/en",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Patentna prijava · Hainan Moore Brothers Technology · SMOORE AT02",
+  "finding": "Opis metalnog filma s Ni/NiCr na keramičkoj podlozi. Patent ne navodi da je konstrukcija u Vuse Pro One ili Pro podu.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Konstrukcija",
+    "text": "Metal i staklena pasta nanose se na keramiku sitotiskom i sinteriraju. Prioritet20.4.2022; objava1.1.2025. Patentna obitelj WO2023202266A1. E-tekućina BAT-204567 nije identitet prodajnog poda."
+   },
+   {
+    "heading": "Brojke prijavitelja, ne neovisni dokaz",
+    "text": "Tablica2 prijavljuje Ni0,52–1,56 ng/puff i Cr ND–0,08 za sedam izvedbi; usporedni Ni85Cr15 film Ni5,32 i Cr0,48 ng/puff. Metodologija elementarne analize, LOD i n nisu dovoljno opisani; naveden GC-MS, a 6,5W/3s×40 odnosi se na zaseban test pucanja. Ne unositi u kliničke ili usporedne metalne grafove kao potvrđen ProOne podatak."
+   }
+  ],
+  "materials": [
+   {
+    "title": "Izvorni patentni PDF",
+    "url": "https://patentimages.storage.googleapis.com/85/c9/83/6e991491b16fad/EP4483731A1.pdf"
+   }
+  ]
+ },
+ {
+  "i": 200,
+  "name": "Patent — porozna keramika grijača",
+  "year": 2015,
+  "cat": "Tehnologija / keramika",
+  "title": "US20150359262A1 / US9861129B2: Preparation method of porous ceramic, porous ceramic, and electronic cigarette",
+  "url": "https://patents.google.com/patent/US20150359262A1/en",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Patent · Shenzhen Smoore / Hunan Zhengyuan",
+  "finding": "Opis početne smjese s amorfnom silikom, aluminijevim i željezovim oksidom te sinteriranja. Nije potvrđen sastav Vuse poda.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Materijal i granice",
+    "text": "Početna smjesa navodi amorfnu siliku80–90 mas.%, Al2O3 i Fe2O3 po1–10%, uz natrijev silikat i porogen. Patentni recept nije analiza gotovog komercijalnog poda ni udahnutih čestica. Ne daje temperaturu sigurnog rada ili dugoročni zdravstveni rizik."
+   }
+  ],
+  "materials": [
+   {
+    "title": "Izvorni patentni PDF",
+    "url": "https://patentimages.storage.googleapis.com/a6/1c/7a/9b6adde7baec6f/US20150359262A1.pdf"
+   }
+  ]
+ },
+ {
+  "i": 201,
+  "name": "IQOS ILUMA — deklarirana temperatura",
+  "year": 2026,
+  "cat": "Emisije / temperatura",
+  "title": "Pertanyaan Umum Tentang IQOS ILUMA dan TEREA",
+  "url": "https://www.iqos.com/id/id/news/informasi/pertanyaan-umum-tentang-iqos-iluma-dan-terea.html",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Službeni FAQ · proizvođački podatak",
+  "finding": "Proizvođač navodi zagrijavanje TEREA duhana do350 °C. Prikaz je deklarirani maksimum, ne neovisno mjerenje.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Kako čitati graf",
+    "text": "Točka na350 °C ne znači izmjereni raspon0–350 °C. Ne prenosi se neovisno mjerenje330±10 °C starijeg IQOS-a na indukcijski ILUMA sustav."
+   }
+  ],
+  "accessed": "2026-10-05"
+ },
+ {
+  "i": 202,
+  "name": "Vuse Pro One — tvrdnja o odabranim toksikantima",
+  "year": 2026,
+  "cat": "Emisije / Vuse",
+  "title": "Less toxicants: Vuse GO1000 and Vuse ProOne",
+  "url": "https://www.vuse.com/ch/en/thr/less-toxicants",
+  "srclabel": "Izvorni rad / dokument",
+  "design": "Švicarska službena stranica · proizvođačka tvrdnja",
+  "finding": "Proizvođač navodi99% manji prosjek devet odabranih štetnih sastojaka prema referentnoj cigareti. To nije99% manji zdravstveni rizik.",
+  "non": 0,
+  "sections": [
+   {
+    "heading": "Što nije dostupno",
+    "text": "Javni tekst ne daje povezani laboratorijski izvještaj, DOI, broj uzoraka, detaljan protokol ili metalne vrijednosti. Tvrdnja ne potvrđuje da aktualni ProOne pod nema metala ili keramičkih čestica."
+   }
+  ],
+  "accessed": "2026-10-05"
+ },
+ {
+  "i": 203,
+  "name": "Pappas i sur. — nikotinske soli i metali",
+  "year": 2024,
+  "cat": "Emisije / metali",
+  "title": "Lactic Acid Salts of Nicotine Potentiate the Transfer of Toxic Metals into Electronic Cigarette Aerosols",
+  "journal": "Toxics",
+  "authors": "Pappas R. Steven; Gray Naudia; Halstead Mary; Watson Clifford H.",
+  "doi": "10.3390/toxics12010065",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10819797/",
+  "srclabel": "Toxics / PMC · izvorni rad",
+  "design": "Aerosol ICP-MS i komponente SEM-EDS · uključuje Vuse Alto",
+  "non": 0,
+  "finding": "U ispitanim uređajima s nikotin-laktatom izmjerene su više koncentracije nekih metala nego u uređajima s drugim solima. Vuse Alto ima metalni grijač u poroznom keramičkom bloku; nije Pro One.",
+  "sections": [
+   {
+    "heading": "Komponente Vuse Alta",
+    "text": "SEM-EDS: keramički blok s pretežno silicijevim oksidom i manjim udjelom aluminijeva oksida; izloženi dio ugrađenog grijača pretežno nikal, uz manje željeza i kroma. Žica i električni kontakti također sadrže metale. Kemijska analiza elementa u podu nije dokaz iste vrste čestice u aerosolu."
+   },
+   {
+    "heading": "Formulacija i ograničenja",
+    "text": "ICP-MS mjeri metale u aerosolu, a SEM-EDS sastav komponenti. Tekućina, kiselina nikotinske soli i konstrukcija djeluju zajedno; usporedbe različitih uređaja ne dokazuju da svaka laktatna tekućina daje isti rezultat. Rad ne mjeri dugoročne bolesti niti temperaturnu mapu odvajanja keramike. Nalaz za Alto ne prenosimo na aktualni Pro One ili Pro pod."
+   },
+   {
+    "heading": "Lokalna kopija i licenca",
+    "text": "https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/). Izvorni PDF i slike preuzeti 5.10.2026 iz službenog PMC Open Data izvora; MD5 i izvori sačuvani u provenance.json."
+   }
+  ],
+  "pmid": "38251020",
+  "fullText": "/materiali/studije/PMC10819797/PMC10819797.1.pdf",
+  "materials": [
+   {
+    "title": "Izvorni materijal: toxics-12-00065-g001.jpg",
+    "url": "/materiali/studije/PMC10819797/toxics-12-00065-g001.jpg"
+   },
+   {
+    "title": "Izvorni materijal: toxics-12-00065-g002a.jpg",
+    "url": "/materiali/studije/PMC10819797/toxics-12-00065-g002a.jpg"
+   },
+   {
+    "title": "Izvorni materijal: toxics-12-00065-g002b.jpg",
+    "url": "/materiali/studije/PMC10819797/toxics-12-00065-g002b.jpg"
+   },
+   {
+    "title": "Izvorni materijal: toxics-12-00065-g003.jpg",
+    "url": "/materiali/studije/PMC10819797/toxics-12-00065-g003.jpg"
+   }
+  ]
  }
 ];
 

@@ -1,0 +1,39 @@
+{
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6475061/",
+  "doi": "10.1161/JAHA.118.010455",
+  "license": "CC BY-NC",
+  "licenseText": "https://creativecommons.org/licenses/by-nc/4.0/This is an open access article under the terms of the http://creativecommons.org/licenses/by-nc/4.0/ License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited and is not used for commercial purposes.",
+  "retrieved": "2026-10-05",
+  "files": [
+    {
+      "name": "PMC6475061.1.pdf",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6475061.1/PMC6475061.1.pdf?md5=57687934337bf020019792b3267262b9",
+      "md5": "57687934337bf020019792b3267262b9",
+      "bytes": 1228176
+    },
+    {
+      "name": "PMC6475061.1.xml",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6475061.1/PMC6475061.1.xml?md5=7ff757595375f159d5e54daa93cc3777",
+      "md5": "7ff757595375f159d5e54daa93cc3777",
+      "bytes": 153116
+    },
+    {
+      "name": "JAH3-8-e010455-g001.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6475061.1/JAH3-8-e010455-g001.jpg?md5=05fc2f348b8c3a85a0d8cbc51de7bc64",
+      "md5": "05fc2f348b8c3a85a0d8cbc51de7bc64",
+      "bytes": 50193
+    },
+    {
+      "name": "JAH3-8-e010455-g002.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6475061.1/JAH3-8-e010455-g002.jpg?md5=b883a85af554b8dea9ce26d4e99b28ae",
+      "md5": "b883a85af554b8dea9ce26d4e99b28ae",
+      "bytes": 45214
+    },
+    {
+      "name": "JAH3-8-e010455-s001.pdf",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6475061.1/JAH3-8-e010455-s001.pdf?md5=7b61ca74b4b6f85c7b6d501b9ab2591d",
+      "md5": "7b61ca74b4b6f85c7b6d501b9ab2591d",
+      "bytes": 734621
+    }
+  ]
+}

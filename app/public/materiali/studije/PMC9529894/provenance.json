@@ -1,0 +1,33 @@
+{
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9529894/",
+  "doi": "10.1038/s41598-022-19761-w",
+  "license": "CC BY",
+  "licenseText": "https://creativecommons.org/licenses/by/4.0/Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.",
+  "retrieved": "2026-10-05",
+  "files": [
+    {
+      "name": "PMC9529894.1.pdf",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9529894.1/PMC9529894.1.pdf?md5=8514b34f42c2d11ff70548ea20b2bf40",
+      "md5": "8514b34f42c2d11ff70548ea20b2bf40",
+      "bytes": 1138745
+    },
+    {
+      "name": "PMC9529894.1.xml",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9529894.1/PMC9529894.1.xml?md5=26e4b95a2b78fd2a8b1f522200ca100c",
+      "md5": "26e4b95a2b78fd2a8b1f522200ca100c",
+      "bytes": 179317
+    },
+    {
+      "name": "41598_2022_19761_Fig1_HTML.jpg",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9529894.1/41598_2022_19761_Fig1_HTML.jpg?md5=0a8ab8b3ba156a46af790e66bbcb570a",
+      "md5": "0a8ab8b3ba156a46af790e66bbcb570a",
+      "bytes": 62742
+    },
+    {
+      "name": "41598_2022_19761_MOESM1_ESM.xlsx",
+      "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9529894.1/41598_2022_19761_MOESM1_ESM.xlsx?md5=3e320b693c46e91d3e90a21c1b8f573e",
+      "md5": "3e320b693c46e91d3e90a21c1b8f573e",
+      "bytes": 33144
+    }
+  ]
+}
