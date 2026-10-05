@@ -1,0 +1,69 @@
+---
+import ChartFootnote from './ChartFootnote.astro';
+import MarkerPlot from './MarkerPlot.astro';
+const fullSample = [
+  {label:'IQOS + HEETS', value:8.3, low:4.5, high:19.3, color:'#7185aa'},
+  {label:'Vlastita cigareta', value:12.9, low:7.2, high:28.6, color:'#e45b53'},
+  {label:'JUUL · 59 mg/mL', value:19.6, low:8.9, high:36.3, color:'#ffbe00'},
+];
+const refillableSample = [
+  {label:'IQOS + HEETS', value:19.4, low:6.4, high:28.5, color:'#7185aa'},
+  {label:'Punjiva e-cig. · 20 mg/mL', value:12.6, low:7.1, high:13.9, color:'#35a99d'},
+];
+const vuseSample = [
+  {label:'B&H cigareta', value:14.3, color:'#e45b53'},
+  {label:'Vuse ePen3 · sol · 18 mg/mL', value:9.93, color:'#35a99d'},
+  {label:'Vuse ePen3 · baza · 18 mg/mL', value:7.38, color:'#35a99d'},
+  {label:'Vype ePen · baza · 18 mg/mL', value:5.57, color:'#35a99d'},
+  {label:'Vuse Pro One — N/A', value:null},
+];
+---
+<div class="nicotine-comparison">
+  <h3 id="nicotine-blood">Nikotin u krvi: IQOS, cigareta i e-cigarete od 18–20 mg/mL</h3>
+  <p><strong>Rad Phillips-Waller uključuje i e-cigarete s 20 mg/mL</strong>, u poduzorku od osam osoba. Dodajemo taj rezultat i zaseban pokus s Vype/Vuse ePen3 od 18 mg/mL. Svi prikazi Cmax koriste istu linearnu skalu 0–40 ng/mL, ali različite pokuse čitamo odvojeno: nisu zajednički test svih proizvoda.</p>
+
+  <h4>A · Izvorni pokus: 22 osobe, pet minuta uporabe</h4>
+  <p><a href="/studije/190/">Phillips-Waller i sur. (2021)</a> testirali su iste 22 osobe nakon noćne apstinencije: pet minuta slobodne uporabe proizvoda, zatim uzorkovanje krvi do 30 minuta. Prikazan je medijan vršne koncentracije nikotina u plazmi (Cmax); autori navode korekciju za početnu razinu. Točka je medijan, a crta srednjih 50% rezultata (IQR).</p>
+  <MarkerPlot title="Izvorni pokus: medijan Cmax, n=22" unit="Medijan Cmax · ng/mL" max={40} uncertainty="Srednjih 50% rezultata (IQR)" rows={fullSample}/>
+  <ChartFootnote chart="nicotine-main">
+    <p class="chart-note"><a href="/studije/190/">Tablica 3, puni rad i prilozi</a>: IQOS 8,3 (IQR 4,5–19,3), cigareta 12,9 (7,2–28,6), američki JUUL 59 mg/mL 19,6 (8,9–36,3) ng/mL. Razlika Cmax između IQOS-a i cigarete nije bila statistički značajna (p=0,095). Sudionici su bili iskusni vaperi koji su povremeno pušili, bez ranijeg iskustva s IQOS-om; redoslijed proizvoda nije bio nasumičan. Nije testiran IQOS ILUMA/TEREA ili JUUL2.</p>
+  </ChartFootnote>
+
+  <h4>B · Isti rad, poduzorak: osam osoba i 20 mg/mL</h4>
+  <p>U tih osam sudionika medijan Cmax za punjive e-cigarete bio je <strong>12,6 ng/mL</strong>, a za IQOS <strong>19,4 ng/mL</strong>. Razlika nije bila statistički značajna (p=0,093). Ovdje koristimo IQOS rezultat baš tih osam osoba; 8,3 ng/mL iz cijelog uzorka od 22 osobe pripada prikazu A.</p>
+  <MarkerPlot title="Poduzorak: IQOS i punjive e-cigarete 20 mg/mL, n=8" unit="Medijan Cmax · ng/mL" max={40} uncertainty="Srednjih 50% rezultata (IQR)" rows={refillableSample}/>
+  <ChartFootnote chart="nicotine-refillable">
+    <p class="chart-note"><a href="/studije/190/">Dodatna tablica D</a>: IQOS 19,4 (IQR 6,4–28,5), punjive e-cigarete 12,6 (7,1–13,9) ng/mL. Testirani su KangerTech EVOD i Innokin iTaste MVP 2 pri 4,8 V, oba s tekućinom od 20 mg/mL. Prikazan je prosjek njihovih rezultata po sudioniku, jer su profili bili slični. Testovi punjivih uređaja provedeni su ranije s istim osobama; pet minuta slobodne uporabe i uzorkovanje do 30 minuta. Medijan vremena do vrha: IQOS 4,0, e-cigarete 7,5 minuta. Mala i odabrana skupina nije procjena svih korisnika e-cigareta.</p>
+  </ChartFootnote>
+
+  <h4 id="nicotine-vuse">C · Vype/Vuse: 18 mg/mL i pet minuta uporabe</h4>
+  <p><a href="/studije/204/">Ebajemito i sur. (2020)</a> proveli su nasumičan križni pokus nakon <strong>12 sati apstinencije</strong>: pet minuta slobodne uporabe, uz uzorkovanje krvi do 120 minuta. Uključene su 24 osobe koje koriste i e-cigarete i cigarete; 23 su završile pokus. Prikazani su medijani Cmax iz tablice 3, uz vlastitu cigaretnu kontrolu iz istog pokusa.</p>
+  <MarkerPlot title="Vype/Vuse ePen3 i ePen 18 mg/mL: pet minuta slobodne uporabe" unit="Medijan Cmax · ng/mL" max={40} uncertainty="IQR (nije objavljen)" rows={vuseSample}/>
+  <p class="chart-note">„Sol” označava nikotin-benzoat, a „baza” neprotonirani nikotin. Jednaka koncentracija od 18 mg/mL ne daje nužno jednak Cmax. <strong>ePen3 je stariji Vype/Vuse model; ovo nije mjerenje za Pro One ili aktualni Pro pod.</strong> IQR nije objavljen, pa stupci nemaju crte raspona. Početna razina u ovom radu ulazi kao kovarijata statističke analize; medijane iz tablice ne poistovjećujemo s početno korigiranim rezultatima Phillips-Waller rada.</p>
+  <ChartFootnote chart="nicotine-vuse">
+    <p class="chart-note"><a href="/studije/204/">Tablice 1, 3 i 5 te izvorni protokol</a>: B&H Skyblue 14,3 ng/mL (n=23); ePen3 18 mg/mL nikotin-benzoat, MasterBlend Tobacco 9,93 (n=23); ePen3 18 mg/mL neprotonirani nikotin, Blended Tobacco 7,38 (n=23); ePen 18 mg/mL neprotonirani nikotin, Blended Tobacco 5,57 (n=22). Vrijednosti su medijani, nisu aritmetički ili geometrijski prosjeci. Isti ePen3 sa solju pri zadanih 10 puffova u pet minuta imao je medijan 5,64 ng/mL (n=22); slobodna uporaba prosječno je uključivala 15,2 puffa. Režim povlačenja zato također utječe na unos.</p>
+    <p class="chart-note">Uzorci krvi uzeti su prije uporabe te nakon 1, 3, 5, 7, 9, 15, 30, 45, 60, 90 i 120 minuta. To nije 120 minuta konzumiranja. Pokus i autori povezani su s BAT-om: BAT je financirao rad, a autori su bili njegovi zaposlenici. Za usporedbu biramo izmjerene 18 mg/mL formulacije; rezultate jačih formulacija ne preračunavamo na 18 mg/mL. To nisu rezultati za osobe koje nikad nisu koristile nikotin.</p>
+  </ChartFootnote>
+
+  <h4 id="nicotine-longer-use">D · Dulja uporaba: 18 mg/mL kroz ukupno 65 minuta</h4>
+  <p><a href="/studije/205/">Farsalinos i sur. (2014)</a> testirali su 23 iskusna vapera, bivša pušača, nakon osam sati apstinencije. Prvo su uzeli 10 puffova u pet minuta, zatim koristili uređaj slobodno još 60 minuta. Tablica prikazuje <strong>izmjerenu koncentraciju u određenom trenutku, prosjek ± SEM</strong>; nije medijan Cmax iz gornjih pokusa.</p>
+  <div class="table-scroll"><table class="data">
+    <thead><tr><th>Uređaj · oba 18 mg/mL</th><th>Prije uporabe</th><th>Nakon 5 minuta</th><th>Nakon 65 minuta</th></tr></thead>
+    <tbody>
+      <tr><th>V2 · uređaj nalik cigareti</th><td>2,80 ± 0,42</td><td>4,87 ± 0,45</td><td>15,75 ± 1,20</td></tr>
+      <tr><th>eVic + EVOD · 9 W</th><td>2,46 ± 0,33</td><td>6,59 ± 0,62</td><td>23,47 ± 1,94</td></tr>
+    </tbody>
+  </table></div>
+  <p class="chart-note">Sve vrijednosti su ng/mL nikotina u plazmi, bez oduzimanja početne koncentracije. SEM je standardna pogreška prosjeka, a ne raspon pojedinačnih korisnika. Ovaj rad nije testirao Vuse ili IQOS.</p>
+  <ChartFootnote chart="nicotine-longer-use">
+    <p class="chart-note"><a href="/studije/205/">Rezultati, metode, puni PDF i slike</a>: isti sudionici testirali su oba uređaja na odvojenim danima, nasumičnim redoslijedom, uz istu tekućinu. Krv je uzeta prije uporabe, nakon pet minuta te svakih 15 minuta do 65. minute. U radu se spominje cigaretni rezultat iz druge studije; nije cigaretna kontrola ovih 23 osoba pa ga ovdje ne crtamo. Rad je financirala AEMSA, udruga za standarde e-tekućina; autori navode da financijer nije sudjelovao u dizajnu, obradi ni odluci o objavi.</p>
+  </ChartFootnote>
+  <div class="callout">
+    <h4>Što možemo povezati iz ovih pokusa?</h4>
+    <p>E-cigarete od 18–20 mg/mL mogu dati mjerljiv nikotin u krvi već u pet minuta; rezultat ovisi o uređaju, formulaciji i povlačenju. Uz nastavak uporabe koncentracija može dalje rasti. Dulju uporabu zato ne pretvaramo u „jednu cigaretu” ili „jedan IQOS stick”. <strong>Cmax nije apsorbirana masa nikotina niti mjera ukupne štetnosti.</strong> Ovo je opisna usporedba odvojenih pokusa, bez objedinjavanja rezultata u jednu procjenu. Za Pro One nedostaje odgovarajući rezultat u ovdje provjerenim izvorima.</p>
+  </div>
+</div>
+<style>
+  [id]{scroll-margin-top:1.5em}
+  @media(max-width:1100px){[id]{scroll-margin-top:4.2em}}
+</style>

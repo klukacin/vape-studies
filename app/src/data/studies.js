@@ -3212,7 +3212,7 @@ const STUDIES_DB = [
   "doi": "10.1093/ntr/ntab094",
   "cat": "Biomarkeri / nikotin",
   "design": "Unutar istih 22 sudionika · 5 minuta uporabe · uzorci krvi do 30 minuta",
-  "finding": "Medijan vršne koncentracije nikotina, korigirane za početnu razinu: IQOS 8,3; vlastita cigareta 12,9; JUUL 19,6 ng/mL. Sudionici su bili iskusni vaperi koji su povremeno pušili, a ne iskusni korisnici IQOS-a.",
+  "finding": "Medijan vršne koncentracije nikotina, korigirane za početnu razinu: IQOS 8,3; vlastita cigareta 12,9; JUUL 19,6 ng/mL. Sudionici su bili iskusni vaperi koji su povremeno pušili, a ne iskusni korisnici IQOS-a. U poduzorku istih osam osoba: IQOS 19,4 naspram punjivih e-cigareta 20 mg/mL 12,6 ng/mL; p=0,093.",
   "non": 0,
   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8496472/",
   "srclabel": "PMC · izvorni znanstveni rad",
@@ -3220,6 +3220,10 @@ const STUDIES_DB = [
    {
     "heading": "Proizvodi i postupak",
     "text": "Ispitan je IQOS s HEETS stickovima, američki JUUL s 59 mg/mL te, u poduzorku od osam osoba, dva punjiva uređaja s 20 mg/mL tekućinom. Nije testiran IQOS ILUMA s TEREA-om, JUUL2, Vuse Pro One ili Wiip."
+   },
+   {
+    "heading": "Punjive e-cigarete 20 mg/mL: poduzorak n=8",
+    "text": "Dodatna tablica D: medijan Cmax za IQOS 19,4 ng/mL (IQR 6,4–28,5), za punjive e-cigarete 12,6 (7,1–13,9), p=0,093. KangerTech EVOD i Innokin iTaste MVP 2 pri 4,8 V koristili su tekućinu od 20 mg/mL; njihovi slični rezultati prosječeni su po sudioniku. Testovi punjivih uređaja provedeni su ranije s istih osam osoba, uz pet minuta slobodne uporabe i uzorkovanje do 30 minuta. Medijan Tmax: IQOS 4,0, punjive e-cigarete 7,5 minuta. IQOS vrijednost od 8,3 ng/mL iz cijelog uzorka n=22 ne predstavlja ovu podskupinu."
    },
    {
     "heading": "Kako čitati brojke",
@@ -3647,6 +3651,130 @@ const STUDIES_DB = [
     "url": "/materiali/studije/PMC10819797/toxics-12-00065-g003.jpg"
    }
   ]
+ },
+ {
+  "i": 204,
+  "name": "Ebajemito i sur. — Vype/Vuse ePen3, nikotin u krvi",
+  "year": 2020,
+  "title": "A randomised controlled single-centre open-label pharmacokinetic study to examine various approaches of nicotine delivery using electronic cigarettes",
+  "doi": "10.1038/s41598-020-76610-4",
+  "cat": "Biomarkeri / nikotin",
+  "design": "Nasumičan križni pokus · 24 uključene osobe · 12 h apstinencije · 5 min uporabe · krv do 120 min",
+  "finding": "Tablica 3: medijan Cmax pri pet minuta slobodne uporabe: ePen3 18 mg/mL nikotin-benzoat 9,93; ePen3 18 mg/mL neprotonirani nikotin 7,38; ePen 18 mg/mL neprotonirani nikotin 5,57; B&H Skyblue cigareta 14,3 ng/mL. To nisu rezultati za Pro One ili aktualni Pro pod.",
+  "non": 0,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7686355/",
+  "srclabel": "Scientific Reports / PMC · izvorni rad",
+  "sections": [
+   {
+    "heading": "Uređaji, koncentracija i režim",
+    "text": "Testirani su Vype ePen i Vype ePen3 (stariji Vype/Vuse modeli), ne Vuse Pro One. ePen3 imao je pamučni fitilj i jednu postavku 6 W, ePen silikatni fitilj i korištenu postavku 4,4 W. Rad ispituje formulacije od 12, 18 i 30 mg/mL; naš usporedni prikaz koristi izmjerene 18 mg/mL formulacije i ne preračunava jače na nižu koncentraciju. Blended Tobacco ima neprotonirani nikotin; MasterBlend Tobacco 18 mg/mL nikotin-benzoat sa srednjom protonacijom."
+   },
+   {
+    "heading": "Postupak i sudionici",
+    "text": "Uključene su 24 zdrave osobe koje svakodnevno koriste e-cigarete i povremeno cigarete; 23 su završile devetodnevni pokus. Analize pojedinih proizvoda imaju n=22 ili 23. Proizvodi su ispitani nasumičnim redoslijedom, nakon upoznavanja s proizvodom i 12 sati apstinencije. Slobodna uporaba trajala je pet minuta. Krv je uzeta prije uporabe te nakon 1, 3, 5, 7, 9, 15, 30, 45, 60, 90 i 120 minuta; 120 minuta je praćenje, ne trajanje konzumiranja."
+   },
+   {
+    "heading": "Medijani, prosjeci i početna razina",
+    "text": "Cmax medijani iz tablice 3 za proizvode A/C/D/E: 14,3/5,57/7,38/9,93 ng/mL. Odgovarajući aritmetički prosjeci ± SD su 18,5 ± 12,5; 5,82 ± 3,81; 8,01 ± 5,38; 12,5 ± 6,81. Geometrijski prosjeci su 14,5; 4,79; 6,36; 10,8. IQR nije objavljen. Protokol navodi početnu razinu izraženu kao postotak Cmax kao kovarijatu ANCOVA analize; ne opisuje oduzimanje početne koncentracije od medijana prikazanih u tablici 3. Te medijane zato ne objedinjavamo s početno korigiranim rezultatima Phillips-Waller rada."
+   },
+   {
+    "heading": "Povlačenje utječe na rezultat",
+    "text": "Isti ePen3 18 mg/mL s nikotin-benzoatom pri deset zadanih puffova u pet minuta: medijan Cmax 5,64 ng/mL (n=22), prema 9,93 pri slobodnoj uporabi (n=23). Slobodna uporaba te formulacije prosječno je uključivala 15,2 puffa. Koncentracija e-tekućine, uređaj, formulacija i režim povlačenja djeluju zajedno; ng/mL u plazmi nije mg apsorbiranih po puffu."
+   },
+   {
+    "heading": "Financiranje i ograničenja",
+    "text": "Pokus je financirao British American Tobacco (Investments) Limited. Autori su bili zaposlenici BAT-a u vrijeme istraživanja i pisanja. Ovo je kratak pokus s iskusnim dualnim korisnicima; ne određuje dugoročni zdravstveni rizik niti unos početnika ili korisnika aktualnog Pro One. Različiti okusi i formulacije ograničavaju izoliranje samo jednog uzroka razlike."
+   },
+   {
+    "heading": "Lokalna kopija i licenca",
+    "text": "CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. Izvorni PDF, slika 1, protokol u DOCX-u i XML preuzeti 5. 10. 2026. iz službene NCBI PMC Open Data zbirke. Izvornici nisu mijenjani; izvori i provjereni MD5 sačuvani su u provenance.json. Urednički sažetak nije zamjena za puni rad."
+   }
+  ],
+  "pmid": "33235307",
+  "fullText": "/materiali/studije/PMC7686355/PMC7686355.1.pdf",
+  "materials": [
+   {
+    "title": "Izvorna slika · 41598_2020_76610_Fig1_HTML.jpg",
+    "url": "/materiali/studije/PMC7686355/41598_2020_76610_Fig1_HTML.jpg"
+   },
+   {
+    "title": "Protokol i prilozi · 41598_2020_76610_MOESM1_ESM.docx",
+    "url": "/materiali/studije/PMC7686355/41598_2020_76610_MOESM1_ESM.docx"
+   },
+   {
+    "title": "Izvorni tekst u XML-u · PMC7686355.1.xml",
+    "url": "/materiali/studije/PMC7686355/PMC7686355.1.xml"
+   }
+  ],
+  "authors": "Ebajemito James K.; McEwan Michael; Gale Nathan; Camacho Oscar M.; Hardie George; Proctor Christopher J.",
+  "journal": "Scientific Reports",
+  "pubdate": "2020-11-24"
+ },
+ {
+  "i": 205,
+  "name": "Farsalinos i sur. — nikotin tijekom 65 minuta vapinga",
+  "year": 2014,
+  "title": "Nicotine absorption from electronic cigarette use: comparison between first and new-generation devices",
+  "doi": "10.1038/srep04133",
+  "cat": "Biomarkeri / nikotin",
+  "design": "23 iskusna vapera, bivša pušača · nasumičan križni pokus · 18 mg/mL · ukupno 65 min uporabe",
+  "finding": "Nakon pet minuta: V2 4,87 ± 0,45, eVic/EVOD 6,59 ± 0,62 ng/mL; nakon ukupno 65 minuta: 15,75 ± 1,20 i 23,47 ± 1,94 ng/mL. Izmjerene koncentracije, aritmetički prosjek ± SEM, bez oduzimanja početne razine; nisu medijani Cmax.",
+  "non": 0,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3935206/",
+  "srclabel": "Scientific Reports / PMC · izvorni rad",
+  "sections": [
+   {
+    "heading": "Što je testirano",
+    "text": "Ista 23 zdrava iskusna vapera, svi bivši pušači, testirala su dva uređaja nasumičnim redoslijedom na odvojenim danima. V2 s kartomizerom nalik cigareti uspoređen je s Joyetech eVic uređajem na 9 W i KangerTech EVOD atomizerom. Oba su koristila istu tekućinu Max Blend deklarirane koncentracije 18 mg/mL. Nije testiran Vuse ili IQOS."
+   },
+   {
+    "heading": "Pet minuta, pa još sat vremena",
+    "text": "Nakon najmanje osam sati apstinencije sudionici su uzeli deset puffova u pet minuta, zatim koristili uređaj slobodno još 60 minuta: ukupno 65 minuta. Krv je uzeta prije uporabe, nakon pet minuta i svakih 15 minuta tijekom sljedećeg sata. Potrošene baterije i kartomizeri zamjenjivani su po potrebi."
+   },
+   {
+    "heading": "Koncentracije u plazmi: prosjek ± SEM",
+    "text": "V2: prije uporabe 2,80 ± 0,42; nakon 5 minuta 4,87 ± 0,45; nakon 65 minuta 15,75 ± 1,20 ng/mL. eVic/EVOD: prije 2,46 ± 0,33; nakon 5 minuta 6,59 ± 0,62; nakon 65 minuta 23,47 ± 1,94 ng/mL. SEM je standardna pogreška prosjeka, a ne SD ili raspon pojedinačnih sudionika. Početna koncentracija nije oduzeta."
+   },
+   {
+    "heading": "Kako povezati s kraćim pokusima",
+    "text": "Rad pokazuje rast koncentracije tijekom nastavka uporabe starijih e-cigareta od 18 mg/mL. Rezultat u 65. minuti nije jednak vršnoj koncentraciji nakon pet minuta uporabe u Phillips-Waller ili Ebajemito pokusu. Studija nema vlastitu cigaretnu kontrolu; cigaretne koncentracije citirane u raspravi dolaze iz drugog rada. Ne pretvaramo ove rezultate u broj cigareta ili IQOS stickova i ne prenosimo ih na Pro One."
+   },
+   {
+    "heading": "Financiranje",
+    "text": "Rad je financirala American E-Liquid Manufacturing Standards Association (AEMSA), udruga za standarde e-tekućina. Autori navode da financijer nije sudjelovao u dizajnu, prikupljanju i obradi podataka, pisanju ili odluci o objavi."
+   },
+   {
+    "heading": "Lokalna kopija i licenca",
+    "text": "CC BY-NC-ND 3.0, https://creativecommons.org/licenses/by-nc-nd/3.0/. Izvorni PDF i četiri slike kopirani su bez izmjena za ovaj nekomercijalni istraživački pregled, uz atribuciju i poveznicu na izvornik. Preuzeto 5. 10. 2026. iz službene NCBI PMC Open Data zbirke; izvori i provjereni MD5 sačuvani su u provenance.json. Sažetak prenosi nalaze i metode, a nije prijevod punog teksta."
+   }
+  ],
+  "pmid": "24569565",
+  "fullText": "/materiali/studije/PMC3935206/PMC3935206.1.pdf",
+  "materials": [
+   {
+    "title": "Izvorni tekst u XML-u · PMC3935206.1.xml",
+    "url": "/materiali/studije/PMC3935206/PMC3935206.1.xml"
+   },
+   {
+    "title": "Izvorna slika · srep04133-f1.jpg",
+    "url": "/materiali/studije/PMC3935206/srep04133-f1.jpg"
+   },
+   {
+    "title": "Izvorna slika · srep04133-f2.jpg",
+    "url": "/materiali/studije/PMC3935206/srep04133-f2.jpg"
+   },
+   {
+    "title": "Izvorna slika · srep04133-f3.jpg",
+    "url": "/materiali/studije/PMC3935206/srep04133-f3.jpg"
+   },
+   {
+    "title": "Izvorna slika · srep04133-f4.jpg",
+    "url": "/materiali/studije/PMC3935206/srep04133-f4.jpg"
+   }
+  ],
+  "authors": "Farsalinos Konstantinos E.; Spyrou Alketa; Tsimopoulou Kalliroi; Stefopoulos Christos; Romagna Giorgio; Voudris Vassilis",
+  "journal": "Scientific Reports",
+  "pubdate": "2014-02-26"
  }
 ];
 

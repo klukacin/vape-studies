@@ -1,0 +1,33 @@
+{
+  "retrieved": "2026-10-05",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7686355/",
+  "title": "A randomised controlled single-centre open-label pharmacokinetic study to examine various approaches of nicotine delivery using electronic cigarettes",
+  "doi": "10.1038/s41598-020-76610-4",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "files": [
+    {
+      "name": "41598_2020_76610_Fig1_HTML.jpg",
+      "size": 86153,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7686355.1/41598_2020_76610_Fig1_HTML.jpg",
+      "md5": "4df34e63c02f15931d54b0afec5f31a8"
+    },
+    {
+      "name": "41598_2020_76610_MOESM1_ESM.docx",
+      "size": 1124733,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7686355.1/41598_2020_76610_MOESM1_ESM.docx",
+      "md5": "574eea5e8db2d371a106316618510c29"
+    },
+    {
+      "name": "PMC7686355.1.pdf",
+      "size": 1410837,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7686355.1/PMC7686355.1.pdf",
+      "md5": "7a8df1aaceaa54b5978172955968b0d8"
+    },
+    {
+      "name": "PMC7686355.1.xml",
+      "size": 95714,
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7686355.1/PMC7686355.1.xml",
+      "md5": "6f37f0633702e93761c90981d6f25fed"
+    }
+  ]
+}

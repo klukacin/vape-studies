@@ -1,5 +1,6 @@
 ---
 import ChartFootnote from './ChartFootnote.astro';
+import NicotineComparison from './NicotineComparison.astro';
 ---
 <section id="biomarkers" class="reveal">
   <div class="eyebrow">Mjere na ljudima · PATH · NHANES</div>
@@ -27,17 +28,7 @@ import ChartFootnote from './ChartFootnote.astro';
   </div>
 
 
-  <h3 id="nicotine-blood">Nikotin u krvi: cigareta, IQOS i e-cigareta u istom testu</h3>
-  <p><a href="/studije/190/">Phillips-Waller i sur. (2021)</a> testirali su iste 22 osobe nakon noćne apstinencije: pet minuta slobodne uporabe proizvoda, zatim uzorkovanje krvi do 30 minuta. Prikazan je medijan vršne koncentracije nikotina u plazmi (Cmax), nakon korekcije za početnu razinu.</p>
-  <table class="data">
-    <thead><tr><th>Proizvod u studiji</th><th>Cmax · ng/mL</th><th>Srednjih 50% rezultata · ng/mL</th></tr></thead>
-    <tbody>
-      <tr><th>IQOS + HEETS</th><td>8,3</td><td>4,5–19,3</td></tr>
-      <tr><th>Vlastita cigareta sudionika</th><td>12,9</td><td>7,2–28,6</td></tr>
-      <tr><th>Američki JUUL · 59 mg/mL</th><td>19,6</td><td>8,9–36,3</td></tr>
-    </tbody>
-  </table>
-  <p class="chart-note">Ovo su koncentracije u krvi, ne miligrami apsorbirani po sticku ili puffu. Razlika Cmax između IQOS-a i cigarete nije bila statistički značajna (p=0,095). Sudionici su bili iskusni vaperi, bez ranijeg iskustva s IQOS-om; redoslijed proizvoda nije bio nasumičan. Rezultati ne opisuju IQOS ILUMA/TEREA, JUUL2, Vuse Pro One ili Wiip. <a href="/studije/190/">Rad, izvorni PDF i prilozi →</a></p>
+  <NicotineComparison />
   <div class="callout">
     <h4>A gdje su cigare?</h4>
     <p><a href="/studije/191/">Claus i sur. (2018)</a> pratili su nikotin u plazmi kod 77 isključivih pušača cigara tijekom pušenja vlastitog proizvoda do jednog sata. Izloženost se razlikovala prema vrsti cigare i inhaliranju; veće cigare i inhaliranje bili su povezani s većom izloženošću. Zbog drukčijeg trajanja i protokola taj rad ne spajamo s gornjim brojkama u jednu ljestvicu. Za sve četiri skupine ovdje nemamo usporedbu pod istim uvjetima.</p>
