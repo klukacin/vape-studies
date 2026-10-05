@@ -1,3 +1,6 @@
+---
+import ChartFootnote from './ChartFootnote.astro';
+---
 <section id="temp" class="reveal">
   <div class="eyebrow">Fizika grijanja</div>
   <h2><span class="num">02</span>Temperatura uređaja — gdje se tvar raspada</h2>
@@ -5,12 +8,12 @@
   <div class="callout"><h4>Suhi fitilj, dry puff i dry burn</h4><p><strong>Fitilj dovodi tekućinu do grijača.</strong> Ako lokalno stiže premalo tekućine, isparavanje slabije hladi grijač pa se on pregrijava. Udisaj tada može imati jak zagoren okus: <em>dry puff</em> ili <em>dry hit</em>. <em>Dry burn</em> često označava namjerno zagrijavanje grijača bez tekućine; to nije isti postupak. U poroznom keramičkom sustavu dovod tekućine također je važan. Ne određujemo ova stanja samo brojem °C. <a href="/studije/6/">Dry puff istraživanja</a> · <a href="/studije/163/">Pregrijavanje uz mokar fitilj</a>.</p></div>
   <p class="chart-help">Na uskom ekranu graf možete pomicati vodoravno.</p>
   <div class="chart-scroll"><div id="chartTemp" class="chart tall"></div></div>
-  <p class="chart-note">Rasponi temperatura iz različitih laboratorijskih postavki: top-coil uređaji 322–1008&nbsp;°C u suhom testu / 110–185&nbsp;°C u mokrom testu — <a href="/studije/12/">PLoS ONE 2018</a>; JUUL element 200–250&nbsp;°C, prosjek atomizera &lt;300&nbsp;°C (<a href="/studije/98/">CORESTA 2019</a>). Za Vuse Pro One i ENVA Sol nema potvrđene temperaturne krivulje. Raspon suhog testa nije temperatura pri kojoj svi uređaji ulaze u dry puff; graf ne definira sigurnosni prag.</p>
+  <ChartFootnote chart="chartTemp"><p class="chart-note">Rasponi temperatura iz različitih laboratorijskih postavki: top-coil uređaji 322–1008&nbsp;°C u suhom testu / 110–185&nbsp;°C u mokrom testu — <a href="/studije/12/">PLoS ONE 2018</a>; JUUL element 200–250&nbsp;°C, prosjek atomizera &lt;300&nbsp;°C (<a href="/studije/98/">CORESTA 2019</a>). Za Vuse Pro One i ENVA Sol nema potvrđene temperaturne krivulje. Raspon suhog testa nije temperatura pri kojoj svi uređaji ulaze u dry puff; graf ne definira sigurnosni prag.</p></ChartFootnote>
 
   <h3>Temperatura → karbonili: što pokazuju izmjereni °C</h3>
   <p><strong>Snaga u vatima nije temperatura.</strong> Isti W mogu dati različite °C ovisno o grijaču, protoku zraka i dovodu tekućine. Zato graf koristi <a href="/studije/192/">Wang i sur. (2017)</a>: temperaturu izmjerenu termoparom u kontroliranom reaktoru te formaldehid po miligramu čistog propilen-glikola (PG) ili glicerola (VG). To je pokus razgradnje otapala, ne izmjerena doza određenog uređaja. Viša temperatura u tom pokusu povećala je formaldehid, uz veliku razliku između otapala.</p>
   <div class="chart-scroll"><div id="chartPower" class="chart"></div></div>
-  <p class="chart-note">Vodoravno: izmjerena temperatura reaktora u °C, ne temperatura aerosola u ustima. Okomito: µg formaldehida / mg otapala, linearno od nule. Crte uz točke pokazuju ± SD iz izvornog teksta i tablice 2. Crte između točaka nisu dodatna mjerenja. Ne pretvaramo ih u ng/puff niti u sigurnosni prag. <a href="/studije/192/">Izvor, puni PDF i izvorne slike</a>.</p>
+  <ChartFootnote chart="chartPower"><p class="chart-note">Vodoravno: izmjerena temperatura reaktora u °C, ne temperatura aerosola u ustima. Okomito: µg formaldehida / mg otapala, linearno od nule. Crte uz točke pokazuju ± SD iz izvornog teksta i tablice 2. Crte između točaka nisu dodatna mjerenja. Ne pretvaramo ih u ng/puff niti u sigurnosni prag. <a href="/studije/192/">Izvor, puni PDF i izvorne slike</a>.</p></ChartFootnote>
   <details><summary>Vrijednosti i nesigurnost mjerenja</summary><table class="data"><thead><tr><th>Otapalo</th><th>Temperatura reaktora</th><th>Formaldehid (µg/mg)</th><th>SD</th></tr></thead><tbody>
     <tr><td>PG</td><td>215 °C</td><td>0,03</td><td>0,03</td></tr><tr><td>PG</td><td>270 °C</td><td>0,29</td><td>0,11</td></tr><tr><td>PG</td><td>318 °C</td><td>2,03</td><td>0,80</td></tr><tr><td>VG</td><td>270 °C</td><td>7,97</td><td>1,08</td></tr><tr><td>VG</td><td>318 °C</td><td>21,10</td><td>3,80</td></tr>
   </tbody></table><p class="chart-note">SD je standardna devijacija ponavljanja, ne 95% interval pouzdanosti. PG: 2–8 ponavljanja po temperaturi; VG: 2–5. <a href="/studije/192/">Wang 2017</a>.</p></details>
@@ -19,7 +22,7 @@
 
   <h3>Karbonili pri istoj temperaturi: PG i VG na 318 °C</h3>
   <div class="chart-scroll"><div id="chartPowerComposition" class="chart"></div></div>
-  <p class="chart-note">µg spoja / mg otapala; isti reaktor na 318 °C, linearno od nule. PG: formaldehid 2,03 ± 0,80, acetaldehid 2,35 ± 0,87; VG: 21,10 ± 3,80, 2,40 ± 0,99 i akrolein 0,80 ± 0,50 (prosjeci ± SD). Akrolein u čistom PG nije kvantificiran — prazno mjesto ne predstavlja izmjerenu nulu. <a href="/studije/192/">Wang 2017, izvorni rezultati</a>.</p>
+  <ChartFootnote chart="chartPowerComposition"><p class="chart-note">µg spoja / mg otapala; isti reaktor na 318 °C, linearno od nule. PG: formaldehid 2,03 ± 0,80, acetaldehid 2,35 ± 0,87; VG: 21,10 ± 3,80, 2,40 ± 0,99 i akrolein 0,80 ± 0,50 (prosjeci ± SD). Akrolein u čistom PG nije kvantificiran — prazno mjesto ne predstavlja izmjerenu nulu. <a href="/studije/192/">Wang 2017, izvorni rezultati</a>.</p></ChartFootnote>
   <div class="callout">
     <h4>Što znamo za konkretne uređaje</h4>
     <p>Za <a href="/#vuse">Vuse Pro One</a> i <a href="/#enva">ENVA Sol</a> nemamo potvrđenu temperaturnu krivulju. Ranije procjene iz kapaciteta baterije i broja puffova ne dokazuju temperaturu grijača ni rad ispod praga razgradnje, pa nisu prikazane kao brojčani rasponi. Za JUUL su prikazani rezultati navedenih laboratorijskih izvora; oni se ne prenose automatski na JUUL2 ili druge marke. <a href="/studije/9/">Son (2020)</a>.</p>

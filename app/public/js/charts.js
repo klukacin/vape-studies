@@ -4,6 +4,17 @@ const C={cig:'#e05d4f',cigar:'#b07843',ecig:'#3aa896',vuse:'#2f9e8f',juul:'#6d7f
 const baseAxis={nameTextStyle:{color:C.ink2,fontSize:12},axisLine:{lineStyle:{color:C.line}},axisLabel:{color:C.ink2,fontFamily:'ui-monospace,Menlo,monospace',fontSize:11},splitLine:{lineStyle:{color:'rgba(255,255,255,.05)'}}};
 const baseTip={trigger:'axis',backgroundColor:'#161412',borderColor:C.line,textStyle:{color:C.ink,fontSize:12}};
 const charts=[];
+// Measure category labels at the active reading size instead of reserving fixed pixels.
+function fitChartLabels(opt){
+ const yAxes=Array.isArray(opt.yAxis)?opt.yAxis:[opt.yAxis];
+ const horizontal=yAxes.some(axis=>axis?.type==='category');
+ opt.grid={...opt.grid,containLabel:true,left:horizontal?16:64,right:horizontal?120:yAxes.length>1?72:32,bottom:70};
+ if(opt.legend)opt.grid.top=Math.max(opt.grid.top||0,75);
+ const xAxes=Array.isArray(opt.xAxis)?opt.xAxis:[opt.xAxis];
+ xAxes.forEach(axis=>{if(axis?.name){axis.nameLocation='middle';axis.nameGap=40;}});
+ yAxes.forEach(axis=>{if(axis?.name){axis.nameLocation='middle';axis.nameGap=42;}});
+ return opt;
+}
 function readingOption(value){
  const light=document.documentElement.dataset.theme!=='dark', css=getComputedStyle(document.documentElement);
  const colors={'rgba(255,255,255,.9)':css.getPropertyValue('--ink').trim(),'rgba(255,255,255,.6)':css.getPropertyValue('--ink2').trim(),'rgba(255,255,255,.38)':css.getPropertyValue('--ink3').trim(),'rgba(255,255,255,.12)':css.getPropertyValue('--line').trim(),'rgba(255,255,255,.05)':css.getPropertyValue('--line').trim(),'#161412':css.getPropertyValue('--bg2').trim(),'#ddd':css.getPropertyValue('--ink').trim(),'#aaa':css.getPropertyValue('--ink2').trim()};
@@ -34,13 +45,18 @@ const iqosEvidence={
 };
 function mk(id,opt){
  const el=document.getElementById(id);if(!el)return;
+ fitChartLabels(opt);
  const ch=echarts.init(el,null,{renderer:'canvas'});ch.readingOriginal=opt;ch.setOption(readingOption(opt));charts.push(ch);
  const evidence=iqosEvidence[id];
  if(evidence){
   const note=document.createElement('p');note.className='graph-iqos';note.dataset.chart=id;note.dataset.status=evidence[0];
   const label=document.createElement('strong');label.textContent=`IQOS · ${evidence[0]}: `;note.append(label,document.createTextNode(evidence[1]+' '));
   evidence.slice(2).forEach(n=>{const a=document.createElement('a');a.href=`/studije/${n}/`;a.textContent=`Izvor #${n} ↗`;note.append(a,document.createTextNode(' '));});
-  (el.parentElement.classList.contains('chart-scroll')?el.parentElement:el).after(note);
+  const footnote=document.querySelector(`[data-chart-notes="${id}"]`);
+  if(footnote){
+   footnote.querySelector('.chart-footnote-content').append(note);
+   footnote.querySelector('.chart-iqos-status').textContent=` · IQOS: ${evidence[0]}`;
+  }else (el.parentElement.classList.contains('chart-scroll')?el.parentElement:el).after(note);
  }
  return ch;
 }
@@ -76,7 +92,7 @@ mk('chartTemp',{
 tooltip:{...baseTip,trigger:'item',formatter:p=>`Temperatura<br><b>${temperatureLabel(p.value[0],p.value[1],p.value[2])}</b>`},
 grid:{left:265,right:120,top:30,bottom:50},
 xAxis:{type:'value',name:'°C',nameTextStyle:{color:C.ink2},min:0,max:1100,...baseAxis},
-yAxis:{type:'category',data:['Tjelesna temperatura (referenca)','Top-coil — laboratorijski mokri test','Generički pod-uređaji — N/A','Vuse Pro One — N/A','JUUL — navedeni prosjek atomizera','JUUL — grijaći element','ENVA Sol — N/A','Wiip Magnetic II / X Pro — N/A','IQOS — mjerenje starijeg modela','IQOS ILUMA — deklarirani maksimum','Top-coil — laboratorijski suhi test','Cigareta — vrh pri puhanju'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
+yAxis:{type:'category',data:['Tjelesna temperatura','Top-coil — mokri test','Generički pod-uređaji — N/A','Vuse Pro One — N/A','JUUL — prosjek atomizera','JUUL — grijaći element','ENVA Sol — N/A','Wiip Magnetic II / X Pro — N/A','IQOS — stariji model','IQOS ILUMA — maksimum','Top-coil — suhi test','Cigareta — vrh pri puhanju'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
 series:[{type:'custom',renderItem:(p,api)=>{const y=api.coord([0,api.value(0)])[1];const x1=api.coord([api.value(1),0])[0];const x2=api.coord([api.value(2),0])[0];
 return{type:'group',children:[{type:'rect',shape:{x:x1,y:y-9,width:Math.max(x2-x1,3),height:18},style:{fill:api.value(3),opacity:.92}},{type:'text',style:{x:x2+7,y,text:temperatureLabel(api.value(0),api.value(1),api.value(2)),fill:getComputedStyle(document.documentElement).getPropertyValue('--ink').trim(),fontSize:11,verticalAlign:'middle'}}]};},
 data:[
@@ -123,8 +139,8 @@ mk('chartPowerComposition',{
 mk('chartPotency',{
 tooltip:{trigger:'item',...baseTip,formatter:p=>`${p.name}<br>modelirani omjer rizika raka: <b>${p.value[0]}</b><br>${p.value[2]}`},
 grid:{left:60,right:40,top:50,bottom:70},
-xAxis:{type:'log',min:0.0003,max:2,name:'modelirani relativni doživotni rizik raka (cigareta = 1) · log',...baseAxis,nameTextStyle:{color:C.ink2},axisLabel:{...baseAxis.axisLabel,formatter:v=>v}},
-yAxis:{type:'category',data:['Nikotinski inhalator (NRT)','Zatvorene e-cigarete (Vuse/JUUL klasa)','E-cigarete — prosjek svih tipova','E-cigarete — najgori uzorci (visoka snaga)','Grijani duhan (HTP/IQOS)','Cigareta'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
+xAxis:{type:'log',min:0.0003,max:2,name:'Relativni rizik raka · log',...baseAxis,nameTextStyle:{color:C.ink2},axisLabel:{...baseAxis.axisLabel,formatter:v=>v}},
+yAxis:{type:'category',data:['Nikotinski inhalator','Zatvorene e-cigarete','E-cigarete — prosjek','E-cigarete — visoka snaga','Grijani duhan / IQOS','Cigareta'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
 series:[{type:'scatter',symbolSize:d=>34,
 data:[
 [0.0004,0,'doživotni rizik 8,9×10⁻⁶',C.non],
@@ -142,15 +158,14 @@ mk('chartMetals',{
 tooltip:baseTip,
 grid:{left:60,right:30,top:40,bottom:50},
 xAxis:{type:'category',data:['Nikal','Olovo','Krom (VI)*','Mangan'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:13}},
-yAxis:{type:'value',name:'% uzoraka iznad zdravstvene granice',max:100,...baseAxis,nameTextStyle:{color:C.ink2}},
+yAxis:{type:'value',name:'Uzorci iznad granice (%)',max:100,...baseAxis,nameTextStyle:{color:C.ink2}},
 series:[{type:'bar',barWidth:44,data:[
 {value:57,itemStyle:{color:C.enva}},
 {value:48,itemStyle:{color:C.cig}},
 {value:68,itemStyle:{color:'#d94f70'}},
 {value:50,itemStyle:{color:C.juul}}],
 label:{show:true,position:'top',color:C.ink,fontFamily:'ui-monospace,Menlo,monospace',formatter:'{c}%'}
-}],
-graphic:[{type:'text',right:20,top:10,style:{text:'*ako je sav krom heksavalentan\nOlmedo 2018 · n=56 uređaja',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
+}]
 });
 
 /* ---------- 03b metal source: dispenser vs aerosol vs tank ---------- */
@@ -169,7 +184,7 @@ series:[
 mk('chartBrain',{
 tooltip:{...baseTip,formatter:p=>`${p[0].name}<br>+<b>${p[0].value}%</b> vs kontrola (miševi, 2 mj. izloženosti)`},
 grid:{left:200,right:70,top:30,bottom:50},
-xAxis:{type:'value',name:'% iznad kontrolne grupe (moždano tkivo)',...baseAxis,nameTextStyle:{color:C.ink2}},
+xAxis:{type:'value',name:'Promjena prema kontroli (%)',...baseAxis,nameTextStyle:{color:C.ink2}},
 yAxis:{type:'category',data:['Mn — striatum','Ni — ventralni mezencefalon','Fe — striatum','Cu — striatum','Cr — motor. korteks','Sr — striatum','Pb — striatum','Pb — motor. korteks'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
 series:[{type:'bar',barWidth:20,
 data:[
@@ -182,8 +197,7 @@ data:[
 {value:185,itemStyle:{color:'#d94f70'}},
 {value:259,itemStyle:{color:'#d94f70'}}],
 label:{show:true,position:'right',color:C.ink,fontFamily:'ui-monospace,Menlo,monospace',formatter:'+{c}%'}
-}],
-graphic:[{type:'text',right:20,bottom:0,style:{text:'Re i sur. 2021 · miševi · odabrana tkiva i dvije doze izloženosti',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
+}]
 });
 
 /* ---------- 03e blood metals ---------- */
@@ -193,10 +207,9 @@ grid:{left:70,right:30,top:50,bottom:60},
 xAxis:{type:'category',data:['Nepušači','Ekskluzivni vaperi','Dualni korisnici','Pušači cigareta'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12,interval:0}},
 yAxis:[{type:'value',name:'krvni Cd (µg/L)',...baseAxis,nameTextStyle:{color:C.ink2}},{type:'value',name:'urinski Cd (ng/mg)',...baseAxis,nameTextStyle:{color:C.ink2}}],
 series:[
-{name:'krvni Cd (Prokopowicz 2019)',type:'bar',barWidth:34,itemStyle:{color:C.juul},data:[0.31,0.44,1.38,1.44],label:{show:true,position:'top',color:C.ink,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace',formatter:'{c}'}},
-{name:'urinski Cd (PATH Wave 3)',type:'bar',yAxisIndex:1,barWidth:34,itemStyle:{color:C.ecig},data:[0.23,0.35,null,null],label:{show:true,position:'top',color:C.ink,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace',formatter:'{c}'}}
-],
-graphic:[{type:'text',left:70,bottom:0,style:{text:'Dualni ≈ pušači; ekskluzivni vaperi blizu nepušača (krv); urinski Cd ipak viši kod vapera (PATH)',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
+{name:'Krvni Cd [1]',type:'bar',barWidth:34,itemStyle:{color:C.juul},data:[0.31,0.44,1.38,1.44],label:{show:true,position:'top',color:C.ink,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace',formatter:'{c}'}},
+{name:'Urinski Cd [2]',type:'bar',yAxisIndex:1,barWidth:34,itemStyle:{color:C.ecig},data:[0.23,0.35,null,null],label:{show:true,position:'top',color:C.ink,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace',formatter:'{c}'}}
+]
 });
 
 /* ---------- 04 NNAL ---------- */
@@ -205,17 +218,17 @@ tooltip:{trigger:'axis',...baseTip,formatter:p=>{const d=p[0];return `${d.name}<
 grid:{left:230,right:60,top:40,bottom:50},
 xAxis:{type:'value',min:0,max:1100,name:'Urinski NNAL (pg/mg)',nameLocation:'middle',nameGap:30,...baseAxis,nameTextStyle:{color:C.ink2}},
 yAxis:{type:'category',data:[
-'Nepušači (meta 2025)',
-'Nepušači (NHANES)',
-'Adolescenti — samo vaping',
-'Ekskluzivni vaperi (PATH)',
-'Ekskluzivni vaperi (meta 2025)',
+'Nepušači [1]',
+'Nepušači [2]',
+'Adolescenti — vaping [3]',
+'Isključivi vaperi [4]',
+'Isključivi vaperi [1]',
 'Cigare — povremeno',
-'Cigare — dnevno (PATH)',
-'Cigarete — dnevno (meta)',
-'Cigarete — dnevno (PATH)',
+'Cigare — dnevno [5]',
+'Cigarete — dnevno [1]',
+'Cigarete — dnevno [5]',
 'Filtrirane cigare — dnevno',
-'IQOS / THS 2.2 — peti dan prelaska'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
+'IQOS / THS 2.2 — dan 5'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12}},
 series:[{type:'bar',barWidth:18,
 data:[
 {value:5.42,itemStyle:{color:C.non}},
@@ -240,10 +253,10 @@ grid:{left:70,right:30,top:50,bottom:60},
 xAxis:{type:'category',data:['Nepušači','Ekskl. vaperi','Pušači cigareta','Dualni','Cigare (primarni)','IQOS / HEETS\nnakon sesije'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:12,interval:0}},
 yAxis:[{type:'value',name:'urinski kotinin (ng/mL)',...baseAxis,nameTextStyle:{color:C.ink2}},{type:'value',name:'serum/saliva (ng/mL)',...baseAxis,nameTextStyle:{color:C.ink2}}],
 series:[
-{name:'urin (meta 2025)',type:'bar',barWidth:22,itemStyle:{color:C.juul},data:[133.7,175.87,490.19,559.74,null,null]},
-{name:'serum (NHANES, cigare)',type:'bar',yAxisIndex:1,barWidth:22,itemStyle:{color:C.cigar},data:[0.045,null,null,null,6.2,null]},
-{name:'saliva (meta 2025)',type:'bar',yAxisIndex:1,barWidth:22,itemStyle:{color:C.ecig},data:[1.43,193.81,188.33,224.08,null,null]},
-{name:'serum (SUR-VAPES2, akutno)',type:'bar',yAxisIndex:1,barWidth:22,itemStyle:{color:C.iqos},data:[null,null,null,null,null,61],label:{show:true,position:'top',color:C.ink,formatter:'{c}'}}
+{name:'Urin [1]',type:'bar',barWidth:22,itemStyle:{color:C.juul},data:[133.7,175.87,490.19,559.74,null,null]},
+{name:'Serum · cigare [2]',type:'bar',yAxisIndex:1,barWidth:22,itemStyle:{color:C.cigar},data:[0.045,null,null,null,6.2,null]},
+{name:'Slina [1]',type:'bar',yAxisIndex:1,barWidth:22,itemStyle:{color:C.ecig},data:[1.43,193.81,188.33,224.08,null,null]},
+{name:'Serum · IQOS [3]',type:'bar',yAxisIndex:1,barWidth:22,itemStyle:{color:C.iqos},data:[null,null,null,null,null,61],label:{show:true,position:'top',color:C.ink,formatter:'{c}'}}
 ]});
 
 /* ---------- 04 VOC: sve 4 grupe (De Jesus 2020, PATH W1) ---------- */
@@ -259,7 +272,7 @@ series:[
 {name:'Dualni korisnici',type:'bar',barWidth:'18%',itemStyle:{color:C.enva},data:[188.1,569.5,181.8]},
 {name:'Pušači cigareta',type:'bar',barWidth:'14%',itemStyle:{color:C.cig},data:[180.1,724.4,191.9],
 label:{show:true,position:'top',color:C.ink,fontSize:10,fontFamily:'ui-monospace,Menlo,monospace'}}
-,{name:'IQOS / THS 2.2 (geometrijski prosjek, dan 5)',type:'bar',barWidth:'14%',itemStyle:{color:C.iqos},data:[null,402.26,null],label:{show:true,position:'top',color:C.ink,fontSize:10,formatter:'{c}'}}
+,{name:'IQOS / THS 2.2 · dan 5',type:'bar',barWidth:'14%',itemStyle:{color:C.iqos},data:[null,402.26,null],label:{show:true,position:'top',color:C.ink,fontSize:10,formatter:'{c}'}}
 ]});
 
 /* ---------- 04 VOC karcinogeni: % vs nepušači ---------- */
@@ -288,13 +301,13 @@ legend:{textStyle:{color:C.ink2},top:0},
 grid:{left:220,right:60,top:50,bottom:40},
 xAxis:{type:'value',max:100,name:'% smanjenja biomarkera',...baseAxis,nameTextStyle:{color:C.ink2}},
 yAxis:{type:'category',data:[
-'Vuse Solo — benzen/akrilonitril (5d)',
+'Vuse Solo — benzen/akrilonitril',
 'Vuse Vibe — COHb (5d)',
 'Vuse Ciro — COHb (5d)',
 'Vuse — NNN (5d)',
 'Vuse — B[a]P (5d)',
 'JUUL — agregat 8 BOE (5d)',
-'JUUL — agregat vs abstinencija (5d)',
+'Apstinencija — JUUL pokus (5d)',
 'IQOS — NNAL (5d)',
 'IQOS — COHb (5d)',
 'IQOS — benzen (5d)',
@@ -323,8 +336,8 @@ label:{show:true,position:'right',color:C.ink,fontSize:11,fontFamily:'ui-monospa
 mk('chartFMD',{
 tooltip:baseTip,legend:{textStyle:{color:C.ink2},top:0},
 grid:{left:60,right:30,top:50,bottom:60},
-xAxis:{type:'category',data:['Nepušači / kontrole','Ekskluzivni vaperi','Pušači cigareta','Djeca — pasivni aerosol HTP','Djeca — pasivni dim'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:11,interval:0}},
-yAxis:{type:'value',name:'FMD (%) — funkcija endotela',max:12,...baseAxis,nameTextStyle:{color:C.ink2}},
+xAxis:{type:'category',data:['Nepušači /\nkontrole','Ekskluzivni vaperi','Pušači cigareta','Djeca — pasivni\naerosol HTP','Djeca —\npasivni dim'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:11,interval:0}},
+yAxis:{type:'value',name:'FMD (%)',max:12,...baseAxis,nameTextStyle:{color:C.ink2}},
 series:[{type:'bar',barWidth:38,
 data:[
 {value:10.7,itemStyle:{color:C.non}},
@@ -333,15 +346,14 @@ data:[
 {value:5.51,itemStyle:{color:C.cigar}},
 {value:5.78,itemStyle:{color:C.cig}}],
 label:{show:true,position:'top',color:C.ink,fontFamily:'ui-monospace,Menlo,monospace',formatter:'{c}%'}
-}],
-graphic:[{type:'text',left:70,bottom:0,style:{text:'Mohammadi 2022 (odrasli, kronična uporaba) · Loffredo 2020 (djeca, pasivna izloženost)',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
+}]
 });
 
 /* Same participants and protocol; separate from chronic FMD. */
 mk('chartFMDAcute',{
  tooltip:{...baseTip,valueFormatter:v=>`${v}%`},
  legend:{top:0,textStyle:{color:C.ink2}},grid:{left:70,right:35,top:55,bottom:65},
- xAxis:{...baseAxis,type:'category',data:['IQOS / HEETS Amber','Blu Pro (9 udisaja)','Marlboro Gold (1 cigareta)']},
+ xAxis:{...baseAxis,type:'category',data:['IQOS /\nHEETS Amber','Blu Pro\n(9 udisaja)','Marlboro Gold\n(1 cigareta)']},
  yAxis:{...baseAxis,type:'value',min:0,max:10,name:'FMD (%)'},
  series:[{name:'Prije sesije',type:'bar',barMaxWidth:45,itemStyle:{color:C.non},data:[6.10,6.14,6.20]},
  {name:'Odmah poslije',type:'bar',barMaxWidth:45,itemStyle:{color:C.iqos},data:[3.79,3.72,2.40]}].map(s=>({...s,label:{show:true,position:'top',color:C.ink,formatter:'{c}%'}}))
@@ -351,8 +363,8 @@ mk('chartFMDAcute',{
 mk('chartOR',{
 tooltip:{...baseTip,formatter:p=>`${p.name}<br>OR = <b>${p.value[1]}</b> (95% CI ${p.value[2]}–${p.value[3]})`},
 grid:{left:220,right:50,top:40,bottom:50},
-xAxis:{type:'value',min:0,max:2,name:'odds ratio (isprekidana linija = 1,0)',...baseAxis,nameTextStyle:{color:C.ink2}},
-yAxis:{type:'category',data:['KOPB — vaping vs cigarete','Astma — vaping vs cigarete','Oralne bolesti — vaping vs cigarete','MI — vaping vs cigarete (reanaliza)','Moždani udar — vaping vs cigarete (rean.)','CVD — vaping vs cigarete (n.s.)','MI — dual vs cigarete','Moždani udar — dual vs cigarete','KOPB — dual vs cigarete'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:11.5}},
+xAxis:{type:'value',min:0,max:2,name:'OR prema cigaretama',...baseAxis,nameTextStyle:{color:C.ink2}},
+yAxis:{type:'category',data:['KOPB — e-cig','Astma — e-cig','Oralne bolesti — e-cig','Infarkt — e-cig [2]','Moždani udar — e-cig [2]','Srčanožilne bolesti — e-cig','Infarkt — dualna uporaba','Moždani udar — dualna uporaba','KOPB — dualna uporaba'],...baseAxis,axisLabel:{...baseAxis.axisLabel,color:C.ink,fontSize:11.5}},
 series:[{type:'custom',
 renderItem:(p,api)=>{const y=api.coord([0,api.value(0)])[1];const x=api.coord([api.value(1),0])[0];const xl=api.coord([api.value(2),0])[0];const xh=api.coord([api.value(3),0])[0];const col=api.value(4);
 return{type:'group',children:[
@@ -391,8 +403,7 @@ yAxis:{type:'value',name:'NNK (ng/g)',...baseAxis,nameTextStyle:{color:C.ink2}},
 series:[
 {name:'u tekućini',type:'bar',barWidth:34,itemStyle:{color:C.juul},data:[0,0.64,2.63],label:{show:true,position:'top',color:C.ink,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace',formatter:p=>p.value===0?'ND':p.value}},
 {name:'u aerosolu',type:'bar',barWidth:34,itemStyle:{color:'#d94f70'},data:[0,12.0,53.8],label:{show:true,position:'top',color:C.ink,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace',formatter:p=>p.value===0?'<0,37':p.value}}
-],
-graphic:[{type:'text',left:70,bottom:0,style:{text:'Jin i sur. 2022: nitrit u tekućini → TSNA nastaje tijekom aerosolizacije (19–20x više u aerosolu)',fill:C.ink3,fontSize:11,fontFamily:'ui-monospace,Menlo,monospace'}}]
+]
 });
 
 /* ---------- 09 study database ---------- */

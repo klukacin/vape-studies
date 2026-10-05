@@ -1,0 +1,7 @@
+---
+const { chart, summary = 'Izvori i napomene uz graf' } = Astro.props;
+---
+<details class="chart-footnote" data-chart-notes={chart}>
+  <summary>{summary}<span class="chart-iqos-status"></span></summary>
+  <div class="chart-footnote-content"><slot /></div>
+</details>

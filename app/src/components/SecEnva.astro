@@ -1,4 +1,5 @@
 ---
+import ChartFootnote from './ChartFootnote.astro';
 import InlineGallery from './InlineGallery.astro';
 ---
 <section id="enva" class="reveal">
@@ -14,8 +15,8 @@ import InlineGallery from './InlineGallery.astro';
   </div>
   <h3>Ekstrakt duhana i nastanak TSNA: mehanizam, ne ENVA rezultat</h3>
   <p><a href="/studije/17/">Jin i sur. (2022)</a> ispituju nastanak duhanskih nitrozamina tijekom aerosolizacije u prisutnosti nitrita i duhanskih alkaloida. To je relevantno pitanje za formulacije s ekstraktom duhana. Bez analize ENVA tekućine i aerosola ne možemo potvrditi koncentraciju prekursora ni tvrditi koliko TSNA nastaje u ovom proizvodu.</p>
-  <div id="chartENVA" class="chart"></div>
-  <p class="chart-note">Laboratorijski mehanizam iz <a href="/studije/17/">Jin i sur. (2022)</a>: tekućina i aerosol pri različitim razinama nitrita. Graf ne prikazuje testiranje ENVA Sol.</p>
+  <div class="chart-scroll"><div id="chartENVA" class="chart"></div></div>
+  <ChartFootnote chart="chartENVA"><p class="chart-note">Laboratorijski mehanizam iz <a href="/studije/17/">Jin i sur. (2022)</a>: tekućina i aerosol pri različitim razinama nitrita. Graf ne prikazuje testiranje ENVA Sol.</p></ChartFootnote>
   <h3>Notifikacija i dokumentacija</h3>
   <p>U ranijem pregledu proizvođačkih podataka zabilježen je EC-ID 02828-25-90142. Sam identifikator ili prisutnost u trgovini ne potvrđuju sadržaj dosjea, rezultate ispitivanja ni sigurnost proizvoda. <a href="/studije/155/">TPD, članak 20</a> propisuje prijavu podataka o proizvodu, sastojcima, emisijama i toksikologiji; to nije isto što i naša neovisna provjera tih podataka.</p>
   <figure class="enva-material"><a href="/img/enva-znacajke.jpg" target="_blank" rel="noopener"><img src="/img/enva-znacajke.jpg" alt="Proizvođački prikaz značajki ENVA Sol" loading="lazy" /></a><figcaption>Izvorni proizvođački materijal, myenva.com. Klik otvara veću sliku. Marketinške usporedbe s cigaretama nisu mjerenje apsorpcije ili rizika.</figcaption></figure>

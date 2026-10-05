@@ -1,9 +1,12 @@
+---
+import ChartFootnote from './ChartFootnote.astro';
+---
 <section id="switching" class="reveal">
   <div class="eyebrow">Kontrolirana ispitivanja na ljudima</div>
   <h2><span class="num">08</span>Switching studije: koliko brzo tijelo „čisti" pušača</h2>
   <p>Najjači eksperimentalni dizajn u ovom polju: uzmeš pušače, prebaciš ih 5–7 dana isključivo na određeni proizvod u zatvorenim kliničkim uvjetima i izmjeriš biomarkere prije/poslije. Takve studije postoje za <strong>Vuse Solo, Vuse Vibe/Ciro, JUUL i IQOS</strong> — sve su sponzorirane od industrije (važna napomena o pristranosti), ali objavljene u recenziranim časopisima s konzistentnim rezultatima.</p>
-  <div id="chartSwitch" class="chart tall"></div>
-  <p class="chart-note">% smanjenja biomarkera nakon potpunog prelaska na proizvod (5–7 dana), prema objavljenim studijama. Abstinencija = potpuni prestanak svih proizvoda (kontrola).</p>
+  <div class="chart-scroll"><div id="chartSwitch" class="chart tall"></div></div>
+  <ChartFootnote chart="chartSwitch"><p class="chart-note">Izvori: <a href="/studije/42/">Vuse Solo</a>, <a href="/studije/139/">Vuse Vibe/Ciro</a>, <a href="/studije/43/">JUUL</a>, <a href="/studije/194/">IQOS / THS 2.2</a> i <a href="/studije/45/">THP, 360 dana</a>. Vuse Solo prikazan je nakon pet dana; redak apstinencije iz JUUL pokusa jest kontrolna skupina koja je prestala koristiti sve proizvode.</p><p class="chart-note">% smanjenja biomarkera nakon potpunog prelaska na proizvod (5–7 dana), prema objavljenim studijama. Abstinencija = potpuni prestanak svih proizvoda (kontrola).</p></ChartFootnote>
 
   <table class="data">
     <tr><th>Studija</th><th>Dizajn</th><th>Ključni rezultat</th></tr>
